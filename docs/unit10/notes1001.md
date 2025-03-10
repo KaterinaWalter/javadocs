@@ -40,7 +40,9 @@ nav_order: 1
 
 ## What is Recursion?
 
-**Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code*, as an alternative to **iteration/looping**. 
+**Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code*.
+
+![image]()
 
 The method below will print out "This is the method that never ends!" and then _call itself_, which will print out the message again, and then call itself, and so on.
 
@@ -56,8 +58,41 @@ public static void neverEnd() {
 > You will NOT be asked to _write_ a recursive method on the exam.
 
 
-#### Why Use Recursion
+#### Why Use Recursion?
 {:.no_toc}
+
+Recursion is most useful for solving problems where the structure of the problem
+allows it to be broken into smaller, but similar problems, whose solutions can
+be combined into the solution to the original problem.
+
+For example, suppose you wanted to find out how much space a folder on your
+computer uses? Well, if you knew how much space each of the files and
+sub-folders in that folder used, you could add them up and get the answer.
+Getting the size of a regular file is usually easy, but figuring out how much
+space each sub-folder takes up is the same problem we stared with, just with a
+different folder.
+
+But that’s actually great news because we can use the same procedure to solve
+this smaller problem: find the size of all the files and sub-folders in *it* and
+add them up. Eventually, as we try to get the size more deeply nested folders,
+eventually we'll get to folders that only contain plain files whose sizes we can
+add up and return and eventually we work our way back up to give the answer to
+our question about the original top-most folder.
+
+Recursion can also be used to create **fractals**. A simple example is Sierpinski's
+triangle in which you subdivide a triangle into 4 new triangles as shown below.
+You can then do the some procedure with each new triangle except the center one.
+
+![image](Figures/triangleSub.png)
+
+Recursion can also be used to **traverse** ``String``s, arrays, and ``ArrayList``s just like a loop. In fact, any loop—also known as *iterative* code—can be
+re-written using recursion. 
+> However in most languages, including Java, there are limitations on how deeply code can recurse, which rules out using recursion for infinite or even very long loops.
+
+On the other hand, recursion is more **powerful** than simple loops, especially when dealing with _branching structures_ like the file folder example. Computer scientists call such structures “**trees**” and they incredibly common in computer programs.
+
+Recursive procedures that operate on trees often cannot be easily translated into simple loops, at least not without using some extra data structures to keep
+track where you are in the tree. Thus one way to think about recursion is as “loops for trees”. If you need to loop over a simple linear structure like a ``String`` or an array, by all mean use a ``for`` loop. And if you want to navigate a 2D array a pair of nested ``for`` loops is the way to go. But if you need to traverse a tree structure, recursion should be your go to.
 
 ### Factorial Method
 
