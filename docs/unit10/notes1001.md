@@ -40,10 +40,21 @@ nav_order: 1
 
 ## What is Recursion?
 
-**Recursion** is when a _method calls itself_. 
+**Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code*, as an alternative to **iteration/looping**. 
+
+The method below will print out "This is the method that never ends!" and then _call itself_, which will print out the message again, and then call itself, and so on.
+
+```java
+public static void neverEnd() {
+    System.out.println("This is the method that never ends!");
+    neverEnd();
+}
+```
+> ♾️ This is called **infinite recursion**, which is a recursion that never ends. Of course, this particular method is not very useful. (Actually, in practice it *will* end, crashing with a ``StackOverFlowError`` because there is a limit on how many times you can recurse.)
 
 {:.highlight} The AP CSA exam usually has about **4-6 recursion problems** in the MCQ section. You only need to know how to _trace recursive methods_, as in, figure out what they _return_ or _print_.
 > You will NOT be asked to _write_ a recursive method on the exam.
+
 
 #### Why Use Recursion
 {:.no_toc}
