@@ -42,7 +42,7 @@ nav_order: 1
 
 **Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code*.
 
-![image]()
+![image](simpson.gif)
 
 The method below will print out "This is the method that never ends!" and then _call itself_, which will print out the message again, and then call itself, and so on.
 
@@ -78,6 +78,8 @@ add them up. Eventually, as we try to get the size more deeply nested folders,
 eventually we'll get to folders that only contain plain files whose sizes we can
 add up and return and eventually we work our way back up to give the answer to
 our question about the original top-most folder.
+
+![image](fractal.gif)
 
 Recursion can also be used to create **fractals**. A simple example is Sierpinski's
 triangle in which you subdivide a triangle into 4 new triangles as shown below.
