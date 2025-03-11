@@ -40,7 +40,14 @@ nav_order: 1
 
 ## What is Recursion?
 
-**Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code* - an alternative to **loops**.
+**Recursion** in Java is when a _method calls itself_. Recursion is another strategy for *repeating code* - an alternative to **loops**.
+
+<html>
+    <dl>
+        <dt>Recursive Method</dt>
+        <dd>A method that contains at least one <strong>call to itself</strong> inside the method body, thereby <em>repeating</em> its own process recursively.</dd>
+    </dl>
+</html>
 
 ![image-small](recursion-briefcase.gif)
 
@@ -85,7 +92,7 @@ You can then do the _same procedure_ with each new triangle except the center on
 re-written using recursion! 
 > However in most languages, including Java, there are limitations on how deeply code can recurse, which rules out using recursion for infinite or even very long loops.
 
-<div class="important" markdown="block">
+<div class="imp" markdown="block">
 
 🌳 Recursion is more **powerful** than simple loops, especially when dealing with _branching structures_ like the file folder example. Computer scientists call such data structures **trees** and they are incredibly common in computer programs. Thus one way to think about recursion is as “_loops for trees_”. 
 
@@ -114,12 +121,17 @@ See the method `factorial` below that calculates the **factorial** of a number. 
 
 
 ### Base Case
+    
+Every non-infinite recursive method must have at least one **base case** that stops the recursion. 🛑 
 
-Every non-infinite recursive method must have at least one **base case** where the method can `return` an answer _without another recursive call_. 
-> In other words, the base case is the smallest possible problem (or problems) that the method knows how to solve, the ones it can _answer directly_ without any more recursion.
+<html>
+    <dl>
+        <dt>Base Case</dt>
+        <dd>A <strong>condition</strong> where a recursive method can <code>return</code> an answer <em>without another recursive call</em>. In other words, the smallest possible problem (or problems) that the method knows how to solve, the ones it can <em>answer directly</em> without any more recursion.</dd>
+    </dl>
+</html>
 
-The base case is often handled by an ``if`` statement that checks for the base
-case and returns directly when the condition for the base case is met.
+The base case is often handled by an ``if`` statement that checks for the **base case condition**, and _returns directly_ when the condition for the base case is met.
 
 In the factorial method, the base case is when the argument is 0 as that is the
 smallest number that the factorial method can handle since factorial isn’t
