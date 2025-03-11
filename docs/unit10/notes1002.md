@@ -28,7 +28,6 @@ In Unit 7, we learned about searching and sorting algorithms using iteration (lo
 In Unit 7, we learned about two search algorithms, linear search and binary search. Linear search searches for an element in an array or ArrayList by checking each element in order. Binary search is more efficient (faster) because it starts at the middle of a sorted array or ArrayList and eliminates half of the array or ArrayList each pass through the algorithm. Binary search only works on sorted data. It can be written with iteration (using a loop) like below or recursively.
 
 ```java
-
 public class IterativeBinarySearch
   {
       public static int binarySearch(int[] elements, int target)
@@ -115,15 +114,10 @@ Here is the Java code for a recursive binary search:
 
 ### Recursive Merge Sort
 
-In Unit 7, we looked at two sorting algorithms, Selection Sort and Insertion Sort. In this lesson, we will look at a third sorting algorithm, Merge Sort, which uses recursion. Merge Sort is actually more efficient (faster) than Selection Sort and Insertion Sort because it divides the problem in half each time like binary search. This is called a **divide and conquer** algorithm.
+In Unit 7, we looked at two sorting algorithms, **Selection Sort** and **Insertion Sort**. In this lesson, we will look at a third sorting algorithm, **Merge Sort**, which uses _recursion_. 
+> Merge Sort is actually more efficient (faster) than Selection Sort and Insertion Sort because it divides the problem in half each time like binary search. This is called a **divide and conquer** algorithm.
 
-A merge sort recursively breaks the values to be sorted in half until there is only one value to be sorted and then it merges the two sorted lists into one sorted list.  The code shown below uses a second array the same size as the original array for merging the values in order.  Then it copies all of the sorted values back into the original array.
-
-Here is a folk dance video that shows the merge sort process:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XaqR3G_NVoo?si=8W-6B1y-KxvgW1hd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-And here is a short video that describes how merge sort works:
+Here is a short video that describes how merge sort works:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4VqmGXwpLqc?si=SqwsIIKCX_yfDhps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -131,44 +125,41 @@ Here's a video that shows merge sort with cards:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AMJjtTo1LLE?si=jax7DRz91MSkmq69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The code for ``mergeSort`` below is from the AP CSA course description.
+A merge sort **recursively splits** the values to be sorted in half until _there is only one value to be sorted_, and then it **merges** the two sorted lists into one sorted list.  
+> The code shown below uses a second array the same size as the original array for merging the values in order. Then it copies all of the sorted values back into the original array.
 
-To identify a merge sort look for the following:
+<div class="imp" markdown="block">
+  
+🔍 To identify a **merge sort algorithm** look for the following:
 
-* 3 methods, mergeSort, mergeSortHelper, and merge
-* mergeSortHelper is recursive
+* 3 methods: `mergeSort`, `mergeSortHelper`, and `merge`
+* `mergeSortHelper` is **recursive**
+
+</div>
 
 ```java
-   public class SortTest
-   {
-       public static void mergeSort(int[] elements)
-       {
-           int n = elements.length;
-           int[] temp = new int[n];
-           mergeSortHelper(elements, 0, n - 1, temp);
-       }
+public class SortTest {
+  public static void mergeSort(int[] elements) {
+    int n = elements.length;
+    int[] temp = new int[n];
+    mergeSortHelper(elements, 0, n - 1, temp);
+  }
 
-       private static void mergeSortHelper(
-           int[] elements, int from, int to, int[] temp)
-       {
-           if (from < to)
-           {
-               int middle = (from + to) / 2;
-               mergeSortHelper(elements, from, middle, temp);
-               mergeSortHelper(elements, middle + 1, to, temp);
-               merge(elements, from, middle, to, temp);
-           }
-       }
+  private static void mergeSortHelper(int[] elements, int from, int to, int[] temp) {
+    if (from < to)  {
+      int middle = (from + to) / 2;
+      mergeSortHelper(elements, from, middle, temp);
+      mergeSortHelper(elements, middle + 1, to, temp);
+      merge(elements, from, middle, to, temp);
+    }
+  }
 
-       private static void merge(
-           int[] elements, int from, int mid, int to, int[] temp)
-       {
-           int i = from;
-           int j = mid + 1;
-           int k = from;
+  private static void merge(int[] elements, int from, int mid, int to, int[] temp) {
+    int i = from;
+    int j = mid + 1;
+    int k = from;
 
-           while (i <= mid && j <= to)
-           {
+    while (i <= mid && j <= to) {
                if (elements[i] < elements[j])
                {
                    temp[k] = elements[i];
@@ -201,16 +192,13 @@ To identify a merge sort look for the following:
                elements[k] = temp[k];
            }
        }
-
-       public static void main(String[] args)
-       {
+       public static void main(String[] args){
            int[] arr1 = {86, 3, 43, 5};
            System.out.println(Arrays.toString(arr1));
            mergeSort(arr1);
            System.out.println(Arrays.toString(arr1));
        }
    }
-
 ```  
 
 > You can see this executing using the [Java visualizer for merge sort](http://cscircles.cemc.uwaterloo.ca/java_visualize/#code=++import+java.util.Arrays%3B%0A++%0A++public+class+SortTest%0A++%7B%0A+++++public+static+void+mergeSort(int%5B%5D+elements)+%0A+++++%7B%0A++++++++int+n+%3D+elements.length%3B%0A++++++++int%5B%5D+temp+%3D+new+int%5Bn%5D%3B+%0A++++++++mergeSortHelper(elements,+0,+n+-+1,+temp)%3B%0A+++++%7D%0A+++++%0A+++++private+static+void+mergeSortHelper(int%5B%5D+elements,+int+from,+int+to,+int%5B%5D+temp)%0A+++++%7B%0A+++++++++if+(from+%3C+to)%0A+++++++++%7B%0A++++++++++++int+middle+%3D+(from+%2B+to)+/+2%3B+%0A++++++++++++mergeSortHelper(elements,+from,+middle,+temp)%3B+%0A++++++++++++mergeSortHelper(elements,+middle+%2B+1,+to,+temp)%3B+%0A++++++++++++merge(elements,+from,+middle,+to,+temp)%3B%0A+++++++++%7D%0A+++++%7D%0A+++++%0A+++++private+static+void+merge(int%5B%5D+elements,+int+from,+int+mid,+int+to,+int%5B%5D+temp)%0A+++++%7B%0A++++++++int+i+%3D+from%3B+%0A++++++++int+j+%3D+mid+%2B+1%3B+%0A++++++++int+k+%3D+from%3B%0A++++++++%0A++++++++while+(i+%3C%3D+mid+%26%26+j+%3C%3D+to)+%0A++++++++%7B%0A+++++++++++if+(elements%5Bi%5D+%3C+elements%5Bj%5D)+%0A+++++++++++%7B%0A++++++++++++++temp%5Bk%5D+%3D+elements%5Bi%5D%3B%0A++++++++++++++i%2B%2B%3B+%0A+++++++++++%7D%0A+++++++++++else+%0A+++++++++++%7B%0A++++++++++++++temp%5Bk%5D+%3D+elements%5Bj%5D%3B%0A++++++++++++++j%2B%2B%3B+%0A+++++++++++%7D%0A+++++++++++k%2B%2B%3B+%0A++++++++%7D%0A%0A++++++++while+(i+%3C%3D+mid)+%0A++++++++%7B%0A+++++++++++temp%5Bk%5D+%3D+elements%5Bi%5D%3B+%0A+++++++++++i%2B%2B%3B%0A+++++++++++k%2B%2B%3B%0A++++++++%7D%0A++++++++%0A++++++++while+(j+%3C%3D+to)+%0A++++++++%7B%0A+++++++++++temp%5Bk%5D+%3D+elements%5Bj%5D%3B+%0A+++++++++++j%2B%2B%3B%0A+++++++++++k%2B%2B%3B%0A++++++++%7D%0A++++++++%0A++++++++for+(k+%3D+from%3B+k+%3C%3D+to%3B+k%2B%2B)+%0A++++++++%7B%0A+++++++++++elements%5Bk%5D+%3D+temp%5Bk%5D%3B+%0A++++++++%7D%0A+++++%7D%0A++++++++%0A++++++%0A+++++public+static+void+main(String%5B%5D+args)%0A+++++%7B%0A++++++++int%5B%5D+arr1+%3D+%7B86,+3,+43%7D%3B%0A++++++++System.out.println(Arrays.toString(arr1))%3B%0A++++++++mergeSort(arr1)%3B%0A++++++++System.out.println(Arrays.toString(arr1))%3B%0A+++++%7D%0A++%7D&mode=display&curInstr=0).
