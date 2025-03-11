@@ -40,7 +40,7 @@ nav_order: 1
 
 ## What is Recursion?
 
-**Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code*.
+**Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code* - an alternative to **loops**.
 
 ![image-small](recursion-briefcase.gif)
 
@@ -57,47 +57,41 @@ public static void neverEnd() {
 > ♾️ This is called **infinite recursion**, which is a recursion that never ends. Of course, this particular method is not very useful. (Actually, in practice it *will* end, crashing with a ``StackOverFlowError`` because there is a limit on how many times you can recurse.)
 
 {:.highlight} 
-The AP CSA exam usually has about **4-6 recursion problems** in the MCQ section. You only need to know how to _trace recursive methods_, as in, figure out what they _return_ or _print_.
-> You will NOT be asked to _write_ a recursive method on the exam.
+The AP CSA exam usually has about **4-6 recursion problems** in the MCQ section. You only need to know how to _trace_ recursive methods, as in, figure out what they _return_ or _print_. ✍️
 
 
 #### Why Use Recursion?
 {:.no_toc}
 
 Recursion is most useful for solving problems where the structure of the problem
-allows it to be **broken into smaller but similar** problems, whose solutions can
-be combined into the solution to the original problem.
+allows it to be **broken into smaller but similar problems**, whose _solutions can
+be combined_ into the solution to the original problem.
 
 For example:
 
-* Suppose you wanted to find out _how much space a folder_ on your computer uses? Well, if you knew how much space each of the files and sub-folders in that folder used, you could add them up and get the answer. Getting the size of a regular file is usually easy, but figuring out how much
-space each sub-folder takes up is the same problem we stared with, just with a
-different folder.
-
-But that’s actually great news because we can use the same procedure to solve
-this smaller problem: find the size of all the files and sub-folders in *it* and
-add them up. Eventually, as we try to get the size more deeply nested folders,
-eventually we'll get to folders that only contain plain files whose sizes we can
-add up and return and eventually we work our way back up to give the answer to
-our question about the original top-most folder.
+* 🗂️ Suppose you wanted to find out how much space a **folder** on your computer uses? Well, if you knew how much space each of the files and sub-folders in that folder used, you could add them up and get the answer. Getting the size of a regular file is usually easy, but figuring out how much space each sub-folder takes up is the same problem we stared with, just with a different folder.
+    * But that’s actually great news because we can **use the same procedure to solve this smaller problem:** find the size of all the files and sub-folders *in it* and add them up. Eventually, as we try to get the size more deeply **nested folders**, eventually we'll get to folders that only _contain plain files whose sizes we can add up_ and `return`, and eventually we work our way back up to give the answer to our question about the original top-most folder.
 
 * Recursion can also be used to create **fractals**. 
 
 ![image-small](fractal.gif)
 
-* A simple example is Sierpinski's triangle in which you subdivide a triangle into 4 new triangles as shown below.
-You can then do the some procedure with each new triangle except the center one.
+* A simple fractal example is **Sierpinski's Triangle** in which you subdivide a triangle into 4 new triangles as shown below.
+You can then do the _same procedure_ with each new triangle except the center one.
 
-> ![image](Figures/triangleSub.png)
+![image](Figures/triangleSub.png)
 
-Recursion can also be used to **traverse** ``String``s, arrays, and ``ArrayList``s just like a loop. In fact, any loop—also known as *iterative* code—can be
-re-written using recursion. 
+* Recursion can also be used to **traverse** ``String``s, arrays, and ``ArrayList``s just like a loop. In fact, any loop—also known as *iterative* code—can be
+re-written using recursion! 
 > However in most languages, including Java, there are limitations on how deeply code can recurse, which rules out using recursion for infinite or even very long loops.
 
-On the other hand, recursion is more **powerful** than simple loops, especially when dealing with _branching structures_ like the file folder example. Computer scientists call such structures “**trees**” and they incredibly common in computer programs.
+<div class="important" markdown="block">
 
-Recursive procedures that operate on trees often cannot be easily translated into simple loops, at least not without using some extra data structures to keep
-track where you are in the tree. Thus one way to think about recursion is as “loops for trees”. If you need to loop over a simple linear structure like a ``String`` or an array, by all mean use a ``for`` loop. And if you want to navigate a 2D array a pair of nested ``for`` loops is the way to go. But if you need to traverse a tree structure, recursion should be your go to.
+🌳 Recursion is more **powerful** than simple loops, especially when dealing with _branching structures_ like the file folder example. Computer scientists call such data structures **trees** and they are incredibly common in computer programs. Thus one way to think about recursion is as “_loops for trees_”. 
+
+> 🔁 If you need to loop over a **simple linear data structure** like a ``String``, array, or `ArrayList`, by all mean use a ``for`` loop _instead of recursion_. And if you want to navigate a 2D array, a pair of nested ``for`` loops is the way to go. 
+
+</div>
 
 ### Factorial Method
 
