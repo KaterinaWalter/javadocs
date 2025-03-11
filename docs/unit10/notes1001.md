@@ -248,7 +248,10 @@ public static int bunnyEars(int bunnies) {
 
 What about ``bunnyEars(5)``?
 
-<details><summary>✅ CHECK YOUR SOLUTION: </summary>
+</div>
+
+<html>
+<details><summary>✅ CHECK YOUR SOLUTION:</summary>
 
 ```
   bunnyEars(5) returns 2 + bunnyEars(4)
@@ -271,8 +274,7 @@ This approach shows the call stack from bottom to top. Once ``bunnyEars(1)`` exe
 So ``bunnyEars(5)`` returns 10.
 
 </details>
-
-</div>
+</html>
 
 ---
 
