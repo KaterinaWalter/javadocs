@@ -82,11 +82,7 @@ EXAMPLES:
     * Eventually, as we try to get the size more deeply **nested folders**, eventually we'll get to folders that only _contain plain files whose sizes we can add up_ and `return`, and eventually we work our way back up to give the answer to our question about the original top-most folder.
 
 * Recursion can also be used to create **fractals**. 
-
-![image-small](fractal.gif)
-
-* A simple fractal example is **Sierpinski's Triangle** in which you subdivide a triangle into 4 new triangles as shown below.
-You can then do the _same procedure_ with each new triangle except the center one.
+    * A simple fractal example is **Sierpinski's Triangle** in which you subdivide a triangle into 4 new triangles as shown below. You can then do the _same procedure_ with each new triangle except the center one.
 
 ![image](Figures/triangleSub.png)
 
