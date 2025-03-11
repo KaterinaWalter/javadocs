@@ -135,23 +135,13 @@ Every non-infinite recursive method must have at least one **base case** as a wa
 
 The base case is often handled by an ``if`` statement that checks for the **base case condition**, and _returns directly_ when the condition for the base case is met.
 
-In the factorial method, the base case is when the argument is 0 as that is the
-smallest number that the factorial method can handle since factorial isn’t
-defined for negative numbers.
+* In the **factorial** method: the base case is when the argument is 0 as that is the smallest number that the factorial method can handle.
 
-When we recurse through folders on our computer there are two base cases, a
-simple file, whose size we can find out directly, and an empty folder whose size
-is 0 (or maybe some other fixed amount, depending on the operating system). In
-those two cases a method to compute the space used by a file or folder could
-return immediately; in all others it would have to recurse to get the sizes of
-the files and sub-folders it contains and then add them up.
+* When we recurse through **folders** on our computer there are TWO base cases: a simple file, whose size we can find out directly, and an empty folder whose size is 0.
 
-The goal of every recursive call in a recursive method is to shrink the problem
-in some way that gets closer to the base case. You can see that in ``factorial``
-where the recursive call is passing ``n - 1``, one closer to ``0``. If you write
-a recursive method (not required for the AP exam), you should make sure that
-every time you recurse you are shrinking the problem so it is closer to the base
-case—that’s the equivalent in recursion to incrementing your loop variable in a
+{:.highlight}
+The goal of every **recursive call** in a recursive method is to *shrink the problem* in some way that gets **closer to the base case**. 
+> You can see that in ``factorial`` where the recursive call is passing ``n - 1``, one closer to ``0``. This is the equivalent in recursion to _incrementing_ your loop variable in a
 ``for`` loop.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q83nN97LVOU?si=F48d7kHn96smMDpG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
