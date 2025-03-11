@@ -177,7 +177,8 @@ This error can be seen in the **call stack** below, which shows the call stack f
 
 ![image](Figures/errorCallStack.png)
 
-📚 When a method calls itself, the **new method call** gets _added to the top_ of the call stack, taking first priority as the most recent method called. Execution of the current method _pauses_ while the recursive call is being processed. Each recursive call on the stack has its own set of _local variables_, including the parameter variables. The parameter values progressively change in each recursive call until we reach the **base case** which stops the recursion.
+{:.highlight}
+➕ When a method calls itself, the **new method call** gets _added to the top_ of the call stack, taking first priority as the most recent method called. Execution of the current method _pauses_ while the recursive call is being processed. Each recursive call on the stack has its own set of _local variables_, including the parameter variables. The parameter values progressively change in each recursive call until we reach the **base case** which stops the recursion.
 
 ### Tracing Recursive Methods
 
