@@ -165,21 +165,22 @@ In Java, the **call stack** keeps track of the _methods that you have called_ si
 ![image](Figures/cupStack.jpg)
 > An example is a stack of cups. You can grap a cup from the top of the stack, or add more cups at the top of the stack.
 
-When you are executing one method (`method a`) and it calls another method (`method b`), that method call is **placed on the call stack** along with information about where it was called from, which tells the run-time _where to return_ to when the current method finishes executing. When method b finishes executing the run-time pops the method b off of the call stack and returns execution to the next line to be executed in method a.
+When you are executing one method (`method a`) and it calls another method (`method b`), that method call is **placed on the call stack** along with information about where it was called from, which tells the run-time _where to return_ to when the current method finishes executing. When `method b` finishes executing, the run-time pops the `method b` off of the call stack and returns execution to the next line to be executed in `method a`.
 
 Consider the following class definition:
 
 ![image](Figures/codeForCallStack.png)
 
+{:.warning}
 The code above will cause a run-time error of division by zero when it runs.  The ``main`` method calls the method ``test1`` (at line 20) which calls the method ``test2`` (at line 6) which has the divide by zero error (line 14).  This can be seen in the call stack shown below which shows the call stack from the top (most recent method) to the bottom (first method call).
 
 ![image](Figures/errorCallStack.png)
 
-When a method calls itself the new method call gets added to the top of the call stack. Execution of the current method pauses while the recursive call is being processed. Each recursive call on the stack has its own set of local variables, including the parameter variables. The parameter values progressively change in each recursive call until we reach the base case which stops the recursion.
+When a method calls itself, the **new method call** gets _added to the top_ of the call stack, taking first priority. Execution of the current method pauses while the recursive call is being processed. Each recursive call on the stack has its own set of _local variables_, including the parameter variables. The parameter values progressively change in each recursive call until we reach the **base case** which stops the recursion.
 
 ### Tracing Recursive Methods
 
-Let's trace the execution of the factorial method defined below.
+Let's **trace** the execution of the factorial method defined below.
 
 ```java
 public static int factorial(int n) {
@@ -191,7 +192,10 @@ public static int factorial(int n) {
     }
 }
 ```
-What happens when we call ``factorial(0)``?  It will return 1 (line 5) since n is equal to 0.  How about ``factorial(1)``?  It will return ``1 * factorial(0)``.  We already know that ``factorial(0)`` returns 1, but the computer won't *remember* that.  It will execute ``factorial(0)`` and return the result (1).   So  ``factorial(1)`` returns ``1 * 1 which is 1``.
+* What happens when we call ``factorial(0)``?  
+    > It will return 1 (line 5) since `n` is equal to 0.
+* How about ``factorial(1)``?
+    > It will return ``1 * factorial(0)``. We already know that ``factorial(0)`` returns 1, but the computer won't *remember* that.  It will execute ``factorial(0)`` and return the result (1). So  ``factorial(1)`` returns `1 * 1`, which is `1`.
 
 How can you **show what is happening** in a recursive call? The lines below show the _call stack upside down_ (with the bottom of the stack, or the **original call** at the _top_ and the **most recent call** at the _bottom_) for a call to ``factorial(5)``.  
 > ✍️ This is a handy way to _trace_ a recursive method on the exam!!!
@@ -237,10 +241,10 @@ public static int bunnyEars(int bunnies) {
 }
 ```
 
-What happens when we call ``bunnyEars(0)``?  
-> It will return 0 since `n` is equal to 0.
-How about ``bunnyEars(1)``?
-> It will return 2 since `n` is equal to 1. 
+* What happens when we call ``bunnyEars(0)``?  
+    > It will return 0 since `n` is equal to 0.
+* How about ``bunnyEars(1)``?
+    > It will return 2 since `n` is equal to 1. 
 
 What about ``bunnyEars(5)``?
 
