@@ -245,8 +245,7 @@ public static int bunnyEars(int bunnies) {
     > It will return 0 since `n` is equal to 0.
 * How about ``bunnyEars(1)``?
     > It will return 2 since `n` is equal to 1. 
-
-What about ``bunnyEars(5)``?
+* What about ``bunnyEars(5)``?
 
 </div>
 
