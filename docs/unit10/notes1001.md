@@ -221,7 +221,7 @@ So ``factorial(5)`` returns `120`, as the final solution to the original questio
 
 <div class="task" markdown="block">
     
-✍️ Trace the execution of the bunny ears method defined below:
+✍️ **Trace** the execution of the bunny ears method defined below:
 
 ```java
 public static int bunnyEars(int bunnies) {
@@ -237,12 +237,14 @@ public static int bunnyEars(int bunnies) {
 }
 ```
 
-What happens when we call ``bunnyEars(0)``?  It will return 0 since n is equal to 0 (line 3).  How about ``bunnyEars(1)``?  It will return 2 since n is equal to 1 (line 5). 
+What happens when we call ``bunnyEars(0)``?  
+> It will return 0 since `n` is equal to 0.
+How about ``bunnyEars(1)``?
+> It will return 2 since `n` is equal to 1. 
 
 What about ``bunnyEars(5)``?
 
-<details>
-    <summary>✅ CHECK YOUR SOLUTION</summary>
+<details><summary>✅ CHECK YOUR SOLUTION: </summary>
 
 ```
   bunnyEars(5) returns 2 + bunnyEars(4)
