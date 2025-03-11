@@ -44,6 +44,8 @@ nav_order: 1
 
 ![image](simpson.gif)
 
+> Check out more [recursion visualizations](https://giphy.com/explore/recursion)!
+
 The method below will print out "This is the method that never ends!" and then _call itself_, which will print out the message again, and then call itself, and so on.
 
 ```java
