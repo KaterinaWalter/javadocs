@@ -76,8 +76,11 @@ be combined_ into the **solution to the original problem**.
 
 For example:
 
-* 🗂️ Suppose you wanted to find out how much space a **folder** on your computer uses? Well, if you knew how much space each of the files and sub-folders in that folder used, you could add them up and get the answer. Getting the size of a regular file is usually easy, but figuring out how much space each sub-folder takes up is the same problem we stared with, just with a different folder.
-    * But that’s actually great news because we can **use the same procedure to solve this smaller problem:** find the size of all the files and sub-folders *in it* and add them up. Eventually, as we try to get the size more deeply **nested folders**, eventually we'll get to folders that only _contain plain files whose sizes we can add up_ and `return`, and eventually we work our way back up to give the answer to our question about the original top-most folder.
+* 🗂️ Suppose you wanted to find out how much space a **folder** on your computer uses?
+    * Well, if you knew how much space each of the files and sub-folders in that folder used, you could add them up and get the answer.
+    * Getting the size of a regular file is usually easy, but figuring out how much space each sub-folder takes up is the same problem we stared with, just with a different folder...
+    * But that’s actually great news because we can **use the same procedure to solve this smaller problem:** find the size of all the files and sub-folders *in it* and add them up.
+    * Eventually, as we try to get the size more deeply **nested folders**, eventually we'll get to folders that only _contain plain files whose sizes we can add up_ and `return`, and eventually we work our way back up to give the answer to our question about the original top-most folder.
 
 * Recursion can also be used to create **fractals**. 
 
@@ -102,7 +105,7 @@ re-written using recursion!
 
 ### Factorial Method
 
-The following video introduces the concept of recursion and tracing recursion with the factorial method.
+The following video introduces the concept of recursion and tracing recursion with the **factorial method**.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V2S_8E_ubBY?si=GbmCun5a8pxewGLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -122,7 +125,7 @@ See the method `factorial` below that calculates the **factorial** of a number. 
 
 ### Base Case
     
-Every non-infinite recursive method must have at least one **base case** that stops the recursion. 🛑 
+Every non-infinite recursive method must have at least one **base case** as a way to _stop recursion_. 🛑 
 
 <html>
     <dl>
@@ -155,7 +158,7 @@ case—that’s the equivalent in recursion to incrementing your loop variable i
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q83nN97LVOU?si=F48d7kHn96smMDpG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## Tracing Recursive Methods
+## The Call Stack
 
 In Java, the **call stack** keeps track of the _methods that you have called_ since the `main` method executes. A **stack** is a way of organizing data that _adds and removes items only from the top_ of the stack. 
 
@@ -174,17 +177,19 @@ The code above will cause a run-time error of division by zero when it runs.  Th
 
 When a method calls itself the new method call gets added to the top of the call stack. Execution of the current method pauses while the recursive call is being processed. Each recursive call on the stack has its own set of local variables, including the parameter variables. The parameter values progressively change in each recursive call until we reach the base case which stops the recursion.
 
+### Tracing Recursive Methods
+
 Let's trace the execution of the factorial method defined below.
 
 ```java
-  public static int factorial(int n) {
-      if (n == 0) {
-          return 1;
-      }
-      else {
-          return n * factorial(n-1);
-      }
-  }
+public static int factorial(int n) {
+    if (n == 0) {
+        return 1;
+    }
+    else {
+        return n * factorial(n-1);
+    }
+}
 ```
 What happens when we call ``factorial(0)``?  It will return 1 (line 5) since n is equal to 0.  How about ``factorial(1)``?  It will return ``1 * factorial(0)``.  We already know that ``factorial(0)`` returns 1, but the computer won't *remember* that.  It will execute ``factorial(0)`` and return the result (1).   So  ``factorial(1)`` returns ``1 * 1 which is 1``.
 
@@ -216,23 +221,28 @@ So ``factorial(5)`` returns `120`, as the final solution to the original questio
 
 <div class="task" markdown="block">
     
-Let's trace the execution of the bunny ears method defined below:
+✍️ Trace the execution of the bunny ears method defined below:
 
 ```java
-  public static int bunnyEars(int bunnies) {
-     if (bunnies == 0) {
-         return 0;
-     }
-     else if (bunnies == 1) {
-         return 2;
-     }
-     else {
-         return 2 + bunnyEars(bunnies - 1);
-     }
-  }
+public static int bunnyEars(int bunnies) {
+    if (bunnies == 0) {
+        return 0;
+    }
+    else if (bunnies == 1) {
+        return 2;
+    }
+    else {
+        return 2 + bunnyEars(bunnies - 1);
+    }
+}
 ```
 
-What happens when we call ``bunnyEars(0)``?  It will return 0 since n is equal to 0 (line 3).  How about ``bunnyEars(1)``?  It will return 2 since n is equal to 1 (line 5). What about ``bunnyEars(5)``?
+What happens when we call ``bunnyEars(0)``?  It will return 0 since n is equal to 0 (line 3).  How about ``bunnyEars(1)``?  It will return 2 since n is equal to 1 (line 5). 
+
+What about ``bunnyEars(5)``?
+
+<details>
+    <summary>✅ CHECK YOUR SOLUTION</summary>
 
 ```
   bunnyEars(5) returns 2 + bunnyEars(4)
@@ -242,7 +252,7 @@ What happens when we call ``bunnyEars(0)``?  It will return 0 since n is equal t
   bunnyEars(1) returns 2
 ```
 
-This approach shows the call stack from bottom to top.  Once ``bunnyEars(1)`` executes and returns 2 that value can be substituted back into the previous method call, starting at the top and working our way back toward the bottom (or beginning) of the call stack.
+This approach shows the call stack from bottom to top. Once ``bunnyEars(1)`` executes and returns 2 that value can be substituted back into the previous method call, starting at the top and working our way back toward the bottom (or beginning) of the call stack.
 
 ```
   bunnyEars(5) returns 2 + bunnyEars(4) = 2 + 8 = 10
@@ -254,6 +264,8 @@ This approach shows the call stack from bottom to top.  Once ``bunnyEars(1)`` ex
 
 So ``bunnyEars(5)`` returns 10.
 
+</details>
+
 </div>
 
 ---
@@ -264,7 +276,7 @@ So ``bunnyEars(5)`` returns 10.
 
 * **Base Case** - A way to stop the recursive calls. This is a _return_ statement without a recursive call.
 
-* **Call Stack** - The call stack keeps track of the methods that are called while the code executes. It keeps track of the local variables and where the call will return to.
+* **Call Stack** - The call stack keeps track of the methods that are called while the code executes. It keeps track of the _local variables_ and where the call will _return to_.
 
 <div class="warn" markdown="block">
 
