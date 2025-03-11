@@ -65,7 +65,7 @@ The AP CSA exam usually has about **4-6 recursion problems** in the MCQ section.
 
 Recursion is most useful for solving problems where the structure of the problem
 allows it to be **broken into smaller but similar problems**, whose _solutions can
-be combined_ into the solution to the original problem.
+be combined_ into the **solution to the original problem**.
 
 For example:
 
@@ -145,13 +145,14 @@ case—that’s the equivalent in recursion to incrementing your loop variable i
 
 ## Tracing Recursive Methods
 
-In Java, the **call stack** keeps track of the methods that you have called since the main method executes.   A **stack** is a way of organizing data that adds and removes items only from the top of the stack.  An example is a stack of cups.  You can grap a cup from the top of the stack or add more cups at the top of the stack.
+In Java, the **call stack** keeps track of the _methods that you have called_ since the `main` method executes. A **stack** is a way of organizing data that _adds and removes items only from the top_ of the stack. 
 
 ![image](Figures/cupStack.jpg)
+> An example is a stack of cups. You can grap a cup from the top of the stack, or add more cups at the top of the stack.
 
-When you are executing one method (method a) and it calls another method (method b) the method call is placed on the call stack along with information about where it was called from, which tells the run-time where to return to when the current method finishes executing.  When method b finishes executing the run-time pops the method b off of the call stack and returns execution to the next line to be executed in method a.
+When you are executing one method (`method a`) and it calls another method (`method b`), that method call is **placed on the call stack** along with information about where it was called from, which tells the run-time _where to return_ to when the current method finishes executing. When method b finishes executing the run-time pops the method b off of the call stack and returns execution to the next line to be executed in method a.
 
-Consider the following class definition.
+Consider the following class definition:
 
 ![image](Figures/codeForCallStack.png)
 
@@ -175,7 +176,8 @@ Let's trace the execution of the factorial method defined below.
 ```
 What happens when we call ``factorial(0)``?  It will return 1 (line 5) since n is equal to 0.  How about ``factorial(1)``?  It will return ``1 * factorial(0)``.  We already know that ``factorial(0)`` returns 1, but the computer won't *remember* that.  It will execute ``factorial(0)`` and return the result (1).   So  ``factorial(1)`` returns ``1 * 1 which is 1``.
 
-How can you show what is happening in a recursive call?  Here is one way to do it.  The lines below show the call stack upside down (with the bottom of the stack, or the beginning at the top and the most recent call at the bottom) for a call to ``factorial(5)``.  This is a handy way to trace a recursive method on the exam and you will do much better on recursive problems if you practice doing it this way.
+How can you **show what is happening** in a recursive call? The lines below show the _call stack upside down_ (with the bottom of the stack, or the **original call** at the _top_ and the **most recent call** at the _bottom_) for a call to ``factorial(5)``.  
+> ✍️ This is a handy way to _trace_ a recursive method on the exam!!!
 
 ```java
   factorial(5) returns 5 * factorial(4)
@@ -186,7 +188,7 @@ How can you show what is happening in a recursive call?  Here is one way to do i
   factorial(0) returns 1
 ```
 
-Once factorial(0) executes and returns 1 that value can be substituted back into the previous method call, starting at the top of the stack (shown at the bottom here) and working our way back to the bottom of the stack (shown at the top here).
+Once `factorial(0)` executes and returns `1`, that value can be **substituted back** into the previous method call, starting at the _top_ of the stack (_shown at the bottom here_) and working our way back to the _bottom_ of the stack (_shown at the top here_).
 
 ```
   factorial(5) returns 5 * factorial(4) = 5 * 24 = 120
@@ -197,10 +199,12 @@ Once factorial(0) executes and returns 1 that value can be substituted back into
   factorial(0) returns 1
 ```
 
-So ``factorial(5)`` returns 120.
+So ``factorial(5)`` returns `120`, as the final solution to the original question.
 
 
-Let's trace the execution of the bunny ears method defined below.
+<div class="task" markdown="block">
+    
+Let's trace the execution of the bunny ears method defined below:
 
 ```java
   public static int bunnyEars(int bunnies) {
@@ -237,6 +241,8 @@ This approach shows the call stack from bottom to top.  Once ``bunnyEars(1)`` ex
 ```
 
 So ``bunnyEars(5)`` returns 10.
+
+</div>
 
 ---
 
