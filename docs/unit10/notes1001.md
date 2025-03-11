@@ -74,11 +74,10 @@ Recursion is most useful for solving problems where the structure of the problem
 allows it to be **broken into smaller but similar problems**, whose _solutions can
 be combined_ into the **solution to the original problem**.
 
-For example:
+EXAMPLES:
 
-* 🗂️ Suppose you wanted to find out how much space a **folder** on your computer uses?
-    * Well, if you knew how much space each of the files and sub-folders in that folder used, you could add them up and get the answer.
-    * Getting the size of a regular file is usually easy, but figuring out how much space each sub-folder takes up is the same problem we stared with, just with a different folder...
+* 🗂️ Suppose you wanted to find out how much space a **folder** on your computer uses? Well, if you knew how much space each of the **files** and **sub-folders** in that folder used, you could add them up and get the answer.
+    * Getting the size of a regular **file** is usually easy, but figuring out how much space each **sub-folder** takes up is the same problem we stared with, just with a different folder...
     * But that’s actually great news because we can **use the same procedure to solve this smaller problem:** find the size of all the files and sub-folders *in it* and add them up.
     * Eventually, as we try to get the size more deeply **nested folders**, eventually we'll get to folders that only _contain plain files whose sizes we can add up_ and `return`, and eventually we work our way back up to give the answer to our question about the original top-most folder.
 
@@ -172,11 +171,13 @@ Consider the following class definition:
 ![image](Figures/codeForCallStack.png)
 
 {:.warning}
-The code above will cause a run-time error of division by zero when it runs.  The ``main`` method calls the method ``test1`` (at line 20) which calls the method ``test2`` (at line 6) which has the divide by zero error (line 14).  This can be seen in the call stack shown below which shows the call stack from the top (most recent method) to the bottom (first method call).
+The code above will cause a run-time error of division by zero when it runs.  The ``main`` method calls the method ``test1`` (at line 20) which calls the method ``test2`` (at line 6) which has the divide by zero error (line 14).  
+
+This error can be seen in the **call stack** below, which shows the call stack from the top (_most recent method_) to the bottom (_original method call_).
 
 ![image](Figures/errorCallStack.png)
 
-When a method calls itself, the **new method call** gets _added to the top_ of the call stack, taking first priority. Execution of the current method pauses while the recursive call is being processed. Each recursive call on the stack has its own set of _local variables_, including the parameter variables. The parameter values progressively change in each recursive call until we reach the **base case** which stops the recursion.
+📚 When a method calls itself, the **new method call** gets _added to the top_ of the call stack, taking first priority as the most recent method called. Execution of the current method _pauses_ while the recursive call is being processed. Each recursive call on the stack has its own set of _local variables_, including the parameter variables. The parameter values progressively change in each recursive call until we reach the **base case** which stops the recursion.
 
 ### Tracing Recursive Methods
 
@@ -250,8 +251,10 @@ public static int bunnyEars(int bunnies) {
 </div>
 
 <html>
-<details><summary>✅ CHECK YOUR SOLUTION:</summary>
+<details><summary><strong>✅ CHECK YOUR SOLUTION:</strong></summary>
 
+<div markdown="block">
+    
 ```
   bunnyEars(5) returns 2 + bunnyEars(4)
   bunnyEars(4) returns 2 + bunnyEars(3)
@@ -272,6 +275,7 @@ This approach shows the call stack from bottom to top. Once ``bunnyEars(1)`` exe
 
 So ``bunnyEars(5)`` returns 10.
 
+</div>
 </details>
 </html>
 
