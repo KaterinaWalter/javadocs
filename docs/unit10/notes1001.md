@@ -42,7 +42,7 @@ nav_order: 1
 
 **Recursion** is when a _method calls itself_. Recursion is another strategy for *repeating code*.
 
-![image](simpson.gif)
+![image-small](recursion-briefcase.gif)
 
 > Check out more [recursion visualizations](https://giphy.com/explore/recursion)!
 
@@ -56,7 +56,8 @@ public static void neverEnd() {
 ```
 > ♾️ This is called **infinite recursion**, which is a recursion that never ends. Of course, this particular method is not very useful. (Actually, in practice it *will* end, crashing with a ``StackOverFlowError`` because there is a limit on how many times you can recurse.)
 
-{:.highlight} The AP CSA exam usually has about **4-6 recursion problems** in the MCQ section. You only need to know how to _trace recursive methods_, as in, figure out what they _return_ or _print_.
+{:.highlight} 
+The AP CSA exam usually has about **4-6 recursion problems** in the MCQ section. You only need to know how to _trace recursive methods_, as in, figure out what they _return_ or _print_.
 > You will NOT be asked to _write_ a recursive method on the exam.
 
 
@@ -67,10 +68,9 @@ Recursion is most useful for solving problems where the structure of the problem
 allows it to be **broken into smaller but similar** problems, whose solutions can
 be combined into the solution to the original problem.
 
-For example, suppose you wanted to find out how much space a folder on your
-computer uses? Well, if you knew how much space each of the files and
-sub-folders in that folder used, you could add them up and get the answer.
-Getting the size of a regular file is usually easy, but figuring out how much
+For example:
+
+* Suppose you wanted to find out _how much space a folder_ on your computer uses? Well, if you knew how much space each of the files and sub-folders in that folder used, you could add them up and get the answer. Getting the size of a regular file is usually easy, but figuring out how much
 space each sub-folder takes up is the same problem we stared with, just with a
 different folder.
 
@@ -81,13 +81,14 @@ eventually we'll get to folders that only contain plain files whose sizes we can
 add up and return and eventually we work our way back up to give the answer to
 our question about the original top-most folder.
 
-![image](fractal.gif)
+* Recursion can also be used to create **fractals**. 
 
-Recursion can also be used to create **fractals**. A simple example is Sierpinski's
-triangle in which you subdivide a triangle into 4 new triangles as shown below.
+![image-small](fractal.gif)
+
+* A simple example is Sierpinski's triangle in which you subdivide a triangle into 4 new triangles as shown below.
 You can then do the some procedure with each new triangle except the center one.
 
-![image](Figures/triangleSub.png)
+> ![image](Figures/triangleSub.png)
 
 Recursion can also be used to **traverse** ``String``s, arrays, and ``ArrayList``s just like a loop. In fact, any loop—also known as *iterative* code—can be
 re-written using recursion. 
