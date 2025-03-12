@@ -25,7 +25,7 @@ nav_order: 6
 
 This is similar to the See N-Say toddler toy that has pictures of animals and when a handle is pulled an arrow spins.  When the arrow stops the toy plays the sound associated with that animal:
 
-![image](Figures/SeeNSay.jpg)
+![image-small](Figures/SeeNSay.jpg)
 
 If you were simulating this toy in software you could create an ``Animal`` class that had a ``makeNoise`` method. Each subclass of ``Animal`` would override the ``makeNoise`` method to make the correct noise for that type.  This type of polymorphism is called **inheritance-based polymorphism**.  You have a common parent class, but the _behavior_ is specified in the child class.
 
