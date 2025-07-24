@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "🐞 Debugging Help" 
+title: "🐞 Debugging Errors" 
 parent: References
 nav_order: 2
 ---
 
-# 🐞 Debugging Help
+# 🐞 Debugging Errors
 {:.no_toc}
 
 {: .highlight } 
