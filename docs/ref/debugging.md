@@ -62,7 +62,7 @@ Code not working? Follow the steps in the **debugging process** below _before_ a
 
 10. **If All Else Fails…**
 
-    * Comment out blocks to isolate the issue
-    * Create a minimal version of your code that still shows the bug
+    * **Comment** out blocks to isolate the issue
+    * Use a visualization tool like [PythonTutor.com](https://pythontutor.com/java.html#mode=edit) to "step through" code, which shows what's happening **line-by-line**.
 
 
