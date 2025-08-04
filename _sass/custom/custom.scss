@@ -49,7 +49,6 @@ img[alt=image-small] {
 	margin-left: 25%;
 	border-radius: 4px;
 }
-
 h1 {
 	color: $jtdpurple;
 	font-weight: bold;	
@@ -58,12 +57,16 @@ h2 {
 	font-weight: bold;
 }
 h3 {
+	font-size: 1.2rem !important;
 	background-color: #F5F6FA;
 	font-weight: bold;
 }
 h4 {
 	font-size: 1rem !important;
 	font-weight: bold;
+}
+h5 {
+	color: $jtdpurple;
 }
 .highlighter {
 	background-color: #fcf2c2;
@@ -158,4 +161,5 @@ blockquote {
 	color: #67656c !important;
 	font-size: 0.775rem !important;
 }
+
 
