@@ -4,7 +4,8 @@ layout: home
 nav_exclude: true
 ---
 
-# AP Computer Science: Java Programming
+# AP Computer Science:<br><span class="text-purple-100">Java Programming</span>
+
 <strong class="text-purple-000">Welcome, coders!</strong> This website is the central hub for everything you'll need throughout the course, including:
 * 📓 **Notes** for each lesson
 * 🎯 **Activity** instructions (_shorter coding exercises_)
