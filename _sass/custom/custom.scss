@@ -164,10 +164,6 @@ blockquote {
 	font-size: 0.775rem !important;
 }
 
-a.nav-list-link {
-	font-size: 0.7rem !important;
-}
-
 @media (min-width: 50rem) {
     .side-bar {
         width: 13rem !important;
@@ -182,6 +178,9 @@ a.nav-list-link {
     .main-content-wrap {
         padding-top: 0rem !important;
     }
+a.nav-list-link {
+	font-size: 0.7rem !important;
+}
 }
 
 @media (min-width: 66.5rem) {
