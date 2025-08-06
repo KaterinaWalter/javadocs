@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "☕️ Java Cheatsheet" 
-parent: "📚 References"
+parent: "📖 References"
 nav_order: 3
 ---
 
