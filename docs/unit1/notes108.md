@@ -19,236 +19,212 @@ nav_order: 9
 
 ---
 
+## Comments
+
+{:.important}
 Comments don’t run—they _explain_. Your future self (and your teammates) will thank you.
 
-## Types of comments
+Adding comments to your code helps to make it more readable and maintainable. In the commercial world, software development is usually a team effort where many programmers will use your code and maintain it for years. Commenting is essential in this kind of environment and a good habit to develop. Comments will also help you to remember what you were doing when you look back to your code a month or a year from now. 
 
-1) `//` single‑line  
-2) `/* ... */` multi‑line block  
-3) `/** ... */` Javadoc (for API‑style docs)
+Comments are written for both the original programmer and other programmers to understand the code and its functionality, but are ignored by the compiler and are not executed when the program is run. 
 
-Javadoc can be turned into HTML docs using `javadoc` (part of the JDK). It’s common to place Javadoc above **classes** and **methods** and to use tags like `@author`, `@since`, `@version`, `@param`, `@return`.
+There are 3 types of comments in Java:
 
-### Example
+1. `//` Single line comment  
+2. `/* */` Multiline block comment  
+3. `/** */` Java documentation comment  
+
+The special characters `//` are used to mark the rest of the line as a comment in many programming languages. If the comment is going to be multiple lines, we use `/*` to start the comment and `*/` to end the comment.
+
+There is also a special version of the multi-line comment, `/** */`, called the documentation comment. Java has a tool called [javadoc](https://www.tutorialspoint.com/java/java_documentation.htm) that comes with the [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and can generate HTML documentation from these comments — for example, see the [String class documentation](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html).
+
+Although you don’t have to use this for the AP exam, it’s good practice to write documentation comments for your classes, methods, and instance variables.
+
+### Example: Good Commenting
 
 ```java
 /**
  * MyClass.java
- * @author Your Name
- * @since 2025-01-01
+ * @author My Name
+ * @since Date
  * This class keeps track of the max score.
  */
 public class MyClass {
-    private int max = 10; // tracks the max score
-
-    /** Prints the current max. */
-    public void print() {
-        System.out.println(max);
-    }
+   private int max = 10; // this keeps track of the max score
+   
+   /* The print() method prints out the max */
+   public void print() {  
+      System.out.println(max); 
+   }
 }
 ````
 
-> IDEs often render comments in italics/gray to make them easy to spot.
+Common Javadoc tags:
+
+* `@author`
+* `@since`
+* `@version`
+* `@param`
+* `@return`
 
 ---
+
+### **Practice: Adding Comments**
 
 <div class="task" markdown="block">
 
-### Check Your Understanding — comment types
+Type this in your Codespace, press run, and add comments:
 
-Match each comment form:
-
-* **single-line** → `//`
-* **multi-line** → `/* ... */`
-* **Javadoc** → `/** ... */`
-
-</div>
-
----
-
-## Mini exercise — add helpful comments
-
-Create a `Multiply.java` that reads two ints and prints their product. Add:
-
-* A **multi-line Javadoc** block above the class describing its purpose.
-* **Single-line** comments above the input, the calculation, and the print.
-
-Starter outline:
+1. Add a **multi-line comment** above the class describing its purpose.
+2. Add **single-line comments** before each section: reading input, calculating result, printing output.
 
 ```java
 import java.util.Scanner;
 
-/** 
- * Multiply: reads two integers and prints num1 x num2 = result.
- * Add your author/date here if you like.
- */
-public class Multiply {
-    public static void main(String[] args) {
-        // Read two numbers
-        Scanner scan = new Scanner(System.in);
-        int num1 = scan.nextInt();
-        int num2 = scan.nextInt();
+Scanner scan = new Scanner(System.in);
+int num1 = scan.nextInt();
+int num2 = scan.nextInt();
 
-        // Compute product
-        int result = num1 * num2;
+int result = num1 * num2;
 
-        // Print formatted result
-        System.out.println(num1 + " x " + num2 + " = " + result);
-        scan.close();
-    }
-}
+System.out.println(num1 + " x " + num2 + " = " + result); 
+scan.close();
 ```
+
+</div>
 
 ---
 
-## Preconditions and postconditions
+## Preconditions and Postconditions
 
-* A **precondition** must be true before code runs (what your method *expects*).
-* A **postcondition** is guaranteed after it runs (what your method *promises*).
+Many methods in API libraries have **preconditions** and **postconditions** described in their comments.
 
-APIs often document both. A method may not check its preconditions—it can assume callers satisfy them.
+* **Precondition**: A condition that must be true for the method to work properly. Example: parameters must not be `null` or out of range.
+* **Postcondition**: A condition that is true after running the method — describes the outcome, such as what is returned or what state has changed.
 
-**Examples:**
+Example: `Math.sqrt(num)`
 
-* Division requires the **divisor ≠ 0** (precondition).
-* `Math.sqrt(x)` expects **x ≥ 0**. If not, Java returns `NaN` (not a number); practically, think of the precondition as *non‑negative input*.
+* **Precondition**: `num >= 0`
+* **Postcondition**: Returns the positive square root of `num`.
 
-### Try it
+---
+
+### **Practice: Fixing a Precondition Violation**
+
+<div class="task" markdown="block">
+
+Type this in your Codespace, press run. The `Math.sqrt` method has a precondition that its argument must be non-negative. Fix the value of `num` so it meets the precondition.
 
 ```java
-public class SqRoot {
-    public static void main(String[] args) {
-        double num = 9;              // change from negative to non-negative
-        System.out.println(Math.sqrt(num));
-    }
-}
+double num = -4;
+System.out.println(Math.sqrt(num));
 ```
 
-* Precondition for `sqrt`: the argument is ≥ 0.
-* Postcondition: the return value squared (within floating‑point error) is the original argument.
+</div>
 
 ---
 
-## Preconditions in a library method (Turtle)
-
-A Turtle library’s `forward(int pixels)` typically has a precondition like:
-
-* **0 ≤ pixels ≤ (world width/height limit)**
-
-If you give a value outside the range, the method may clamp it so the turtle stays visible (a reasonable postcondition).
+### Example: Preconditions in API Methods
 
 ```java
 /**
- * Moves the turtle forward.
- * @param pixels distance to move, in the current heading
- * Preconditions: 0 ≤ pixels ≤ world bounds
- * Postconditions: turtle moves forward, remains within world
+ * Method to move the turtle forward the given number of pixels
+ * @param pixels the number of pixels to walk forward
+ * Preconditions: pixels is between 0 and the width/height of the world
+ * Postconditions: turtle is moved forward by pixels without going off screen
  */
-public void forward(int pixels) { ... }
+public void forward(int pixels) {
+    /* code to move the turtle forward */
+}
 ```
 
+---
+
+### **Practice: Breaking Turtle Preconditions**
+
 <div class="task" markdown="block">
 
-### Turtle preconditions (thought experiment)
+Type this in your Codespace, press run. Try to break the precondition for the `forward` method by using:
 
-* What happens if you try `forward(-50)`?
-* What about a huge value (e.g., `forward(1_000_000)`)—does it clamp to the edge or ignore it?
+* A value too large (larger than the world dimensions)
+* A negative number
 
-(If you’re using the Swing Turtle from earlier lessons, test and observe; otherwise, reason about expected behavior using the documentation above.)
+```java
+World habitat = new World(300, 300);
+Turtle yertle = new Turtle(habitat);
+
+// Change 100 to a larger or negative value to test preconditions
+yertle.forward(100);
+
+yertle.turnLeft();
+yertle.forward();
+yertle.turnLeft();
+yertle.forward();
+
+habitat.show(true);
+```
 
 </div>
 
 ---
 
-## Software validity, use‑case diagrams (context)
+## Software Validity and Use-Case Diagrams
 
-Not on the AP exam, but useful in practice:
+Preconditions and postconditions are also used in **software testing** and **design**.
 
-* **Validity/testing**: Does the software do what it should? Break it on purpose (violating preconditions) to discover edge cases.
-* **Use‑case diagrams**: Show how users interact with a system. Each use case can list preconditions and postconditions; often the postcondition of one becomes the precondition of the next.
+* **Software validity**: ensuring a program does what it is supposed to do before release.
+* **Use-case diagrams**: show how different users (actors) interact with a system.
 
-**Restaurant example**
-
-* *Order Food* → Post: order placed
-* *Eat Food* → Pre: order placed and delivered; Post: food eaten
-* *Pay for Food* → (see short answer below)
-
-<div class="task" markdown="block">
-
-### Short Answer — “Pay for Food”
-
-Give reasonable preconditions/postconditions.
-
-**Sample answer:**
-
-* *Preconditions*: Food has been ordered and delivered; the bill is prepared; payment method is available.
-* *Postconditions*: Payment is processed; receipt is issued; customer balance due is \$0.
-
-</div>
+Example: Restaurant System Use-Case Diagram
+![Use Case Diagram of a Restaurant System](Figures/use-case-restaurant.png)
 
 ---
 
-## Agile at a glance
+### Example: Linking Preconditions/Postconditions Between Use-Cases
 
-* **Waterfall**: sequential phases; less adaptable to change.
-* **Agile (Scrum)**: short 2–3 week **sprints**, build/test/release small increments; frequent customer feedback → highly adaptable.
+**"Order Food"**
+
+* Preconditions: Customer enters, staff is ready
+* Postconditions: Food is ordered, order is taken
+
+**"Eat Food"**
+
+* Preconditions: Food has been ordered and delivered
+* Postconditions: Customer eats food
 
 ---
 
-## Groupwork — Preconditions for an online purchase
+## Agile Software Development
 
-List **4 steps** (use cases) to purchase a product online (e.g., a Java book) and, for each, write preconditions and postconditions. Typical steps:
+Two models:
 
-1. **Browse/Search Product**
+* **Waterfall**: Step-by-step, less adaptable.
+* **Agile**: Iterative, adaptable, frequent feedback.
 
-   * Pre: user can access site
-   * Post: product page visible
+![Waterfall vs Agile Models](Figures/waterfallVsAgile.png)
 
-2. **Add to Cart**
+### Video: Scrum Overview
 
-   * Pre: product is in stock
-   * Post: cart contains product, quantity updated
+<iframe width="600" height="400" src="https://www.youtube.com/embed/TRcReyRYIMg" frameborder="0" allowfullscreen></iframe>
 
-3. **Checkout**
+---
 
-   * Pre: cart has items; user provides shipping info
-   * Post: order summary with totals displayed
+## Group Challenge: Preconditions in Algorithms
 
-4. **Pay**
+**In groups**:
+Come up with 4 steps for purchasing a product in an online store.
+For each step, list the preconditions and postconditions.
 
-   * Pre: valid payment method; total calculated
-   * Post: payment authorized; order confirmed
-
-Feel free to make a simple use‑case diagram if you like.
+(Optional: Draw a use-case diagram in [Creately.com](https://creately.com))
 
 ---
 
 ## Summary
 
-* (AP 1.8.A.1) **Comments** help humans; the compiler ignores them. Types: `//`, `/*...*/`, `/**...*/`.
-* (AP 1.8.A.2) A **precondition** must be true just before execution; methods may assume it rather than check it.
-* (AP 1.8.A.3) A **postcondition** must be true just after execution; it states the outcome (return value or object state).
-
----
-
-### AP Practice
-
-**Which preconditions are reasonable for:**
-
-```java
-/** Adds extra-credit to score. */
-public double computeScore(double score, double extraCredit) {
-    double totalScore = score + extraCredit;
-    return totalScore;
-}
-```
-
-**Answer:**
-
-* `/* Precondition: score >= 0 */` ✅
-* `/* Precondition: extraCredit >= 0 */` ✅
-  (others are not appropriate)
-
+* **Comments** explain code for humans, not machines.
+* Three comment types: `/* */`, `//`, `/** */` (Javadoc).
+* **Preconditions**: must be true before execution.
+* **Postconditions**: must be true after execution.
 
 ---
 
