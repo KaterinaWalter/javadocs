@@ -2,7 +2,7 @@
 layout: notes
 title: "🎯 Unit 2 Activities" 
 parent: "2️⃣ Selection & Iteration"
-nav_order: 15
+nav_order: 13
 ---
 
 ## Table of Contents
