@@ -69,7 +69,10 @@ To create a variable, you must tell Java its data type and its name. Creating a 
 
 Computers store all values using **bits** (binary digits). A **bit** can represent two values and we usually say that the value of a bit is either 0 or 1. When you declare a variable, you have to tell Java the type of the variable because Java needs to know how many bits to use and how to represent the value. The 3 different primitive types all require different number of bits. An integer gets 32 bits of memory, a double gets 64 bits of memory and a boolean could be represented by just one bit.
 
-![Figure 2: Examples of variables with names and values. Notice that the different types get a different amount of memory space.](Figures/typesAndSpace.png)
+![image](Figures/typesAndSpace.png)
+> Examples of variables with names and values. Notice that the different types get a different amount of memory space.
+
+![image](Figures/variables.png)
 
 To **declare** (create) a variable, specify the type, leave at least one space, then the name for the variable and end the line with a semicolon (`;`). Java uses the keyword **int** for integer, **double** for a floating point number, and **boolean** for a Boolean value (true or false).
 
