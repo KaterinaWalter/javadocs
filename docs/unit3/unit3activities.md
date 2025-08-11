@@ -2,7 +2,7 @@
 layout: notes
 title: "🎯 Unit 3 Activities" 
 parent: "3️⃣ Class Creation"
-nav_order: 15
+nav_order: 10
 ---
 
 ## Table of Contents
