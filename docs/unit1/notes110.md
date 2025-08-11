@@ -19,7 +19,7 @@ nav_order: 11
 
 ---
 
-Most of the methods we’ve used so far are **static methods**, also called **class methods**. These methods are associated with the class and include the `static` keyword in their method header. The `main` method is always `static`.
+Most of the methods we’ve used so far are **static methods**, also called **class methods**. These methods are associated with the class and include the `static` keyword in their method header. The `main` method is always `static`, which also means that there is **only one copy** of the method. 
 
 ## Template for a Static Method
 
