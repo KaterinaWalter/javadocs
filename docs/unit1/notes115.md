@@ -21,6 +21,8 @@ nav_order: 16
 
 **Strings** in Java are objects of the `String` class. Strings represent _sequences of characters_ and are used to store text like names, addresses, or messages. The `String` class is part of the `java.lang` package, which is available by default in all Java programs.
 
+![image](Figures/stringbracelet.png)
+
 > **Note:** Class names in Java, like `String`, begin with a capital letter. All primitive types (`int`, `double`, `boolean`) begin with a lowercase letter. This is one way to tell the difference between primitive types and class types.
 
 ---
