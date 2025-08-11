@@ -20,7 +20,7 @@ nav_order: 15
     
 <div class="setup" markdown="block">
 
-1. Go to the public template **repository** for our class: [BWL-CS HTML/CSS/JS Template](https://github.com/BWL-CS/html-css-js-template)
+1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
 3. Specify the **repository name**: `CS2-Unit3-Activity#`
     > Replace `#` with the specific _activity number_.
