@@ -19,6 +19,8 @@ nav_order: 3
 
 ---
 
+# Lesson 1.2: Variables & Data Types
+
 ## What is a Variable?
 
 A **variable** is a memory location in the computer that can store a value that can change or vary while the program is running. The following video explains what a variable is and gives some real-world examples of variables.
@@ -47,47 +49,21 @@ A data type is a set of values (a domain) and a set of operations on them. For e
 
 <div class="task" markdown="block">
 
-**Check Your Understanding**  
-What type should you use to represent the average grade for a course?  
-Choices: `int`, `double`, `boolean`, `String`
+**Check Your Understanding:** 
 
-</div>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding**  
-What type should you use to represent the number of people in a household?  
-Choices: `int`, `double`, `boolean`, `String`
-
-</div>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding**  
-What type should you use to hold the first name of a person?  
-Choices: `int`, `double`, `boolean`, `String`
-
-</div>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding**  
-What type should you use to record if it is raining or not?  
-Choices: `int`, `double`, `boolean`, `String`
-
-</div>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding**  
-What type should you use to represent the amount of money you have?  
-Choices: `int`, `double`, `boolean`, `String`
+With the people at your table, discuss the situations below. Select the appropriate data type out of the following choices: `int`, `double`, `boolean`, `String`
+ 
+- What type should you use to represent the average grade for a course?  
+- What type should you use to represent the number of people in a household?  
+- What type should you use to hold the first name of a person?  
+- What type should you use to record if it is raining or not?  
+- What type should you use to represent the amount of money you have?  
 
 </div>
 
 ---
 
-## Declaring Variables in Java
+### Declaring Variables in Java
 
 To create a variable, you must tell Java its data type and its name. Creating a variable is also called **declaring a variable**. The type is a keyword like `int`, `double`, or `boolean`, but you get to make up the name for the variable. When you create a **primitive variable** Java will set aside enough bits in memory for that primitive type and associate that memory location with the name that you used.
 
@@ -120,8 +96,9 @@ When you are printing out variables, you can use the **string concatenation** op
 
 <div class="task" markdown="block">
 
-**Coding Exercise — String Concatenation (Codespaces)**
-In your Java file in GitHub Codespaces, type and run each line below. Observe the output, then change values, add/remove spaces, and (on purpose) put quotes around a variable name to see what happens.
+**Coding Exercise — String Concatenation**
+
+In your Java file in GitHub Codespaces, type and run each line below in the `main` method. Observe the output, then change values, add/remove spaces, and (on purpose) put quotes around a variable name to see what happens.
 
 ```java
 int score = 0;
@@ -142,7 +119,8 @@ System.out.println("Hi " + name);
 
 </div>
 
-> **Note:** Variables are never put inside quotes (`""`) in `System.out.print` statements. That would print the variable **name** instead of its **value**.
+{:.highlight}
+**Note:** Variables are never put inside quotes (`""`) in `System.out.print` statements. That would print the variable **name** instead of its **value**.
 
 <div class="task" markdown="block">
 
@@ -168,6 +146,8 @@ public class Test2 {
 *Write your answers as comments or bullet points.*
 
 </div>
+
+<br>
 
 <div class="task" markdown="block">
 
@@ -234,7 +214,7 @@ System.out.println(score);
 
 ---
 
-## Naming Variables
+### Naming Variables
 
 While you can name your variable almost anything, there are some rules. A variable name should start with an alphabetic character and can include letters, numbers, and underscores `_`. It must be all one word with no spaces.
 
@@ -242,12 +222,14 @@ You can't use any of the keywords or reserved words as variable names in Java (`
 
 The name of the variable should describe the data it holds. A name like `score` helps make your code easier to read. A name like `x` is not a good variable name in programming, because it gives no clues as to what kind of data it holds. Do not name your variables extremely long names on the AP exam.
 
-> **Guidelines**
->
-> * Use meaningful variable names.
-> * Start variable names with a lowercase letter and use camelCase.
-> * Variable names are case-sensitive and spelling-sensitive — every use must match the declaration.
-> * Never put variables inside quotes (`" "`).
+<div class="important" markdown="block">
+
+**Variable Naming Guidelines:**
+
+* Use meaningful variable names.
+* Start variable names with a lowercase letter and use camelCase.
+* Variable names are case-sensitive and spelling-sensitive — every use must match the declaration.
+* Never put variables inside quotes (`" "`).
 
 The convention in Java is to start a variable name with a lowercase letter and uppercase the first letter of each additional word, for example `gameScore`. This is called **camel case**. Another option is to use underscore `_` to separate words, but no spaces are allowed.
 
@@ -263,6 +245,8 @@ System.out.println("gameScore is " + gamescore);  // wrong name on purpose
 
 </div>
 
+<br>
+
 <div class="task" markdown="block">
 
 **Check Your Understanding — Camel Case Names**
@@ -277,7 +261,7 @@ System.out.println("gameScore is " + gamescore);  // wrong name on purpose
 
 ---
 
-## Debugging Challenge : Weather Report
+#### Debugging Challenge : Weather Report
 
 Debug the following code that reads out a weather report. Make sure the data types match the values put into the variables. Can you find all the bugs and get the code to run? Work with a programming buddy if you get stuck.
 
@@ -311,7 +295,7 @@ Is it sunny today? true
 
 ---
 
-## |Groupwork| Coding Challenge : Mad Libs
+#### Groupwork Coding Challenge : Mad Libs
 
 Have you ever played MAD LIBS? In this game, you first choose words by prompts like “a color” or “a plural noun,” and then those words are filled into a story to make it wacky!
 
@@ -362,20 +346,25 @@ double gpa = 3.5;
 
 ---
 
-## AP Practice
+### AP Practice
 
 <div class="task" markdown="block">
 
 **Multiple Choice**
 Which of the following pairs of declarations are the most appropriate to store a student’s average course grade in the variable `GPA` and the number of students in the variable `numStudents`?
 
-A. `int GPA; int numStudents;`
-B. `double GPA; int numStudents;`
-C. `double GPA; double numStudents;`
-D. `int GPA; boolean numStudents;`
-E. `double GPA; boolean numStudents;`
+* A. `int GPA; int numStudents;`
+* B. `double GPA; int numStudents;`
+* C. `double GPA; double numStudents;`
+* D. `int GPA; boolean numStudents;`
+* E. `double GPA; boolean numStudents;`
 
-**Answer:** **B** — the average can be decimal (`double`), and the number of students is an integer (`int`).
+<details>
+<summary>ANSWER:</summary>
+
+**B** — the average can be decimal (`double`), and the number of students is an integer (`int`).
+
+</details>
 
 </div>
 
