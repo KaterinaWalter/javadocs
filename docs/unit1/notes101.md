@@ -244,7 +244,7 @@ Unexpected '}' on line 32.
 ✅ **Answer:** Put the semicolon after the `)` on each line, not inside the comment.
 
 </div>
-```
+
 
 ---
 
