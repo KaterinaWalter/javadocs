@@ -11,7 +11,7 @@ nav_order: 18
 
 <html>
 <details>
-<summary>📥 <strong class="text-green-200">PROGRAM SETUP & SUBMISSION INSTRUCTIONS</strong></summary>
+<summary>📥 <strong class="text-green-200">PROJECT SETUP & SUBMISSION INSTRUCTIONS</strong></summary>
   
 <div class="setup" markdown="block">
 
