@@ -378,7 +378,6 @@ E. `double GPA; boolean numStudents;`
 **Answer:** **B** — the average can be decimal (`double`), and the number of students is an integer (`int`).
 
 </div>
-```
 
 
 ---
