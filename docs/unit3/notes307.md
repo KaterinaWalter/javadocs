@@ -19,7 +19,87 @@ nav_order: 7
 
 ---
 
-## TOPIC
+In Java, the keyword `static` means a variable or method belongs to the **class** rather than to individual objects.
+
+## Static Variables
+
+- Shared by all objects of the class.
+- Only one copy exists, regardless of how many objects are created.
+- Can be used for **constants** or **counters**.
+
+Example:
+
+```java
+public class Student {
+    private String name;
+    private static int studentCount = 0;
+
+    public Student(String n) {
+        name = n;
+        studentCount++;
+    }
+
+    public static int getStudentCount() {
+        return studentCount;
+    }
+}
+````
+
+Usage:
+
+```java
+Student s1 = new Student("Alex");
+Student s2 = new Student("Jordan");
+System.out.println(Student.getStudentCount()); // prints 2
+```
+
+---
+
+## Static Methods
+
+* Can be called without creating an object.
+* Cannot access **instance variables** directly (since they belong to objects, not the class).
+* Often used for utility methods.
+
+Example:
+
+```java
+public class MathHelper {
+    public static int square(int num) {
+        return num * num;
+    }
+}
+```
+
+Usage:
+
+```java
+int result = MathHelper.square(5); // returns 25
+```
+
+---
+
+## Summary
+
+* **Static variables**: Shared data for all objects of the class.
+* **Static methods**: Called on the class itself, not an object.
+* Useful for constants, counters, and utility methods.
+
+---
+
+## AP Practice
+
+<details>
+<summary><strong>Question</strong></summary>
+
+Which of the following is true about static methods?
+
+* A. They can directly use instance variables.
+* B. They can be called without creating an object. ✅
+* C. They are slower than instance methods.
+* D. They must always return a value.
+
+</details>
 
 ---
 
