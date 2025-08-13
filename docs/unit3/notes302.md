@@ -19,7 +19,72 @@ nav_order: 2
 
 ---
 
-## TOPIC
+## Impacts of Computing
+
+Computing innovations affect the **economy**, **society**, and **culture** in both positive and negative ways. Understanding these impacts helps us create technology that benefits people while minimizing harm.
+
+---
+
+## Examples of Positive Impacts
+
+- **Communication**: Instant messaging, video calls, and social media connect people worldwide.
+- **Healthcare**: AI-assisted diagnostics, telemedicine, and health tracking devices improve outcomes.
+- **Education**: Online learning platforms expand access to knowledge.
+
+---
+
+## Examples of Negative Impacts
+
+- **Privacy concerns**: Personal data collection and misuse.
+- **Job displacement**: Automation reducing demand for certain roles.
+- **Digital divide**: Unequal access to technology and the internet.
+
+---
+
+## Ethical Considerations
+
+Programmers and tech companies have a responsibility to consider:
+
+- **Bias in algorithms**
+- **Environmental effects** of manufacturing and disposing devices
+- **Security risks** from poorly designed systems
+
+---
+
+## Open Access and Sharing
+
+Some computing innovations use **open source** models, allowing anyone to view, use, and improve the code. This promotes collaboration but may raise security and intellectual property concerns.
+
+---
+
+## Example: GPS
+
+- **Positive impact**: Enables precise navigation for individuals, businesses, and emergency services.
+- **Negative impact**: Can be used for unwanted tracking and privacy invasion.
+
+---
+
+## Summary
+
+- Computing impacts can be **positive** or **negative** in economic, social, and cultural contexts.
+- Ethical issues like **bias, privacy, and security** must be considered.
+- Open source encourages collaboration but introduces risks.
+
+---
+
+## AP Practice
+
+<details>
+<summary><strong>Question</strong></summary>
+
+Which of the following is an example of a negative impact of computing?
+
+- A. Improved global communication  
+- B. Increased job opportunities in the tech sector  
+- C. Unequal access to technology ✅  
+- D. Faster data processing
+
+</details>
 
 ---
 
