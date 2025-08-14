@@ -15,7 +15,7 @@ nav_order: 9
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.9]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.9](https://runestone.academy/ns/books/published/csawesome2/topic-2-9-loop-algorithms.html) 
 
 ---
 
@@ -162,20 +162,6 @@ System.out.println(count);
 **Answer:** Counts the odd numbers from 1 to 10, so it prints `5`.
 
 </details>
-
----
-
-<div class="warn" markdown="block">
-
-🛑 When class ends, don't forget to **SAVE YOUR WORK**!
-
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Type a brief **commit message** in the box, for example: `updated Main.java`
-3. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-4. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-5. _Finally you can close your Codespace!_
-
-</div>
 
 ---
 
