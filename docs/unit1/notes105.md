@@ -25,7 +25,7 @@ In Java, **type casting** is used to convert values from one type to another. By
 
 ![Figure 1: Bronze casting changes the shape of the metal.](Figures/bronze-casting.jpg)
 
-The **cast operator** is written in parentheses before an expression, e.g., `(int)` or `(double)`. It converts the expression’s value to the given type.
+The **cast operator** is written in parentheses before an expression, e.g., `(int)` or `(double)`. It _converts_ the expression’s value to the given type.
 
 - `(double) 1 / 3` → `0.33333333` (a `double`)
 - `(int) 3.6` → `3` (truncates to an `int`)
@@ -34,7 +34,6 @@ The **cast operator** is written in parentheses before an expression, e.g., `(in
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**  
 Type these in your program, run, and observe. Then **add one more line** that divides `5` by `2` using a `(double)` cast.
 
 ```java
@@ -65,42 +64,26 @@ A conversion from `int` to `double` is a **widening conversion** (every `int` fi
 > `Integer.MIN_VALUE` and `Integer.MAX_VALUE` hold these limits.
 > Doubles represent wider ranges and can exactly represent consecutive integers up to `±2^53`.
 
----
+### Rounding by Casting
 
-## Rounding
-
-Values of type `double` (within `int` range) can be rounded to the nearest `int` by adding/subtracting `0.5` and then casting:
-
-```java
-double number =  /* positive value */;
-double negNumber = /* negative value */;
-
-int nearestInt    = (int) (number + 0.5);
-int nearestNegInt = (int) (negNumber - 0.5);
-```
-
-Example: `7.0 / 4.0` is `1.75`. Casting directly to `int` gives `1`. Using `+ 0.5` before casting gives `2`.
-
-<div class="task" markdown="block">
-
-**Coding Exercise (Codespaces)**
-Type and run, then **add one more line** to round `(number + 2.3)` to the nearest int.
+Values of type ``double`` in the range that can be represented by an ``int`` can
+be **rounded** to the nearest ``int`` by adding or subtracting 0.5 and then casting
+the result with ``(int)``:
 
 ```java
-double number = 5.0 / 3;
-int nearestInt = (int) (number + 0.5);
-System.out.println("5.0/3 = " + number);
-System.out.println("5/3 truncated: " + (int) number);
-System.out.println("5.0/3 rounded to nearest int: " + nearestInt);
+double number;    // positive value from somewhere
+double negNumber; // negative value from somewhere
 
-double negNumber = -number;
-int nearestNegInt = (int) (negNumber - 0.5);
-System.out.println("-5.0/3 rounded to nearest negative int: " + nearestNegInt);
-
-// TODO: print the result of rounding (number + 2.3) to the nearest int
+int nearestInt = (int)(number + 0.5);
+int nearestNegInt = (int)(negNumber – 0.5);
 ```
 
-</div>
+> For example, if you divide ``7.0 / 4.0`` you get ``1.75``. If you cast that to
+an ``int``, it will be truncated to ``1``.
+> 
+> However if we want to round a ``double`` rather than truncating it, adding ``0.5`` will produce a number that
+is above the next integer value if the decimal part is greater than ``0.5``, as
+it is here. Then casting *that* value to an ``int`` will truncate down.
 
 ---
 
