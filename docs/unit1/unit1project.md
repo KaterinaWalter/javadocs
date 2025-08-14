@@ -69,13 +69,13 @@ public class Receipt1
 
 <div markdown="block">
 
-* A(n) syntax error is a mistake in the program where the rules of the programming language are not followed. These errors are detected by the compiler. 
+* A **syntax error** is a mistake in the program where the rules of the programming language are not followed. These errors are detected by the compiler. 
 
-* A(n) logic error is a mistake in the algorithm or program that causes it to behave incorrectly or unexpectedly. These errors are detected by testing the program with specific data to see if it produces the expected outcome. 
+* A **logic error** is a mistake in the algorithm or program that causes it to behave incorrectly or unexpectedly. These errors are detected by testing the program with specific data to see if it produces the expected outcome. 
 
-* A(n) run-time error is a mistake in the program that occurs during the execution of a program and typically causes the program to terminate abnormally. 
+* A **run-time error** is a mistake in the program that occurs during the execution of a program and typically causes the program to terminate abnormally. 
 
-* A(n) exception is a type of run-time error that occurs as a result of an unexpected error that was not detected by the compiler. It interrupts the normal flow of the program’s execution.  
+* An **exception** is a type of run-time error that occurs as a result of an unexpected error that was not detected by the compiler. It interrupts the normal flow of the program’s execution.  
 
 </div>
 </details>
@@ -104,13 +104,13 @@ public class Receipt1
 
 <div markdown="block">
 
-* The variable for high school name should be of type String because it will contain letters, and the variables for the cost of a drink, candy, hot dog, and hamburger should be of type double because each of them will contain a real number value. 
+* The variable for high school name should be of type `String` because it will contain letters, and the variables for the cost of a drink, candy, hot dog, and hamburger should be of type `double` because each of them will contain a real number value. 
 
-* The syntax for declaring a variable is data type variable name =  initial value ;.
+* The syntax for **declaring** a variable is `dataType variableName =  initialValue ;`.
 
-* To correctly concatenate the variable name highSchoolName with the literal “Snack Bar” in the print statement, the syntax should be highSchoolNameSystem.out.printIn("*     " + highSchoolName + " Snack Bar     *"):
+* To correctly **concatenate** the variable name `highSchoolName` with the literal “Snack Bar” in the print statement, the syntax should be `highSchoolNameSystem.out.printIn("*     " + highSchoolName + " Snack Bar     *");`
 
-* To correctly concatenate a variable name itemName with a real number itemCost in the print statement, the syntax should be System.out.printIn("*     " + itemName + ".............$" + itemCost +"     *");
+* To correctly **concatenate** a variable name `itemName` with a real number `itemCost` in the print statement, the syntax should be `System.out.printIn("*     " + itemName + ".............$" + itemCost +"     *");`
 
 </div>
 </details>
@@ -153,15 +153,16 @@ public class Receipt1
 
 <div markdown="block">
 
-* The variables for tax rate, subtotal, total tax, and total should be of type double because each will contain a real number value. The variables for order number and the number of drinks, candies, hot dogs, and hamburgers should be of type int because each will contain a whole number.
+* The variables for tax rate, subtotal, total tax, and total should be of type `double` because each will contain a real number value. The variables for order number and the number of drinks, candies, hot dogs, and hamburgers should be of type `int` because each will contain a whole number.
 
-* To generate the order number, which should be a random number between 1 and 100, inclusive, the Math.random() method should be used. The general form of generating a random number between low and high is (int)(Math.random() * (high - low + 1) + low). For the order number example, the code should be (int)(Math.random() * 100 + 1)
+* To generate the order number, which should be a random number between 1 and 100, inclusive, the `Math.random()` method should be used. The general form of generating a random number between low and high is `(int)(Math.random() * (high - low + 1) + low)`. For the order number example, the code should be `(int)(Math.random() * 100 + 1)`
 
-* If the variable numDrinks contains the value that is randomly generated and the variable drinkCost contains the value of the cost per drink, then to calculate the total cost for the drinks, you would use the expression numDrinks * drinkCost.
+* If the variable `numDrinks` contains the value that is randomly generated and the variable `drinkCost` contains the value of the cost per drink, then to calculate the total cost for the drinks, you would use the expression `numDrinks * drinkCost`.
 
-* The subtotal can be found by adding each of the item totals. The value for the tax can be found by multiplying the subtotal and tax rate. The order total can be found by adding the subtotal and the tax. 
+* The subtotal can be found by _adding_ each of the item totals. The value for the tax can be found by _multiplying_ the subtotal and tax rate. The order total can be found by _adding_ the subtotal and the tax. 
 
-* The escape sequence for adding a new line to an output is "\n". The escape sequence for adding a tab to an output is "\t".
+* The **escape sequence** for adding a new line to an output is `"\n"`. The escape sequence for adding a tab to an output is `"\t"`.
+ 
 </div>
 </details>
 </html>
@@ -199,15 +200,15 @@ public class Receipt1
 
 <div markdown="block">
 
-* The placement of the statement import java.util.Scanner; must be before the public class Receipt4 header.
+* The placement of the statement `import java.util.Scanner;` must be before the `public class Receipt4` header.
 
-* The placement of the statement Scanner input = new Scanner(System.in); should be after the header public static void main(String[] args).
+* The placement of the statement `Scanner input = new Scanner(System.in);` should be after the header `public static void main(String[] args)`.
 
-* If the variable nameOfSchool contains the four-word name of the high school, the String method substring can be used to extract the first letter. This would yield the statement firstLetter = nameOfSchool.substring(0, 1);.
+* If the variable `nameOfSchool` contains the four-word name of the high school, the String method substring can be used to extract the first letter. This would yield the statement `firstLetter = nameOfSchool.substring(0, 1);`.
 
-* To find the position of the first space in the high school’s name, the String method indexOf can be used. This would yield the statement int position = nameOfSchool.indexOf(" ");.
+* To find the position of the first space in the high school’s name, the String method `indexOf `can be used. This would yield the statement `int position = nameOfSchool.indexOf(" ");`.
 
-* Once the position of the space is located, the String method substring can be used to get the remaining words. This would yield the statement remainingWords = nameOfSchool.substring(position+1);.
+* Once the position of the space is located, the String method `substring` can be used to get the remaining words. This would yield the statement `remainingWords = nameOfSchool.substring(position+1);`.
 
 </div>
 </details>
@@ -245,7 +246,7 @@ public class Receipt1
 
 <div markdown="block">
 
-* Because of the way decimal numbers are stored, the values of a double variable value will print many decimal places. One way to display only two decimal places would be to use the statement value = ((int)(value * 100)/100.0);.
+* Because of the way decimal numbers are stored, the values of a double variable value will print many decimal places. One way to display **only two decimal places** would be to use the statement `value = ((int)(value * 100)/100.0);`.
 
 </div>
 </details>
