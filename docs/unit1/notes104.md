@@ -74,7 +74,19 @@ System.out.println(x);
 </div>
 
 
-### Incrementing & Decrementing
+
+### Compound Assignment Operators
+
+**Compound assignment operators** are _shortcuts_ that do a math operation and
+assignment in one step. For example, ``x += 1`` adds 1 to the current value of
+``x`` and assigns the result back to ``x``. It is the same as ``x = x + 1``.
+This pattern is possible with any operator put in front of the ``=`` sign, as
+seen below. If you need a mnemonic to remember whether the compound operators
+are written like ``+=`` or ``=+``, just remember that the operation (``+``) is
+done first to produce the new value which is then assigned (``=``) back to the
+variable. So it's operator then equal sign: ``+=``.
+
+#### Incrementing & Decrementing
 
 If you use a variable to keep score, you would probably increment it (add one to
 the current value) whenever score should go up. You can do this by setting the
@@ -82,20 +94,46 @@ variable to the **current value** of the variable plus one (``score = score + 1`
 as shown below. 
 > The formula would look strange in math class, but it makes sense in coding because it is _assigning_ a new **value** to the variable on the left that comes from _evaluating_ the arithmetic **expression** on the right.
 
-To **increment** (increase an existing value by 1):
+To **increment** (increase an existing value):
 
 ```java
 score = score + 1;
 ```
 
-To **decrement** (decrease an existing value by 1):
+To **decrement** (decrease an existing value):
 ```java
 score = score - 1;
 ```
 
+Since changing the value of a variable by one is especially common, there are
+two _extra concise_ operators ``++`` and ``--``, also called the plus-plus or
+**increment** operator and minus-minus or **decrement** operator that set a
+variable to one greater or less than its current value.
+
+> Thus ``x++`` is even more concise way to write ``x = x + 1`` than the compound
+operator ``x += 1``. You’ll see this shortcut used a lot in loops when we get to
+them in Unit 4.
+> 
+> Similarly, ``y--`` is a more concise way to write ``y = y - 1``.
+>
+> These shortcuts only exist for ``+`` and ``-`` as they don’t really make sense
+for other operators.
+
+#### Compound Operator Cheatsheet
+Here’s a table of all the compound arithmetic operators and the extra concise
+increment and decrement operators and how they relate to fully written out
+assignment expressions. 
+
+
+| Operator       | ``+``        | ``-``        | ``*``        | ``/``        | ``%``        |
+| -------------- | ------------ | ------------ | ------------ | ------------ | ------------ |
+| Written out    |``x = x + 1`` |``x = x - 1`` |``x = x * 2`` |``x = x / 2`` |``x = x % 2`` |
+| Compound       |``x += 1``    |``x -= 1``    |``x *= 2``    |``x /= 2``    |``x %= 2``    |
+| Extra concise  |``x++``       |``x--``       |              |              |              |
+
 ---
 
-## Input with Variables
+## `Scanner` Input with Variables
 
 Variables are a powerful abstraction in programming because the same algorithm can be used with _different input values_ saved in variables.  
 
