@@ -279,7 +279,7 @@ System.out.println(3/0);
 
 - (AP 1.1.C.4) An **exception** is a type of run-time error that occurs as a result of an unexpected error that was not detected by the compiler. It interrupts the normal flow of the program’s execution.
 
----
+<!--
 
 #### AP Practice
 {:.no_toc}
@@ -306,7 +306,7 @@ Unexpected '}' on line 32.
 
 </div>
 
-
+-->
 ---
 
 #### Acknowledgement
