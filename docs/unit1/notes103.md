@@ -19,19 +19,18 @@ nav_order: 4
 
 ---
 
-## Output
+## Output (Printing)
 
 Java has two different methods to print output to the screen:
 
-- **`System.out.println(value)`** : prints the value followed by a new line (`ln`)
+- **`System.out.println(value)`** : prints the value _followed_ by a new line (`ln`)
 - **`System.out.print(value)`** : prints the value without advancing to the next line
 
-`System.out.println("Hi there!");` prints out the characters between the first `"` and the second `"` followed by a new line. `"Hi there!"` is called a **string literal**, which is zero to many characters enclosed in double quotes. A **literal** is the code representation of a fixed value, which can be a string or a numerical value.
+`System.out.println("Hi there!");` prints out the characters between the first `"` and the second `"` followed by a new line. `"Hi there!"` is called a **string literal**, which is zero to many characters enclosed in double quotes. 
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**  
-Type these lines in your program, run them, and note the output. Then modify them so the `!` prints on the same line as `Hi there` while keeping all three statements.
+Type these lines in your program, run them, and note the output. Then modify them so the `!` prints on the **same line** as `Hi there` while keeping all three statements.
 
 ```java
 System.out.print("Hi ");
@@ -41,13 +40,13 @@ System.out.print("!");
 
 </div>
 
----
+### Escape Sequences
+{:.no_toc}
 
-What if you wanted to print out a double quote `"` character? Since the double quote is a special character in Java, you need to put a backslash before it to “escape” it. This is called a **backslash escape sequence**. The same rule applies to printing a backslash itself, and `\n` is a special escape sequence for printing a newline.
+What if you wanted to print out a double quote `"` character? Since the double quote is a _special character_ in Java, you need to put a backslash before it to “escape” it. This is called a **backslash escape sequence**. The same rule applies to printing a backslash itself, and `\n` is a special escape sequence for printing a newline.
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**
 Type this line and run it to see escape sequences in action.
 
 ```java
@@ -81,8 +80,7 @@ Have the students simplify the expression by hand and then enter their expressio
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**
-Type and run the code below. Notice what happens with `2 / 3`. Then change it so it prints the decimal result by making at least one number a double (e.g., `2.0 / 3`).
+Type and run each line of code below: 
 
 ```java
 System.out.println(2 + 3);
@@ -91,34 +89,39 @@ System.out.println(2 * 3);
 System.out.println(2 / 3);
 ```
 
+Notice what happened with `2 / 3`. Change it so it prints the decimal result by making at least one number a double (e.g., `2.0 / 3`).
+
 </div>
 
----
-
-Math errors can cause runtime problems. For example, this conversion from centimeters to inches has a **logic error** — it multiplies instead of divides.
+**Mathematical errors** sometimes lead to runtime errors in code. 
+> For example, when the Hubble Space Telescope was launched to space in 1990, a math error in a formula caused it to point in the wrong direction! It missed its target stars by about half a degree, which is about the width of the moon as seen from Earth.
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**
-Fix this so it correctly converts centimeters to inches (`1 inch = 2.54 cm`).
+Fix the **logic error** so it correctly converts centimeters to inches (`1 inch = 2.54 cm`).
 
 ```java
 System.out.print("100 centimeters in inches is: ");
-System.out.println(100 * 2.54);  // wrong, fix to divide
+System.out.println(100 * 2.54); 
 ```
 
 </div>
 
----
+### Compound Expressions
 
-## Compound Expressions
+**Compound expressions** use multiple operators. 
 
-Compound expressions use multiple operators. Java follows **operator precedence** (PEMDAS):
-`*`, `/`, and `%` before `+` and `-`, unless parentheses override it.
+<div class="important" markdown="block">
+  
+Java follows **operator precedence** (PEMDAS):
+`*`, `/`, and `%` _compute before_ `+` and `-`, unless parentheses `( )` override it.
+
+</div>
+
+<br>
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**
 Predict the output, then run:
 
 ```java
@@ -129,17 +132,19 @@ System.out.println(2 + (3 * 2));
 
 </div>
 
----
+### The Remainder `%` Operator
 
-## The Remainder Operator
+The `%` operator returns the **remainder** after using _truncating integer division_. 
+> Example: `5 % 2` is `1`.
 
-The `%` operator returns the **remainder** after integer division. Example: `5 % 2` is `1`.
+![image](Figures/mod-py.png)
+
+> Remember when you first learned long division, before they taught you about decimals, how when you did a long division that didn’t divide evenly, you gave the answer as the number of even divisions and the remainder. That **remainder** is what is returned by this operator.
 
 <iframe width="700" height="415" src="https://www.youtube.com/embed/jp-T9lFISlI" frameborder="0" allowfullscreen></iframe>
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**
 Predict the output, then run:
 
 ```java
@@ -148,48 +153,10 @@ System.out.println(3 % 4);
 System.out.println(8 % 2);
 System.out.println(9 % 2);
 ```
-
-</div>
-
 > **Note:** If `x` is smaller than `y`, `x % y` is always `x`.
 
-<div class="task" markdown="block">
-
-**Check Your Understanding**
-What is the result of `158 % 10`?
-What is the result of `3 % 8`?
-
 </div>
 
----
-
-## Groupwork: Coding Challenge — Pay Calculator
-
-Work with a partner to complete a pay calculator using math expressions and operators.
-
-<div class="task" markdown="block">
-
-**Coding Challenge (Codespaces)**
-Fill in the operators or expressions where indicated.
-
-```java
-System.out.println("Pay for 4 hours of work at 10 dollars an hour");
-System.out.println(4  10);   // fill in operator
-
-System.out.println("Number of hours worked for pay 120 dollars & rate 15 dollars/hour");
-System.out.println(120  15); // fill in operator
-
-System.out.println("Pay for 12 hours of work at 7.50 dollars an hour");
-System.out.println(        ); // fill in expression
-
-System.out.println("Number of int hours worked for pay 100 dollars & rate 9 dollars/hour");
-// add expression
-
-System.out.println("The remainder of 100 dollars divided by 9 dollars/hour");
-// add expression
-```
-
-</div>
 
 ---
 
@@ -208,6 +175,7 @@ System.out.println("The remainder of 100 dollars divided by 9 dollars/hour");
 
 ---
 
+<!-- 
 ## AP Practice
 
 <div class="task" markdown="block">
@@ -242,9 +210,7 @@ System.out.println(5 + 5 / 2 * 3 - 1);
 ✅ Correct: `10` — Equivalent to `(5 + ((5 / 2) * 3) - 1)` with truncating integer division.
 
 </div>
-
-
----
+-->
 
 #### Acknowledgement
 {: .no_toc }
