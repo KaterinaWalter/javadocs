@@ -15,7 +15,7 @@ nav_order: 8
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 1.7]() 
+📖 This page is a condensed version of [CSAwesome Topic 1.7](https://runestone.academy/ns/books/published/csawesome2/topic-1-7-APIs-and-libraries.html) 
 
 ---
 
@@ -194,20 +194,6 @@ yertle.forward();
 * (AP 1.7.A.1) Classes are organized into **packages** that you can import.
 * (AP 1.7.A.1) A **class** defines a reference type; you create **objects** (instances) from it.
 * (AP 1.7.A.2) **Attributes (fields)** are the object’s data; **behaviors (methods)** are what it can do.
-
----
-
-<div class="warn" markdown="block">
-
-🛑 When class ends, don't forget to **SAVE YOUR WORK**!
-
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Type a brief **commit message** in the box, for example: `updated Main.java`
-3. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-4. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-5. _Finally you can close your Codespace!_
-
-</div>
 
 ---
 
