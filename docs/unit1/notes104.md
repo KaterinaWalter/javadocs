@@ -167,6 +167,10 @@ int dogYearsAge = ;
 
 </div>
 
+<!--
+ As a class, brainstorm types of information used by computer programs. What types of data might be entered? How might the information be gathered by the program? (Types of input to programs/apps)
+-->
+
 ---
 
 ## Summary
