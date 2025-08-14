@@ -60,8 +60,6 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 What do Android phones, Minecraft, and Netflix have in common? They're all coded in Java! Many of the apps you use in an Android phone or tablet are written in Java. If you've used App Inventor before, those apps are translated to Java before they are run on a phone or tablet. Netflix uses Java for some of its software too. Java is a **programming language** that is used worldwide to create software that we all use.
 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/Fc-BQzPbJmU" frameborder="0" allowfullscreen></iframe>
-
 
 #### INTRODUCTORY ACTIVITY
 {:.no_toc}
