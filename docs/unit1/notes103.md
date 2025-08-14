@@ -73,6 +73,12 @@ Java uses:
 
 If both operands are integers, division will **truncate** (drop) the decimal part. If at least one operand is a double, the result will be a double.
 
+<!--
+The basic arithmetic operators of +, −, /, and * are similar to what students have experienced in math class or when using a calculator.  Have students come up with expressions using all 4 of the mathematical operators stated above. First round they should be using numbers only, second round, they should be using variables only and defining each variable.
+Example:  Round 1:    4 + 4 / 3 - 6 * 4    Round 2: x = 4, y = 3 and x + x / y - 6 *x
+Have the students simplify the expression by hand and then enter their expressions into a compiler and find an answer. Discuss how the answers are different and why.
+-->
+
 <div class="task" markdown="block">
 
 **Coding Exercise (Codespaces)**
