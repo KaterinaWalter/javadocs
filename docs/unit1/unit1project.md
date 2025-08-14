@@ -353,6 +353,10 @@ Be creative! Incorporate other concepts from this unit, especially the methods o
 
 ---
 
+#### Acknowledgement
+{: .no_toc }
 
+Content on this page is adapted from [CollegeBoard](https://apclassroom.collegeboard.org/8/home).
+{: .fs-2 }
 
 
