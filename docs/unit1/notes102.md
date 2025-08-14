@@ -132,8 +132,8 @@ int score = 4;
 
 ![image-small](Figures/concatenation.png)
 
-When you are printing out variables, you can use the **string concatenation** operator ``+`` to combine them with another string inside System.out.print. 
-> Never put variables inside quotes ``""`` because that will print out the variable name letter by letter. You do not want to print out the variable name, but the *value of the variable* in memory. 
+When you are printing out variables, you can use the **string concatenation** operator ``+`` to combine them with more text inside a `System.out.print` statement. 
+> Never put variables inside quotes ``""``! You do not want to print out the variable name, but the *value of the variable* in memory. 
 
 <div class="task" markdown="block">
 
@@ -155,13 +155,13 @@ System.out.println("Hi " + name);
 <div class="task" markdown="block">
 
 
-1. Type the wrong assignment below, run it, and read the **compiler error**.
+1. Type the (incorrect) assignment below, run it, and read the **compiler error**.
 2. Then fix it and run again.
 
 ```java
-int score;
-4 = score;           
-System.out.println(score);
+int num;
+4 = num;           
+System.out.println(num);
 ```
 
 </div>
