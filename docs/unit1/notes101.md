@@ -252,17 +252,15 @@ System.out.println(3/0);
 - (AP 1.1.B.1) An **Integrated Development Environment (IDE)** is often used to write programs because it provides tools for a programmer to write, compile, and run code.
 
 - A basic Java program looks like the following:
-
-.. code-block:: java
-
-   public class MyClass
-   {
-       public static void main(String[] args)
-       {
-           System.out.println("Hi there!");
-       }
-   }
-
+  ```java
+     public class MyClass
+     {
+         public static void main(String[] args)
+         {
+             System.out.println("Hi there!");
+         }
+     }
+  ```
 - A Java program starts with **public class NameOfClass { }**. If you are using your own files for your code, each class should be in a separate file that matches the class name inside it, for example NameOfClass.java.
 
 - Most Java classes have a main method that will be run automatically. It looks like this: **public static void main(String[] args) { }**.
