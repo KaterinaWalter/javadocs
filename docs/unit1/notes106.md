@@ -169,20 +169,6 @@ Afterward, try the **Operators Maze game**: <a href="https://docs.google.com/doc
 
 ---
 
-## Review/Practice for Unit 1 Part 1
-
-**Time: \~90 minutes**
-
-You can now do the following review and practice lessons and the College Board Progress Check for Unit 1 Part 1:
-
-* <a href="unit1a-summary.html" target="_blank">Unit 1a Summary</a>
-* <a href="unit1a-practice-mixed-code.html" target="_blank">Unit 1a Practice</a>
-* <a href="unit1a-practice-mixed-code-toggle.html" target="_blank">Unit 1a Practice Toggle</a>
-* <a href="unit1a-practice-coding.html" target="_blank">Unit 1a Practice Coding</a>
-* <a href="Exercises.html" target="_blank">Exercises</a>
-
----
-
 #### Acknowledgement
 {: .no_toc }
 
