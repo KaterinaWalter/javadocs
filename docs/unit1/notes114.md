@@ -15,7 +15,7 @@ nav_order: 15
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 1.14]() 
+📖 This page is a condensed version of [CSAwesome Topic 1.14](https://runestone.academy/ns/books/published/csawesome2/topic-1-14-calling-instance-methods.html) 
 
 ---
 
@@ -251,19 +251,7 @@ world.show(true);
 * **Void methods** do something but return nothing. **Non-void methods** return a value.
 * Always _use_ returned values from non-void methods.
   
----
 
-<div class="warn" markdown="block">
-
-🛑 When class ends, don't forget to **SAVE YOUR WORK**!
-
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Type a brief **commit message** in the box, for example: `updated Main.java`
-3. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-4. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-5. _Finally you can close your Codespace!_
-
-</div>
 
 ---
 
