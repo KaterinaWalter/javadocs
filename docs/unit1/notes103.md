@@ -21,10 +21,14 @@ nav_order: 4
 
 ## Output (Printing)
 
-Java has two different methods to print output to the screen:
+<div class="imp" markdown="block">
+  
+🖨️ Java has two different methods to display (print) **output** to the screen:
 
 - **`System.out.println(value)`** : prints the value _followed_ by a new line (`ln`)
 - **`System.out.print(value)`** : prints the value without advancing to the next line
+
+</div> 
 
 `System.out.println("Hi there!");` prints out the characters between the first `"` and the second `"` followed by a new line. `"Hi there!"` is called a **string literal**, which is zero to many characters enclosed in double quotes. 
 
@@ -112,7 +116,7 @@ System.out.println(100 * 2.54);
 
 **Compound expressions** use multiple operators. 
 
-<div class="important" markdown="block">
+<div class="imp" markdown="block">
   
 Java follows **operator precedence** (PEMDAS):
 `*`, `/`, and `%` _compute before_ `+` and `-`, unless parentheses `( )` override it.
