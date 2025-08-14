@@ -19,6 +19,8 @@ nav_order: 12
 
 ---
 
+## The Math Class
+
 Games would be boring if the same thing happened each time you played the game. **Random** numbers can be used in games to generate different outcomes each time the game is played. In Java, the `Math.random()` method is used to generate a random number.
 
 There are lots of mathematical methods in the `Math` class that you might want to use in your programs, like `Math.pow(2,3)` which calculates 2 to the power of 3, which is 8.
