@@ -15,7 +15,7 @@ nav_order: 12
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.12]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.12](https://runestone.academy/ns/books/published/csawesome2/topic-4-12-2Darray-traversal.html) 
 
 ---
 
