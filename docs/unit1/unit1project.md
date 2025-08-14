@@ -28,36 +28,15 @@ nav_order: 18
 </details>
 </html>
 
+--- 
+
+
 ### PART A: Basic Receipt
 
 <div class="task" markdown="block">
 
-1. Steps
-
-</div> 
-
-<html>
-<details>
-<summary><strong>💡 HINTS: </strong></summary>
-
-<div markdown="block">
-
-* Hint 1
-
-</div>
-</details>
-</html>
-
-
-### PART A: Basic Receipt
-
-You will start with a basic receipt that you might get after making a purchase from the high school snack bar. In a later activity you will create a more complex version that includes asking the user for information (input) about items purchased so that a custom receipt can be produced for that purchase.  
-
-The program shown is `Receipt1.java`. It is an example of how a list of items that are available at the snack bar and their prices can be printed on a receipt.  
-
-Create a new file in your integrated development environment (IDE) called `Receipt1.java`. Copy and paste the given code (or retype it) into your IDE and run it. **Correct any errors** that might occur with your program before proceeding to the next activity. You will use the code in this activity as a starting point for the code in the next activity, so be sure to save it for reuse later. 
-
-#### STARTER CODE
+1. Open your IDE and create a new file called `Receipt1.java`.
+2. Copy and paste (or retype) the following starter code into your new file:
 
 ```
 public class Receipt1
@@ -78,7 +57,17 @@ public class Receipt1
 }
 ```
 
-#### HINTS:
+3. Run the program.
+4. If any errors occur, fix them so the program compiles and runs successfully.
+5. Save the file — you will reuse this code in the next activity.
+
+</div>
+
+<html>
+<details>
+<summary><strong>💡 HINTS: </strong></summary>
+
+<div markdown="block">
 
 * A(n) syntax error is a mistake in the program where the rules of the programming language are not followed. These errors are detected by the compiler. 
 
@@ -88,15 +77,32 @@ public class Receipt1
 
 * A(n) exception is a type of run-time error that occurs as a result of an unexpected error that was not detected by the compiler. It interrupts the normal flow of the program’s execution.  
 
+</div>
+</details>
+</html>
+
 ### PART B: Enhanced Receipt
 
-The receipt that was generated in Activity 1 prints literal values for each of the items, but that is not always the best practice. In this activity you will modify the code from Activity 1 to include variables that will store your high school’s name and the prices of the items available at the snack bar. 
+<div class="task" markdown="block">
 
-In your IDE, create a new file called Receipt2.java. Open the code from Activity 1, Receipt1.java (or use the code provided below) and copy and paste it into your new file. Be sure to rename the class Receipt2 so it matches the file name.  
+1. In your IDE, create a new file called `Receipt2.java`.
+2. Open the code from `Receipt1.java` and copy it into your new file.
+3. Change the class name to `Receipt2` so it matches the file name.
+4. Create a variable to store your high school’s name.
+5. Create separate variables to store the prices of each snack bar item.
+6. Choose the most appropriate data type for each variable.
+7. Replace the literal values in `System.out.println` with string concatenation using your variables.
+8. If your high school name is too long for one line, abbreviate it or split it onto two lines.
+9. Run the program and debug if needed.
+10. Make sure the receipt displays correctly with your variables.
 
-Modify the code to include a variable for the high school’s name and variables for the prices of each item that is available on the snack bar menu. Be sure to use the most appropriate data types to store the values. Once the variables are declared and given initial values, use string concatenation to replace the statements that print the literal values that were given in Receipt1.java with the variables declared in this part. You will need to change the parameter in System.out.println. For example, instead of printing “Drink ...... $1.50”, you should print “Drink ......” followed by the value of the variable that stores the price of the drink. You might need to abbreviate the name of your high school so it fits on one line, or use a second line to accommodate the longer high school name. Run (and debug if needed) the program to be sure it prints the information in the correct format.
+</div>
 
-#### HINTS:
+<html>
+<details>
+<summary><strong>💡 HINTS: </strong></summary>
+
+<div markdown="block">
 
 * The variable for high school name should be of type String because it will contain letters, and the variables for the cost of a drink, candy, hot dog, and hamburger should be of type double because each of them will contain a real number value. 
 
@@ -105,18 +111,47 @@ Modify the code to include a variable for the high school’s name and variables
 * To correctly concatenate the variable name highSchoolName with the literal “Snack Bar” in the print statement, the syntax should be highSchoolNameSystem.out.printIn("*     " + highSchoolName + " Snack Bar     *"):
 
 * To correctly concatenate a variable name itemName with a real number itemCost in the print statement, the syntax should be System.out.printIn("*     " + itemName + ".............$" + itemCost +"     *");
- 
+
+</div>
+</details>
+</html>
+
 ### PART C: Adding Random
 
-In this activity we are going to add some arithmetic to the program to calculate the subtotal, tax, and total for the purchase based on ordering multiples of each of the items. To determine the number ordered of each item, your program should generate a random number between 0 and 2, inclusive, which represents the number ordered of each item. Your code should also generate an order number, which is a random number between 1 and 100, inclusive. 
+<div class="task" markdown="block">
 
-Create a new file called Receipt3.java. Open the code from Activity 2, Receipt2.java (or use the code provided below) and copy and paste it into your new file. Be sure to rename the class Receipt3 so it matches the file name.  
+1. Create a new file called `Receipt3.java`.
+2. Copy the code from `Receipt2.java` into your new file.
+3. Change the class name to `Receipt3`.
+4. Add variables for:
 
-Add variables to your code for order number, number of drinks ordered, number of candies ordered, number of hot dogs ordered, number of hamburgers ordered, tax rate, subtotal, total tax, and total for the order.  
+   * Order number
+   * Number of drinks ordered
+   * Number of candies ordered
+   * Number of hot dogs ordered
+   * Number of hamburgers ordered
+   * Tax rate
+   * Subtotal
+   * Total tax
+   * Total
+5. Use random numbers to:
 
-When the receipt is printed, be sure to include the order number and the quantity, name, and cost of each item ordered as well as the total for the order. 
+   * Assign each item a quantity between 0 and 2 (inclusive).
+   * Assign an order number between 1 and 100 (inclusive).
+6. Update the receipt printout to include:
 
-#### HINTS:
+   * Order number
+   * Quantity, name, and cost for each item
+   * Total cost for the order
+7. Run and debug the program.
+
+</div>
+
+<html>
+<details>
+<summary><strong>💡 HINTS: </strong></summary>
+
+<div markdown="block">
 
 * The variables for tax rate, subtotal, total tax, and total should be of type double because each will contain a real number value. The variables for order number and the number of drinks, candies, hot dogs, and hamburgers should be of type int because each will contain a whole number.
 
@@ -127,6 +162,124 @@ When the receipt is printed, be sure to include the order number and the quantit
 * The subtotal can be found by adding each of the item totals. The value for the tax can be found by multiplying the subtotal and tax rate. The order total can be found by adding the subtotal and the tax. 
 
 * The escape sequence for adding a new line to an output is "\n". The escape sequence for adding a tab to an output is "\t".
+</div>
+</details>
+</html>
+
+### PART D: Interactive Receipt
+
+<div class="task" markdown="block">
+
+1. Create a new file called `Receipt4.java`.
+2. Copy the code from `Receipt3.java` into your new file.
+3. Change the class name to `Receipt4`.
+4. Import the Scanner library at the top of the file:
+   `import java.util.Scanner;`
+5. Create a `Scanner` object for keyboard input:
+   `Scanner input = new Scanner(System.in);`
+6. Prompt the user to enter:
+
+   * Number of drinks
+   * Number of candies
+   * Number of hot dogs
+   * Number of hamburgers
+7. Store these values in the appropriate variables.
+8. Prompt the user to enter the **full high school name**.
+9. Use String methods to create initials from the first letters of each word (e.g., “Trevor Packer High School” → “TPHS”).
+10. Replace the high school name on the receipt with the generated initials.
+11. Calculate the order’s total cost using the user’s input values.
+12. Print the updated receipt.
+13. Run and debug the program.
+
+</div>
+
+<html>
+<details>
+<summary><strong>💡 HINTS: </strong></summary>
+
+<div markdown="block">
+
+* The placement of the statement import java.util.Scanner; must be before the public class Receipt4 header.
+
+* The placement of the statement Scanner input = new Scanner(System.in); should be after the header public static void main(String[] args).
+
+* If the variable nameOfSchool contains the four-word name of the high school, the String method substring can be used to extract the first letter. This would yield the statement firstLetter = nameOfSchool.substring(0, 1);.
+
+* To find the position of the first space in the high school’s name, the String method indexOf can be used. This would yield the statement int position = nameOfSchool.indexOf(" ");.
+
+* Once the position of the space is located, the String method substring can be used to get the remaining words. This would yield the statement remainingWords = nameOfSchool.substring(position+1);.
+
+</div>
+</details>
+</html>
+
+### PART E: Design a Receipt
+
+<div class="task" markdown="block">
+
+1. Choose a business type for your custom receipt (e.g., store, café, personal business).
+2. Write down details about the business:
+
+   * What it sells
+   * Information shown on the receipt (store name, location, date, item descriptions, prices, quantities, etc.)
+3. Decide how many items your receipt will include.
+4. Draw your receipt on paper to plan the layout.
+5. Identify all the variables needed to store your data.
+6. Assign data to the variables:
+
+   * Some set with literal values
+   * Some set from user input
+7. Add creativity by including extra features:
+
+   * Generate a receipt number using part of the business name plus a random number.
+   * Apply a random “surprise” discount (1%–10%).
+   * Use String and Math methods from the Java Quick Reference.
+8. Write your Java code in a file named `Receipt5.java`.
+9. Test the program to ensure it displays correctly and works as intended.
+
+</div>
+
+<html>
+<details>
+<summary><strong>💡 HINTS: </strong></summary>
+
+<div markdown="block">
+
+* Because of the way decimal numbers are stored, the values of a double variable value will print many decimal places. One way to display only two decimal places would be to use the statement value = ((int)(value * 100)/100.0);.
+
+</div>
+</details>
+</html>
+
+
+<!--
+
+
+### PART A: Basic Receipt
+
+You will start with a basic receipt that you might get after making a purchase from the high school snack bar. In a later activity you will create a more complex version that includes asking the user for information (input) about items purchased so that a custom receipt can be produced for that purchase.  
+
+The program shown is `Receipt1.java`. It is an example of how a list of items that are available at the snack bar and their prices can be printed on a receipt.  
+
+Create a new file in your integrated development environment (IDE) called `Receipt1.java`. Copy and paste the given code (or retype it) into your IDE and run it. **Correct any errors** that might occur with your program before proceeding to the next activity. You will use the code in this activity as a starting point for the code in the next activity, so be sure to save it for reuse later. 
+
+### PART B: Enhanced Receipt
+
+The receipt that was generated in Activity 1 prints literal values for each of the items, but that is not always the best practice. In this activity you will modify the code from Activity 1 to include variables that will store your high school’s name and the prices of the items available at the snack bar. 
+
+In your IDE, create a new file called Receipt2.java. Open the code from Activity 1, Receipt1.java (or use the code provided below) and copy and paste it into your new file. Be sure to rename the class Receipt2 so it matches the file name.  
+
+Modify the code to include a variable for the high school’s name and variables for the prices of each item that is available on the snack bar menu. Be sure to use the most appropriate data types to store the values. Once the variables are declared and given initial values, use string concatenation to replace the statements that print the literal values that were given in Receipt1.java with the variables declared in this part. You will need to change the parameter in System.out.println. For example, instead of printing “Drink ...... $1.50”, you should print “Drink ......” followed by the value of the variable that stores the price of the drink. You might need to abbreviate the name of your high school so it fits on one line, or use a second line to accommodate the longer high school name. Run (and debug if needed) the program to be sure it prints the information in the correct format.
+ 
+### PART C: Adding Random
+
+In this activity we are going to add some arithmetic to the program to calculate the subtotal, tax, and total for the purchase based on ordering multiples of each of the items. To determine the number ordered of each item, your program should generate a random number between 0 and 2, inclusive, which represents the number ordered of each item. Your code should also generate an order number, which is a random number between 1 and 100, inclusive. 
+
+Create a new file called Receipt3.java. Open the code from Activity 2, Receipt2.java (or use the code provided below) and copy and paste it into your new file. Be sure to rename the class Receipt3 so it matches the file name.  
+
+Add variables to your code for order number, number of drinks ordered, number of candies ordered, number of hot dogs ordered, number of hamburgers ordered, tax rate, subtotal, total tax, and total for the order.  
+
+When the receipt is printed, be sure to include the order number and the quantity, name, and cost of each item ordered as well as the total for the order. 
 
 ### PART D: Interactive Receipt
 
@@ -174,18 +327,6 @@ Modify your Receipt3.java program so that instead of randomly obtaining values f
 
 Also ask the user to enter the full high school name. Once that is entered, have your code create initials for the high school based on the first letters of its name. For example, if the user entered “Trevor Packer High School”, your program would create the initials “TPHS” and use that value for the high school name on the receipt. Use the appropriate String methods on the Java Quick Reference sheet to create the high school initials. For consistency, enter a four-word name for the high school (e.g., “Trevor Packer High School” instead of “Packer High School”)
 
-#### HINTS: 
-
-* The placement of the statement import java.util.Scanner; must be before the public class Receipt4 header.
-
-* The placement of the statement Scanner input = new Scanner(System.in); should be after the header public static void main(String[] args).
-
-* If the variable nameOfSchool contains the four-word name of the high school, the String method substring can be used to extract the first letter. This would yield the statement firstLetter = nameOfSchool.substring(0, 1);.
-
-* To find the position of the first space in the high school’s name, the String method indexOf can be used. This would yield the statement int position = nameOfSchool.indexOf(" ");.
-
-* Once the position of the space is located, the String method substring can be used to get the remaining words. This would yield the statement remainingWords = nameOfSchool.substring(position+1);.
-
 ### PART E: Design a Receipt
 
 In this last activity you will use the ideas and examples from prior activities and what you have learned in this class so far to design and create your own receipt. Your Java file should be named Receipt5.java. 
@@ -208,10 +349,9 @@ Be creative! Incorporate other concepts from this unit, especially the methods o
 
 * Use a random value to apply a “surprise” discount (e.g., a random value discount between 1% and 10%).
 
-#### HINTS:
+--> 
 
-* Because of the way decimal numbers are stored, the values of a double variable value will print many decimal places. One way to display only two decimal places would be to use the statement value = ((int)(value * 100)/100.0);.
-
+---
 
 
 
