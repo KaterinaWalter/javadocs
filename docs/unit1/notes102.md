@@ -19,17 +19,16 @@ nav_order: 3
 
 ---
 
-# Variables & Data Types
-
 ## What is a Variable?
 
-A **variable** is a memory location in the computer that can store a value that can change or vary while the program is running. The following video explains what a variable is and gives some real-world examples of variables.
+<dl>
+ <dt>Variable</dt>
+ <dd>A <strong>labeled memory location</strong> in the computer that can <em>store</em> a value that can change or vary while a program is running.</dd>
+</dl>
 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/pHgYlVjagmA" frameborder="0" allowfullscreen></iframe>
+When you play a game, it will often have a `score`. Scores often start at 0 and increase, so they can _change_. A score can be _stored_ in a **variable**.
 
-For example, when you play a game, it will often have a `score`. Scores often start at 0 and increase, so they can _change_. A score can be _stored_ in a **variable**.
-
-![Figure 1: A pong game in Scratch with a score shown in the upper left.](Figures/pongScore.png)
+![image-small](Figures/pongScore.png)
 
 #### INTRODUCTORY ACTIVITY
 {:.no_toc}
