@@ -70,7 +70,8 @@ Java uses:
 * `*` (multiplication)
 * `/` (division)
 
-If both operands are integers, division will **truncate** (drop) the decimal part. If at least one operand is a double, the result will be a double.
+{:.warning}
+**TRUNCATION:** When Java sees you doing **integer division** (or any operation with integers) it assumes you want an `int` result too, so it _throws away anything after the decimal_ point in the answer. This is called **truncating**. If you need a `double` answer, you should make at least one of the values in the expression a `double`, like `2.0`.
 
 <!--
 The basic arithmetic operators of +, −, /, and * are similar to what students have experienced in math class or when using a calculator.  Have students come up with expressions using all 4 of the mathematical operators stated above. First round they should be using numbers only, second round, they should be using variables only and defining each variable.
