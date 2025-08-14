@@ -210,7 +210,7 @@ System.out.println(message.equals("hello!"));
 > Since ``"Hello!"`` would be alphabetically ordered after ``"And"``, ``compareTo`` returns a positive number. Since ``"Hello!"`` would be alphabetically ordered before ``"Zoo"``, ``compareTo`` returns a negative number.  Notice that ``equals`` is case-sensitive.
 
 
-{.highlight}
+{:.highlight}
 Strings are **immutable** which means that they can't change after creation. Anything that you do to **modify** a string (like creating a substring or appending strings) _returns a new string_.
 
 ### Common Mistakes with Strings
