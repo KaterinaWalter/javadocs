@@ -38,14 +38,14 @@ nav_order: 18
 1. Open your IDE and create a new file called `Receipt1.java`.
 2. Copy and paste (or retype) the following starter code into your new file:
 
-```
+```java
 public class Receipt1
 {
    public static void main(String [] args)
    {
       System.out.println("**************************************");
       System.out.println("*                                    *");
-      System.out.println("*     Birch Wathen Lenox Snack Bar   *");
+      System.out.println("*     High School Snack Bar          *");
       System.out.println("*                                    *");
       System.out.println("*     Drink ..........$1.50          *");                      
       System.out.println("*     Candy ..........$1.25          *");     
