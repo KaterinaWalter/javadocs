@@ -53,7 +53,7 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ---
 
-## ACTIVITY #1: 
+## ACTIVITY #1: MadLibs
 
 In this activity, you'll...
 
