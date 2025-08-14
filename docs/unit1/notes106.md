@@ -19,6 +19,10 @@ nav_order: 7
 
 ---
 
+<!--
+As a class, brainstorm some examples of how people use shortcuts. Shortcuts for any purpose are acceptable for this intro activity. 
+-->
+
 ## Compound Assignment Operators 
 
 Compound assignment operators `+=`, `-=`, `*=`, `/=`, and `%=` are shortcuts that do a math operation **and** an assignment in one step.  
