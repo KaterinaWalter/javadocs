@@ -62,6 +62,38 @@ What do Android phones, Minecraft, and Netflix have in common? They're all coded
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/Fc-BQzPbJmU" frameborder="0" allowfullscreen></iframe>
 
+
+#### INTRODUCTORY ACTIVITY
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+1. Form pairs, then pick a role:
+  - 🗣️ **Instructor**: Will give simple verbal instructions on how to draw some _secret thing_, without revealing what the thing is.
+  - ✍️ **Drawer**: Will follow the instructions to create the drawing _exactly_ as the instructor describes.
+2. **DRAWERS** leave the room while **INSTRUCTORS** are told about the secret thing to draw. 
+3. When the partner returns, move your chairs so you are sitting **back-to-back** with your teammate.  
+4. If you are the **DRAWER**:  
+   - Have a blank sheet of paper and a pencil or pen ready.  
+   - You will not know what you are drawing.  
+   - DO NOT ask any questions during the instructions!  
+5. If you are the **INSTRUCTOR**:  
+   - Give directions step-by-step, as detailed as possible.
+   - You can only describe _shapes_, _sizes_, and _positions_. 
+   - DO NOT use any specific words for objects, body parts, comparisons, etc!!!
+6. Once the drawing is complete, **hand it in**, then move your chairs back to normal.
+7. 💬 As a group, go through each of the drawings and **discuss**:  
+   - Was the drawing _correct_? Can you tell what it is?
+   - How _precise_ did the instructions need to be?  
+   - Did the _order_ of the instructions matter?  
+   - What problems came from _vague_ language?
+
+</div>
+
+> * The **Drawer** represents the *execution* of a program.
+> * The **Instructor** represents the *source code*.
+> * The way the **Drawer** interprets the instructions is like the *compiler*.  
+
 ---
 
 ## Algorithms
