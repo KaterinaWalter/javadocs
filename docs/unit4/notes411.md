@@ -15,7 +15,7 @@ nav_order: 11
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.11]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.11](https://runestone.academy/ns/books/published/csawesome2/topic-4-11-2Darrays.html) 
 
 ---
 
