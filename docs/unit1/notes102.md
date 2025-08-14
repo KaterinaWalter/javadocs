@@ -15,7 +15,7 @@ nav_order: 3
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Lesson 1.2](https://runestone.academy/ns/books/published/csawesome2/topic-1-2-variables.html) 
+📖 This page is a condensed version of [CSAwesome Topic 1.2](https://runestone.academy/ns/books/published/csawesome2/topic-1-2-variables.html) 
 
 ---
 
