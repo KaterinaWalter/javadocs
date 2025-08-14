@@ -15,7 +15,7 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Lesson 1.1](https://runestone.academy/ns/books/published/csawesome2/topic-1-1-intro-algorithms.html) 
+📖 This page is a condensed version of [CSAwesome Topic 1.1](https://runestone.academy/ns/books/published/csawesome2/topic-1-1-intro-algorithms.html) 
 
 ---
 
