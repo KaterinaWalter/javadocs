@@ -19,7 +19,7 @@ nav_order: 16
 
 ---
 
-## Using the `String` Class
+## The String Class
 
 **Strings** in Java are _objects_ of the ``String`` _class_ that hold text, i.e. **sequences of characters** (`a`, `B`, `c`, `$`, etc). You can declare a variable to be of the type ``String``.
 > Remember that a **class** (or classification) in Java defines the data that all **objects** of the class have (the _instance variables_) and the behaviors, the things that objects know how to do (the _methods_).
@@ -223,6 +223,7 @@ Strings are **immutable** which means that they can't change after creation. Any
 6. Assuming uppercase and lowercase are equal.
 
 #### String Methods Game
+{:.no_toc}
 
 Try the game below written by AP CSA teacher Chandan Sarkar. Click on **Strings** and then on the letters that would be the result of the string method calls. We encourage you to work in pairs and see how high a score you can get.
 
