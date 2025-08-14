@@ -19,6 +19,11 @@ nav_order: 15
 
 ---
 
+<!--
+Role play objects in groups or with the whole class. Here are some object roles that you could assign students, e.g. Acrobat, Whiteboard and directions on how you could lead the activity (created by David Levine). Some other objects might be animals like dogs and cats who bark and do different tricks. After assigning roles to students, call out their name and then the method you’d like them to do, and write the commands on the board. For example, acrobat1.clap(2);  whiteboard1.drawSquare(); Have groups write some commands for their group to do and simulate running the program. Have groups design a new object and a method with an argument for it. 
+Remind students “methods define the behaviors or functions.”, and the vocabulary of parameters and arguments as “values that you can give to methods to help them do their job as arguments or parameters.”
+-->
+
 In object-oriented programming, **methods** define the behavior and actions that an object can perform. For example, `Turtle` objects can go forward or turn left using method calls like `yertle.forward()` and `yertle.turnRight()` to change its position. These methods are sometimes called **instance methods** or **object methods** because they are called using an instance or object of the class — in this case a specific `Turtle` object like `yertle`.
 
 ## Class Methods vs. Instance Methods
