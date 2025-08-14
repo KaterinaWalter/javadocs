@@ -45,6 +45,8 @@ When you play a game, it will often have a `score`. Scores often start at 0 and 
 
 </div>
 
+---
+
 ## Data Types
 
 Every variable has a **name** and a **data type** that determines the kind of data it can hold. 
@@ -138,35 +140,27 @@ When you are printing out variables, you can use the **string concatenation** op
 In your Java file in GitHub Codespaces, type and run each line below in the `main` method. Observe the output, then change values, add/remove spaces, and (on purpose) put quotes around a variable name to see what happens.
 
 ```java
-int score = 0;
-System.out.print("The score is ");
-System.out.println(score);
-
 double price = 23.25;
-System.out.println("The price is " + price);
+System.out.print("The price is ");
+System.out.println(price);
 
-boolean won = false;
-System.out.println(won);
-won = true;
-System.out.println(won);
-
-String name = "Jose";
+String name = "Bob";
 System.out.println("Hi " + name);
 ```
 
 </div>
 
-
+<br>
 
 <div class="task" markdown="block">
 
 
-1. Type the **wrong** assignment below, run it, and read the compiler error.
+1. Type the wrong assignment below, run it, and read the **compiler error**.
 2. Then fix it and run again.
 
 ```java
 int score;
-4 = score;            // wrong on purpose
+4 = score;           
 System.out.println(score);
 ```
 
