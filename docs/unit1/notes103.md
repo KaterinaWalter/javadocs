@@ -134,12 +134,11 @@ System.out.println(2 + (3 * 2));
 
 ### The Remainder `%` Operator
 
-The `%` operator returns the **remainder** after using _truncating integer division_. 
-> Example: `5 % 2` is `1`.
+The `%` operator, sometimes called "modulo" or "modulus", returns the **remainder** after using _truncating integer division_. 
 
 ![image](Figures/mod-py.png)
 
-> Remember when you first learned long division, before they taught you about decimals, how when you did a long division that didn’t divide evenly, you gave the answer as the number of even divisions and the remainder. That **remainder** is what is returned by this operator.
+> The left example shows `2 % 3` returns `2` and the right example shows shows `5 % 2` returns `1`. Remember when you first learned long division, before they taught you about decimals, how when you did a long division that didn’t divide evenly, you gave the answer as the _number of even divisions_ and the _remainder_. That **remainder** is what is returned by this operator.
 
 <iframe width="700" height="415" src="https://www.youtube.com/embed/jp-T9lFISlI" frameborder="0" allowfullscreen></iframe>
 
