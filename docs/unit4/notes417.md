@@ -19,21 +19,144 @@ nav_order: 17
 
 ---
 
-## TOPIC
+# Recursive Searching and Sorting
+
+In previous lessons, we learned about searching and sorting algorithms using iteration (loops) to search or sort arrays and `ArrayLists`. In this lesson, we will take a look at a **recursive binary search** algorithm and a **recursive merge sort** algorithm. Recursion can be used to traverse `String` objects, arrays, and `ArrayList` objects.
 
 ---
 
-<div class="warn" markdown="block">
+## Recursive Binary Search
 
-🛑 When class ends, don't forget to **SAVE YOUR WORK**!
+We have already seen two search algorithms using loops:  
+- **Linear search** — checks each element in order.  
+- **Binary search** — more efficient because it starts at the middle of a **sorted** array or `ArrayList` and eliminates half each pass.
 
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Type a brief **commit message** in the box, for example: `updated Main.java`
-3. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-4. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-5. _Finally you can close your Codespace!_
+Binary search can be written iteratively (with a loop) or recursively.
 
-</div>
+**Iterative version:**
+
+```java
+public class IterativeBinarySearch {
+    public static int binarySearch(int[] elements, int target) {
+        int left = 0;
+        int right = elements.length - 1;
+        while (left <= right) {
+            int middle = (left + right) / 2;
+            if (target < elements[middle]) {
+                right = middle - 1;
+            } else if (target > elements[middle]) {
+                left = middle + 1;
+            } else {
+                return middle;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {-20, 3, 15, 81, 432};
+        int index = binarySearch(arr1, 81);
+        System.out.println(index);
+    }
+}
+````
+
+---
+
+**Recursive version:**
+
+```java
+public class RecursiveBinarySearch {
+    public static int binarySearch(int[] elements, int target, int left, int right) {
+        if (left > right) {
+            return -1;
+        }
+        int middle = (left + right) / 2;
+        if (target < elements[middle]) {
+            return binarySearch(elements, target, left, middle - 1);
+        } else if (target > elements[middle]) {
+            return binarySearch(elements, target, middle + 1, right);
+        } else {
+            return middle;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {-20, 3, 15, 81, 432};
+        int index = binarySearch(arr1, 81, 0, arr1.length - 1);
+        System.out.println(index);
+    }
+}
+```
+
+---
+
+## Recursive Merge Sort
+
+Merge sort is a **divide-and-conquer** algorithm:
+
+1. Split the array into halves until arrays of length 1 (base case).
+2. Merge sorted halves back together.
+
+```java
+public class MergeSort {
+    public static void sort(int[] arr) {
+        if (arr.length <= 1) return;
+
+        int mid = arr.length / 2;
+        int[] left = new int[mid];
+        int[] right = new int[arr.length - mid];
+
+        for (int i = 0; i < mid; i++) {
+            left[i] = arr[i];
+        }
+        for (int i = mid; i < arr.length; i++) {
+            right[i - mid] = arr[i];
+        }
+
+        sort(left);
+        sort(right);
+        merge(arr, left, right);
+    }
+
+    private static void merge(int[] result, int[] left, int[] right) {
+        int i = 0, j = 0, k = 0;
+        while (i < left.length && j < right.length) {
+            if (left[i] <= right[j]) {
+                result[k++] = left[i++];
+            } else {
+                result[k++] = right[j++];
+            }
+        }
+        while (i < left.length) {
+            result[k++] = left[i++];
+        }
+        while (j < right.length) {
+            result[k++] = right[j++];
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {38, 27, 43, 3, 9, 82, 10};
+        sort(arr1);
+        for (int num : arr1) {
+            System.out.print(num + " ");
+        }
+    }
+}
+```
+
+---
+
+## Summary
+
+* **Recursive binary search** works the same as iterative but calls itself on a smaller range.
+* **Merge sort** uses recursion to split the array and merge sorted halves.
+* Recursion can often make code shorter, but you must have:
+
+  * A **base case** to stop recursion.
+  * Recursive calls that move toward that base case.
+
 
 ---
 
