@@ -19,6 +19,8 @@ nav_order: 16
 
 ---
 
+## Strings (Text data)
+
 **Strings** in Java are _objects_ of the ``String`` _class_ that hold **sequences of characters** (`a`, `B`, `c`, `$`, etc). You can declare a variable to be of the type ``String``.
 > Remember that a **class** (or classification) in Java defines the data that all **objects** of the class have (the _instance variables_) and the behaviors, the things that objects know how to do (the _methods_).
 
