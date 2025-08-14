@@ -15,7 +15,7 @@ nav_order: 8
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.8]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.8](https://runestone.academy/ns/books/published/csawesome2/topic-4-8-arraylists.html) 
 
 ---
 
