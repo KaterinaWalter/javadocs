@@ -15,7 +15,7 @@ nav_order: 5
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.5]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.5](https://runestone.academy/ns/books/published/csawesome2/topic-4-5-array-algorithms.html) 
 
 ---
 
