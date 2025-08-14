@@ -133,7 +133,6 @@ Computers allot a fixed memory size per type. `double` uses **8 bytes** (twice `
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**
 Format a decimal to 2 digits using `printf`:
 
 ```java
@@ -148,37 +147,14 @@ System.out.printf("\nFormatted number: $%.2f\n", number);
 
 </div>
 
----
 
-## Check Your Understanding
-
-<div class="task" markdown="block">
-
-**True or False**
-Java rounds up automatically when you do integer division.
-**Answer:** `False` — Java **truncates** integer division.
-
-</div>
-
-<div class="task" markdown="block">
-
-**True or False**
-Casting always results in a `double` type.
-**Answer:** `False` — Casting converts to **the type you specify**. `(int) 3.6` → `3`.
-
-</div>
-
----
-
-## Groupwork: Coding Challenge — Average 3 Numbers
+### Coding Challenge: Average 3 Numbers
 
 Work in pairs and switch drivers often. Type three made-up `int` grades, compute the **sum** and **average**, and **cast** to ensure the average is a `double`.
 
 <div class="task" markdown="block">
 
-**Coding Challenge (Codespaces)**
-
-**Pseudocode steps**
+**Pseudocode steps:**
 
 1. Declare `int grade1, grade2, grade3` and **initialize** them.
 2. Declare `int sum`.
@@ -213,15 +189,12 @@ Work in pairs and switch drivers often. Type three made-up `int` grades, compute
 
 </div>
 
----
-
-## Bonus Challenge: Unicode
+### Bonus Challenge: Unicode
 
 Java uses **Unicode** for characters (not on the AP exam, but fun!). Many code points (especially emoji) don’t fit in a `char`. Use an `int` code point with `Character.toString(codePoint)` to build a `String`.
 
 <div class="task" markdown="block">
 
-**Coding Exercise (Codespaces)**
 Print characters from different languages and an emoji. Then look up more code points (decimal) and print them.
 
 ```java
@@ -242,32 +215,32 @@ System.out.println("This also works: " + (char) 65);
 
 ## Summary
 
-* **Type casting** converts a value from one type to another.
-* `(int)` and `(double)` are common cast operators.
-* Casting a `double` to `int` **truncates** the decimal part.
-* In expressions with a `double`, the result is a `double` (widening).
-* Round a `double` to nearest int via `(int)(x + 0.5)` (or `(int)(x - 0.5)` for negatives).
-* `Integer.MAX_VALUE` / `Integer.MIN_VALUE` define `int` limits.
-* **Integer overflow** occurs when a result is outside `int`’s range.
-* **Round-off error** occurs when a `double` can’t represent a value exactly; format or round as needed.
+- **Type casting** is used to convert a value from one type to another.
 
----
+- (AP 1.5.A.1) The casting operators ``(int)`` and ``(double)`` can be used to convert from a double value to an int value (or vice versa).
 
-## AP Practice
+- (AP 1.5.A.2) Casting a ``double`` value to an ``int`` causes the digits to the right of the
+  decimal point to be truncated (cut off and thrown away).
 
-<div class="task" markdown="block">
+- (AP 1.5.A.3) Some code causes int values to be automatically cast (widened) to double values. In expressions involving ``double``\ s, the ``double`` values are contagious,
+  causing ``int``\ s in the expression to be automatically converted ("widened") to the
+  equivalent ``double`` value so the result of the expression can be computed as
+  a ``double``.
 
-**Multiple Choice**
-Which returns the correct average for a total that is the sum of 3 `int` values?
+- (AP 1.5.A.4) Values of type ``double`` can be rounded to the nearest integer by (int)(x +
+  0.5) or (int)(x – 0.5) for negative numbers.
 
-A. `(double) (total / 3);`
-B. `total / 3;`
-C. **`(double) total / 3;`** ✅
-D. `(int) total / 3;`
+- (AP 1.5.B.1) The constant ``Integer.MAX_VALUE`` holds the value of the largest possible int value. The constant ``Integer.MIN_VALUE`` holds the value of the smallest possible int value.
 
-Explanation: Casting **before** dividing prevents truncating integer division.
+- (AP 1.5.B.2) Integer values in Java are represented by values of type ``int``, which are
+  stored using a finite amount (4 bytes) of memory. Therefore, an int value must
+  be in the range from ``Integer.MIN_VALUE`` to ``Integer.MAX_VALUE``,
+  inclusive. 
 
-</div>
+- (AP 1.5.B.3) If an expression would evaluate to an int value outside of the allowed range,
+  an **integer overflow** occurs. The result is an int value in the allowed range but not necessarily the value expected.
+
+- (AP 1.5.C.1) Computers allot a specified amount of memory to store data based on the data type. If an expression would evaluate to a double that is more precise than can be stored in the allotted amount of memory, a **round-off error** occurs. The result will be rounded to the representable value. To avoid rounding errors that naturally occur, use int values or round doubles to the precision needed. 
 
 ---
 
