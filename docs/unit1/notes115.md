@@ -81,8 +81,8 @@ System.out.println(result);
 
 </div>
 
-{:.highlight}
-Note that spaces are not added between strings automatically.  If you want a space between two strings then add one using + " " +. If you forget to add spaces, you will get smushed output like "HiJose" instead of "Hi Jose".  And remember that variables are never put inside the quotes ("") since this would print the variable name out letter by letter instead of its value.
+{:.warning}
+Note that spaces are not added between strings automatically! If you want a space between two strings then add one using `+ " " +`. If you forget to add spaces, you will get smushed output like `"HiJose"`.  And remember that variables are never put inside the quotes (`""`) since this would print the variable name out letter by letter instead of its value.
 
 You can even add other items to a string using the ``+`` operator. Primitive
 values like ``int`` and ``boolean`` will be converted to a ``String`` like what
@@ -100,12 +100,13 @@ System.out.println(message);
 
 </div>
 
+> Since the same operators are processed from left to right this will print ``1243``.  First 4 will be turned into a string and appended to 12 and then 3 will be turned into a string and appended to 124.  If you want to do addition instead, try using parentheses!
+
 {:.highlight}
-If you are appending a number to a string it will be converted to a string first before being appended.
+If you are appending a number to a string it will be converted to a string _first_ before being appended.
 
-Since the same operators are processed from left to right this will print ``1243``.  First 4 will be turned into a string and appended to 12 and then 3 will be turned into a string and appended to 124.  If you want to do addition instead, try using parentheses!
 
---
+---
 
 ## String Methods
 
