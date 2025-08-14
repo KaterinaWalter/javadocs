@@ -19,7 +19,7 @@ nav_order: 12
 
 ---
 
-## The Math Class
+## Using the `Math` Class
 
 Games would be boring if the same thing happened each time you played the game. **Random** numbers can be used in games to generate different outcomes each time the game is played. In Java, the `Math.random()` method is used to generate a random number.
 
