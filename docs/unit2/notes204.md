@@ -15,7 +15,7 @@ nav_order: 4
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 2.4]() 
+📖 This page is a condensed version of [CSAwesome Topic 2.4](https://runestone.academy/ns/books/published/csawesome2/topic-2-4-nested-ifs.html) 
 
 ---
 
@@ -265,20 +265,6 @@ public class Adventure {
 Reason: II checks `x < 33` first, then `x < 66`, else `"High"`. I has off-by-one logic for 66, and III prints more than one output for some values.
 
 </details>
-
----
-
-<div class="warn" markdown="block">
-
-🛑 When class ends, don't forget to **SAVE YOUR WORK**!
-
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Type a brief **commit message** in the box, for example: `updated Main.java`
-3. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-4. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-5. _Finally you can close your Codespace!_
-
-</div>
 
 ---
 
