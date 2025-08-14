@@ -9,7 +9,7 @@ nav_order: 18
 
 ### Overview
 
-🛍️ Many of us engage in activities that involve spending money and obtaining a **receipt**. When we go shopping or go to a restaurant, the business prints a receipt as proof of the purchased items. The store that issues the receipt has software on their register that is designed to print the receipt in a particular format with predetermined information.  
+🛍️ Whenever we shop or dine out, we often spend money and receive a receipt in return. This receipt serves as proof of our purchase. The business’s register uses specialized software that prints the receipt in a specific format, containing certain predetermined details.
 
 <html>
 <details>
@@ -45,7 +45,7 @@ public class Receipt1
    {
       System.out.println("**************************************");
       System.out.println("*                                    *");
-      System.out.println("*     Trevor Packer HS Snack Bar     *");
+      System.out.println("*     Birch Wathen Lenox Snack Bar   *");
       System.out.println("*                                    *");
       System.out.println("*     Drink ..........$1.50          *");                      
       System.out.println("*     Candy ..........$1.25          *");     
@@ -186,7 +186,7 @@ public class Receipt1
    * Number of hamburgers
 7. Store these values in the appropriate variables.
 8. Prompt the user to enter the **full high school name**.
-9. Use String methods to create initials from the first letters of each word (e.g., “Trevor Packer High School” → “TPHS”).
+9. Use String methods to create initials from the first letters of each word (e.g., “Birch Wathen Lenox” → “BWL”).
 10. Replace the high school name on the receipt with the generated initials.
 11. Calculate the order’s total cost using the user’s input values.
 12. Print the updated receipt.
