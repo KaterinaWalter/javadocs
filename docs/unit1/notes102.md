@@ -171,7 +171,7 @@ System.out.println(num);
 
 While you can name your variable almost anything, there are some rules. A variable name should always start with an alphabetic character and can include letters, numbers, and underscores `_`. **It must be all one word with no spaces.**
 
-You also can't use any of the keywords or reserved words as variable names in Java (`for`, `if`, `class`, `static`, `int`, `double`, etc). For a complete list of keywords and reserved words, see [https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9).
+🚫 You cannot use any of the keywords or reserved words as variable names in Java (`for`, `if`, `class`, `static`, `int`, `double`, etc). For a complete list of keywords and reserved words, see [https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9).
 
 <div class="important" markdown="block">
 
