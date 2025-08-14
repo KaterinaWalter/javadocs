@@ -27,9 +27,21 @@ A **variable** is a memory location in the computer that can store a value that 
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/pHgYlVjagmA" frameborder="0" allowfullscreen></iframe>
 
-For example, when you play a game, it will often have a score. Scores often start at 0 and increase, so they can change. A score can be stored in a variable.
+For example, when you play a game, it will often have a `score`. Scores often start at 0 and increase, so they can _change_. A score can be _stored_ in a **variable**.
 
 ![Figure 1: A pong game in Scratch with a score shown in the upper left.](Figures/pongScore.png)
+
+#### INTRODUCTORY ACTIVITY
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+🎮📱 As a class, brainstorm some examples of important pieces of **information (data)** in video games that you play (or apps you use in general).
+
+> * How/why would a program be able to be _personalized_ for each player that plays the game?
+> * What kind of information (data) does the game need to remember about each player?
+
+</div>
 
 ---
 
