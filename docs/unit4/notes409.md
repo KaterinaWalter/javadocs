@@ -15,7 +15,7 @@ nav_order: 9
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.9]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.9](https://runestone.academy/ns/books/published/csawesome2/topic-4-9-arraylist-traversal.html) 
 
 ---
 
