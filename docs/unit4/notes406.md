@@ -15,7 +15,7 @@ nav_order: 6
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.6]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.6](https://runestone.academy/ns/books/published/csawesome2/topic-4-6-input-files.html) 
 
 ---
 
