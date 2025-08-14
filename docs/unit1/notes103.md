@@ -15,7 +15,7 @@ nav_order: 4
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Lesson 1.3](https://runestone.academy/ns/books/published/csawesome2/topic-1-3-expressions.html) 
+📖 This page is a condensed version of [CSAwesome Topic 1.3](https://runestone.academy/ns/books/published/csawesome2/topic-1-3-expressions.html) 
 
 ---
 
