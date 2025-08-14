@@ -21,10 +21,13 @@ nav_order: 3
 
 ## What is a Variable?
 
+<html>
 <dl>
  <dt>Variable</dt>
- <dd>A <strong>labeled memory location</strong> in the computer that can <em>store</em> a value that can change or vary while a program is running.</dd>
+ <dd>A <strong>labeled memory location</strong> in the computer that can <em>store</em> a value that can change or vary while a program is running.
+ </dd>
 </dl>
+</html>
 
 When you play a game, it will often have a `score`. Scores often start at 0 and increase, so they can _change_. A score can be _stored_ in a **variable**.
 
@@ -42,27 +45,31 @@ When you play a game, it will often have a `score`. Scores often start at 0 and 
 
 </div>
 
----
-
 ## Data Types
 
-Every variable has a name and a data type that determines the kind of data it can hold. There are two types of variables in Java: **primitive variables** that hold values of primitive types like numbers and **reference variables** that hold a reference to a more complex object. A reference is a way to find the object (like a UPS tracking number helps you find your package).
+Every variable has a **name** and a **data type** that determines the kind of data it can hold. 
 
-The primitive types on the Advanced Placement Computer Science A exam are:
+There are two types of variables in Java: **primitive variables** that hold values of simple types like numbers and **object (reference) variables** that hold a reference to a more complex group of data. 
+> A _reference_ is a way to find the object (like a UPS tracking number helps you find your package).
 
-- `int` which can represent integers, i.e. numbers with no fractional part such as 3, 0, -76, and 20393.
-- `double` which can represent non-integer numbers like 6.3, -0.9, and 60293.93032. Computer people call these “floating point” numbers because the decimal point “floats” relative to the magnitude of the number, similar to scientific notation like 6.5 × 10^8. The name `double` comes from the fact that doubles are represented using 64 bits, double the 32 bits used for the type `float` (rarely used in AP CS A).
-- `boolean` which can represent only two values: `true` and `false`. (The data type is named for [George Boole](https://en.wikipedia.org/wiki/George_Boole).)
+_Primitive Types tested on the AP Exam:_
+- `int` which can represent **integers**, i.e. numbers with no fractional part such as 3, 0, -76, and 20393.
+- `double` which can represent **decimal numbers** like 6.3, -0.9, and 60293.93032.
+  > Computer people call these “floating point” numbers because the decimal point “floats” relative to the magnitude of the number, similar to scientific notation like 6.5 × 10^8. 
+- `boolean` which can represent only two possible values: `true` or `false`.
+  > The data type is named for [George Boole](https://en.wikipedia.org/wiki/George_Boole).
 
-`String` is one of the object (reference) types on the exam and is the name of a class in Java. A `String` is written in a Java program as a sequence of characters enclosed in a pair of double quotes — like `"Hello"`. You will learn more about `String` objects later.
+{:.highlight}
+`String` is one of the **object (reference) types** on the exam and is the name of a class in Java. A `String` is written in a Java program as a sequence of characters enclosed in a pair of double quotes — like `"Hello"`. 
 
-A data type is a set of values (a domain) and a set of operations on them. For example, you can do addition operations with `int`s and `double`s but not with `boolean`s and `String`s.
+A data type is a set of possible _values_ (a domain) but also a set of _operations_ on them. 
+> For example, you can do addition operations with `int`s and `double`s but not with `boolean`s or `String`s.
 
 <div class="task" markdown="block">
 
 **Check Your Understanding:** 
 
-With the people at your table, discuss the situations below. Select the appropriate data type out of the following choices: `int`, `double`, `boolean`, `String`
+💬 With the people at your table, discuss the situations below. Select the appropriate data type out of the following choices: `int`, `double`, `boolean`, `String`
  
 - What type should you use to represent the average grade for a course?  
 - What type should you use to represent the number of people in a household?  
@@ -71,8 +78,6 @@ With the people at your table, discuss the situations below. Select the appropri
 - What type should you use to represent the amount of money you have?  
 
 </div>
-
----
 
 ### Declaring Variables in Java
 
@@ -85,28 +90,37 @@ Computers store all values using **bits** (binary digits). A **bit** can represe
 
 ![image](Figures/variables.png)
 
-To **declare** (create) a variable, specify the type, leave at least one space, then the name for the variable and end the line with a semicolon (`;`). Java uses the keyword **int** for integer, **double** for a floating point number, and **boolean** for a Boolean value (true or false).
+<div class="important" markdown="block">
 
-Here is an example declaration of a variable called score.
+#### DECLARE
+{:.no_toc}
+
+To **declare** (create) a variable, specify the _type_, leave at least one space, then the _name_ for the variable, and end the line with a semicolon (`;`). 
 
 ```java
 int score;
 ````
 
-After declaring a variable, you can give it a value using an equals sign `=` followed by the value.
+#### ASSIGN
+{:.no_toc}
+
+After declaring a variable, you can **assign a value** to it using an equals sign `=` followed by the value:
 
 ```java
-int score;
 score = 4;
 ```
 
-Or you can set an initial value for the variable in the variable declaration.
+#### INITIALIZE
+{:.no_toc}
+
+Or you can combine both steps into one line, declaring the type AND setting an initial value for a variable:
 
 ```java
 int score = 4;
 ```
 
-When you are printing out variables, you can use the **string concatenation** operator `+` to add them to another string inside `System.out.print`. Never put variables inside quotes `""` because that will print out the variable name letter by letter. If you want spaces between words and variables, you must put the space in the quotes.
+</div>
+
 
 <div class="task" markdown="block">
 
