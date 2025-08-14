@@ -58,7 +58,7 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ---
 
-What do Android phones, Minecraft, and Netflix have in common? They're all coded in Java! Many of the apps you use in an Android phone or tablet are written in Java. If you've used App Inventor before, those apps are translated to Java before they are run on a phone or tablet. Netflix uses Java for some of its software too. Java is a **programming language** that is used worldwide to create software that we all use.
+☕️ What do Android phones, Minecraft, and Netflix have in common? They're all coded in `Java`! Many of the apps you use in an Android phone or tablet are written in Java. Netflix uses Java for some of its software too. Java is a **programming language** that is used worldwide to create software that we all use.
 
 
 #### INTRODUCTORY ACTIVITY
@@ -87,10 +87,6 @@ What do Android phones, Minecraft, and Netflix have in common? They're all coded
    - What problems came from _vague_ language?
 
 </div>
-
-> * The **Drawer** represents the *execution* of a program.
-> * The **Instructor** represents the *source code*.
-> * The way the **Drawer** interprets the instructions is like the *compiler*.  
 
 ---
 
@@ -147,6 +143,12 @@ System.out.println("Hi there!");
 An **Integrated Development Environment (IDE)** is often used to write programs because it provides tools for a programmer to write, compile, and run code.
 
 Computers don't actually speak Java, so we have to **compile** (translate) Java source files into class files, which a computer can understand and run. A **compiler** checks your code for errors and translates it to executable code.
+
+> _From the intro activity:_
+> 
+> * The 🗣️ **INSTRUCTOR** represents the <span class="highlighter">source code</span> - all the statements we write in a `.java` file.
+> * The ✍️ **DRAWER** represents the <span class="highlighter">execution</span> of a program.
+> * The way the drawer _interprets_ the instructions is like the <span class="highlighter">compiler</span>.  
 
 ---
 
