@@ -25,6 +25,12 @@ nav_order: 16
 
 > **Note:** Class names in Java, like `String`, begin with a capital letter. All primitive types (`int`, `double`, `boolean`) begin with a lowercase letter. This is one way to tell the difference between primitive types and class types.
 
+<!--
+STRING BRACELET ACTIVITY?
+
+String Methods and tell students that strings are indexed starting at 0. Bring scrabble or banagram tiles to class or have students cut out squares from paper to write letters on. Working in pairs, have students create or write down a long word like “CSAwesome” or “extraordinary” with the tiles. Ask them which index or indices substrings within the large string start and end. For example, what index does the substring “Awesome” start and end in the string “CSAwesome”?
+-->
+
 ---
 
 ### String References
