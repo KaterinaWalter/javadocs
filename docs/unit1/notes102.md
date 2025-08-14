@@ -51,7 +51,7 @@ When you play a game, it will often have a `score`. Scores often start at 0 and 
 
 Every variable has a **name** and a **data type** that determines the kind of data it can hold. 
 
-<div class="important" markdown="block">
+<div class="imp" markdown="block">
 There are two types of variables in Java: 
  
 * **Primitive variables** that hold one simple unit of data, like a number
@@ -97,7 +97,7 @@ When you create a **primitive variable** Java will set aside enough bits in memo
 
 ![image](Figures/variables.png)
 
-<div class="important" markdown="block">
+<div class="imp" markdown="block">
 
 #### DECLARE
 {:.no_toc}
@@ -173,7 +173,7 @@ While you can name your variable almost anything, there are some rules. A variab
 
 🚫 You cannot use any of the keywords or reserved words as variable names in Java (`for`, `if`, `class`, `static`, `int`, `double`, etc). For a complete list of keywords and reserved words, see [https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9).
 
-<div class="important" markdown="block">
+<div class="imp" markdown="block">
 
 **Variable Naming Guidelines:**
 
