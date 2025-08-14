@@ -121,6 +121,12 @@ int score = 4;
 
 </div>
 
+### Concatenation
+
+![image-small](Figures/concatenation.png)
+
+When you are printing out variables, you can use the **string concatenation** operator ``+`` to combine them with another string inside System.out.print. 
+> Never put variables inside quotes ``""`` because that will print out the variable name letter by letter. You do not want to print out the variable name, but the *value of the variable* in memory. 
 
 <div class="task" markdown="block">
 
