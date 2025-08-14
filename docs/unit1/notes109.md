@@ -19,6 +19,12 @@ nav_order: 10
 
 ---
 
+<!--
+"Have you ever had to tell two people with the same first name apart? How did you do it?"
+Relate this to how Java tells methods apart using their signatures.
+
+-->
+
 ## Methods and Procedural Abstraction
 
 Up until now, all of our code has been in the `main` method, but complex programs are made up of many methods.  
