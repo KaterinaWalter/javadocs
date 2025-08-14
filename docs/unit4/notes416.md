@@ -15,7 +15,7 @@ nav_order: 16
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.16]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.16](https://runestone.academy/ns/books/published/csawesome2/topic-4-16-recursion.html) 
 
 ---
 
