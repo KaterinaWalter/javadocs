@@ -115,7 +115,7 @@ Inside the class, there can be a **main method** that starts the program.
 * In other programming languages, methods are called _functions_ or _procedures_.
 * The `main()` method is the _entry point_ for the program.
 
-<div class="important" markdown="block">
+<div class="imp" markdown="block">
   
 Template for a simple Java program with a `main()` method:
 
