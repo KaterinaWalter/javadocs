@@ -34,7 +34,7 @@ You can traverse an `ArrayList` in several ways:
    for (String name : nameList) {
        System.out.println(name);
    }
-````
+   ```
 
 2. **Regular for loop (with index)**
    Useful when you need to know the index of the element or change elements.
