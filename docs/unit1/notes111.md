@@ -25,6 +25,14 @@ There are lots of mathematical methods in the `Math` class that you might want t
 
 The `Math` class is part of the `java.lang` package. Classes in the `java.lang` package are available by default. The `Math` methods are **class methods** (or **static** methods) which means you can call them by just using `ClassName.methodName()`.
 
+<!--
+Play Rock-Paper-Scissors with student volunteers: Enter the following command into the Coding Exercise window to generate a random integer from 1 to 3, inclusive. 
+System.out.println( (int) (Math.random()*3 + 1));
+Ask one student at a time to challenge the computer in a game of Rock-Paper-Scissors. You can have students choose at the same time you run the command or the student can turn their back. Explain that a computer choice of 1 =  Paper, 2 = Rock, &  3 = Scissors 
+
+Ask students to share aloud other situations where it  would be necessary to generate random numbers…other games, lottery, etc.
+-->
+
 ---
 
 ## Mathematical Functions
