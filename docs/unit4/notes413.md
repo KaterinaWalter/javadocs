@@ -15,7 +15,7 @@ nav_order: 13
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.13]() 
+📖 This page is a condensed version of [CSAwesome Topic 4.13](https://runestone.academy/ns/books/published/csawesome2/topic-4-13-2Darray-algorithms.html) 
 
 ---
 
