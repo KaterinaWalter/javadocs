@@ -49,8 +49,14 @@ When you play a game, it will often have a `score`. Scores often start at 0 and 
 
 Every variable has a **name** and a **data type** that determines the kind of data it can hold. 
 
-There are two types of variables in Java: **primitive variables** that hold values of simple types like numbers and **object (reference) variables** that hold a reference to a more complex group of data. 
-> A _reference_ is a way to find the object (like a UPS tracking number helps you find your package).
+<div class="important" markdown="block">
+There are two types of variables in Java: 
+ 
+* **Primitive variables** that hold one simple unit of data, like a number
+* **Object (reference) variables** that hold a reference to a more complex set of data 
+ > A _reference_ is a way to locate the object (like a UPS tracking number helps you find your package)
+ 
+</div>
 
 _Primitive Types tested on the AP Exam:_
 - `int` which can represent **integers**, i.e. numbers with no fractional part such as 3, 0, -76, and 20393.
@@ -67,9 +73,7 @@ A data type is a set of possible _values_ (a domain) but also a set of _operatio
 
 <div class="task" markdown="block">
 
-**Check Your Understanding:** 
-
-💬 With the people at your table, discuss the situations below. Select the appropriate data type out of the following choices: `int`, `double`, `boolean`, `String`
+💬 With the people at your table, discuss the situations below. **Select the appropriate data type** out of the following choices: `int`, `double`, `boolean`, `String`
  
 - What type should you use to represent the average grade for a course?  
 - What type should you use to represent the number of people in a household?  
@@ -81,9 +85,10 @@ A data type is a set of possible _values_ (a domain) but also a set of _operatio
 
 ### Declaring Variables in Java
 
-To create a variable, you must tell Java its data type and its name. Creating a variable is also called **declaring a variable**. The type is a keyword like `int`, `double`, or `boolean`, but you get to make up the name for the variable. When you create a **primitive variable** Java will set aside enough bits in memory for that primitive type and associate that memory location with the name that you used.
+Creating a new variable is also called **declaring a variable**. The type must be a recognized keyword like `int`, `double`, or `boolean`, but you get to make up the name for the variable. 
 
-Computers store all values using **bits** (binary digits). A **bit** can represent two values and we usually say that the value of a bit is either 0 or 1. When you declare a variable, you have to tell Java the type of the variable because Java needs to know how many bits to use and how to represent the value. The 3 different primitive types all require different number of bits. An integer gets 32 bits of memory, a double gets 64 bits of memory and a boolean could be represented by just one bit.
+When you create a **primitive variable** Java will set aside enough bits in memory for that primitive type and associate that _memory location_ with the name that you used.
+> Computers store all values using **bits** (binary digits). A **bit** can represent two values and we usually say that the value of a bit is either 0 or 1. 
 
 ![image](Figures/typesAndSpace.png)
 > Examples of variables with names and values. Notice that the different types get a different amount of memory space.
@@ -130,8 +135,6 @@ When you are printing out variables, you can use the **string concatenation** op
 
 <div class="task" markdown="block">
 
-**Coding Exercise — String Concatenation**
-
 In your Java file in GitHub Codespaces, type and run each line below in the `main` method. Observe the output, then change values, add/remove spaces, and (on purpose) put quotes around a variable name to see what happens.
 
 ```java
@@ -153,64 +156,10 @@ System.out.println("Hi " + name);
 
 </div>
 
-{:.highlight}
-**Note:** Variables are never put inside quotes (`""`) in `System.out.print` statements. That would print the variable **name** instead of its **value**.
+
 
 <div class="task" markdown="block">
 
-**Check Your Understanding — Find the Declarations**
-In the code below, list all the **variable declarations** (type + name).
-
-```java
-public class Test2 {
-    public static void main(String[] args) {
-        int numLives;
-        numLives = 0;
-        System.out.println(numLives);
-        double health;
-        health = 8.5;
-        System.out.println(health);
-        boolean powerUp;
-        powerUp = true;
-        System.out.println(powerUp);
-    }
-}
-```
-
-*Write your answers as comments or bullet points.*
-
-</div>
-
-<br>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding — Find the Initializations**
-In the code below, list all the **initializations** (first time a variable is set to a value).
-
-```java
-public class Test2 {
-    public static void main(String[] args) {
-        int numLives;
-        numLives = 0;
-        System.out.println(numLives);
-        double health = 8.5;
-        System.out.println(health);
-        boolean powerUp = true;
-        System.out.println(powerUp);
-    }
-}
-```
-
-*Write your answers as comments or bullet points.*
-
-</div>
-
-The equal sign `=` here doesn't mean the same as it does in a mathematical equation where it implies that the two sides are equal. Here it means set the value in the memory location associated with the variable name on the left to a **copy** of the value on the right. A variable must be on the left side of the `=` and a value or expression on the right.
-
-<div class="task" markdown="block">
-
-**Coding Exercise — Assignment Order (Codespaces)**
 
 1. Type the **wrong** assignment below, run it, and read the compiler error.
 2. Then fix it and run again.
@@ -221,80 +170,26 @@ int score;
 System.out.println(score);
 ```
 
-**Fix:**
-
-```java
-int score;
-score = 4;            // correct
-System.out.println(score);
-```
-
 </div>
 
-<div class="task" markdown="block">
-
-**Check Your Understanding — Fill in the Blanks**
-
-1. Declare `age` to be an integer and set its value to 5.
-   *Your answer:* `_____ age = _____;`
-
-2. What type should you use for a shoe size like 8.5?
-   *Your answer:* `_____`
-
-3. What type should you use for a number of tickets?
-   *Your answer:* `_____`
-
-</div>
-
----
 
 ### Naming Variables
 
-While you can name your variable almost anything, there are some rules. A variable name should start with an alphabetic character and can include letters, numbers, and underscores `_`. It must be all one word with no spaces.
+While you can name your variable almost anything, there are some rules. A variable name should always start with an alphabetic character and can include letters, numbers, and underscores `_`. **It must be all one word with no spaces.**
 
-You can't use any of the keywords or reserved words as variable names in Java (`for`, `if`, `class`, `static`, `int`, `double`, etc). For a complete list of keywords and reserved words, see [https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9).
-
-The name of the variable should describe the data it holds. A name like `score` helps make your code easier to read. A name like `x` is not a good variable name in programming, because it gives no clues as to what kind of data it holds. Do not name your variables extremely long names on the AP exam.
+You also can't use any of the keywords or reserved words as variable names in Java (`for`, `if`, `class`, `static`, `int`, `double`, etc). For a complete list of keywords and reserved words, see [https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se14/html/jls-3.html#jls-3.9).
 
 <div class="important" markdown="block">
 
 **Variable Naming Guidelines:**
 
-* Use meaningful variable names.
-* Start variable names with a lowercase letter and use camelCase.
-* Variable names are case-sensitive and spelling-sensitive — every use must match the declaration.
-* Never put variables inside quotes (`" "`).
-
-The convention in Java is to start a variable name with a lowercase letter and uppercase the first letter of each additional word, for example `gameScore`. This is called **camel case**. Another option is to use underscore `_` to separate words, but no spaces are allowed.
-
-<div class="task" markdown="block">
-
-**Coding Exercise — Case Sensitivity (Codespaces)**
-Type the lines below. The second line is intentionally wrong. Run it, read the error, then fix it to use the correct variable name.
-
-```java
-int gameScore = 0;                 // camelCase
-System.out.println("gameScore is " + gamescore);  // wrong name on purpose
-```
+* Use a meaningful variable name that describe the data it holds.
+* Start variable names with a lowercase letter and use `camelCase` for names with multiple words.
+ > Variable names are case-sensitive and spelling-sensitive... every use must match the original declaration!
 
 </div>
 
-<br>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding — Camel Case Names**
-
-1. Camel case name for a variable that represents a shoe size?
-   *Your answer:* `__________`
-
-2. Camel case name for a variable that represents the top score?
-   *Your answer:* `__________`
-
-</div>
-
----
-
+<!--
 #### Debugging Challenge : Weather Report
 
 Debug the following code that reads out a weather report. Make sure the data types match the values put into the variables. Can you find all the bugs and get the code to run? Work with a programming buddy if you get stuck.
@@ -358,6 +253,7 @@ System.out.println("Do " + pluralNoun2 + " like them too?");
 ```
 
 </div>
+-->
 
 ---
 
@@ -377,31 +273,6 @@ double gpa = 3.5;
 * (AP 1.2.A.3) A **reference** type, like `String`, is used to define objects that are not primitive types.
 * (AP 1.2.B.1) The three primitive data types used in this course are **`int`** (integer numbers), **`double`** (decimal numbers), and **`boolean`** (true or false).
 * `String` is a reference data type representing a sequence of characters.
-
----
-
-### AP Practice
-
-<div class="task" markdown="block">
-
-**Multiple Choice**
-Which of the following pairs of declarations are the most appropriate to store a student’s average course grade in the variable `GPA` and the number of students in the variable `numStudents`?
-
-* A. `int GPA; int numStudents;`
-* B. `double GPA; int numStudents;`
-* C. `double GPA; double numStudents;`
-* D. `int GPA; boolean numStudents;`
-* E. `double GPA; boolean numStudents;`
-
-<details>
-<summary>ANSWER:</summary>
-
-**B** — the average can be decimal (`double`), and the number of students is an integer (`int`).
-
-</details>
-
-</div>
-
 
 ---
 
