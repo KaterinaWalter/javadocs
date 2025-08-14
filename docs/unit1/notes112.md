@@ -19,6 +19,10 @@ nav_order: 13
 
 ---
 
+<!--
+Print out the Creature coloring sheets and crayons/markers or bring cookie cutters and playdough to class. Ask students to decorate the turtle cutouts or playdough cutouts. Tell them they have all made objects of the Creature class (or other cookie-cutter shapes). Ask them to assign some attributes such as name and color. Ask them to come up with behavior or method names such as goForward and turn.
+-->
+
 Java is an **object-oriented programming** language. That means that one of the primary ways of designing and organizing a Java program is in terms of **objects**. Objects combine data and the code that operates on that data into a single unit.
 
 To create objects, we first define a **class** which provides a blueprint for creating the objects. In Java, all programs are built out of classes. This is why every Java program starts with `public class`.
