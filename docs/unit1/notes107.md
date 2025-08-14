@@ -19,6 +19,15 @@ nav_order: 8
 
 ---
 
+<!--
+Begin with a question: "Who do you think wrote the code to make System.out.println work?
+Use System.out.println("Hello, World!"); in Java.
+Explain that this method is part of the java.lang package, which is automatically available in every Java program.
+James Gosling and his team at Sun Microsystems developed Java and the java.lang library that comes with Java.
+Ask:  How do we know how to use System.out.println the right way?”
+Show the Java doc for https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/io/PrintStream.html and see if you can find the println methods.
+-->
+
 We’ve already been using `System.out.println()` to print text. That method lives in the Java **API**—the Application Programming Interface for Java’s standard libraries.
 
 - A **library** is a collection of prewritten code (classes) you can reuse.
