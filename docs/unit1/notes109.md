@@ -27,7 +27,7 @@ Relate this to how Java tells methods apart using their signatures.
 
 ## Methods and Procedural Abstraction
 
-Up until now, all of our code has been written as statements in the `main` method, but complex programs are made up of many **methods**.  
+Up until now, all of our code has been written as statements in the `main` method, but complex programs are made up of many **methods**. We divide a program into methods to organize the code and avoid repetition. 
 
 <html>
     <dl>
@@ -42,7 +42,7 @@ A **block** of code is any section enclosed in `{ }`. These _named blocks of cod
 <html>
     <dl>
         <dt>Procedural Abstraction</dt>
-        <dd>Allows a programmer to use a method without knowing exactly how it works, i.e. "abstracting away" the details.</dd>
+        <dd>Allowing a programmer to use a method without knowing exactly how it works, i.e. "abstracting away" the details.</dd>
     </dl>
 </html>
 
@@ -51,149 +51,64 @@ A **block** of code is any section enclosed in `{ }`. These _named blocks of cod
 
 ### Method Calls
 
-We divide a program into methods to organize the code and avoid repetition.  
-A **method call** is when the code "calls out" the method's name to run it. It always includes parentheses `()` and may include data (arguments) inside.
-
-Example:
-
+📣 A **method call** is when the code "calls out" a method's name to run it. It always includes parentheses `()` and may include data (arguments) inside.
 ```java
-// Method call
 methodName();
 ````
+> For example, when we write the statement ``System.out.println("Hello World");``, we are _calling_ the ``println()`` _method_ to print out the text "Hello World".
 
-When a method ends, control returns to the line immediately after the method call.
+{:.highlight}
+✋ A method call **interrupts** the _sequential execution_ of statements, causing the program to first execute the statements in the method before continuing. Once the last statement in the method has been executed or a `return` statement is executed, the flow of control is returned to the point immediately following where the method was called.
 
-Every method call is followed by **parentheses**. The parentheses ``()`` after method names are there in case you need to give the method parameters (data) to do its job, which we will see in the next lesson. You must always include the parentheses after the method name.
+Every method call is followed by **parentheses**. The parentheses ``()`` after method names are there in case you need to give the method some **parameters/data** to do its job, which we will see in the next lesson.
 
+### Method Header/Signature
 
-{:.important}
-📣 `object.method();` is used to **call** an object's method!
+When using methods in a library or API, we can look up the **method signature** (or **method header**) in its documentation.  A **method header** is the first line of a method that includes the method name, the return type, and the parameter list of parameters and their data types. The **return type** is the type of value that the method returns; in this lesson, we'll just look at **void** return types which means the method doesn't return anything. The **method signature** is the method header without the return type, just the method name and its parameter list.  The **parameter list** is a list of variables and their data types that are passed to the method when it is called. The parameter list is enclosed in parentheses and separated by commas; it can be empty with no parameters although the parentheses must be present. 
 
-{:.important}
-📣 `object.method(arguments);` is used to call an object's method _and_ provide some **arguments** (actual parameters) to do its job.
+For example, the ``PrintStream`` class documented in [Oracle - Java Documentation](https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html) contains the following method signatures for ``println`` that we use in ``System.out.println()``: 
 
-### Procedural Abstraction
+- ``void println()`` which has an empty parameter list with no parameters 
+- ``void println(String x)`` which will print out a ``String`` value
+- ``void println(int x)`` which will print out an ``int`` value
 
-**Procedural abstraction** allows a programmer to use a method and not worry about the details of how it exactly works. For example, we know that if we hit the brakes, the car will stop, and we can still use the brakes even if we don't really know how they work.
+We can call these methods with the appropriate arguments to print out the value we want. The **argument** is the actual value that is passed to the method when it is called.  Here are the method calls that correspond to the method signatures above:
 
-You will learn to write your own methods in Unit 5. In this unit, you should be able to **use** methods already written for you and figure out what they do. 
+- ``System.out.println();`` // prints a newline
+- ``System.out.println("Hello World");`` // prints a String
+- ``System.out.println(42);`` // prints an int
 
----
+Compare the method signature of ``println(String x)`` with the method call ``println("Hello World");`` below. The method signature contains the method name and the parameter type and variable. The method call contains only the method name and the argument value. The argument must be compatible with the data type of the parameter in the method signature and is saved in the parameter variable when the method is called. Many people use the terms parameter and argument interchangeably.
 
-### **Practice: Adding Another Verse to a Song**
-
-<div class="task" markdown="block">
-
-Type this in your Codespace, press run.
-Scroll down to the section marked **TODO** and add lines to create a second verse about a duck (or another animal) using the existing `intro()` and `chorus()` methods.
-
-```java
-public static void intro() {
-    System.out.println("Old MacDonald had a farm");
-    chorus();
-}
-
-public static void chorus() {
-    System.out.println("E-I-E-I-O");
-}
-
-public static void main(String[] args) {
-    intro();
-    System.out.println("And on that farm they had a cow.");
-    chorus();
-    System.out.println("With a moo moo here and a moo moo there");
-    System.out.println("Here a moo, there a moo, everywhere a moo moo");
-    
-    // TODO:
-    // 1. Call intro()
-    // 2. Print "And on that farm..." with your animal
-    // 3. Call chorus()
-    // 4. Print lines with the correct sounds
-    // 5. Call intro() again
-}
-```
-
-</div>
-
----
-
-## Method Signature, Parameters, and Arguments
-
-A **method header** (or signature with return type) contains:
-
-* **Return type**: The type of value returned (or `void` if nothing is returned).
-* **Method name**
-* **Parameter list**: variables and their data types.
-
-The **method signature** (in strict terms) is the method name + parameter list (no return type).
-
-Example from `PrintStream`:
-
-* `void println()`
-* `void println(String x)`
-* `void println(int x)`
+![image](Figures/method-parts.png)
 
 ### Parameters vs Arguments
+
+We can make methods even more powerful and more abstract by giving them parameters for data that they need to do their job. A **parameter** (sometimes called a **formal parameter**) is a variable declared in the header of a method or constructor and can be used inside the body of the method. This allows values or arguments to be passed and used by a method. An **argument** (sometimes called an **actual parameter**) is a value that is passed into a method when the method is called and is saved in the parameter variable. 
 
 * **Parameter**: Variable declared in the method header.
 * **Argument**: Actual value passed in when calling the method.
 
+When a method is called, the right method definition is found by checking the **method signature** or **header** at the top of the method definition to match the method name, the number of arguments, the data types for the arguments and the return type. A method signature for a method with parameters consists of the method name and the ordered list of parameter types. A method signature for a method without parameters consists of the method name and an empty parameter list.
+
 ```java
-// Method header (parameters)
+// Method signature (parameters)
 public static void verse(String animal, String sound) { }
 
 // Method call (arguments)
 verse("cow", "moo");
 ```
 
----
+![image](Figures/args2paramsFarm.png)
+> Here's what that looks like with the two method calls above. The arguments like "cow" and "moo" are saved into the parameter variables ``animal`` and ``sound`` with each method call.
 
-### **Practice: Add a Verse with Parameters**
+Java uses **call by value** when it passes arguments to methods. This means that a copy of the value in the argument is saved in the parameter variable. Call by value initializes the parameters with copies of the arguments. If the parameter variable changes its value inside the method, the original value outside the method is not changed.
 
-<div class="task" markdown="block">
+### Overloading Methods
 
-Type this in your Codespace, press run.
-Scroll to `main()` and add:
+Methods are **overloaded** when they share the same name but have different **parameter** lists. The compiler determines which method to call based on the number and types of **arguments** passed to the method. 
 
-1. `verse("goose", "honk");` then `intro();`
-2. Another `verse()` call with an animal/sound of your choice, then `intro();`
-
-```java
-public static void intro() {
-    System.out.println("Old MacDonald had a farm");
-    chorus();
-}
-
-public static void chorus() {
-    System.out.println("E-I-E-I-O");
-}
-
-public static void verse(String animal, String sound) {
-    System.out.println("And on this farm, they had a " + animal);
-    chorus();
-    System.out.println("With a " + sound + " " + sound + " here and a " + sound + " " + sound + " there");
-    System.out.println("Here a " + sound + ", there a " + sound + ", everywhere a " + sound + " " + sound);
-}
-
-public static void main(String[] args) {
-    intro();
-    verse("cow","moo");
-    intro();
-    verse("duck","quack");
-    intro();
-    // TODO: Add goose + honk, intro, and one more animal + sound
-}
-```
-
-</div>
-
----
-
-## Overloading
-
-Methods are **overloaded** when they share the same name but have different parameter lists.
-
-Example: `println()` in `PrintStream`:
+_Example:_ `println()` in `PrintStream`:
 
 * `println()` → prints newline
 * `println(String x)` → prints a string
@@ -201,50 +116,23 @@ Example: `println()` in `PrintStream`:
 
 ---
 
-## Group Challenge: Song with Parameters
-
-<div class="task" markdown="block">
-
-Write a program that prints 3 verses of *The Ants Go Marching*.
-Use `chorus(String num)` and `verse(String num, String action)` methods.
-Call them in `main()` with:
-
-1. `"one", "suck a thumb"`
-2. `"two", "tie a shoe"`
-3. `"three", "climb a tree"`
-
-```java
-public static void chorus(String num) {
-    System.out.println("The ants go marching " + num + " by " + num + ", hurrah, hurrah");
-    System.out.println("The ants go marching " + num + " by " + num + ", hurrah, hurrah");
-}
-
-public static void verse(String num, String action) {
-    System.out.println("The ants go marching " + num + " by " + num);
-    System.out.println("The little one stops to " + action);
-    System.out.println("And they all go marching down to the ground");
-    System.out.println("To get out of the rain, BOOM! BOOM! BOOM! BOOM!\n");
-}
-
-public static void main(String[] args) {
-    // TODO: Call chorus and verse 3 times with correct arguments
-}
-```
-
-</div>
-
----
-
 ## Summary
 
-* **Method**: Named block of code that runs when called.
-* **Procedural abstraction**: Use a method without knowing the details of its implementation.
-* **main method**: Where program execution begins.
-* **Method signature**: Name + ordered list of parameter types.
-* **Parameter**: Variable in the method header.
-* **Argument**: Value passed when calling a method.
-* **Call by value**: Java passes copies of argument values to parameters.
-* **Overloading**: Multiple methods with the same name but different parameter lists.
+- (AP 1.9.A.1) A **method** is a named block of code that only runs when it is called. A block of code is any section of code that is enclosed in braces.
+
+- (AP 1.9.A.1) **Procedural abstraction** allows a programmer to use a method by knowing what the method does even if they do not know how the method was written.
+
+- (AP 1.9.B.5) A method call interrupts the sequential execution of statements, causing the program to first execute the statements in the method before continuing. Once the last statement in the method has been executed or a return statement is executed, the flow of control is returned to the point immediately following where the method was called.
+
+- (AP 1.9.A.2) A **parameter** is a variable declared in the header of a method or constructor and can be used inside the body of the method. This allows values or arguments to be passed and used by a method or constructor. 
+
+- (AP 1.9.A.2) A **method signature** for a method with parameters consists of the method name and the ordered list of parameter types. A method signature for a method without parameters consists of the method name and an empty parameter list.
+
+- (AP 1.9.B.3) An **argument** is a value that is passed into a method when the method is called. The arguments passed to a method must be compatible in number and order with the types identified in the parameter list of the method signature. When calling methods, arguments are passed using call by value. 
+
+- (AP 1.9.B.3) **Call by value** initializes the parameters with copies of the arguments.
+
+- (AP 1.9.B.4) Methods are said to be **overloaded** when there are multiple methods with the same name but different signatures.
 
 ---
 
