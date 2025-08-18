@@ -35,12 +35,18 @@ Each class has **constructors** which are used to initialize the attributes in a
 
 A new object is created with the `new` keyword followed by the class name, which is a call to the constructor (`new ClassName()`).
 
-For example:
+<div class="imp" markdown="block">
+    
+🏗️ Syntax pattern to create a `new` **object** and call a **constructor**:
 
 ```java
-// To create a new object and call a constructor:
-ClassName variableName = new ClassName(arguments);
+ClassName variableName = new ClassName(parameters);
+```
 
+</div>
+
+**Examples:**
+```java
 World habitat = new World();    // create a new World object
 Turtle t = new Turtle(habitat); // create a new Turtle object
 ```
@@ -49,7 +55,10 @@ Turtle t = new Turtle(habitat); // create a new Turtle object
 
 ### The World Class Constructors
 
-There can be more than one constructor defined in a class. This is called **overloading** the constructor.
+There can be _more than one constructor_ defined in a class. This is called **overloading** the constructor. 
+
+{:.important}
+Constructors are considered **overloaded** when there are multiple constructors, but the constructors have different _signatures_. They can differ in the number, type, and/or order of parameters (_input_). Think of overloading constructors as providing different ways of "setting up" an object, depending on how much information you want to specify about the object.
 
 The `World` class has two constructors:
 
@@ -76,6 +85,9 @@ Turtle t2 = new Turtle(50, 100, world1);
 ```
 
 > **Note:** The order of arguments matters — `Turtle(int x, int y, World w)` is **not** the same as swapping them.
+
+{:.highlight}
+🗺️ The Turtle world does not use the Cartesian coordinate system with `(0,0)` in in the middle the screen. Instead: `(0,0)` is at the **top left corner** of the screen, `x` increases to the right, and `y` increases towards the bottom of the screen.
 
 ---
 
