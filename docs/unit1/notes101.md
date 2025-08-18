@@ -17,24 +17,28 @@ nav_order: 2
 {:.note}
 📖 This page is a condensed version of [CSAwesome Topic 1.1](https://runestone.academy/ns/books/published/csawesome2/topic-1-1-intro-algorithms.html) 
 
----
+<br>
 
+<span class="highlighter"> 
+<strong>✴✴✴ NEW UNIT/SECTION! ✴✴✴</strong> Create a blank Java program to take your class notes in for the next few lessons. <em>Click on the collapsed heading</em> below for step-by-step instructions.  
+</span>
 
 <html>
-
-  <div class="setup" markdown="block">
-
   <details>
     <summary>📓 <strong class="text-green-200">NOTES PROGRAM SETUP INSTRUCTIONS</strong></summary>
-    
+
+<div class="setup" markdown="block">
+
 1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
-3. Specify the **repository name**: `CS2-Unit1A-Notes`
+3. Specify the **repository name**: `CS2-Unit1a-Notes`
 4. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
     > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 📂
 5. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
 6. Click `Create Codespace on main` and wait for the environment to load, _then you're ready to code_!
 7. 📝 Take notes in this Codespace during class, writing **code** & **comments** along with the instructor.
+
+</div>
 
 <br>
 
@@ -53,9 +57,7 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 </div>
 
-  </details>
-
-</div>
+</details>
 
 </html>
 
