@@ -47,28 +47,18 @@ APIs and libraries are essential to programming because they allow you to use co
 
 ### The `java.lang` Package
 
-`java.lang` is imported automatically. It includes core classes like `String` and `System`, which we use in `System.out.println`.
+The ``java.lang`` package contains built-in classes and interfaces that are fundamental to the Java programming language, such as the ``String`` class and the ``System`` class which we use in ``System.out.println``. 
+> Take a look at the docs for the `java.lang` package here: [Java Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html). Can you find the ``System`` class in the documentation?
 
-Browse the docs:  
-- Package summary: <https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html>  
-- `PrintStream.println` overloads: <https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding — `println` overloads**  
-How many distinct `println(...)` methods are listed in `PrintStream`?
-
-</div>
+📖 **Documentation** found in API specifications and libraries is essential to understanding the _attributes_ and _behaviors_ of a class defined by the API. 
+> The ``System`` class has an object called ``out`` that is type ``PrintStream``, and the ``PrintStream`` class has a method called ``println()`` that we use to print to the screen. 
 
 <div class="task" markdown="block">
 
-**Multiple Choice — Why use APIs/libraries?**  
-What’s the main purpose of APIs and libraries in programming?
+**Check Your Understanding:**  
 
-A) Write all code from scratch  
-B) **Use code written by others** ✅  
-C) Create new programming languages  
-D) Compile code
+1. How many distinct `println(...)` methods are listed in the `PrintStream` class [official documentation](https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html)?
+2. Try finding the same documentation on **DevDocs**, an unofficial collection of documentation (_linked in the top right corner of this website_). Do you prefer looking at the official docs or DevDocs?
 
 </div>
 
@@ -82,11 +72,15 @@ D) Compile code
     <dt>Attributes/Fields)</dt>
     <dd><strong>Data</strong> the object “knows” (e.g., <code>name</code>, <code>height</code>, <code>width</code>, <code>position</code></dd>
     <dt>Behaviors/Methods</dt>
-    <dd><strong>Actions</strong> the object “does” (e.g., <code>forward()</code>, <code>turnLeft()</code>)</dd>
+    <dd><strong>Actions</strong> the object “does” (e.g., <code>forward()</code>, <code>turnLeft()</code>) or what can be done to it.</dd>
   </dl>
 </html>
 
+We will learn more about classes, objects, attributes, and methods in the next lessons, but this lesson introduces them to explore APIs.
+
 ![image-small](Figures/turtleOOD.png)
+
+> This diagram of a turtle shows some of the generic `Turtle` **attributes** like `name`, `width`, `height`, `color` in the body of the turtle and its **methods** like `forward()`, `backward()`, written around the turtle. 
 
 <div class="imp" markdown="block">
   
@@ -105,6 +99,8 @@ myrtle.turnRight();
 A quick tip to tell **methods** vs **attributes** in docs:
 
 * **Methods** always have _parentheses_: `forward()`, `println(...)`.
+  * Sometimes these are empty, but always necessary.
+  * And sometimes they contain **data** that the method needs to do its job (_for example: what to print_).
 * **Attributes/fields** do not: `out`, `length`, `width`.
 
 Explore the docs for a simple `Turtle`: [📖 SimpleTurtle Documentation](https://cseweb.ucsd.edu/~ricko/CSE11/turtleClassesDocs/turtleClasses/SimpleTurtle.html)
@@ -123,12 +119,19 @@ Explore the docs for a simple `Turtle`: [📖 SimpleTurtle Documentation](https:
 
 ## Summary
 
-* (AP 1.7.A.1) **Libraries** are collections of classes written by others.
-* (AP 1.7.A.1) An **API** describes how to use those classes.
-* (AP 1.7.A.1) Good **documentation** is essential for understanding a class’s attributes and behaviors.
-* (AP 1.7.A.1) Classes are organized into **packages** that you can import.
-* (AP 1.7.A.1) A **class** defines a reference type; you create **objects** (instances) from it.
-* (AP 1.7.A.2) **Attributes (fields)** are the object’s data; **behaviors (methods)** are what it can do.
+- (AP 1.7.A.1) **Libraries** are collections of classes written by other programmers. 
+
+- (AP 1.7.A.1) An **Application Programming Interface (API)** specification informs the programmer how to use classes in a library. 
+
+- (AP 1.7.A.1) Documentation found in API specifications and libraries is essential to understanding the attributes and behaviors of a class defined by the API. 
+
+- (AP 1.7.A.1) Classes in the APIs and libraries are grouped into **packages** that can be imported into a program. 
+
+- (AP 1.7.A.1) A **class** defines a specific reference type and is the building block of object-oriented programming. Existing classes and class libraries can be utilized to create objects.
+
+- (AP 1.7.A.2) **Attributes** refer to the data related to the class and are stored in variables. 
+
+- (AP 1.7.A.2) **Behaviors** refer to what instances of the class can do (or what can be done with it) and are defined by methods.
 
 ---
 
