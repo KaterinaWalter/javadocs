@@ -27,15 +27,29 @@ Relate this to how Java tells methods apart using their signatures.
 
 ## Methods and Procedural Abstraction
 
-Up until now, all of our code has been in the `main` method, but complex programs are made up of many methods.  
+Up until now, all of our code has been written as statements in the `main` method, but complex programs are made up of many **methods**.  
 
-A **method** is a named block of code that performs a task when it is called. (A **block** of code is any section enclosed in `{ }`.) In Java they are called *methods* — as in a method of doing something.
+<html>
+    <dl>
+        <dt>Method</dt>
+        <dd>A named block of code that performs a task/process when it is called.</dd>
+    </dl>
+</html>
 
-**Procedural abstraction** allows a programmer to use a method without knowing exactly how it works — just like you can drive a car without knowing every engineering detail.
+A **block** of code is any section enclosed in `{ }`. These _named blocks of code_ go by many names in different programming languages: _functions_, _procedures_, _subroutines_, etc. In Java they are called **methods**, as in a method of doing something. 
+> In this unit, you will learn how to use methods written by other programmers. In latter units, you will learn how to write your own methods.
 
----
+<html>
+    <dl>
+        <dt>Procedural Abstraction</dt>
+        <dd>Allows a programmer to use a method without knowing exactly how it works, i.e. "abstracting away" the details.</dd>
+    </dl>
+</html>
 
-## Method Calls
+**Procedural abstraction** means we can use a method that someone else wrote without knowing exactly how it works. We just need to know the method's name to call it and what it needs to do its job.
+> For example, we don't need to know how a car exactly works in order to drive. We know that if we hit the brakes, the car will stop; we can still use the brakes even if we don't really know how they exactly work. 
+
+### Method Calls
 
 We divide a program into methods to organize the code and avoid repetition.  
 A **method call** is when the code "calls out" the method's name to run it. It always includes parentheses `()` and may include data (arguments) inside.
