@@ -55,6 +55,9 @@ Every method call is followed by **parentheses**. The parentheses ``()`` after m
 {:.important}
 📣 `object.method();` is used to **call** an object's method!
 
+{:.important}
+📣 `object.method(arguments);` is used to call an object's method _and_ provide some **arguments** (actual parameters) to do its job.
+
 ### Procedural Abstraction
 
 **Procedural abstraction** allows a programmer to use a method and not worry about the details of how it exactly works. For example, we know that if we hit the brakes, the car will stop, and we can still use the brakes even if we don't really know how they work.
