@@ -58,19 +58,6 @@ Browse the docs:
 **Check Your Understanding — `println` overloads**  
 How many distinct `println(...)` methods are listed in `PrintStream`?
 
-**Answer:** `10` (one for each supported parameter type).
-
-</div>
-
-<div class="task" markdown="block">
-
-**Match the vocabulary**  
-- A collection of classes written by other programmers → **library**  
-- A collection of related classes organized to be imported → **package**  
-- A specification describing how to use a library → **API**  
-- The building blocks of Java and OOP → **class**  
-- A block of code that performs a specific task → **method**
-
 </div>
 
 <div class="task" markdown="block">
@@ -87,19 +74,30 @@ D) Compile code
 
 ### Turtle Library
 
-The **Turtle** library (by Dr. Barbara Ericson) lets you draw with an animated turtle that moves, turns, and draws lines. A **class** like `Turtle` defines the data (**attributes/fields**) and **behaviors/methods** shared by all turtle objects you create.
+The **Turtle** library (by Dr. Barbara Ericson) lets you draw with an animated turtle that moves, turns, and draws lines. A **class** like `Turtle` defines the data (**attributes/fields**) and **behaviors/methods** shared by all turtle-type **objects** you create. 
 
-![image](Figures/turtleOOD.png)
+![image-small](Figures/turtleOOD.png)
 
-- **Attributes** (fields): data the object “knows” (e.g., `name`, `height`, `width`, position).  
-- **Behaviors** (methods): actions the object “does” (e.g., `forward()`, `turnLeft()`).
+<html>
+  <dl>
+    <dt>Attributes/Fields)</dt>
+    <dd>Data the object “knows” (e.g., <code>name</code>, <code>height</code>, <code>width</code>, <code>position</code></dd>
+    <dt>Behaviors/Methods</dt>
+    <dd>Actions the object “does” (e.g., <code>forward()</code>, <code>turnLeft()</code>)</dd>
+  </dl>
+</html>
 
-You call methods with the **dot operator** (`.`), just like `System.out.println(...)`:
+<div class="imp" markdown="block">
+  
+📣 You **CALL** (activate/run) methods with the **dot operator** (`.`), just like `System.out.println()`:
 
 ```java
 yertle.forward();
 yertle.turnRight();
-````
+```
+> The code above calls two **methods** on the `yertle` object: first, `forward()` then `turnRight()`. These methods "belong" to the general `Turtle` class definition, but are being used on that specific **object** (_an instance of the class_). 
+
+</div>
 
 #### Reading API Documentation
 
