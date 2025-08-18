@@ -177,65 +177,74 @@ For example, computing the square root of a negative number is undefined, so the
 
 </div>
 
----
+### Software Validity and Use-Case Diagrams
 
-## Software Validity and Use-Case Diagrams
+🧪 Determining the preconditions and postconditions help us to test our code and determine the **validity** of our software. Software validity tests whether the software does what it is supposed to do before it is released.
 
-Preconditions and postconditions are also used in **software testing** and **design**.
+> Good software testers actually try to break the code! They try all kinds of input to see what the software will do because you never know what users will try or what conditions there will be. 
 
-* **Software validity**: ensuring a program does what it is supposed to do before release.
-* **Use-case diagrams**: show how different users (actors) interact with a system.
+💡 Preconditions and postconditions can also help us to design better software systems. Software designers often first draw a high-level **Use-Case Diagram** of a system that shows the different ways that a user might interact with a system before they build it. 
 
-Example: Restaurant System Use-Case Diagram
 ![Use Case Diagram of a Restaurant System](Figures/use-case-restaurant.png)
 
----
+> Here is a simple Use-Case Diagram of a restaurant system. It shows 2 actors in the system: the customer and the staff at the restaurant, and 3 use-cases in circles. A **Use-case** is a particular user interaction or situation in the system or software, and they often become methods in the program.
 
-### Example: Linking Preconditions/Postconditions Between Use-Cases
+After drawing a Use-Case Diagram, designers write down the preconditions and the postconditions for each Use-Case. Often the successful post-condition for one use-case becomes the preconditions for the next use-case. _For example:_
 
-**"Order Food"**
+- **Preconditions for "Order Food":** Customer enters restaurant. Staff is ready to take the order.
+- **Postconditions for "Order Food":** Customer orders the food. Staff takes the order.
+- **Preconditions for "Eat Food":** Customer has already ordered food. Staff has delivered food.
+- **Postcondition for "Eat Food":** Customer has consumed the food.
 
-* Preconditions: Customer enters, staff is ready
-* Postconditions: Food is ordered, order is taken
+<div class="task" markdown="block">
 
-**"Eat Food"**
+💬 **Discuss:** What are the *preconditions* and *postconditions* of the use-case "Pay for food"? Remember that these are often related to the other use-case conditions "order food" and "eat food".
 
-* Preconditions: Food has been ordered and delivered
-* Postconditions: Customer eats food
+</div>
 
----
+### Agile Software Development
 
-## Agile Software Development
-
-Two models:
-
-* **Waterfall**: Step-by-step, less adaptable.
-* **Agile**: Iterative, adaptable, frequent feedback.
+There are many different models for software development. 
+* The **Waterfall Model**, developed in the 1970s, is a step by step model where each phase is finished before the next phase begins.
+  * This model has recently been criticized because it is not very adaptable.
+* The more recent **Agile** development model involves _iterative_, _incremental_ development where teams works in short 2-3 week **sprints** to completely develop, test, and release a component of the project to the customer for feedback.
+  * It is very adaptable as project requirements change because of early testing, immediate customer feedback and collaboration.
 
 ![Waterfall vs Agile Models](Figures/waterfallVsAgile.png)
 
-### Video: Scrum Overview
+One very popular type of agile development is called **Scrum**. The following short video describes software development with Scrum.
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/TRcReyRYIMg" frameborder="0" allowfullscreen></iframe>
 
----
+<!--
 
-## Group Challenge: Preconditions in Algorithms
+Try this <a href="https://www.agilesparks.com/blog/wake-up-in-the-morning-game/" target="_blank">Wake Up In the Morning Game</a> in groups to practice the iterative and incremental agile development process.
 
-**In groups**:
-Come up with 4 steps for purchasing a product in an online store.
-For each step, list the preconditions and postconditions.
+-->
 
-(Optional: Draw a use-case diagram in [Creately.com](https://creately.com))
+#### Group Challenge: Preconditions in Algorithms
+{:.no_toc}
 
+<div class="task" markdown="block">
+
+1. Write down at least 4 steps that a user must do to **purchase a product**, for example a book about Java, in an online store.
+2. List the preconditions and postconditions for each step.
+
+**Optional:** Draw a use-case diagram in [Creately.com](https://creately.com)
+
+</div>
+ 
 ---
 
 ## Summary
 
-* **Comments** explain code for humans, not machines.
-* Three comment types: `/* */`, `//`, `/** */` (Javadoc).
-* **Preconditions**: must be true before execution.
-* **Postconditions**: must be true after execution.
+- (AP 1.8.A.1) **Comments** are written for both the original programmer and other programmers to understand the code and its functionality, but are ignored by the compiler and are not executed when the program is run. 
+
+- (AP 1.8.A.1) Three types of comments in Java include ``/* */``, which generates a block of comments, ``//``, which generates a comment on one line, and ``/** */``, which are Javadoc comments and are used to create API documentation.
+
+- (AP 1.8.A.2) A **precondition** is a condition that must be true just prior to the execution of a section of program code in order for the method to behave as expected. There is no expectation that the method will check to ensure preconditions are satisfied.
+
+- (AP 1.8.A.3) A **postcondition** is a condition that must always be true after the execution of a section of program code. Postconditions describe the outcome of the execution in terms of what is being returned  or the current value of the attributes of an object.
 
 ---
 
