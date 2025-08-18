@@ -21,16 +21,18 @@ nav_order: 8
 
 We have already been using `System.out.println()` to print text to the screen. That method belongs to the `Java API` – the **Application Programming Interface** for Java’s standard **libraries** and **packages**.
 
+## APIs, Libraries, Packages
+
 <html>
   <dl>
-    <dt>Library</dt>
+    <dt>📚 Library</dt>
     <dd>A collection of <strong>prewritten code</strong> (classes) that you can reuse in your own program.</dd>
-    <dt>Package</dt>
+    <dt>📦 Package</dt>
     <dd>A group of related classes that can be <strong>imported</strong> into a program, like a folder of classes in a library's file directory.</dd>
-    <dt>Method</dt>
-    <dd>A block of code that performs a specific task/process. Classes often contain many methods.</dd>
-    <dt>API</dt>
-    <dd><strong>Application Programming Interface</strong> refers to a library's documentation that tells the programmer <em>how to use</em> its classes and their methods.</dd>
+    <dt>👉 Method</dt>
+    <dd>A block of code that performs a specific task, like instructions for a process. Classes often contain many methods.</dd>
+    <dt>🖥️ API</dt>
+    <dd><strong>Application Programming Interface</strong> refers mainly to a library's documentation that tells the programmer <em>how to use</em> its classes and their methods.</dd>
   </dl>
 </html>
 
@@ -43,9 +45,7 @@ APIs and libraries are essential to programming because they allow you to use co
 
 </div>
 
----
-
-## `java.lang` package
+### The `java.lang` Package
 
 `java.lang` is imported automatically. It includes core classes like `String` and `System`, which we use in `System.out.println`.
 
@@ -85,18 +85,14 @@ D) Compile code
 
 </div>
 
----
-
-## Turtle library (intro)
+### Turtle Library
 
 The **Turtle** library (by Dr. Barbara Ericson) lets you draw with an animated turtle that moves, turns, and draws lines. A **class** like `Turtle` defines the data (**attributes/fields**) and **behaviors/methods** shared by all turtle objects you create.
 
-![](Figures/turtleOOD.png)
+![image](Figures/turtleOOD.png)
 
 - **Attributes** (fields): data the object “knows” (e.g., `name`, `height`, `width`, position).  
 - **Behaviors** (methods): actions the object “does” (e.g., `forward()`, `turnLeft()`).
-
-Docs for a simple Turtle: <https://www2.cs.uic.edu/~i101/doc/SimpleTurtle.html>
 
 You call methods with the **dot operator** (`.`), just like `System.out.println(...)`:
 
@@ -105,98 +101,22 @@ yertle.forward();
 yertle.turnRight();
 ````
 
-<div class="task" markdown="block">
-
-**Run Some Code (Codespaces)**
-In your Java program:
-
-1. Create a `World` and a `Turtle` named `yertle` in that world.
-2. Move `yertle` forward, turn right, then **add one more** `forward()` call.
-3. Show the world/animation according to the starter you’re using.
-
-Example method calls to add (after you’ve created the objects):
-
-```java
-yertle.forward();
-yertle.turnRight();
-// Add one more forward:
-yertle.forward();
-```
-
-</div>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding**
-
-1. When a turtle is first created, which way does it face?
-   **North** ✅
-
-2. In the program above, what *kind* of thing is `Turtle`?
-   **Class** ✅
-
-3. What kind of thing is `turnRight`?
-   **Method** ✅
-
-4. What kind of thing is the turtle’s position in the world?
-   **Attribute (field)** ✅
-
-</div>
-
----
-
-## Reading API docs quickly
+#### Reading API Documentation
 
 A quick tip to tell **methods** vs **attributes** in docs:
 
 * **Methods** always have parentheses: `forward()`, `println(...)`.
 * **Attributes/fields** don’t: `out`, `length`, `width`.
 
----
+Docs for a simple Turtle: [SimpleTurtle Documentation](https://www2.cs.uic.edu/~i101/doc/SimpleTurtle.html)
 
-## Parsons-style “L” drawing (concept walkthrough)
-
-To draw a sideways “L”, you would:
-
-1. Do the setup (create `World`, create `Turtle`).
-2. `turnRight()`
-3. `forward()`
-4. `turnLeft()`
-5. `forward(50)`
-6. Show the world.
-
-(If you’re practicing with a Parsons tool, arrange those lines in that order and ignore distractors like `right()` or missing parentheses.)
-
----
-
-## Groupwork: Turtle Drawing
-
-Make **yertle** draw a shape—square, zigzag, or a block letter—by combining `forward()` with `turnRight()`/`turnLeft()` multiple times. Pair up and iterate!
-
-Handy methods:
-
-* `yertle.forward();`
-* `yertle.turnLeft();`
-* `yertle.turnRight();`
-* `yertle.backward();`
-* `yertle.penUp();`
-* `yertle.penDown();`
+#### CSAwesome Exercises: Turtle Class
 
 <div class="task" markdown="block">
 
-**Coding Challenge (Codespaces)**
-Add a sequence of method calls to draw a shape. Aim for at least **4 moves** and **3 turns**.
+🐢 We will use the `Turtle` class to demonstrate using **objects** visually. 
 
-```java
-// Example outline for a square (tweak distances as you like)
-yertle.forward();
-yertle.turnRight();
-yertle.forward();
-yertle.turnRight();
-yertle.forward();
-yertle.turnRight();
-yertle.forward();
-```
+<a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-7-APIs-and-libraries.html"><button class="btn">CSAwesome 1.7</button></a>
 
 </div>
 
