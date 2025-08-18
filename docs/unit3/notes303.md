@@ -17,9 +17,11 @@ nav_order: 3
 {:.note}
 📖 This page is a condensed version of [CSAwesome Topic 3.3](https://runestone.academy/ns/books/published/csawesome2/topic-3-3-anatomy-of-class.html) 
 
+<div style="text-align: center;">
 <span class="highlighter-green"> 
-<strong>✴✴✴ NEW UNIT/SECTION! ✴✴✴</strong> Create a blank Java program to take your class notes in for the next few lessons. <em>Click on the collapsed heading below for GitHub instructions</em> ⤵  
+<strong>✴✴✴ NEW UNIT/SECTION! ✴✴✴</strong><br>Create a blank Java program to take your class notes in for the next few lessons.<br><em>Click on the collapsed heading below for GitHub instructions</em> ⤵  
 </span>
+</div>
 
 <html>
   <details>
