@@ -17,6 +17,16 @@ nav_order: 14
 {:.note}
 📖 This page is a condensed version of [CSAwesome Topic 1.13](https://runestone.academy/ns/books/published/csawesome2/topic-1-13-constructors.html) 
 
+#### CSAwesome Activities: Turtle Class
+
+<div class="task" markdown="block">
+
+🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
+
+👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-13-constructors.html"><button class="btn">CSAwesome Topic 1.13</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
+
+</div>
+
 ---
 
 A Java class defines what objects of the class know (**attributes**) and what they can do (**behaviors**).
