@@ -74,28 +74,29 @@ D) Compile code
 
 ### Turtle Library
 
-The **Turtle** library (by Dr. Barbara Ericson) lets you draw with an animated turtle that moves, turns, and draws lines. A **class** like `Turtle` defines the data (**attributes/fields**) and **behaviors/methods** shared by all turtle-type **objects** you create. 
-
-![image-small](Figures/turtleOOD.png)
+🐢 The **Turtle** library (by Dr. Barbara Ericson) lets you draw with an animated turtle that moves, turns, and draws lines. A **class** like `Turtle` defines the data (**attributes/fields**) and **behaviors/methods** shared by all turtle-type **objects** you create. 
+> The `Turtle` class is not tested on the AP Exam, but working with its visual interface is helpful when learning about **object-oriented programming** concepts. 
 
 <html>
   <dl>
     <dt>Attributes/Fields)</dt>
-    <dd>Data the object “knows” (e.g., <code>name</code>, <code>height</code>, <code>width</code>, <code>position</code></dd>
+    <dd><strong>Data</strong> the object “knows” (e.g., <code>name</code>, <code>height</code>, <code>width</code>, <code>position</code></dd>
     <dt>Behaviors/Methods</dt>
-    <dd>Actions the object “does” (e.g., <code>forward()</code>, <code>turnLeft()</code>)</dd>
+    <dd><strong>Actions</strong> the object “does” (e.g., <code>forward()</code>, <code>turnLeft()</code>)</dd>
   </dl>
 </html>
+
+![image-small](Figures/turtleOOD.png)
 
 <div class="imp" markdown="block">
   
 📣 You **CALL** (activate/run) methods with the **dot operator** (`.`), just like `System.out.println()`:
 
 ```java
-yertle.forward();
-yertle.turnRight();
+myrtle.forward();
+myrtle.turnRight();
 ```
-> The code above calls two **methods** on the `yertle` object: first, `forward()` then `turnRight()`. These methods "belong" to the general `Turtle` class definition, but are being used on that specific **object** (_an instance of the class_). 
+> Assume `myrtle` is a `Turtle` object. The code above calls two **methods** on that turtle: first, `forward()` then `turnRight()`. These methods "belong" to the general `Turtle` class definition, but are being used on that specific **object** (_an instance of the class_). 
 
 </div>
 
@@ -103,18 +104,18 @@ yertle.turnRight();
 
 A quick tip to tell **methods** vs **attributes** in docs:
 
-* **Methods** always have parentheses: `forward()`, `println(...)`.
-* **Attributes/fields** don’t: `out`, `length`, `width`.
+* **Methods** always have _parentheses_: `forward()`, `println(...)`.
+* **Attributes/fields** do not: `out`, `length`, `width`.
 
-Docs for a simple Turtle: [SimpleTurtle Documentation](https://www2.cs.uic.edu/~i101/doc/SimpleTurtle.html)
+Explore the docs for a simple `Turtle`: [📖 SimpleTurtle Documentation](https://cseweb.ucsd.edu/~ricko/CSE11/turtleClassesDocs/turtleClasses/SimpleTurtle.html)
 
-#### CSAwesome Exercises: Turtle Class
+#### CSAwesome Activities: Turtle Class
 
 <div class="task" markdown="block">
 
-🐢 We will use the `Turtle` class to demonstrate using **objects** visually. 
+🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
 
-<a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-7-APIs-and-libraries.html"><button class="btn">CSAwesome 1.7</button></a>
+👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-7-APIs-and-libraries.html"><button class="btn">CSAwesome Topic 1.7</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
 
 </div>
 
