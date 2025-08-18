@@ -30,13 +30,23 @@ Ask:  How do we know how to use System.out.println the right way?”
 Show the Java doc for https://docs.oracle.com/en/java/javase/22/docs/api/java.base/java/io/PrintStream.html and see if you can find the println methods.
 -->
 
-We’ve already been using `System.out.println()` to print text. That method lives in the Java **API**—the Application Programming Interface for Java’s standard libraries.
+We have already been using `System.out.println()` to print text to the screen. That method belongs to the `Java API` – the **Application Programming Interface** for Java’s standard **libraries** and **packages**.
 
-- A **library** is a collection of prewritten code (classes) you can reuse.
-- An **API** tells you how to use that library—names of classes, methods, parameters, etc.
-- A **package** groups related classes to avoid name conflicts and to organize a library.
+<html>
+  <dl>
+    <dt>Library</dt>
+    <dd>A collection of <strong>prewritten code</strong> (classes) that you can reuse in your own program.</dd>
+    <dt>Method</dt>
+    <dd>A block of code that performs a specific task/process. Classes often contain many methods.</dd>
+    <dt>API</dt>
+    <dd><strong>Application Programming Interface</strong> refers to a library's documentation that tells the programmer <em>how to use</em> its classes and their methods.</dd>
+    <dt>Package</dt>
+    <dd>A group of related classes that can be <strong>imported</strong> into a program, like a folder of classes in a library's file directory.</dd>
+  </dl>
+</html>
 
-Using APIs and libraries means you don’t reinvent the wheel—you stand on the shoulders of other programmers.
+APIs and libraries are essential to programming because they allow you to use code that has **already been written** by others. This saves you time and allows you to focus on the specific task you are trying to accomplish.
+> The terms library, API, and package are often used _interchangeably_ to mean similar things.
 
 ---
 
