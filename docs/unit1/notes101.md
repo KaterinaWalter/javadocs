@@ -19,12 +19,14 @@ nav_order: 2
 
 ---
 
+
 <html>
+
+  <div class="setup" markdown="block">
+
   <details>
     <summary>📓 <strong class="text-green-200">NOTES PROGRAM SETUP INSTRUCTIONS</strong></summary>
     
-<div class="setup" markdown="block">
-
 1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
 3. Specify the **repository name**: `CS2-Unit1A-Notes`
@@ -33,8 +35,6 @@ nav_order: 2
 5. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
 6. Click `Create Codespace on main` and wait for the environment to load, _then you're ready to code_!
 7. 📝 Take notes in this Codespace during class, writing **code** & **comments** along with the instructor.
-
-</div>
 
 <br>
 
@@ -54,6 +54,9 @@ _There are multiple steps to saving in GitHub Codespaces:_
 </div>
 
   </details>
+
+</div>
+
 </html>
 
 ---
