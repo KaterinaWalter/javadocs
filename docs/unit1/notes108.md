@@ -124,45 +124,13 @@ System.out.println(Math.sqrt(num));
 
 ---
 
-### Example: Preconditions in API Methods
-
-```java
-/**
- * Method to move the turtle forward the given number of pixels
- * @param pixels the number of pixels to walk forward
- * Preconditions: pixels is between 0 and the width/height of the world
- * Postconditions: turtle is moved forward by pixels without going off screen
- */
-public void forward(int pixels) {
-    /* code to move the turtle forward */
-}
-```
-
----
-
-### **Practice: Breaking Turtle Preconditions**
+#### CSAwesome Activities: Turtle Class
 
 <div class="task" markdown="block">
 
-Type this in your Codespace, press run. Try to break the precondition for the `forward` method by using:
+🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
 
-* A value too large (larger than the world dimensions)
-* A negative number
-
-```java
-World habitat = new World(300, 300);
-Turtle yertle = new Turtle(habitat);
-
-// Change 100 to a larger or negative value to test preconditions
-yertle.forward(100);
-
-yertle.turnLeft();
-yertle.forward();
-yertle.turnLeft();
-yertle.forward();
-
-habitat.show(true);
-```
+👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-7-APIs-and-libraries.html"><button class="btn">CSAwesome Topic 1.7</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
 
 </div>
 
