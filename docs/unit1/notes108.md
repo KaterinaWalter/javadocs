@@ -17,30 +17,90 @@ nav_order: 9
 {:.note}
 📖 This page is a condensed version of [CSAwesome Topic 1.8](https://runestone.academy/ns/books/published/csawesome2/topic-1-8-comments.html) 
 
+<div style="text-align: center;">
+<span class="highlighter-green"> 
+<strong>✴✴✴ NEW UNIT/SECTION! ✴✴✴</strong><br>Create a blank Java program to take your class notes in for the next few lessons.<br><em>Click on the collapsed heading below for GitHub instructions</em> ⤵  
+</span>
+</div>
+
+<html>
+  <details>
+    <summary>📓 <strong class="text-green-200">NOTES PROGRAM SETUP INSTRUCTIONS</strong></summary>
+
+<div class="setup" markdown="block">
+
+1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
+2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
+3. Specify the **repository name**: `CS2-Unit1PartB-Notes`
+4. For the **description**, write: `Object/reference data types, using methods, Math class, String class`
+5. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
+    > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 📂
+6. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
+7. Click `Create Codespace on main` and wait for the environment to load, _then you're ready to code_!
+8. 📝 Take notes in this Codespace during class, writing **code** & **comments** along with the instructor.
+
+</div>
+
+<br>
+
+<div class="warn" markdown="block">
+
+🛑 When class ends, don't forget to **SAVE YOUR WORK**! **Codespaces** are TEMPORARY editing environments, so you need to COMMIT changes properly in order to update the main **repository** for your program. 
+
+_There are multiple steps to saving in GitHub Codespaces:_
+
+1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
+2. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
+3. Type a brief **commit message** at the top of the file that opens, for example: `updated Main.java`
+4. Click the small `✔️` **checkmark** in the _TOP RIGHT_ corner
+5. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
+6. _Finally you can close your Codespace!_
+
+</div>
+
+</details>
+
+</html>
+
 ---
 
 ## Comments
 
-{:.important}
-Comments don’t run—they _explain_. Your future self (and your teammates) will thank you.
+**Comments** are written for both the original programmer and other programmers to understand the code and its functionality, but are **ignored by the compiler** and are not executed when the program is run. 
 
-Adding comments to your code helps to make it more readable and maintainable. In the commercial world, software development is usually a team effort where many programmers will use your code and maintain it for years. Commenting is essential in this kind of environment and a good habit to develop. Comments will also help you to remember what you were doing when you look back to your code a month or a year from now. 
+Adding comments to your code helps to make it more *readable* and *maintainable*.
+> * In the commercial world, software development is usually a team effort where many programmers will use your code and maintain it for years. Commenting is essential in this kind of environment and a good habit to develop.
+> * Comments will also help you to remember what you were doing when you look back to your code a month or a year from now. 
 
-Comments are written for both the original programmer and other programmers to understand the code and its functionality, but are ignored by the compiler and are not executed when the program is run. 
-
-There are 3 types of comments in Java:
+<div class="imp" markdown="block">
+   
+There are 3 types of **comments** in Java:
 
 1. `//` Single line comment  
 2. `/* */` Multiline block comment  
 3. `/** */` Java documentation comment  
 
-The special characters `//` are used to mark the rest of the line as a comment in many programming languages. If the comment is going to be multiple lines, we use `/*` to start the comment and `*/` to end the comment.
+</div>
 
-There is also a special version of the multi-line comment, `/** */`, called the documentation comment. Java has a tool called [javadoc](https://www.tutorialspoint.com/java/java_documentation.htm) that comes with the [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and can generate HTML documentation from these comments — for example, see the [String class documentation](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html).
+The special characters `//` are used to mark the rest of the line as a comment in many programming languages. 
 
-Although you don’t have to use this for the AP exam, it’s good practice to write documentation comments for your classes, methods, and instance variables.
+If the comment is going to be multiple lines, we use `/*` to start the comment and `*/` to end the comment.
 
-### Example: Good Commenting
+### Javadoc Comments
+
+There is also a special version of the multi-line comment, `/** */`, called the **documentation comment**. Java has a tool called [javadoc](https://www.tutorialspoint.com/java/java_documentation.htm) that comes with the [Java JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and can generate HTML documentation from these comments — for example, see the [String class documentation](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html).
+
+> Although you don’t have to use this for the AP exam, it’s good practice to write documentation comments for your classes, methods, and instance variables.
+
+_Common Javadoc tags:_
+- `@author`  Author of the program
+- `@since`   Date released
+- `@version` Version of program
+- `@param`   Parameter of a method
+- `@return`  Return value for a method
+  
+#### Example: Good Commenting
+{:.no_toc}
 
 ```java
 /**
@@ -57,23 +117,14 @@ public class MyClass {
       System.out.println(max); 
    }
 }
-````
+```
 
-Common Javadoc tags:
-
-* `@author`
-* `@since`
-* `@version`
-* `@param`
-* `@return`
-
----
-
-### **Practice: Adding Comments**
+#### Practice: Adding Comments
+{:.no_toc}
 
 <div class="task" markdown="block">
 
-Type this in your Codespace, press run, and add comments:
+Copy-paste the code below into your blank Java program, press run, then add comments:
 
 1. Add a **multi-line comment** above the class describing its purpose.
 2. Add **single-line comments** before each section: reading input, calculating result, printing output.
@@ -81,14 +132,18 @@ Type this in your Codespace, press run, and add comments:
 ```java
 import java.util.Scanner;
 
-Scanner scan = new Scanner(System.in);
-int num1 = scan.nextInt();
-int num2 = scan.nextInt();
+public class Main {
 
-int result = num1 * num2;
-
-System.out.println(num1 + " x " + num2 + " = " + result); 
-scan.close();
+   public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int num1 = scan.nextInt();
+      int num2 = scan.nextInt();
+      
+      int result = num1 * num2;
+      
+      System.out.println(num1 + " x " + num2 + " = " + result);
+   }
+}
 ```
 
 </div>
@@ -97,32 +152,20 @@ scan.close();
 
 ## Preconditions and Postconditions
 
-Many methods in API libraries have **preconditions** and **postconditions** described in their comments.
+Many methods in API libraries have **preconditions** and **postconditions** described in their comments. These assumptions are very useful to other programmers who want to use that method and get the correct results.
 
-* **Precondition**: A condition that must be true for the method to work properly. Example: parameters must not be `null` or out of range.
-* **Postcondition**: A condition that is true after running the method — describes the outcome, such as what is returned or what state has changed.
+<html>
+   <dl>
+      <dt>Precondition</dt>
+      <dd>A condition that must be true for the method to work properly. <em>Example: parameters must not be `null` or out of range.</em></dd>
+      <dt>Postcondition</dt>
+      <dd>A condition that is true after running the method — describes the outcome, such as what is returned or what state has changed.</dd>
+   </dl>
+</html>
 
-Example: `Math.sqrt(num)`
-
-* **Precondition**: `num >= 0`
+For example, computing the square root of a negative number is undefined, so the ``Math.sqrt(num)`` Java method, which we will learn later, will return a special value ``NaN`` which stands for "not a number" if num is negative. But since you can't really do anything useful with ``NaN`` it's better to think of ``sqrt`` as having a precondition that says it only works properly if given a positive argument. 
+* **Precondition**: `num >= 0` 
 * **Postcondition**: Returns the positive square root of `num`.
-
----
-
-### **Practice: Fixing a Precondition Violation**
-
-<div class="task" markdown="block">
-
-Type this in your Codespace, press run. The `Math.sqrt` method has a precondition that its argument must be non-negative. Fix the value of `num` so it meets the precondition.
-
-```java
-double num = -4;
-System.out.println(Math.sqrt(num));
-```
-
-</div>
-
----
 
 #### CSAwesome Activities: Turtle Class
 
