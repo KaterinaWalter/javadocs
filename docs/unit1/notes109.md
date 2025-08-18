@@ -27,7 +27,7 @@ Relate this to how Java tells methods apart using their signatures.
 
 ## Methods and Procedural Abstraction
 
-Up until now, all of our code has been written as statements in the `main` method, but complex programs are made up of many **methods**. We divide a program into methods to organize the code and avoid repetition. 
+Up until now, all of our code has been written as line-by-line **statements** in the `main` method, executed like step-by-step instructions, but complex programs are made up of many **methods**. We divide a program into methods to organize the code and avoid repetition. 
 
 <html>
     <dl>
@@ -47,14 +47,16 @@ A **block** of code is any section enclosed in `{ }`. These _named blocks of cod
 </html>
 
 **Procedural abstraction** means we can use a method that someone else wrote without knowing exactly how it works. We just need to know the method's name to call it and what it needs to do its job.
-> For example, we don't need to know how a car exactly works in order to drive. We know that if we hit the brakes, the car will stop; we can still use the brakes even if we don't really know how they exactly work. 
+> For example, we don't need to know how a car exactly works in order to drive. 🚗 We know that if we hit the brakes, the car will stop; we can still use the brakes even if we don't really know how they exactly work. 
 
 ### Method Calls
 
-📣 A **method call** is when the code "calls out" a method's name to run it. It always includes parentheses `()` and may include data (arguments) inside.
+<div class="imp" markdown="block">
+📣 A **method call** is when the code "calls out" a method's name to activate/run it. It always includes parentheses `()` and may include data inside.
 ```java
 methodName();
-````
+```
+</div>
 > For example, when we write the statement ``System.out.println("Hello World");``, we are _calling_ the ``println()`` _method_ to print out the text "Hello World".
 
 Every method call is followed by **parentheses**. The parentheses ``()`` after method names are there in case you need to give the method some **parameters/data** to do its job, which we will see in the next lesson.
@@ -77,7 +79,7 @@ Go into edit mode in the **Visualizer** and scroll down to the `main()` method. 
 </div>
 
 {:.highlight}
-✋ A method call **interrupts** the _sequential execution_ of statements, causing the program to first execute the statements in the method before continuing. Once the last statement in the method has been executed or a `return` statement is executed, the flow of control is returned to the point immediately following where the method was called.
+✋ A method call **interrupts** the _sequential execution_ of statements, causing the program to first execute the statements in the method before continuing. Once the last statement in the method has been executed or a `return` statement is executed, the **flow of control** is returned to the point immediately following where the method was called.
 
 ### Method Header/Signature
 
@@ -101,9 +103,12 @@ Compare the method signature of ``println(String x)`` with the method call ``pri
 
 We can make methods even more powerful and more abstract by giving them parameters for data that they need to do their job. A **parameter** (sometimes called a **formal parameter**) is a variable declared in the header of a method or constructor and can be used inside the body of the method. This allows values or arguments to be passed and used by a method. An **argument** (sometimes called an **actual parameter**) is a value that is passed into a method when the method is called and is saved in the parameter variable. 
 
-Let's take another look at the Old MacDonald Song and see if we can replace more repeated code with methods with _parameters_. Each **verse** of the song is similar except it is about a different _animal_ and the _sound_ it makes. 
+#### EXAMPLE: Old MacDonald Improved
+{:.no_toc}
 
-We can make a method called ``verse`` that takes the animal and its sound to print out any verse! The parameter variables ``animal`` and ``sound`` will hold different values when the method is called.
+Let's take another look at the Old MacDonald Song and see if we can replace more repeated code with methods with _parameters_. 
+
+Notice that each verse of the song is similar, except it is about a different _animal_ and the _sound_ it makes. We can make a method called ``verse`` that takes the animal and its sound to print out any verse! The parameter variables ``animal`` and ``sound`` will hold different **values** when the method is called.
 
 Step through this new version of the Old MacDonald program in the <a href="https://pythontutor.com/render.html#code=%20%20%20%20public%20class%20OldMacDonaldSong%0A%20%20%20%20%7B%0A%20%20%20%20%20%20public%20static%20void%20intro%28%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Old%20MacDonald%20had%20a%20farm%22%29%3B%0A%20%20%20%20%20%20%20%20chorus%28%29%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20public%20static%20void%20chorus%28%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22E-I-E-I-O%22%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20public%20static%20void%20verse%28String%20animal,%20String%20sound%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22And%20on%20this%20farm,%20they%20had%20a%20%22%20%2B%20animal%29%3B%0A%20%20%20%20%20%20%20%20chorus%28%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22With%20a%20%22%20%2B%20sound%20%2B%20%22%20%22%20%2B%20sound%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2B%20%22%20here%20and%20a%20%22%20%2B%20sound%20%2B%20%22%20%22%20%2B%20sound%20%2B%20%22%20there%22%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Here%20a%20%22%20%2B%20sound%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2B%20%22,%20there%20a%20%22%20%2B%20sound%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2B%20%22,%20everywhere%20a%20%22%20%2B%20sound%20%2B%20%22%20%22%20%2B%20sound%29%3B%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20intro%28%29%3B%0A%20%20%20%20%20%20%20%20verse%28%22cow%22,%20%22moo%22%29%3B%0A%20%20%20%20%20%20%20%20intro%28%29%3B%0A%20%20%20%20%20%20%20%20verse%28%22duck%22,%20%22quack%22%29%3B%0A%20%20%20%20%20%20%20%20intro%28%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D&cumulative=false&curInstr=34&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false"><button class="btn btn-primary">Java Code Visualizer</button></a> and watch how the argument are saved in the parameter variables with each call to the ``verse`` method.
 
@@ -138,13 +143,14 @@ verse("cow", "moo");
 ![image](Figures/args2paramsFarm.png)
 > Here's what that looks like with the two method calls above. The arguments like "cow" and "moo" are saved into the parameter variables ``animal`` and ``sound`` with each method call.
 
+{:.highlight}
 Java uses **call by value** when it passes arguments to methods. This means that a copy of the value in the argument is saved in the parameter variable. Call by value initializes the parameters with copies of the arguments. If the parameter variable changes its value inside the method, the original value outside the method is not changed.
 
 ### Overloading Methods
 
 Methods are **overloaded** when they share the same name but have different **parameter** lists. The compiler determines which method to call based on the number and types of **arguments** passed to the method. 
 
-_Example:_ `println()` in `PrintStream`:
+_Example:_ 
 
 * `println()` → prints newline
 * `println(String x)` → prints a string
