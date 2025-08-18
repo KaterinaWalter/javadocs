@@ -81,12 +81,6 @@ Go into edit mode in the **Visualizer** and scroll down to the `main()` method. 
 {:.highlight}
 ✋ A method call **interrupts** the _sequential execution_ of statements, causing the program to first execute the statements in the method before continuing. Once the last statement in the method has been executed or a `return` statement is executed, the **flow of control** is returned to the point immediately following where the method was called.
 
-### Method Header/Signature
-
-Got it — here’s a **fuller but still concise** version that keeps the teaching detail without the extra wordiness:
-
----
-
 ### Method Signature/Header
 
 When using methods in a library or API, we can look up the **method signature/header**) in its documentation.
