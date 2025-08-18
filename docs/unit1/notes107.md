@@ -48,7 +48,9 @@ APIs and libraries are essential to programming because they allow you to use co
 ### The `java.lang` Package
 
 The ``java.lang`` package contains built-in classes and interfaces that are fundamental to the Java programming language, such as the ``String`` class and the ``System`` class which we use in ``System.out.println``. 
-> Take a look at the docs for the `java.lang` package here: [Java Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html). Can you find the ``System`` class in the documentation?
+
+Take a look at the summary for the `java.lang` package here: [Oracle – Java Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html). 
+> Can you find the ``System`` class in the documentation?
 
 📖 **Documentation** found in API specifications and libraries is essential to understanding the _attributes_ and _behaviors_ of a class defined by the API. 
 > The ``System`` class has an object called ``out`` that is type ``PrintStream``, and the ``PrintStream`` class has a method called ``println()`` that we use to print to the screen. 
@@ -58,7 +60,9 @@ The ``java.lang`` package contains built-in classes and interfaces that are fund
 **Check Your Understanding:**  
 
 1. How many distinct `println(...)` methods are listed in the `PrintStream` class [official documentation](https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html)?
-2. Try finding the same documentation on **DevDocs**, an unofficial collection of documentation (_linked in the top right corner of this website_). Do you prefer looking at the official docs or DevDocs?
+2. Try finding the same documentation on **DevDocs**, an unofficial collection of documentation (_linked in the top right corner of this website_).
+  > Would you prefer using the official docs from Oracle, or DevDocs?
+3. Try asking an **AI bot** like ChatGPT the original question (_"how many println methods does Java have?"_) and determine if it produces a correct answer. 
 
 </div>
 
