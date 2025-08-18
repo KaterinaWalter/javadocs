@@ -83,25 +83,50 @@ Go into edit mode in the **Visualizer** and scroll down to the `main()` method. 
 
 ### Method Header/Signature
 
-When using methods in a library or API, we can look up the **method signature** (or **method header**) in its documentation.  A **method header** is the first line of a method that includes the method name, the return type, and the parameter list of parameters and their data types. The **return type** is the type of value that the method returns; in this lesson, we'll just look at **void** return types which means the method doesn't return anything. The **method signature** is the method header without the return type, just the method name and its parameter list.  The **parameter list** is a list of variables and their data types that are passed to the method when it is called. The parameter list is enclosed in parentheses and separated by commas; it can be empty with no parameters although the parentheses must be present. 
+Got it — here’s a **fuller but still concise** version that keeps the teaching detail without the extra wordiness:
 
-For example, the ``PrintStream`` class documented in [Oracle - Java Documentation](https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html) contains the following method signatures for ``println`` that we use in ``System.out.println()``: 
+---
 
-- ``void println()`` which has an empty parameter list with no parameters 
-- ``void println(String x)`` which will print out a ``String`` value
-- ``void println(int x)`` which will print out an ``int`` value
+### Method Signature/Header
 
-We can call these methods with the appropriate arguments to print out the value we want. The **argument** is the actual value that is passed to the method when it is called.  Here are the method calls that correspond to the method signatures above:
+When using methods in a library or API, we can look up the **method signature/header**) in its documentation.
 
-- ``System.out.println();`` // prints a newline
-- ``System.out.println("Hello World");`` // prints a String
-- ``System.out.println(42);`` // prints an int
+A **method header** is the first line of a method that defines:
+* **Method name**
+* **Return type** (e.g., `void` means no return value)
+* **Parameter list** (variables and data types in parentheses; may be empty, but parentheses are required)
 
-Compare the method signature of ``println(String x)`` with the method call ``println("Hello World");`` below. The method signature contains the method name and the parameter type and variable. The method call contains only the method name and the argument value. The argument must be compatible with the data type of the parameter in the method signature and is saved in the parameter variable when the method is called. Many people use the terms parameter and argument interchangeably.
+#### Example: `PrintStream` `println` Methods
+{:.no_toc}
+
+From [Oracle - Java Documentation](https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html):
+
+* `println()` – no parameters, just prints a new line
+* `println(String x)` – prints a `String`
+* `println(int x)` – prints an `int`
+
+We can call these methods with the appropriate arguments to print out the value we want. The **argument** is the actual value that is passed to the method when it is called. Here are the **method calls** that correspond to the method signatures above:
+
+* `System.out.println();`
+* `System.out.println("Hello World");` 
+* `System.out.println(42);`
 
 ![image](Figures/method-parts.png)
 
-We can make methods even more powerful and more abstract by giving them parameters for data that they need to do their job. A **parameter** (sometimes called a **formal parameter**) is a variable declared in the header of a method or constructor and can be used inside the body of the method. This allows values or arguments to be passed and used by a method. An **argument** (sometimes called an **actual parameter**) is a value that is passed into a method when the method is called and is saved in the parameter variable. 
+### Parameters vs. Arguments
+
+We can make methods even more powerful and more abstract by giving them **parameters** for data that they need to do their job. This allows values, or **arguments**, to be passed and used by a method. 
+
+* A **parameter** ("formal parameter") is a _placeholder_ variable declared in the method header.
+* An **argument** ("actual parameter") is the _value_ passed into the method when called.
+    * The argument must be compatible with the parameter’s data type.
+
+_Example:_
+* Signature: `println(String x)` → **parameter** is `String x`
+* Call: `println("Hello World");` → **argument** is `"Hello World"`
+
+{:.highlight}
+Many people use the terms interchangeably, but technically the **parameter** is the _placeholder_ and the **argument** is the _value_.
 
 #### EXAMPLE: Old MacDonald Improved
 {:.no_toc}
@@ -125,12 +150,7 @@ Go into edit mode in the **Visualizer** and scroll down to the `main()` method. 
 {:.highlight}
 Note that the **main method** can now just consist of calls to the `intro()` and `verse()` methods. Main methods often look like an *outline* for the program, calling methods to do the work.
 
-### Parameters vs Arguments
-
-* **Parameter**: Variable declared in the method header.
-* **Argument**: Actual value passed in when calling the method.
-
-When a method is called, the right method definition is found by checking the **method signature** or **header** at the top of the method definition to match the method name, the number of arguments, the data types for the arguments and the return type. A method signature for a method with parameters consists of the method name and the ordered list of parameter types. A method signature for a method without parameters consists of the method name and an empty parameter list.
+When a method is **called**, the correct method definition (_set of code instructions_) is found by checking the **method signature** or **header** at the top of the method definition to match the method name, the number of arguments, the data types for the arguments and the return type. 
 
 ```java
 // Method signature (parameters)
