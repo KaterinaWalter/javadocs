@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.8: Documentation, Comments, Preconditions" 
+title: "📓1.8: Documentation & Comments" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 9
 ---
