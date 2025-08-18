@@ -49,6 +49,18 @@ methodName();
 
 When a method ends, control returns to the line immediately after the method call.
 
+Every method call is followed by **parentheses**. The parentheses ``()`` after method names are there in case you need to give the method parameters (data) to do its job, which we will see in the next lesson. You must always include the parentheses after the method name.
+
+
+{:.important}
+📣 `object.method();` is used to **call** an object's method!
+
+### Procedural Abstraction
+
+**Procedural abstraction** allows a programmer to use a method and not worry about the details of how it exactly works. For example, we know that if we hit the brakes, the car will stop, and we can still use the brakes even if we don't really know how they work.
+
+You will learn to write your own methods in Unit 5. In this unit, you should be able to **use** methods already written for you and figure out what they do. 
+
 ---
 
 ### **Practice: Adding Another Verse to a Song**
