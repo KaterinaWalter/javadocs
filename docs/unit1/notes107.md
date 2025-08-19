@@ -73,7 +73,7 @@ Take a look at the summary for the `java.lang` package here: [Oracle – Java Do
 
 <html>
   <dl>
-    <dt>Attributes/Fields)</dt>
+    <dt>Attributes/Fields</dt>
     <dd><strong>Data</strong> the object “knows” (e.g., <code>name</code>, <code>height</code>, <code>width</code>, <code>position</code></dd>
     <dt>Behaviors/Methods</dt>
     <dd><strong>Actions</strong> the object “does” (e.g., <code>forward()</code>, <code>turnLeft()</code>) or what can be done to it.</dd>
