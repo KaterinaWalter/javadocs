@@ -21,62 +21,60 @@ nav_order: 15
 
 ## Calling Instance (Object) Methods
 
+In object-oriented programming, **methods** define the _behavior_ and _actions_ that an object can perform.
+
+🐢 `Turtle` objects can go forward or turn left using method calls like `yertle.forward()` and `yertle.turnRight()` to change its position. These methods are sometimes called **instance methods** or **object methods** because they are called using an instance or object of the class — in this case a specific `Turtle` object like `yertle`.
+
 <!--
 Role play objects in groups or with the whole class. Here are some object roles that you could assign students, e.g. Acrobat, Whiteboard and directions on how you could lead the activity (created by David Levine). Some other objects might be animals like dogs and cats who bark and do different tricks. After assigning roles to students, call out their name and then the method you’d like them to do, and write the commands on the board. For example, acrobat1.clap(2);  whiteboard1.drawSquare(); Have groups write some commands for their group to do and simulate running the program. Have groups design a new object and a method with an argument for it. 
 Remind students “methods define the behaviors or functions.”, and the vocabulary of parameters and arguments as “values that you can give to methods to help them do their job as arguments or parameters.”
 -->
 
-In object-oriented programming, **methods** define the behavior and actions that an object can perform. For example, `Turtle` objects can go forward or turn left using method calls like `yertle.forward()` and `yertle.turnRight()` to change its position. These methods are sometimes called **instance methods** or **object methods** because they are called using an instance or object of the class — in this case a specific `Turtle` object like `yertle`.
-
 ### Class Methods vs. Instance Methods
 
-In lessons 1.9 and 1.10, we learned how to call **class methods** (also called **static methods**). Class methods are called using the class name followed by the dot (`.`) operator and the method name. For example:
+In earlier lessons, we learned how to call **static methods** (also called **class methods**). Class methods use the keyword `static` in their method signature and do not access or change the attributes of an object. 
 
-```java
-Math.sqrt(25);
-````
+📣 Class methods are **called** using the class name followed by the dot (`.`) operator and the method name. 
+> _For example:_ `Math.sqrt(25);` runs the `sqrt` method defined in the `Math` **class** to find the square root of 25. 
 
-calls the `sqrt` method in the `Math` class to find the square root of 25. Class methods use the keyword `static` in their method signature and do not access or change the attributes of an object.
+In this lesson, we will learn more about **instance methods**, which are always called using a specific **object** of the class. _They are not static methods._ They access and change the attributes of the object they are called on. _For example:_
 
-In this lesson, we will learn more about **instance methods**, which are always called using an object of the class. They are not static methods. They access and change the attributes of the object they are called on. For example:
-
-```java
-yertle.forward();
-```
-
-changes the `Turtle` object yertle's position.
+> _For example:_ `yertle.forward();` changes the `Turtle`-type **object** `yertle`'s position.
 
 ![image](Figures/calling-static-vs-instance-methods.png)
-> Calling static vs. instance methods
+
+{:.highlight}
+Traditionally, `Class` names are capitalized, and `object` variables are lowercase.
 
 ### Method Signatures
 
-The **method signature** defines the method's name and the number and types of parameters it takes. In a class definition or in documentation of a library, instance methods are usually defined after the instance variables (attributes) and constructors in a class. For example, see the `Student` class below. Notice that the methods do not use the keyword `static`.
+The **method signature** defines the method's name and the number and types of parameters it takes. In a class definition or in documentation of a library, instance methods are usually defined _after_ the instance variables (attributes) and constructors in a class. 
+> _More on this in Unit 3 when we write our own full classes!_
+
+For example, see the `Student` class below. Notice that the methods do not use the keyword `static`.
 
 ![image-small](Figures/StudentClass.png)
-> A Student class showing instance variables, constructors, and methods
 
 ### Method Calls
 
-To use an object's method, you must use the object name and the dot (`.`) operator followed by the method name. For example:
+To use an object's method, you must use the object name and the dot (`.`) operator followed by the method name. 
+> _For example:_ `yertle.forward();` calls `yertle`'s `forward` method to move a turtle object forward 100 pixels.
 
-```java
-yertle.forward();
-```
+Object methods often work with the **attributes** of the object, such as the direction the turtle is heading, or its position.
 
-calls `yertle`'s `forward` method to move a turtle object forward 100 pixels. Object methods work with the **attributes** of the object, such as the direction the turtle is heading or its position.
-
-Methods inside the same class can call each other using just `methodName()`. But to call instance methods in another class or from a `main` method, you must first create an object of that class and then call its methods using:
+Methods inside the same class can call each other using just `methodName()`. But to call instance methods in another class or from a `main` method, you must first **construct** an object of that class and then call its methods using:
 
 ```java
 object.methodName();
 ```
 
 ![image](Figures/calling-methods.png)
-> **Note:**
-> `method();` is used to call a method within the same class, but `object.method();` is necessary if you are calling the method from `main` or from a different class.
 
-If you just declare an object reference without setting it to refer to a new object, the value will be `null`. Calling a method on a variable whose value is `null` will result in a **NullPointerException**.
+{:.highlight}
+**Note:** `method();` is used to call a method within the _same_ class, but `object.method();` is necessary if you are calling the method from a _different_ class.
+
+![image](Figures/FlowChartCallingMethods.png)
+
 
 ### Method Calls with Arguments
 
@@ -92,21 +90,20 @@ turn(30);     // turn 30 degrees
 When you define your own method, the variables in its definition are called **parameters**. When you call the method, the values you pass in are **arguments**.
 
 ![image](Figures/method-param-arg.png)
-> Method signatures with parameters and method call arguments.
 
 ### Methods that Return Values
 
 So far, our `Turtle` methods have been **void methods** — they do something but don’t return a value.
 
-**Non-void methods** return a value that can be stored or used. Methods that return information about an object are called **getters**. For example:
+**Non-void methods** return a value that can be stored or used. Methods that return information about an object are called **getters**. _For example:_
 
 ```java
 int width = yertle.getWidth();
 System.out.println(yertle.getXPos());
 ```
 
-> **Note:**
-> Always do something with the value a getter returns — store it in a variable, use it in a calculation, or print it.
+{:.highlight}
+**Note:** Always _do something_ with the value a getter returns — **store** it in a variable, **use** it in a calculation, or **print** it.
 
 #### CSAwesome Activities: Turtle Class
 
