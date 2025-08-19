@@ -60,20 +60,22 @@ For example, see the `Student` class below. Notice that the methods do not use t
 To use an object's method, you must use the object name and the dot (`.`) operator followed by the method name. 
 > _For example:_ `yertle.forward();` calls `yertle`'s `forward` method to move a turtle object forward 100 pixels.
 
-Object methods often work with the **attributes** of the object, such as the direction the turtle is heading, or its position.
+{:.highlight}
+**Object/Instance Methods** often work with the **attributes** of the object, such as the direction the turtle is heading or its current position.
 
-Methods inside the same class can call each other using just `methodName()`. But to call instance methods in another class or from a `main` method, you must first **construct** an object of that class and then call its methods using:
+Methods inside the same class can call each other using just `methodName()`. But to call instance methods in another class or from a `main()` method, you must first **construct** an **object** of that class and then call its methods like so:
 
 ```java
-object.methodName();
+ClassName object = new ClassName();
+object.methodName(); 
 ```
 
-![image](Figures/calling-methods.png)
+The following flowchart shows the difference between calling **static** (class) methods and **instance** (object) methods:
+
+![image](Figures/FlowChartCallingMethods.png)
 
 {:.highlight}
 **Note:** `method();` is used to call a method within the _same_ class, but `object.method();` is necessary if you are calling the method from a _different_ class.
-
-![image](Figures/FlowChartCallingMethods.png)
 
 
 ### Method Calls with Arguments
