@@ -9,8 +9,6 @@ nav_order: 18
 
 ### Overview
 
-🛍️ Whenever we shop or dine out, we often spend money and receive a receipt in return. This receipt serves as proof of our purchase. The business’s register uses specialized software that prints the receipt in a specific format, containing certain predetermined details.
-
 <html>
 <details>
 <summary>📥 <strong class="text-green-200">PROJECT SETUP & SUBMISSION INSTRUCTIONS</strong></summary>
@@ -27,6 +25,8 @@ nav_order: 18
 
 </details>
 </html>
+
+🛍️ Whenever we shop or dine out, we often spend money and receive a receipt in return. This receipt serves as proof of our purchase. The business’s register uses specialized software that prints the receipt in a specific format, containing certain predetermined details.
 
 --- 
 
