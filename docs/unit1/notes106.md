@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.6: Compound Assignment Operators" 
+title: "📓1.6: Compound Operators" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 7
 ---
