@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.5: Casting & Ranges of Values" 
+title: "📓1.5: Casting" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 6
 ---
