@@ -19,7 +19,7 @@ nav_order: 14
 
 ---
 
-## Constructors: Creating & Initializing Objects
+## Constructors – Creating & Initializing Objects
 
 A Java class defines what objects of the class know (**attributes**) and what they can do (**behaviors**).
 Each class has **constructors** which are used to initialize the attributes in a newly created object.
