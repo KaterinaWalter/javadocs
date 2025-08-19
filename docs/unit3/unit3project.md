@@ -9,8 +9,6 @@ nav_order: 11
 
 ### Overview
 
-In this project, you will practice defining and working with Java classes by creating an interactive `Pet` class. You'll demonstrate their understanding of instance variables, constructors, getter and setter methods, the toString method, and behavior methods.
-
 <html>
 <details>
 <summary>📥 <strong class="text-green-200">PROJECT SETUP & SUBMISSION INSTRUCTIONS</strong></summary>
@@ -27,6 +25,10 @@ In this project, you will practice defining and working with Java classes by cre
 
 </details>
 </html>
+
+In this project, you will practice defining and working with Java classes by creating an interactive `Pet` class. You'll demonstrate their understanding of instance variables, constructors, getter and setter methods, the toString method, and behavior methods.
+
+---
 
 ### Part A: 
 
