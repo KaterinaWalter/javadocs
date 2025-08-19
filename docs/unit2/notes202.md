@@ -426,9 +426,7 @@ When is the expression below `true`?
 ## Relational Operators Practice Game
 
 Try the [Relationals Practice Game](https://csa-games.netlify.app/). Work in pairs and see how high a score you can get.
--->
 
---
 
 ## Summary
 
@@ -437,6 +435,7 @@ Try the [Relationals Practice Game](https://csa-games.netlify.app/). Work in pai
 * Numeric values can be compared using `<`, `>`, `<=`, `>=`.
 * Relational expressions evaluate to `true` or `false`.
 * `%` can be used to test divisibility.
+-->
 
 ---
 
