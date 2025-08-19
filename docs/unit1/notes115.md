@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.15: The String Class" 
+title: "📓1.15: String Class" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 16
 ---
