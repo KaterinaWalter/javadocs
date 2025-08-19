@@ -21,19 +21,22 @@ nav_order: 14
 
 ## Constructors – Creating & Initializing Objects
 
-A Java class defines what objects of the class know (**attributes**) and what they can do (**behaviors**).
-Each class has **constructors** which are used to initialize the attributes in a newly created object.
-**Constructors** have the same name as the class.
+A Java class defines what objects of the class know (**attributes**) and what they can do (**behaviors**). Each class has **constructors** which are special methods used to _initialize_ the attributes for a newly created object. 
 
-A new object is created with the `new` keyword followed by the class name, which is a call to the constructor (`new ClassName()`).
+{:.highlight}
+**Constructors** always have the _same name as the class_! 
+
+A new object instance is created with the `new` keyword followed by the class name, which is a call to the constructor (`new ClassName()`).
 
 <div class="imp" markdown="block">
     
-🏗️ Syntax pattern to create a `new` **object** and call a **constructor**:
+🏗️ Syntax pattern to construct a `new` **object** instance:
 
 ```java
 ClassName variableName = new ClassName(parameters);
 ```
+> * **Right side of `=`:** _declaring_ a variable of type `ClassName`
+> * **Left side of `=`:** _assigning_ values by calling a _constructor_ 
 
 </div>
 
