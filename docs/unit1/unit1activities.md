@@ -69,42 +69,82 @@ In this activity, you'll be creating your own **MadLibs** game using Java! A Mad
 <div class="task" markdown="block">
 
 1. Come up with a fun story to use for MadLibs. Yours should be long enough to include at least **10 variables**. Choose nouns, verbs, adjectives, etc., that you want the user to fill in, and decide how many blanks you’ll need.
-> _Example:_ "Today, I went to the PLACE to VERB with my ADJECTIVE NOUN. It was a ADJECTIVE day, and we had lots of fun!"
-2. In your `main` method, **declare variables** for the parts of the story that the user will input. For each _blank_ in the story, you'll need a variable.
-> _Example:_ `String adjective1;`
-3. Use a Scanner object to take user input, using the code example below for help.
-```java
-// Add to TOP of program before the class:
-import java.util.Scanner;
-// In the main method:
-// Construct the Scanner - only do this once
-Scanner scan = new Scanner(System.in);
-// Take input for each variable!!!
-System.out.print("Enter an adjective: ");
-adjective1 = scan.nextLine();
-```
-4. Use string **concatenation** to combine the user's input with your story.
-> _Example:_ `String story = "It was a " + adjective1 + " day";`
+
+   > *Example:* "Today, I went to the PLACE to VERB with my ADJECTIVE NOUN. It was a ADJECTIVE day, and we had lots of fun!"
+
+2. In your `main` method, **declare variables** for the parts of the story that will be filled in. For each blank, create a variable.
+
+   > *Example:* `String adjective1;`
+
+3. Instead of asking the user, **manually assign values** to each variable in your code.
+
+   > *Example:*
+
+   ```java
+   String adjective1 = "funny";
+   String place1 = "park";
+   String verb1 = "dance";
+   ```
+
+4. Use string **concatenation** to combine your variables with the rest of the story.
+
+   > *Example:*
+
+   ```java
+   String story = "Today, I went to the " + place1 + " to " + verb1 +
+                  " with my " + adjective1 + " friend!";
+   ```
+
 5. **Print** out your story!
-> It may be easier to separate each sentence into its own variable, then use the appropriate method to print them out (either all together or on separate lines). 
 
-</div> 
+   > It may be easier to separate each sentence into its own variable, then print them together at the end.
 
-### PART B: Mix it up with Methods
+</div>  
+
+### PART B: Interactive Story with `Scanner` Input
+
 <div class="task" markdown="block">
-  
-1. Manipulate some of the string variables with `String` class methods such as `.substring()`. Use at least **3 String class methods** total.
-2. Take numerical input (`int` and `double`) by using the `Scanner` class methods: `scan.nextInt()` or `scan.nextDouble()`, for at least 2 of the variables in your story. 
-3. Before including those numbers in your story, run a `Math` class method on them to manipulate the numbers however you'd like. You should use at **least 2 Math class methods** total here, and possibly `Math.random()` to include a random number somewhere in the story.  
 
-</div> 
+1. Copy your Part A story into a new program or comment out the old one so you can reuse the structure.
 
-#### Extensions
+2. At the **top** of your program, import the Scanner class:
+
+   ```java
+   import java.util.Scanner;
+   ```
+
+3. In your `main` method, **construct the Scanner** (only once):
+
+   ```java
+   Scanner scan = new Scanner(System.in);
+   ```
+
+4. For each variable in your story, **prompt the user for input** and store it:
+
+   ```java
+   System.out.print("Enter an adjective: ");
+   String adjective1 = scan.nextLine();
+   ```
+
+5. Use string **concatenation** to build your story, this time using the user’s input.
+
+6. **Print** the completed story to the console.
+
+7. Test it out by running your program multiple times—each time, enter different values to create unique stories!
+
+</div>
+
+#### Optional Challenges
 {:.no_toc}
 
 * Add more variables to make your story longer and funnier.
 * Format the output to make it look like a paragraph using `\n` for new lines.
 * Include emojis to make the story visually interesting!
+* Take numerical input (`int` and `double`) by using the `Scanner` class methods: `scan.nextInt()` or `scan.nextDouble()`, for at least 2 of the variables in your story. 
+* _ADVANCED:_ Before including those numbers in your story, run a `Math` class method on them to manipulate the numbers however you'd like. You should use at **least 2 Math class methods** total here, and possibly `Math.random()` to include a random number somewhere in the story.
+  > Refer to [📓 1.11: Math Class](https://coderina.dev/javadocs/docs/unit1/notes111.html)
+* _ADVANCED:_ Manipulate some of the string variables with `String` class methods such as `.substring()`. Use at least **3 String class methods** total.
+  > Refer to [📓 1.15: String Class](https://coderina.dev/javadocs/docs/unit1/notes115.html)
 
 ---
 
