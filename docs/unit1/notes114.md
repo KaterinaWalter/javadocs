@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.14: Calling Instance Methods" 
+title: "📓1.14: Instance Methods" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 15
 ---
@@ -19,7 +19,7 @@ nav_order: 15
 
 ---
 
-## Instance (Object) Methods
+## Calling Instance (Object) Methods
 
 <!--
 Role play objects in groups or with the whole class. Here are some object roles that you could assign students, e.g. Acrobat, Whiteboard and directions on how you could lead the activity (created by David Levine). Some other objects might be animals like dogs and cats who bark and do different tricks. After assigning roles to students, call out their name and then the method you’d like them to do, and write the commands on the board. For example, acrobat1.clap(2);  whiteboard1.drawSquare(); Have groups write some commands for their group to do and simulate running the program. Have groups design a new object and a method with an argument for it. 
