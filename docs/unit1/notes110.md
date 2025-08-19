@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.10: Calling Class Methods" 
+title: "📓1.10: Static Methods" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 11
 ---
@@ -19,7 +19,7 @@ nav_order: 11
 
 ---
 
-## Static (Class) Methods
+## Calling Static (Class) Methods
 
 Most of the methods we’ve used so far are `static` methods, also called **class methods**. These methods are associated with the _general class_, which also means that there is **only one copy** of the method. 
 
