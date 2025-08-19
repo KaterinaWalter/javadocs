@@ -73,9 +73,7 @@ object.methodName();
 The following flowchart shows the difference between calling **static** (class) methods and **instance** (object) methods:
 
 ![image](Figures/FlowChartCallingMethods.png)
-
-{:.highlight}
-**Note:** `method();` is used to call a method within the _same_ class, but `object.method();` is necessary if you are calling the method from a _different_ class.
+> **Note:** `method();` is used to call a method within the _same_ class, but `object.method();` is necessary if you are calling the method from a _different_ class.
 
 
 ### Method Calls with Arguments
@@ -103,9 +101,7 @@ So far, our `Turtle` methods have been **void methods** — they do something bu
 int width = yertle.getWidth();
 System.out.println(yertle.getXPos());
 ```
-
-{:.highlight}
-**Note:** Always _do something_ with the value a getter returns — **store** it in a variable, **use** it in a calculation, or **print** it.
+> **Note:** Remember to always _do something_ with the value a getter returns — *store* it in a variable, *use* it in a calculation, or *print* it.
 
 #### CSAwesome Activities: Turtle Class
 
