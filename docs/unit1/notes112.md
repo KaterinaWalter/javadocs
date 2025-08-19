@@ -19,15 +19,17 @@ nav_order: 13
 
 ---
 
+Java is an **object-oriented programming** language. That means that one of the primary ways of designing and organizing a Java program is in terms of **objects**. Objects combine _data_, and the _code that operates on that data_, into a single unit.
+
+To create objects, we first define a **class** which provides a _template_ for creating the objects. 
+> In Java, all programs are built out of classes. This is why every Java program starts with `public class`.
+
+
 <!--
 Print out the Creature coloring sheets and crayons/markers or bring cookie cutters and playdough to class. Ask students to decorate the turtle cutouts or playdough cutouts. Tell them they have all made objects of the Creature class (or other cookie-cutter shapes). Ask them to assign some attributes such as name and color. Ask them to come up with behavior or method names such as goForward and turn.
 -->
 
-Java is an **object-oriented programming** language. That means that one of the primary ways of designing and organizing a Java program is in terms of **objects**. Objects combine data and the code that operates on that data into a single unit.
-
-To create objects, we first define a **class** which provides a blueprint for creating the objects. In Java, all programs are built out of classes. This is why every Java program starts with `public class`.
-
-In this unit, you will learn the vocabulary of object-oriented programming and how to create and use objects of a class written for you. In later units, you will learn to write your own classes.
+In this unit, you will learn the vocabulary of object-oriented programming and how to _create_ and _use_ objects of a class written for you. In later units, you will learn to write your own classes.
 
 ### Classes & Objects
 
@@ -41,12 +43,14 @@ The cookie cutter (**class**) can be used to create as many cookies (**objects**
 ![image-small](Figures/blueprint.png)
 ![image-small](Figures/cookieCutterLabelled.png)
 
-A class also defines a **new data type**. In this lesson, we will use the `Turtle` class to make animated turtle objects.
+{:.highlight}
+You can also think of a class as **defining a custom data type**. 
 
-Example:
+In this lesson, we will use the class ``Turtle`` to make animated turtle objects. Just like you use ``int`` to declare variables that hold numbers, you can use ``Turtle`` to declare many variables, animated turtle objects, who are **instances** of the ``Turtle`` class. 
 
+_Example:_
 ```java
-// Creating 2 Turtle objects called yertle and myrtle
+// Declaring 2 Turtle-type objects called yertle and myrtle
 Turtle yertle;
 Turtle myrtle;
 ```
@@ -71,7 +75,6 @@ Example: The `Belt` class has 3 instance variables (attributes), and each belt o
 <iframe width="650" height="415" src="https://www.youtube.com/embed/Y9vn6u3901Y" frameborder="0" allowfullscreen></iframe>
 
 ![image-small](Figures/catsLabelled.png)
-*Figure 2: Pictures of cats (cat objects)*
 
 **Think About It:**
 What are some attributes of cats? What are some behaviors?
