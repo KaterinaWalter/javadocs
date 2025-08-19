@@ -33,12 +33,11 @@ In this unit, you will learn the vocabulary of object-oriented programming and h
 
 ### Classes & Objects
 
-You can think of a class as something like:
+A class is a **template** for objects of a particular _classification_. You can think of a class as something like:
 
-* A **blueprint** of a house used to construct houses (_objects_)
-* A **cookie cutter** used to create cookies (_objects_)
-
-The cookie cutter (**class**) can be used to create as many cookies (**objects**) as you want. The cookies are the same shape, but can have different decorations (attribute values).
+* A **blueprint** of a house used to construct multiple homes
+* A **cookie cutter** used to create cookies
+  * The cookie cutter (**class**) can be used to create as many cookies (**objects**) as you want. The cookies are the same shape, but can have different decorations (_attribute values_).
 
 ![image-small](Figures/blueprint.png)
 ![image-small](Figures/cookieCutterLabelled.png)
