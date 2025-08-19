@@ -147,7 +147,7 @@ Contractors constantly need to convert between units: feet to inches, yards to f
 One common use for the Pythagorean theorem is to calculate the length of
 ladder you will need to reach your work bestie, who got stuck standing at the top of a tower surrounded by a moat. The ladder will be the **hypotenuse** of a triangle whose legs are the height of the tower and the width of the moat (since you have to place the base of the ladder on the edge of the moat).
 
-> The Pythagorean theorem is named for **Pythagoras**, who was also the leader of the gang of Greek mathematicians who legend has it allegedly drowned their fellow mathematician for showing that :math:`\sqrt{2}` is irrational.
+> The Pythagorean theorem is named for **Pythagoras**, who was also the leader of the gang of Greek mathematicians who legend has it allegedly drowned their fellow mathematician for showing that `√2` is irrational.
 
 <div class="task" markdown="block">
 
@@ -160,7 +160,7 @@ ladder you will need to reach your work bestie, who got stuck standing at the to
       return ladderSize;
   }
   ```
-2. Complete the `calcLadderSize` method body using the Pythagorean theorem, `Math.sqrt` and `Math.pow`: $ c = \sqrt{a^2 + b^2} $
+2. Complete the `calcLadderSize` method body using `Math.sqrt()` and `Math.pow()` in the Pythagorean theorem `c = √(a² + b²)`
   * `a` = height of the tower
   * `b` = width of the moat
   * `c` = ladder length
