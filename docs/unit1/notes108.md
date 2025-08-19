@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.8: Documentation & Comments" 
+title: "📓1.8: Documentation" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 9
 ---
@@ -64,7 +64,7 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ---
 
-## Comments
+## Documentation & Comments
 
 **Comments** are written for both the original programmer and other programmers to understand the code and its functionality, but are **ignored by the compiler** and are not executed when the program is run. 
 
