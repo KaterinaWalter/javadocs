@@ -53,7 +53,7 @@ There can be _more than one constructor_ defined in a class. This is called **ov
 {:.important}
 Constructors are considered **overloaded** when there are multiple constructors, but the constructors have different _signatures_. They can differ in the number, type, and/or order of parameters (_input_). Think of overloading constructors as providing different ways of "setting up" an object, depending on how much information you want to specify about the object.
 
-The `World` class has two constructors:
+The `World` class has two **constructors**:
 
 * `World()` — no arguments, creates a default-sized world (640×480 px)
 * `World(int width, int height)` — takes two integers to create a world of specific size.
@@ -66,9 +66,12 @@ World world2 = new World(300, 400); // custom size 300x400
 ### The `Turtle` Class Constructors
 
 The `Turtle` class also has multiple constructors.
-It always requires a **world** argument for where the turtle will be drawn.
+It always requires a `World` **argument** for where the turtle will be drawn.
 
-The default location is the middle of the world. Another constructor allows you to set a specific `(x, y)` location:
+{:.highlight}
+🗺️ The Turtle world does not use the Cartesian coordinate system with `(0,0)` in in the middle the screen. Instead: `(0,0)` is at the **top left corner** of the screen, `x` increases to the right, and `y` increases towards the bottom of the screen.
+
+The **default** location is the middle of the world. Another constructor allows you to set a specific `(x, y)` location:
 
 ```java
 Turtle t1 = new Turtle(world1);
@@ -77,10 +80,17 @@ Turtle t2 = new Turtle(50, 100, world1);
 
 > **Note:** The order of arguments matters — `Turtle(int x, int y, World w)` is **not** the same as swapping them.
 
-{:.highlight}
-🗺️ The Turtle world does not use the Cartesian coordinate system with `(0,0)` in in the middle the screen. Instead: `(0,0)` is at the **top left corner** of the screen, `x` increases to the right, and `y` increases towards the bottom of the screen.
+#### CSAwesome Activities: Turtle Class
 
-### Object Variables and References
+<div class="task" markdown="block">
+
+🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
+
+👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-13-constructors.html"><button class="btn">CSAwesome Topic 1.13</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
+
+</div>
+
+### Object Variables & References
 
 New objects are saved in **reference type** variables, which hold a reference to the object in memory.
 
@@ -99,41 +109,25 @@ t1 = new Turtle(world1);
 
 ### Constructor Signatures
 
-When using a class from a library (e.g., `Turtle`), you can look up the **constructor signatures** in the documentation.
+When using a class from a library (e.g., `Turtle`), you can look up the **constructor headers/signatures** in the <a href="https://www2.cs.uic.edu/~i101/doc/Turtle.html" target="_blank" style="text-decoration:underline">documentation</a> just like you would for **methods**. 
 
-A **signature** = constructor name + parameter list (number, types, order).
+Constructors are **OVERLOADED** if there are multiple with different **signatures**. For example, here are the two constructors for the ``Turtle`` class that take different parameters:
 
-Constructors are **overloaded** if there are multiple with different signatures.
-
-Example (`Turtle` class):
-
-* `Turtle(World w)`
-* `Turtle(int x, int y, World w)`
+![image](Figures/TurtleClassDefn.png)
+> Constructors can differ in the number, type, and/or order of **parameters**.
 
 ### Arguments, Parameters, and Call by Value
 
-When a constructor like:
-
-```java
-new Date(2005, 9, 1)
-```
-
-is called:
+When a constructor like `new Date(2005, 9, 1)` is called:
 
 * **Parameters** = variables in the constructor’s signature (e.g., `year`, `month`, `day`)
 * **Arguments** = values passed in (e.g., `2005`, `9`, `1`)
+    * Java passes arguments **by value** (_copies_).
 
-Java passes arguments **by value** (copies).
+![image](Figures/parameterMappingDate.png)
+> * The **type** of the values being passed in as arguments have to match the type of the parameter variables. We cannot give a constructor a ``String`` object when it is expecting an ``int``.
+> * The **order** of the arguments also matters. If you mix up the month and the day in the ``Date`` constructor, you will get a completely different date, for example January 9th (1/9) instead of Sept. 1st (9/1).
 
-#### CSAwesome Activities: Turtle Class
-
-<div class="task" markdown="block">
-
-🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
-
-👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-13-constructors.html"><button class="btn">CSAwesome Topic 1.13</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
-
-</div>
 
 ---
 
