@@ -110,7 +110,7 @@ Input can come in a variety of forms:
 * **Visual** using a webcam
 * Or the most common form, **text** that the user types in.
 
-The ``Scanner`` class in Java is one way to obtain text input from the **keyboard**.
+🖨️ The ``Scanner`` class in Java is one way to obtain text input from the **keyboard**.
 
 <div class="task" markdown="block">
 
