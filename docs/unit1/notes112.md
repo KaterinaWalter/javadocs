@@ -19,7 +19,7 @@ nav_order: 13
 
 ---
 
-## Objects: Instances of Classes
+## Objects – Instances of Classes
 
 Java is an **object-oriented programming** language. That means that one of the primary ways of designing and organizing a Java program is in terms of **objects**. Objects combine _data_, and the _code that operates on that data_, into a single unit.
 
