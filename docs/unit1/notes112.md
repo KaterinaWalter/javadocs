@@ -26,11 +26,13 @@ To create objects, we first define a **class** which provides a _template_ for c
 
 <div class="task" markdown="block">
 
-Let's say you wanted to create a virtual model of a cat in a Java app. You would start by writing a `Cat` **class** that defines a generic cat.
+🐈‍⬛ Let's say you wanted to create a virtual model of a cat café, populated with tons of kitties of all sizes and colors. You can start by writing a `Cat` **class** that defines a generic cat **object**. To do this, you need to think very _generally_ about what cats are, what characteristics they have, and what they can do. 
 
- ![image-small](Figures/catsLabelled.png)
+💬 **Discuss:** 
+* What are some common _attributes_ of cats?
+* What are some _behaviors_?
 
-💬 **Discuss:** What are some common _attributes_ of cats? What are some _behaviors_?
+![image-small](Figures/catsLabelled.png)
  
 </div>
 
@@ -90,8 +92,6 @@ A **class** like `Turtle` defines the data (**attributes/fields**) and **behavio
 ![image-small](Figures/turtleOOD.png)
 
 > This diagram of a turtle shows some of the generic `Turtle` **attributes** like `name`, `width`, `height`, `color` in the body of the turtle and its **methods** like `forward()`, `backward()`, written around the turtle. 
-
-![image-small](Figures/turtleOOD.png)
 
 <div class="task" markdown="block">
 
