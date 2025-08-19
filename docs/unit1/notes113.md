@@ -51,7 +51,8 @@ Turtle t = new Turtle(habitat); // create a new Turtle object
 There can be _more than one constructor_ defined in a class. This is called **overloading** the constructor. 
 
 {:.important}
-Constructors are considered **overloaded** when there are multiple constructors, but the constructors have different _signatures_. They can differ in the number, type, and/or order of parameters (_input_). Think of overloading constructors as providing different ways of "setting up" an object, depending on how much information you want to specify about the object.
+Constructors are considered **OVERLOADED** when there are multiple constructors, but the constructors have different _signatures_. They can differ in the number, type, and/or order of parameters (_input_). 
+> Think of overloading constructors as providing different ways of "setting up" an object, depending on _how much information is known_ about the object upon creation. 
 
 The `World` class has two **constructors**:
 
