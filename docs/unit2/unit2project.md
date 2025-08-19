@@ -9,14 +9,6 @@ nav_order: 14
 
 ### Overview
 
-One of the first games coded for early computers in the 1970s was called [Colossal Cave Adventure](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure). It was a **text-based interactive fiction game** where you had to make your way through an elaborate cave. The program only understood one word or phrase commands like north, south, enter, take, etc. 
-
-You can try [playing adventure](http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure) recreated online following some of the commands in this [walkthrough](https://adventuregamers.com/walkthrough/full/colossal-cave). Part of the challenge is finding the commands that the code will understand.
-
-In a game like Adventure, `if`, `else if`, and `else` statements can be used to respond to commands from the user like `n`, `s`, `e`, `w`.
-
-![image](Figures/adventure.jpg)
-
 <html>
 <details>
 <summary>📥 <strong class="text-green-200">PROJECT SETUP & SUBMISSION INSTRUCTIONS</strong></summary>
@@ -33,6 +25,16 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 
 </details>
 </html>
+
+One of the first games coded for early computers in the 1970s was called [Colossal Cave Adventure](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure). It was a **text-based interactive fiction game** where you had to make your way through an elaborate cave. The program only understood one word or phrase commands like north, south, enter, take, etc. 
+
+You can try [playing adventure](http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure) recreated online following some of the commands in this [walkthrough](https://adventuregamers.com/walkthrough/full/colossal-cave). Part of the challenge is finding the commands that the code will understand.
+
+In a game like Adventure, `if`, `else if`, and `else` statements can be used to respond to commands from the user like `n`, `s`, `e`, `w`.
+
+![image](Figures/adventure.jpg)
+
+---
 
 ### Part A: 
 
