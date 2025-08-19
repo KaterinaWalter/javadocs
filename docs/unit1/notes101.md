@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.1: Algorithms, Programming, Compilers" 
+title: "📓1.1: Algorithms & Programming" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 2
 ---
