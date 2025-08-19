@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.11: The Math Class" 
+title: "📓1.11: Math Class" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 12
 ---
