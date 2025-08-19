@@ -187,7 +187,7 @@ Because Java's ``%`` is a remainder operator and not a true
 
 </div>
 
----
+<!--
 
 ## Testing Equality (`==`)
 
@@ -426,6 +426,7 @@ When is the expression below `true`?
 ## Relational Operators Practice Game
 
 Try the [Relationals Practice Game](https://csa-games.netlify.app/). Work in pairs and see how high a score you can get.
+-->
 
 --
 
