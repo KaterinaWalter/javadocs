@@ -71,7 +71,7 @@ A **class** defines:
 
 <html>
   <dl>
-    <dt>Attributes/Fields)</dt>
+    <dt>Attributes/Fields</dt>
     <dd><strong>Data</strong> the object “knows” (e.g., <code>name</code>, <code>age</code>, <code>color</code></dd>
     <dt>Behaviors/Methods</dt>
     <dd><strong>Actions</strong> the object “does” (e.g., <code>meow()</code>, <code>eatTreats()</code>) or what can be done to it.</dd>
