@@ -19,23 +19,44 @@ nav_order: 11
 
 ---
 
-Most of the methods we’ve used so far are **static methods**, also called **class methods**. These methods are associated with the class and include the `static` keyword in their method header. The `main` method is always `static`, which also means that there is **only one copy** of the method. 
+## Static (Class) Methods
 
-## Template for a Static Method
+Most of the methods we’ve used so far are `static` methods, also called **class methods**. These methods are associated with the _general class_, which also means that there is **only one copy** of the method. 
+
+{:.highlight}
+🎈 A **static (class) method** is like a school-wide event or rule (e.g., the fire drill procedure). There’s only _one copy of the instructions_, and it applies to _everyone_ in the school equally. 
+
+> In contrast, an **instance (non-static) method** is like a student’s personal schedule (e.g., “Sarah goes to math class at 10 AM”). Each student has their _own individual copy_ of that schedule, and you’d need to ask the specific student to know what it is. _More about these types of methods later!_
+
+The `main` method is always `static`, as there can only be **one copy** per Java class.
+> The main method is like the school’s opening bell: one universal event that always happens the same way to start the day, no matter which students are present.
+
+#### Template for a Static Method Definition
+{:.no_toc}
+
+In the **method header**, the keyword `static` is included before the **return type**: 
 
 ```java
 // static method header
-public static return-type methodName(parameters) {
+public static returnType methodName(parameters) {
     // method body
 }
-````
+```
 
----
+## Non-Void Methods
 
-## Non-void Methods
+Up until now, we have used the keyword `void` as the return type for methods that **do not return a value**. Think of a void method like giving an instruction without expecting anything back.
+> _Example:_ If you tell your friend “Turn on the light”, they do it, but they don’t hand you anything in return. That’s a **void** method – it performs an _action_, but there’s no “output” to capture.
 
-A **void method** does not return a value.
-A **non-void method** returns a value and can be used like a mathematical function.
+However, many methods are **non-void**: think of these kind of like mathematical functions that calculate and `return` a result, given some arguments. 
+> _Example:_ If you ask your friend “What’s the temperature outside?”, they give you an answer (a value). That’s a **non-void** method – it _returns something_ you can use.
+
+| ⬛️ **Void Methods** | ⬛️ **Non-Void Methods** |
+| ------------------  | ----------------------- |
+| DO NOT return a value  | `return` a value (output) |
+| "Just do an action"  | "Do something AND give me a result" |
+
+![image](Figures/function.png)
 
 Example: squaring an integer.
 
@@ -46,11 +67,15 @@ public static int square(int number) {
 }
 ```
 
-The `return` statement:
+<div class="imp" markdown="block">
+    
+The `return` statement in a **non-void** method:
 
-* Sends a value back to the caller.
-* Must return a type that matches the return type in the method header.
+* Sends a **value** back to the caller (_output_).
+* Must return a **type** that matches the return type in the method header.
 * Ends method execution immediately.
+
+</div>
 
 You can store the return value in a variable or use it directly in an expression.
 
