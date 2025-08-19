@@ -302,7 +302,6 @@ if (x >= 50) {
 To fix, chain with `else if`.
 
 </details>
--->
 
 ## Summary
 
@@ -310,6 +309,8 @@ To fix, chain with `else if`.
 * `if` executes a block only if a condition is true.
 * `if-else` chooses between two paths.
 * Always test both branches of an `if-else`.
+
+-->
 
 ---
 
