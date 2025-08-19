@@ -140,7 +140,7 @@ Contractors constantly need to convert between units: feet to inches, yards to f
 
 </div>  
 
-### Part B: Ladder on Tower
+### PART B: Ladder on Tower
 
 ![image-small](Figures/ladder.png)
 
@@ -182,44 +182,35 @@ On a real construction site, supplies don’t always arrive in the exact amounts
 <div class="task" markdown="block">
 
 1. Write a method called `randomPlankDelivery` that generates a **random number of planks** between 10 and 50 (inclusive).
-
-   ```java
+  ```java
    public static int randomPlankDelivery() {
        int planks;
        // TODO: Use Math.random to generate an int from 10 to 50
        return planks;
    }
-   ```
-
+  ```
 2. Inside the method, use the formula:
-
-   ```java
+  ```java
    planks = (int)(Math.random() * 41) + 10;
-   ```
-
-   * `Math.random() * 41` → gives a number between 0.0 and 40.999…
-   * Adding `10` shifts it into the range **10–50**.
-   * Casting to `(int)` gives a whole number.
-
+  ```
+  * `Math.random() * 41` → gives a number between 0.0 and 40.999…
+  * Adding `10` shifts it into the range **10–50**.
+  * Casting to `(int)` gives a whole number.
 3. In your `main()` method, **call the method 3 times** to simulate 3 separate deliveries.
-
-   ```java
-   int delivery1 = randomPlankDelivery();
-   int delivery2 = randomPlankDelivery();
-   int delivery3 = randomPlankDelivery();
-   ```
-
+  ```java
+  int delivery1 = randomPlankDelivery();
+  int delivery2 = randomPlankDelivery();
+  int delivery3 = randomPlankDelivery();
+  ```
 4. Print the results in a clear sentence for each delivery, for example:
-
-   ```
-   First truck delivered 32 planks.
-   Second truck delivered 48 planks.
-   Third truck delivered 15 planks.
-   ```
-
+  ```
+  First truck delivered 32 planks.
+  Second truck delivered 48 planks.
+  Third truck delivered 15 planks.
+  ```
 5. *Optional Challenge*:
-   * Add all three deliveries together and print the **total number of planks delivered**.
-   * Example output: `Total planks delivered: 95`
+  * Add all three deliveries together and print the **total number of planks delivered**.
+  > EXPECTED OUTPUT: `Total planks delivered: 95`
 
 </div>  
 
