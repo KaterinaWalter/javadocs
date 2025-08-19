@@ -17,17 +17,9 @@ nav_order: 15
 {:.note}
 📖 This page is a condensed version of [CSAwesome Topic 1.14](https://runestone.academy/ns/books/published/csawesome2/topic-1-14-calling-instance-methods.html) 
 
-#### CSAwesome Activities: Turtle Class
-
-<div class="task" markdown="block">
-
-🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
-
-👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-14-calling-instance-methods.html"><button class="btn">CSAwesome Topic 1.14</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
-
-</div>
-
 ---
+
+## Instance (Object) Methods
 
 <!--
 Role play objects in groups or with the whole class. Here are some object roles that you could assign students, e.g. Acrobat, Whiteboard and directions on how you could lead the activity (created by David Levine). Some other objects might be animals like dogs and cats who bark and do different tricks. After assigning roles to students, call out their name and then the method you’d like them to do, and write the commands on the board. For example, acrobat1.clap(2);  whiteboard1.drawSquare(); Have groups write some commands for their group to do and simulate running the program. Have groups design a new object and a method with an argument for it. 
@@ -36,7 +28,7 @@ Remind students “methods define the behaviors or functions.”, and the vocabu
 
 In object-oriented programming, **methods** define the behavior and actions that an object can perform. For example, `Turtle` objects can go forward or turn left using method calls like `yertle.forward()` and `yertle.turnRight()` to change its position. These methods are sometimes called **instance methods** or **object methods** because they are called using an instance or object of the class — in this case a specific `Turtle` object like `yertle`.
 
-## Class Methods vs. Instance Methods
+### Class Methods vs. Instance Methods
 
 In lessons 1.9 and 1.10, we learned how to call **class methods** (also called **static methods**). Class methods are called using the class name followed by the dot (`.`) operator and the method name. For example:
 
@@ -54,23 +46,17 @@ yertle.forward();
 
 changes the `Turtle` object yertle's position.
 
-![Calling static vs. instance methods](Figures/calling-static-vs-instance-methods.png)
+![image](Figures/calling-static-vs-instance-methods.png)
+> Calling static vs. instance methods
 
-**Figure 1:** Calling static vs. instance methods
-
----
-
-## Method Signatures
+### Method Signatures
 
 The **method signature** defines the method's name and the number and types of parameters it takes. In a class definition or in documentation of a library, instance methods are usually defined after the instance variables (attributes) and constructors in a class. For example, see the `Student` class below. Notice that the methods do not use the keyword `static`.
 
-![A Student class showing instance variables, constructors, and methods](Figures/StudentClass.png)
+![image-small](Figures/StudentClass.png)
+> A Student class showing instance variables, constructors, and methods
 
-**Figure 2:** A Student class showing instance variables, constructors, and methods
-
----
-
-## Method Calls
+### Method Calls
 
 To use an object's method, you must use the object name and the dot (`.`) operator followed by the method name. For example:
 
@@ -86,37 +72,13 @@ Methods inside the same class can call each other using just `methodName()`. But
 object.methodName();
 ```
 
-![Calling instance methods](Figures/calling-methods.png)
-
-**Figure 3:** Calling instance methods from `main()` or from other methods inside the same class.
-
+![image](Figures/calling-methods.png)
 > **Note:**
 > `method();` is used to call a method within the same class, but `object.method();` is necessary if you are calling the method from `main` or from a different class.
 
 If you just declare an object reference without setting it to refer to a new object, the value will be `null`. Calling a method on a variable whose value is `null` will result in a **NullPointerException**.
 
----
-
-<div class="task" markdown="block">
-
-**Codespaces Task:**
-Type this in your Codespace, press run, and observe the error. Then fix the code by creating a new `Turtle` object with `new Turtle(habitat)` before calling its methods.
-
-```java
-World habitat = new World(300, 300);
-Turtle yertle = null;
-
-// yertle is null!
-yertle.forward();
-
-habitat.show(true);
-```
-
-</div>
-
----
-
-## Method Calls with Arguments
+### Method Calls with Arguments
 
 Methods like `forward()` and `turnRight()` always do the same thing unless you give them **arguments**. Arguments allow you to specify details like how far to move or how much to turn.
 
@@ -129,33 +91,10 @@ turn(30);     // turn 30 degrees
 
 When you define your own method, the variables in its definition are called **parameters**. When you call the method, the values you pass in are **arguments**.
 
-![Method parameters and arguments](Figures/method-param-arg.png)
+![image](Figures/method-param-arg.png)
+> Method signatures with parameters and method call arguments.
 
-**Figure 5:** Method signatures with parameters and method call arguments
-
----
-
-<div class="task" markdown="block">
-
-**Codespaces Task:**
-Make yertle draw a square, changing the pen color for each side, then draw a triangle with different colors. Use `turn()` for non-90-degree turns.
-
-```java
-World world = new World(300, 300);
-Turtle yertle = new Turtle(world);
-
-yertle.forward(100);
-yertle.turnLeft();
-yertle.forward(75);
-
-world.show(true);
-```
-
-</div>
-
----
-
-## Methods that Return Values
+### Methods that Return Values
 
 So far, our `Turtle` methods have been **void methods** — they do something but don’t return a value.
 
@@ -169,87 +108,13 @@ System.out.println(yertle.getXPos());
 > **Note:**
 > Always do something with the value a getter returns — store it in a variable, use it in a calculation, or print it.
 
----
+#### CSAwesome Activities: Turtle Class
 
 <div class="task" markdown="block">
 
-**Codespaces Task:**
-Print the turtle’s current position using `getXPos()` and `getYPos()`. Move it to `(0,0)` or as close as possible.
+🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
 
-```java
-World world = new World(300, 300);
-Turtle yertle = new Turtle(world);
-
-System.out.println("Start: " + yertle.getXPos() + ", " + yertle.getYPos());
-yertle.forward(100);
-yertle.turn(90);
-yertle.forward(50);
-System.out.println("End: " + yertle.getXPos() + ", " + yertle.getYPos());
-
-world.show(true);
-```
-
-</div>
-
----
-
-<div class="task" markdown="block">
-
-**Codespaces Task:**
-Fix this code so it prints the turtle's area using `getWidth()` and `getHeight()`.
-
-```java
-World world = new World(300, 300);
-Turtle yertle = new Turtle(world);
-
-int area;
-area = yertle.getWidth() * yertle.getHeight();
-System.out.println("Yertle's area is: " + area);
-
-world.show(true);
-```
-
-</div>
-
----
-
-<div class="task" markdown="block">
-
-**Codespaces Task:**
-Use `getXPos()`, `getYPos()`, and `getDistance(x,y)` to find yertle's distance from `(0,0)`. Add another turtle, move both, and find the distance between them.
-
-```java
-World world = new World(300, 300);
-Turtle yertle = new Turtle(world);
-
-// Your code here
-
-world.show(true);
-```
-
-</div>
-
----
-
-## Group Challenge: Turtle House
-
-![simple house](Figures/houseWithWindows.png)
-
-Work in pairs to design a house drawn by a turtle. Use multiple colors, and add windows and doors. Use `penUp()`, `penDown()`, and `moveTo(x, y)` to position the turtle without drawing.
-
-<div class="task" markdown="block">
-
-**Codespaces Task:**
-Draw your own turtle house.
-
-```java
-World world = new World(300, 300);
-Turtle t = new Turtle(world);
-
-// Draw your house here
-
-world.show(true);
-```
+👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-14-calling-instance-methods.html"><button class="btn">CSAwesome Topic 1.14</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
 
 </div>
 
@@ -257,14 +122,23 @@ world.show(true);
 
 ## Summary
 
-* **Instance methods** define object behavior and are called on objects.
-* The dot operator (`.`) is used to call them: `object.method();`
-* Calling a method on `null` causes a `NullPointerException`.
-* Arguments can be passed inside parentheses: `object.method(arg)`.
-* A method signature includes its name and parameter list.
-* Method call arguments must match the method signature in number, order, and type.
-* **Void methods** do something but return nothing. **Non-void methods** return a value.
-* Always _use_ returned values from non-void methods.
+- **Instance methods** define the behavior and actions that an object can perform. 
+
+- (AP 1.14.A.1) **Instance methods** are called on objects of the class. 
+
+- (AP 1.14.A.1) The dot operator is used along with the object name to **call** instance methods, for example **object.method();**
+
+- (AP 1.14.A.2) A method call on a ``null`` reference will result in a ``NullPointerException``.
+
+- Some methods take **arguments** that are placed inside the parentheses **object.method(arguments)**.
+
+- A **method signature** is the method name followed by the parameter list which gives the type and name for each parameter. Note that methods do not have to take any parameters, but you still need the parentheses after the method name.
+
+- The method call arguments must match the method signature in number, order, and type.
+
+- A **method**  call interrupts the sequential execution of statements, causing the program to first execute the statements in the method or constructor before continuing. Once the last statement in the method or constructor has executed or a ``return`` statement is executed, the flow of control is returned to the point immediately following the method or constructor call.
+
+- **Non-void methods** are methods that return values. You should do something with the return value, such as assigning it to a variable, using it in an expression, or printing it.
   
 
 
