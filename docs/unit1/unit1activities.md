@@ -68,15 +68,11 @@ In this activity, you'll be creating your own **MadLibs** game using Java! A Mad
 
 <div class="task" markdown="block">
 
-1. Come up with a fun story to use for MadLibs. Yours should be long enough to include at least **10 variables**. Choose nouns, verbs, adjectives, etc., that you want the user to fill in, and decide how many blanks you’ll need.
+1. Come up with a fun story to use for MadLibs. Yours should be long enough to include at least **10 variables**. Choose nouns, verbs, adjectives, etc., that you want the user to fill in, and decide how many blanks you’ll need. Write the full story in a `// comment` with placeholders like below.
 
    > *Example:* "Today, I went to the PLACE to VERB with my ADJECTIVE NOUN. It was a ADJECTIVE day, and we had lots of fun!"
 
-2. In your `main` method, **declare variables** for the parts of the story that will be filled in. For each blank, create a variable.
-
-   > *Example:* `String adjective1;`
-
-3. Instead of asking the user, **manually assign values** to each variable in your code.
+2. In your `main` method, **declare variables** for the parts of the story that will be filled in. For now, **manually assign values** to each variable in your code.
 
    > *Example:*
 
