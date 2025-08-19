@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.13: Constructors - Creating & Initializing Objects" 
+title: "📓1.13: Constructors" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 14
 ---
@@ -17,17 +17,9 @@ nav_order: 14
 {:.note}
 📖 This page is a condensed version of [CSAwesome Topic 1.13](https://runestone.academy/ns/books/published/csawesome2/topic-1-13-constructors.html) 
 
-#### CSAwesome Activities: Turtle Class
-
-<div class="task" markdown="block">
-
-🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
-
-👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-13-constructors.html"><button class="btn">CSAwesome Topic 1.13</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
-
-</div>
-
 ---
+
+## Constructors: Creating & Initializing Objects
 
 A Java class defines what objects of the class know (**attributes**) and what they can do (**behaviors**).
 Each class has **constructors** which are used to initialize the attributes in a newly created object.
@@ -51,9 +43,7 @@ World habitat = new World();    // create a new World object
 Turtle t = new Turtle(habitat); // create a new Turtle object
 ```
 
----
-
-### The World Class Constructors
+### The `World` Class Constructors
 
 There can be _more than one constructor_ defined in a class. This is called **overloading** the constructor. 
 
@@ -70,9 +60,7 @@ World world1 = new World(); // default size 640x480
 World world2 = new World(300, 400); // custom size 300x400
 ```
 
----
-
-### The Turtle Class Constructors
+### The `Turtle` Class Constructors
 
 The `Turtle` class also has multiple constructors.
 It always requires a **world** argument for where the turtle will be drawn.
@@ -89,41 +77,7 @@ Turtle t2 = new Turtle(50, 100, world1);
 {:.highlight}
 🗺️ The Turtle world does not use the Cartesian coordinate system with `(0,0)` in in the middle the screen. Instead: `(0,0)` is at the **top left corner** of the screen, `x` increases to the right, and `y` increases towards the bottom of the screen.
 
----
-
-## **Coding Exercise: Turtle Constructors**
-
-<div class="task" markdown="block">
-
-1. Open your GitHub Codespace.
-
-2. Create a new file named `TurtleConstructorTest.java`.
-
-3. Type this code into your file:
-
-   ```java
-   World world1 = new World(300, 300);
-
-   // Turtle in the middle of the world
-   Turtle t1 = new Turtle(world1);
-
-   // Try changing the World constructor to 300x400
-   // Try placing the turtle in the top-right corner
-   // What happens if you mix up argument order?
-   t1.turnLeft();
-
-   world1.show(true);
-   ```
-
-4. Press **Run** to see the results.
-
-5. Experiment with different constructor arguments and observe where the turtle appears.
-
-</div>
-
----
-
-## Object Variables and References
+### Object Variables and References
 
 New objects are saved in **reference type** variables, which hold a reference to the object in memory.
 
@@ -135,15 +89,12 @@ Turtle t1 = null; // no object yet
 t1 = new Turtle(world1);
 ```
 
----
-
-### Video: Understanding `null`
+#### Video: Understanding `null`
+{:.no_toc}
 
 <iframe width="650" height="415" src="https://www.youtube.com/embed/5fpjgXAV2BU" title="YouTube video" frameborder="0" allowfullscreen></iframe>
 
----
-
-## Constructor Signatures
+### Constructor Signatures
 
 When using a class from a library (e.g., `Turtle`), you can look up the **constructor signatures** in the documentation.
 
@@ -156,9 +107,7 @@ Example (`Turtle` class):
 * `Turtle(World w)`
 * `Turtle(int x, int y, World w)`
 
----
-
-## Arguments, Parameters, and Call by Value
+### Arguments, Parameters, and Call by Value
 
 When a constructor like:
 
@@ -173,67 +122,13 @@ is called:
 
 Java passes arguments **by value** (copies).
 
----
-
-## **Debugging Challenge: Turtle Constructors**
+#### CSAwesome Activities: Turtle Class
 
 <div class="task" markdown="block">
 
-1. Open your GitHub Codespace.
+🐢 To explore the concepts from this lesson in code, we'll play around with the `Turtle` class on the CSAwesome website instead of taking notes.  
 
-2. Create a new file `TurtleConstructorDebug.java`.
-
-3. The code below has **multiple errors** — fix them so it runs:
-
-   ```java
-   World w = new World(300, 0);
-   Turtle t0; 
-   Turtle t1 = new Turtle(w);
-   Turtle t2 = new Turtle(100, 50, w);
-
-   t0 = new Turtle(w);
-   t0.forward();
-   t1.turnRight();
-   t2.turnLeft();
-
-   w.show(true);
-   ```
-
-4. Try changing constructor arguments and see how the turtle positions change.
-
-</div>
-
----
-
-## **Group Coding Challenge: Custom Turtles**
-
-<div class="task" markdown="block">
-
-1. Open your GitHub Codespace.
-
-2. Create a new file named `CustomTurtleRunner.java`.
-
-3. Type this code:
-
-   ```java
-   World world1 = new World(400, 400);
-
-   // 1. Large turtle (150x200) — green body, blue shell, position (150, 300)
-   CustomTurtle turtle1 = new CustomTurtle(150, 300, world1, Color.green, Color.blue, 150, 200);
-   turtle1.forward();
-
-   // 2. Small turtle (25x50) — red body, yellow shell, position (350, 200)
-   CustomTurtle turtle2 = new CustomTurtle(350, 200, world1, Color.red, Color.yellow, 25, 50);
-   turtle2.forward();
-
-   // 3. Your own custom turtle!
-   CustomTurtle turtle3 = new CustomTurtle(200, 200, world1, Color.orange, Color.pink, 100, 150);
-   turtle3.forward();
-
-   world1.show(true);
-   ```
-
-4. Experiment with different sizes, positions, and colors.
+👉 **GO TO:** <a href="https://runestone.academy/ns/books/published/csawesome2/topic-1-13-constructors.html"><button class="btn">CSAwesome Topic 1.13</button></a>, **SIGN IN** to your account, and complete all the turtle-related **coding activities/challenges** with a partner. 
 
 </div>
 
@@ -241,14 +136,29 @@ Java passes arguments **by value** (copies).
 
 ## Summary
 
-* **Constructors** create and initialize objects.
-* They have the same name as the class.
-* Use `new ClassName(arguments)` to create an object.
-* **No-argument constructors** set default values.
-* **Overloaded constructors** have the same name but different parameter lists.
-* **Parameters** = variables in the signature.
-* **Arguments** = values passed into the constructor.
-* Java passes arguments **by value**.
+- (AP 1.13.A.1) A class contains **constructors** that are called with the keyword ``new`` to create objects and initialize its attributes. 
+
+- (AP 1.13.A.1) **Constructors** have the same name as the class.
+
+- (AP 1.13.C.1) An object is typically created using the keyword new followed by a call to one of the class’s constructors. ``new ClassName()`` creates a new object of the specified class and calls a constructor.
+
+- (AP 1.13.B.1) The new object is saved in a variable of a **reference type** which holds an object reference or null if there is no object.
+
+- (AP 1.13.A.2) A **constructor signature** consists of the constructor’s name, which is the same as the class name, and the ordered list of parameter types. 
+
+- (AP 1.13.A.2) The **parameter list**, in the header of a constructor, lists the types of the values that are passed and their variable names.
+
+- (AP 1.13.A.3) Constructors are said to be **overloaded** when there are multiple constructors with different signatures. They must differ in the number, type, or order of parameters.
+
+- A **no-argument constructor** is a constructor that doesn't take any passed in values (arguments).
+
+- (AP 1.13.C.2) **Parameters** allow constructors to accept values to establish the initial values of the attributes of the object.
+
+- (AP 1.13.C.3) A constructor **argument** is a value that is passed into a constructor when the constructor is called. The arguments passed to a constructor must be compatible in order and number with the types identified in the parameter list in the constructor signature. 
+
+- (AP 1.13.C.3) When calling constructors, arguments are passed using call by value. **Call by value** initializes the parameters with copies of the arguments.
+
+- (AP 1.13.C.4) A constructor call interrupts the sequential execution of statements, causing the program to first execute the statements in the constructor before continuing. Once the last statement in the constructor has been executed, the flow of control is returned to the point immediately following where the constructor was called.
 
 ---
 
