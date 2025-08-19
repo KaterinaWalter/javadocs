@@ -108,4 +108,48 @@ adjective1 = scan.nextLine();
 
 ---
 
+## 🏗️ ACTIVITY #2: Construction Calculator
+
+You just got a summer job shadowing a contractor on a construction site. Your boss isn't too impressed with your manual labor skills, city kid, but maybe you can shine on the engineering side of it. If you can make your initial calculations quickly, that gives you more time to struggle with the building part! 
+
+In this activity, you'll write some Java methods to help you with various tasks on the job. 
+
+### Part A: Unit Conversions
+
+
+### Part B: Ladder on Tower
+
+![image-small](Figures/ladder.png)
+
+One common use for the Pythagorean theorem is to calculate the length of
+ladder you will need to reach your work bestie, who got stuck standing at the top of a tower surrounded by a moat. The ladder will be the **hypotenuse** of a triangle whose legs are the height of the tower and the width of the moat (since you have to place the base of the ladder on the edge of the moat).
+
+> The Pythagorean theorem is named for **Pythagoras**, who was also the leader of the gang of Greek mathematicians who legend has it allegedly drowned their fellow mathematician for showing that :math:`\sqrt{2}` is irrational.
+
+<div class="task" markdown="block">
+
+1. Copy the **starter code** for the method below into your program (outside of the main method, but still inside the `Main` class):
+  ```java
+  public static double calcLadderSize(double height, double width) {
+      double ladderSize;
+      // TODO: Calculate using Pythagorean theorem
+      // Use Math.sqrt and Math.pow or *
+      return ladderSize;
+  }
+  ```
+2. Complete the `calcLadderSize` method body using the Pythagorean theorem:
+  $$
+  c = \sqrt{a^2 + b^2}
+  $$
+  * `a` = height of the tower
+  * `b` = width of the moat
+  * `c` = ladder length
+
+3. Call your method from the `main()` method with `height` = 30 and `width` = 40. Make sure to **store** the result in a variable.
+  > HINT: `double size = ...`
+
+4. Use **string concatenation** to print out a sentence with the calculated `size`: 
+  > EXPECTED OUTPUT: `Bestie, I need a 50.0 foot ladder!`
+
+</div>
 
