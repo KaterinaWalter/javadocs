@@ -114,8 +114,31 @@ You just got a summer job shadowing a contractor on a construction site. Your bo
 
 In this activity, you'll write some Java methods to help you with various tasks on the job. 
 
-### Part A: Unit Conversions
+### PART A: Unit Conversions
 
+Contractors constantly need to convert between units: feet to inches, yards to feet, and meters to centimeters. Your boss says if you can't do this in your head, at least make the computer do it for you!
+
+<div class="task" markdown="block">
+
+1. Copy the **starter code** for the method below into your program (outside of the `main` method, but still inside the `Main` class):
+   ```java
+   public static double feetToInches(double feet) {
+       double inches;
+       // TODO: Convert feet to inches (1 foot = 12 inches)
+       return inches;
+   }
+   ```
+2. Complete the method body by multiplying the number of `feet` by `12` to get `inches`.
+3. Call your method from the `main()` method with `feet = 8`.
+   * Store the result in a variable, e.g. `double result = feetToInches(8);`
+4. Print the result using **string concatenation**:
+   > EXPECTED OUTPUT: `8.0 feet = 96.0 inches`
+5. *Optional Challenge*:
+   * Add **more conversion methods** on your own.
+     * `yardsToFeet` (1 yard = 3 feet)
+     * `metersToCentimeters` (1 meter = 100 centimeters)
+
+</div>  
 
 ### Part B: Ladder on Tower
 
@@ -152,4 +175,55 @@ ladder you will need to reach your work bestie, who got stuck standing at the to
   > EXPECTED OUTPUT: `Bestie, I need a 50.0 foot ladder!`
 
 </div>
+
+### PART C: Random Supply Delivery
+
+On a real construction site, supplies don’t always arrive in the exact amounts you expect. To simulate this chaos, you’ll use the `Math.random()` method to generate random numbers for a delivery of wood planks.
+
+> Recall: `Math.random()` returns a decimal between 0.0 (inclusive) and 1.0 (exclusive). You can **multiply** it to scale the range, and **cast** to `int` if you want whole numbers.
+
+<div class="task" markdown="block">
+
+1. Write a method called `randomPlankDelivery` that generates a **random number of planks** between 10 and 50 (inclusive).
+
+   ```java
+   public static int randomPlankDelivery() {
+       int planks;
+       // TODO: Use Math.random to generate an int from 10 to 50
+       return planks;
+   }
+   ```
+
+2. Inside the method, use the formula:
+
+   ```java
+   planks = (int)(Math.random() * 41) + 10;
+   ```
+
+   * `Math.random() * 41` → gives a number between 0.0 and 40.999…
+   * Adding `10` shifts it into the range **10–50**.
+   * Casting to `(int)` gives a whole number.
+
+3. In your `main()` method, **call the method 3 times** to simulate 3 separate deliveries.
+
+   ```java
+   int delivery1 = randomPlankDelivery();
+   int delivery2 = randomPlankDelivery();
+   int delivery3 = randomPlankDelivery();
+   ```
+
+4. Print the results in a clear sentence for each delivery, for example:
+
+   ```
+   First truck delivered 32 planks.
+   Second truck delivered 48 planks.
+   Third truck delivered 15 planks.
+   ```
+
+5. *Optional Challenge*:
+   * Add all three deliveries together and print the **total number of planks delivered**.
+   * Example output: `Total planks delivered: 95`
+
+</div>  
+
 
