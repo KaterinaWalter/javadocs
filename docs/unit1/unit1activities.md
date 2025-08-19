@@ -160,10 +160,7 @@ ladder you will need to reach your work bestie, who got stuck standing at the to
       return ladderSize;
   }
   ```
-2. Complete the `calcLadderSize` method body using the Pythagorean theorem:
-  $$
-  c = \sqrt{a^2 + b^2}
-  $$
+2. Complete the `calcLadderSize` method body using the Pythagorean theorem, `Math.sqrt` and `Math.pow`: $ c = \sqrt{a^2 + b^2} $
   * `a` = height of the tower
   * `b` = width of the moat
   * `c` = ladder length
