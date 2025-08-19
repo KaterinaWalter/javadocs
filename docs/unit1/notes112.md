@@ -22,12 +22,13 @@ nav_order: 13
 Java is an **object-oriented programming** language. That means that one of the primary ways of designing and organizing a Java program is in terms of **objects**. Objects combine _data_, and the _code that operates on that data_, into a single unit.
 
 To create objects, we first define a **class** which provides a _template_ for creating the objects. 
-> In Java, all programs are built out of classes. This is why every Java program starts with `public class`.
+> In Java, all programs are built out of classes. This is why every Java program starts with the keywords `public class`.
 
-
-<!--
+<div class="task" markdown="block">
+ 
 Print out the Creature coloring sheets and crayons/markers or bring cookie cutters and playdough to class. Ask students to decorate the turtle cutouts or playdough cutouts. Tell them they have all made objects of the Creature class (or other cookie-cutter shapes). Ask them to assign some attributes such as name and color. Ask them to come up with behavior or method names such as goForward and turn.
--->
+ 
+</div>
 
 In this unit, you will learn the vocabulary of object-oriented programming and how to _create_ and _use_ objects of a class written for you. In later units, you will learn to write your own classes.
 
@@ -37,7 +38,7 @@ A class is a **template** for objects of a particular _classification_. You can 
 
 * A **blueprint** of a house used to construct multiple homes
 * A **cookie cutter** used to create cookies
-  * The cookie cutter (**class**) can be used to create as many cookies (**objects**) as you want. The cookies are the same shape, but can have different decorations (_attribute values_).
+  > The cookie cutter (**class**) can be used to create as many cookies (**objects**) as you want. The cookies are the same shape, but can have different decorations (_attribute values_).
 
 ![image-small](Figures/blueprint.png)
 ![image-small](Figures/cookieCutterLabelled.png)
