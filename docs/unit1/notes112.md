@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓1.12: Objects - Instances of Classes" 
+title: "📓1.12: Java Objects" 
 parent: "1️⃣ Objects & Methods"
 nav_order: 13
 ---
@@ -18,6 +18,8 @@ nav_order: 13
 📖 This page is a condensed version of [CSAwesome Topic 1.12](https://runestone.academy/ns/books/published/csawesome2/topic-1-12-objects.html) 
 
 ---
+
+## Objects (instances of Classes)
 
 Java is an **object-oriented programming** language. That means that one of the primary ways of designing and organizing a Java program is in terms of **objects**. Objects combine _data_, and the _code that operates on that data_, into a single unit.
 
