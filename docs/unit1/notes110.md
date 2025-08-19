@@ -94,8 +94,10 @@ System.out.println(calcArea(4,2)); // use directly
 
 ### Calling Methods from Another Class
 
-In the examples above, we called the methods just by using the method name. However, if we call a method from a _different class_, a different Java program, we need to include its **class name**. 
-> For example, if the ``calcArea`` method is in a class called ``MathFunctions``, we could call it as ``MathFunctions.calcArea()``. Class methods are typically called using the class name along with the **dot operator (`.`)**. 
+In the examples above, we **called** the methods just by using the method name since they were _defined in that same class_. 
+
+However, if we call a method from a _different class_, another Java program, we need to include its **class name**. Class methods are typically called using the class name along with the **dot operator (`.`)**.
+> For example, if the ``calcArea`` method is in a class called ``MathFunctions``, we could call it as ``MathFunctions.calcArea()``.  
 
 ---
 
