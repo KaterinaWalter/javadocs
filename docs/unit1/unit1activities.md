@@ -91,13 +91,13 @@ In this activity, you'll be creating your own **MadLibs** game using Java! A Mad
    > *Example:*
 
    ```java
-   String story = "Today, I went to the " + place1 + " to " + verb1 +
+   String sentence1 = "Today, I went to the " + place1 + " to " + verb1 +
                   " with my " + adjective1 + " friend!";
    ```
 
 5. **Print** out your story!
 
-   > It may be easier to separate each sentence into its own variable, then print them together at the end.
+   > It will be easier to separate each sentence into its own variable and/or print statement, rather than build one giant string for the whole story.
 
 </div>  
 
@@ -105,9 +105,7 @@ In this activity, you'll be creating your own **MadLibs** game using Java! A Mad
 
 <div class="task" markdown="block">
 
-1. Copy your Part A story into a new program or comment out the old one so you can reuse the structure.
-
-2. At the **top** of your program, import the Scanner class:
+1. At the **top** of your program, import the Scanner class:
 
    ```java
    import java.util.Scanner;
@@ -126,7 +124,7 @@ In this activity, you'll be creating your own **MadLibs** game using Java! A Mad
    String adjective1 = scan.nextLine();
    ```
 
-5. Use string **concatenation** to build your story, this time using the user’s input.
+5. Use string **concatenation** to build your story as before, but this time the variables contain the user’s input.
 
 6. **Print** the completed story to the console.
 
