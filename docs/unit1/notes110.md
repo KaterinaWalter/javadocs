@@ -58,7 +58,7 @@ However, many methods are **non-void**: think of these kind of like mathematical
 
 ![image](Figures/function.png)
 
-In the next lesson, we will look at the `Math` library in Java, but consider a simple **non-void** method that squares a number:
+In the next lesson, we will look at the `Math` library in Java, but consider a simple **non-void** method that calculates area given length and width:
 
 ```java
 public static int calcArea(int length, int width) {
