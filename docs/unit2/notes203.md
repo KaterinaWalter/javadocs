@@ -21,25 +21,21 @@ nav_order: 3
 
 ## `if` Statements (Conditional Blocks)
 
-The statements in a Java main method normally run or _execute one at a time_ in the order they are found, sequentially from top to bottom. **`if` statements** (also called **conditionals** or **selection**) are blocks of code that change the flow of control through the program so that some code is only run when some condition is true. 
+Code statements (_instructions_) in a Java main method normally run sequentially, executed line-by-line in the order they are written. One way to change the flow of control through the program is with **If Statements** (also called _conditionals_), which are structures found in all programming languages as a way to **make decisions** about which code to execute. 
 
-**If statements** are found in all programming languages as a way to _make choices_. 
-* In an if statement, if the condition is `true` then the next statement or a block of statements will execute.
-* If the condition is `false` then the next statement or block of statements is skipped.
+* `if` the **condition** is `true`, then the next statement (or block of statements) will _execute_.
+* `if` the **condition** is `false`, then the next statement (or block of statements) is _skipped_. 
 
 ![image-small](Figures/Condition.png)
 
-A **conditional** uses the keyword ``if`` followed by a **boolean expression** inside of  an open parenthesis ``(`` and a close parenthesis ``)`` and then followed by a single statement or block of statements. The open curly brace ``{`` and a close curly brace ``}`` are used to group a block of statements together.  
-
-{:.highlight}
-It is recommended to _always include the curly braces_ even if you have just one statement under the if statement! The questions you will see on the AP exam will usually use curly braces.
+A **conditional block** uses the keyword ``if`` followed by a **boolean expression** inside of an open parenthesis ``(`` and a close parenthesis ``)`` and then followed by either a single statement, or block of statements. The open curly brace ``{`` and a close curly brace ``}`` are used to **group a block of statements** together.  
 
 <div class="imp" markdown="block">
 
 Examples of `if` statements: 
 
 ```java
-// A single if statement
+// A single if statement without {}
 if (boolean expression)
   statement;
 
@@ -57,7 +53,7 @@ if (boolean expression) {
 }
 ```
 
-> Note that there is no semicolon (`;`) at the end of the **boolean expression** in an if statement, even if it is the end of that line. The semicolon goes at the end of the _whole_ if statement, often on the next line. Or `{ }` are used to mark the beginning and end of the block of code under the if condition.
+> Note that there is no semicolon (`;`) at the end of the **boolean expression** in an if statement. Curly braces (`{ }`) are used to mark the beginning and end of the block of code under the if condition.
 
 </div>
 
