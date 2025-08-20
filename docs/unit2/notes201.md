@@ -126,11 +126,12 @@ To understand why **ORDER MATTERS**, consider this pseudocode algorithm for buyi
 #### Group Challenge: Algorithm Design
 {:.no_toc}
 
-![image-small](Figures/algorithms.png)
-
 <div class="task" markdown="block">
 
-🍫 In small groups, design an algorithm for a common problem: **choosing a snack**! Write **pseudocode** that includes both _selection_ and _repetition_, and then draw a **flowchart**. Make it customized to your own preferences and experiences. 
+🍫 In small groups, design an algorithm for a common problem: **choosing a snack**. Write **pseudocode** that includes both _selection_ and _repetition_, and then draw a **flowchart**. 
+> Make it customized to your own preferences and experiences! 
+
+![image-small](Figures/algorithms.png)
 
 _Examples:_
 - If there are Oreos today, grab one immediately and head back to class. 
