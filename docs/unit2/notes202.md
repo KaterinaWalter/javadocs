@@ -171,22 +171,18 @@ The **remainder** operator has been used quite a bit on the AP CSA exam, so you 
   ``num`` and ``limit`` are both positive.
 
 {:.warning}
-Because Java's ``%`` is a remainder operator, you can’t check if a number is odd with the expression ``num % 2 == 1``.
+Because Java's ``%`` is a remainder operator, you should always use ``num % 2 != 0`` to **check if a number is odd**. You can’t accurately check if a number is odd with the expression ``num % 2 == 1``. 
 
-> That expression will be ``true`` if ``num`` is positive and odd and ``false``
-  when ``num`` is even, both of which are correct. But if ``num`` is negative
-  and odd, its remainder when divided by 2 is -1, not 1 and this expression will
-  evaluate to ``false``. Thus you should always use ``num % 2 != 0`` to check if
-  ``num`` is odd.
+> That expression breaks with _negative_ numbers. ``num % 2 != 0`` will be ``true`` if ``num`` is positive and odd and ``false`` when ``num`` is even, both of which are correct. BUT if ``num`` is _negative_ and odd, its remainder when divided by 2 is -1, not 1, and this expression will (incorrectly) evaluate to ``false``. 
   
 #### Relational Operators Game
 {:.no_toc}
 
 <div class="task" markdown="block">
 
-🎲 Try the game below to practice! Click on _Relationals_, evaluate the relational expression and click on **None**, **All**, or the **numbers** that make the expression `true`. Check on _Compound_ for an added challenge. We encourage you to work in pairs and see how high a score you can get.
+🎲 Try the game below to practice! Click on _Relationals_, evaluate the relational expression and click on **None**, **All**, or the **numbers** that make the expression `true`. Check on _Compound_ for an added challenge.
 
-<a href="https://csa-games.netlify.app/" target="_blank"><button class="btn">Relational Operators Game</button></a>
+<iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
 </div>
 
