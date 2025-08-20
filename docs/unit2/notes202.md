@@ -100,8 +100,6 @@ System.out.println(yourAge != drivingAge);
 ```
 </div>
 
-> Remember that 1 equal sign (``=``) is used for _assigning_ a value and 2 equal signs (``==``) for _testing_ values!
-
 #### Comparing Primitives vs. References
 
 Watch the following video which shows what happens in memory as **primitive data types** like ``int`` and **reference (object) types** like ``Dog`` are compared with ``==`` in a physical model of Java memory:
