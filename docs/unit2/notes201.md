@@ -30,11 +30,11 @@ Every **algorithm** consists of a _sequence of steps_. Up until now, we have bee
 
 <div class="imp" markdown="block">
   
-**CONTROL STRUCTURES:**
-* 🔀 _Branch_ the code into different paths using **SELECTION**
+Algorithms can implement **control structures** that:
+* 🔀 _Branch_ the code execution into different paths using **SELECTION**
   > **Conditional** decision-making (`if`, `else if`, `else`)
 * 🔁 _Repeat_ a block of code using **ITERATION**
-  > **Loop** structures (`while`, `for`, `for each`) 
+  > **Loops** (`while`, `for`, `for each`) 
 
 </div>
 
@@ -42,7 +42,7 @@ Every **algorithm** consists of a _sequence of steps_. Up until now, we have bee
 
 <html>
   <dl>
-    <dt>Selection (Branching)</dt>
+    <dt>Selection</dt>
     <dd>When a <em>choice</em> of how a process will proceed is based on a <strong>true or false decision</strong>.</dd>
   </dl>
 </html>
@@ -71,8 +71,8 @@ Every **algorithm** consists of a _sequence of steps_. Up until now, we have bee
 
 <html>
   <dl>
-    <dt>Repetition (Iteration)</dt>
-    <dd>When a process <em>repeats</em> itself until a specified <strong>condition is met</strong>.</dd>
+    <dt>Repetition</dt>
+    <dd>When a process <em>repeats</em> itself, or <em>iterates</em>, until a specified <strong>condition is met</strong>.</dd>
   </dl>
 </html>
 
