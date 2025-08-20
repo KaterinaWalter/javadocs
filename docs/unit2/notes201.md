@@ -101,23 +101,21 @@ For complex problems, it is important to _plan_ your solution before writing cod
 ![image-small](Figures/Condition-two.png)
 
 {:.highlight}
-The **order** in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm. 
+The **order** in which sequencing, selection, and repetition are used contributes to the _outcome_ of the algorithm. 
 
 <div class="task" markdown="block">
 
 **Pseudocode:**
 1. Initialize `total` amount of money.
-2. Repeat while still money in `total`:
+2. Repeat while still have money in `total`:
    - If `total` more than $25, buy a gift card and subtract 25 from `total`.
    - If `total` more than $10, buy a small cake and subtract 10 from `total`.
    - If `total` more than $5, buy some candy and subtract 5 from `total`.
    - If `total` more than $1, buy a card and subtract 1 from `total`.
-   - Otherwise, give them the change.
+   - Otherwise, give them the change. 
 
-💬 Decide what the **outcome** will be, based on the order of the steps and the conditions.
+💬 Imagine you're buying a birthday gift, following the algorithm above. Decide what the **outcome** will be if you have `$16` to spend, based on the order of the steps and the conditions. What if you had `$22`?
   > Afterwards, _switch the order_ of some of the steps and determine how the outcomes change.
-- If you have $16 to spend, what will be the outcome?
-- If you have $22 to spend, what will be the outcome?
 
 </div>
 
