@@ -66,8 +66,17 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ## Boolean Variables & Expressions
 
-**Boolean variables** are data containers of type `boolean` that can only store either `true` or `false` as values. **Boolean expressions** are longer statements that need to be _evaluated_, but will result in only `true` or `false`. 
-> ❓ **Boolean expressions** are like simple _questions_ where "yes or no" are the only possible _answers_.
+* **Boolean variables** are data containers of type `boolean` that can only store either `true` or `false` as values.
+  * _Example:_ `boolean lightsOn = true;` 
+* **Boolean expressions** are statements that need to be _evaluated_, but will result in only `true` or `false`.
+  * _Example:_
+  ```java
+  boolean passing = (grade > 60);
+  ```
+  > `(grade > 60)` is the **boolean expression** that evaluates to `true` if the value of the variable `grade` is greater than 60, or `false` otherwise. That result can be stored in a **boolean variable** like `passing`.
+
+{:.highlight}
+❓ **Boolean expressions** are like simple _questions_ where "yes or no" are the only possible _answers_.
 
 ### Testing Equality `==`
 
