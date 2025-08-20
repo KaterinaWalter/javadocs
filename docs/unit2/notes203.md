@@ -74,6 +74,7 @@ System.out.println("Drive carefully");
 
 Most if statements have a boolean expression that uses **relational operators** like `==`, `!=`, `<`, `>`, `<=`, `>=`, as we saw in the last lesson.
 
+For example, `(grade > 60.0)` is a **boolean expression** (rather than just a boolean _variable_) and can be used to control the `if` statement:
 ```java
 double grade = 85.0;
 if (grade > 60.0) {
@@ -91,7 +92,7 @@ What if you want to pick between two possibilities? If you are trying to decide 
 
 A **two-way selection** involves two connected conditional blocks: an `if` statement controlled by a **boolean expression** (_condition_), followed by a corresponding `else` statement. It executes the `if` body when the **condition** is true, and the `else` body when false.
 
-![image](Figures/Condition-two.png)
+![image-small](Figures/Condition-two.png)
 
 ### Syntax of an `if-else` Block
 
@@ -112,6 +113,8 @@ else {
 ```
 
 </div>
+
+<br>
 
 <div class="task" markdown="block">
 
