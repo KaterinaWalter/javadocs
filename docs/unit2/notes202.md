@@ -120,17 +120,26 @@ The **relational operators** below in Java are used to compare _numeric_ values 
 
 > Java only allows these **operators** to be used with _primitive_ type numbers (`int` and `double`), but for _reference/object_ types like `String`, uses the **methods** ``.compareTo()`` and ``.equals()``.
 
+{:.highlight}
 🐊 If you have trouble telling ``<`` and ``>`` apart, use the “hungry alligator” mnemonic beloved by elementary school teachers—think of ``<`` and ``>`` as the mouths of **hungry alligators** which always want to _eat the bigger number_; a ``<`` or ``>`` expression is only ``true`` if the alligator is in fact about to eat the bigger number.
 
-{:.highlight}
 To remember the correct **order** of the two characters in ``<=`` and ``>=``, just
 write them in the same order you would say them out loud in English: “less than or equal
 to” not “equal to or less than”.
 
+<div class="task" markdown="block">
+
+🔮 **Predict:** What will the value of `result` be after execution? 
+
+```java
+boolean result = (5 % 3 == 0) == (3 > 5);
+```
+
+</div>
+
 ### Testing with Remainder `%`
 
-Here are some common **boolean expressions** that are very useful in coding, and the **remainder** operator (`%`) is used in many of them:
-
+Here are some common **boolean expressions** that are very useful in coding, noting that the **remainder** operator (`%`) is used in many of them:
 
 ```java
   // Test if a number is positive
@@ -143,6 +152,9 @@ Here are some common **boolean expressions** that are very useful in coding, and
   (number % 2 > 0)
   //Test if a number is a multiple of x (or divisible by x with no remainder)
   (number % x == 0)
+
+Use it to get the **last digit** from an integer number: ``num % 10`` gives us the
+  rightmost digit of ``num``.
 ```
 
 The **remainder** operator has been used quite a bit on the AP CSA exam, so you should be familiar with it.
@@ -174,7 +186,17 @@ The **remainder** operator has been used quite a bit on the AP CSA exam, so you 
 Because Java's ``%`` is a remainder operator, you should always use ``num % 2 != 0`` to **check if a number is odd**. You can’t accurately check if a number is odd with the expression ``num % 2 == 1``. 
 
 > That expression breaks with _negative_ numbers. ``num % 2 != 0`` will be ``true`` if ``num`` is positive and odd and ``false`` when ``num`` is even, both of which are correct. BUT if ``num`` is _negative_ and odd, its remainder when divided by 2 is -1, not 1, and this expression will (incorrectly) evaluate to ``false``. 
-  
+
+<div class="task" markdown="block">
+
+🔮 **Predict:** What will the value of `result` be after execution? 
+
+```java
+boolean result = (5 % 3 == 0) == (3 > 5);
+```
+
+</div>
+
 #### Relational Operators Game
 {:.no_toc}
 
@@ -435,6 +457,15 @@ Try the [Relationals Practice Game](https://csa-games.netlify.app/). Work in pai
 * Relational expressions evaluate to `true` or `false`.
 * `%` can be used to test divisibility.
 -->
+
+---
+
+## Summary
+
+- (AP 2.2.A.1) Values or expressions can be compared using the relational operators ``==`` and ``!=`` to determine whether the values are the same. With primitive types, this compares the actual primitive values. With reference types, this compares the object references.
+- (AP 2.2.A.2) Numeric values or expressions can be compared using the relational operators (``<``, ``>``, ``<=``, ``>=``) to determine the relationship between the values.
+- (AP 2.2.A.3) An expression involving relational operators evaluates to a ``Boolean`` value of ``true`` or ``false``.	
+- The remainder operator ``%`` can be used to test for divisibility by a number. For example, ``num % 2 == 0`` can be used to test if a number is even.
 
 ---
 
