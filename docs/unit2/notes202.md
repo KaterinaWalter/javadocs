@@ -76,10 +76,6 @@ The **relational operators** ``==`` (equal) and ``!=`` (not equal) can be used t
 {:.warning}
 The **assignment operator**, ONE ``=`` sign, _changes_ the value of a variable. The **equality operator**, TWO ``==`` equal signs, are used to _test_ if a variable holds a certain value, without changing its value!
 
-Watch the following video which shows what happens in memory as **primitive data types** like ``int`` and **reference (object) types** like ``Dog`` are compared with ``==`` in a physical model of Java memory:
-
-<a href="https://www.youtube.com/watch?v=bO9bejT0jwE&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" target="_blank"><button type="button" name="button" class="btn btn-purple">📺 Video: Testing Equality</button></a>
-
 <div class="task" markdown="block">
 
 🔮 **Predict:** What will the code below print out? Try to guess before you run it! 
@@ -98,6 +94,11 @@ System.out.println(age != year);
 ```
 </div>
 
+#### Comparing Primitives vs. References
+Watch the following video which shows what happens in memory as **primitive data types** like ``int`` and **reference (object) types** like ``Dog`` are compared with ``==`` in a physical model of Java memory:
+
+<iframe width="650" height="415" src="https://www.youtube.com/watch?v=bO9bejT0jwE&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" frameborder="0" allowfullscreen></iframe>
+
 We can also use ``==`` or ``!=`` to test if two **reference** values, like ``Turtle`` and ``String`` objects, refer to the same **object**. 
 
 ![image](Figures/turtleEquality.png)
@@ -106,7 +107,7 @@ We can also use ``==`` or ``!=`` to test if two **reference** values, like ``Tur
 
 ### Relational Operators `<`, `>`
 
-The **Relational Operators** below in Java are used to compare numeric values or arithmetic expressions. Although some programming languages allow using relational operators like ``<`` to compare strings, Java only uses these operators for numbers, and uses the methods ``compareTo`` and ``equals`` for comparing ``String`` values.
+The **relational operators** below in Java are used to compare _numeric_ values or arithmetic expressions: 
 
 | Operator | Description |
 | --- | ----------- |
@@ -117,16 +118,18 @@ The **Relational Operators** below in Java are used to compare numeric values or
 | ``==`` |  Equals |
 | ``!=`` | Does not equal |
 
+> Java only allows these **operators** to be used with _primitive_ type numbers (`int` and `double`), but for _reference/object_ types like `String`, uses the **methods** ``.compareTo()`` and ``.equals()``.
+
 🐊 If you have trouble telling ``<`` and ``>`` apart, use the “hungry alligator” mnemonic beloved by elementary school teachers—think of ``<`` and ``>`` as the mouths of **hungry alligators** which always want to _eat the bigger number_; a ``<`` or ``>`` expression is only ``true`` if the alligator is in fact about to eat the bigger number.
 
 {:.highlight}
-To remember the correct order of the two characters in ``<=`` and ``>=``, just
-write them in the same order you would say them in English: “less than or equal
+To remember the correct **order** of the two characters in ``<=`` and ``>=``, just
+write them in the same order you would say them out loud in English: “less than or equal
 to” not “equal to or less than”.
 
-### Testing with remainder `%`
+### Testing with Remainder `%`
 
-Here are some boolean expressions that are very useful in coding, and **remainder** is used in many of them:
+Here are some common **boolean expressions** that are very useful in coding, and the **remainder** operator (`%`) is used in many of them:
 
 
 ```java
@@ -144,17 +147,17 @@ Here are some boolean expressions that are very useful in coding, and **remainde
 
 The **remainder** operator has been used quite a bit on the AP CSA exam, so you should be familiar with it.
 
-- Use it to check for odd or even numbers. If ``num % 2 != 0`` is true, ``num``
+- Use it to check for **odd or even** numbers. If ``num % 2 != 0`` is true, ``num``
   is odd and if ``num % 2 == 0`` is true then ``num`` is even.
 
-- You can also use remainder to check if any number is evenly divisible by any
+- You can also use remainder to check if any number is **evenly divisible** by any
   other: If ``num1 % num2 == 0`` is true then ``num1`` is evenly divisible by
   ``num2``.
 
-- Use it to get the last digit from an integer number: ``num % 10`` gives us the
+- Use it to get the **last digit** from an integer number: ``num % 10`` gives us the
   rightmost digit of ``num``.
 
-- Use it to get the number of minutes left when you convert a total number of minutes to hours and minutes:
+- Use it to get the number of minutes left when you **convert** a total number of minutes to hours and minutes:
 
 ```java
      int totalMinutes = 345;
@@ -162,15 +165,13 @@ The **remainder** operator has been used quite a bit on the AP CSA exam, so you 
      int minutes = totalMinutes % 60; // Number of minutes left over, i.e. 45
 ```
 
-- Use it whenever you have limit in the value, and you need to wrap around to
+- Use it whenever you have **limit** in the value, and you need to wrap around to
   zero if the value goes over the limit: the value of ``num % limit`` will
   always be in the range from 0 (inclusive) to ``limit`` (exclusive) as long as
   ``num`` and ``limit`` are both positive.
 
 {:.warning}
-Because Java's ``%`` is a remainder operator and not a true
-  mathematical modulo operator (as we discussed briefly in section 1.4) you
-  can’t check if a number is odd with the expression ``num % 2 == 1``.
+Because Java's ``%`` is a remainder operator, you can’t check if a number is odd with the expression ``num % 2 == 1``.
 
 > That expression will be ``true`` if ``num`` is positive and odd and ``false``
   when ``num`` is even, both of which are correct. But if ``num`` is negative
