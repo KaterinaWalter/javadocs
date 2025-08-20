@@ -78,7 +78,7 @@ _There are multiple steps to saving in GitHub Codespaces:_
 {:.highlight}
 ❓ **Boolean expressions** are like simple _questions_ where "yes or no" are the only possible _responses_.
 
-### Testing Equality `==`
+### Testing Equality `==`, `!=`
 
 The **relational operators** ``==`` (equal) and ``!=`` (not equal) can be used to _compare_ two values. Expressions that include relational operators are _evaluated_ and **return** a `true` or `false` boolean value. 
 
@@ -113,7 +113,7 @@ We can also use ``==`` or ``!=`` to test if two **reference** values, like ``Tur
 > * In the figure above, we are creating two separate ``Turtle`` objects called ``juan`` and ``mia``. _They do NOT refer to same object or turtle!_
 > * Then, we create a reference variable called ``friend`` that is set to ``mia``. The turtle ``mia`` will have two ways (**references** or **aliases**) to name her – she's both ``mia`` and ``friend``, and these variables _point to the same object_ (same ``Turtle``) in memory. 
 
-### Relational Operators `<`, `>`
+### Relational Operators `<`, `<=`, `>`, `>=`
 
 The **relational operators** below in Java are used to compare _numeric_ values or arithmetic expressions: 
 
@@ -168,16 +168,6 @@ Here are some common **boolean expressions** that are very useful in coding, not
 Because Java's ``%`` is a _remainder_ operator, not a true [modulo](https://en.wikipedia.org/wiki/Modulo) operator, you should always use ``num % 2 != 0`` to **check if a number is odd**. You cannot accurately check if a number is odd with the expression ``num % 2 == 1``. 
 
 > That expression breaks with _negative_ numbers. ``num % 2 != 0`` will be ``true`` if ``num`` is positive and odd and ``false`` when ``num`` is even, both of which are correct. HOWEVER if ``num`` is _negative_ and odd, its remainder when divided by 2 is -1, not 1, and this expression will (incorrectly) evaluate to ``false``. 
-
-<div class="task" markdown="block">
-
-🔮 **Predict:** What will the value of `result` be after execution? 
-
-```java
-boolean result = (5 % 3 == 0) == (3 > 5);
-```
-
-</div>
 
 #### Relational Operators Game
 {:.no_toc}
