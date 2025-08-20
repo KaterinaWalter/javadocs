@@ -38,18 +38,22 @@ img[alt=image] {
 	width: 80%;
 	margin-right: 10%;
 	margin-left: 10%;
-	border-radius: 4px;
+	border-radius: $border-radius;
+	border-color: #F5F6FA;
+	border-width: 2px;
 }
 img[alt=image-small] {
 	width: 50%;
 	margin-right: 25%;
 	margin-left: 25%;
-	border-radius: 4px;
+	border-radius: $border-radius;
+	border-color: #F5F6FA;
+	border-width: 2px;
 }
 iframe {
-width: 90% !important;
-margin-left: 5% !important;
-margin-right: 5% !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
 }
 h1 {
 	color: $jtdpurple;
