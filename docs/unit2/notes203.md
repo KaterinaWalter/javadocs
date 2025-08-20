@@ -19,13 +19,15 @@ nav_order: 3
 
 ---
 
-## If Statements and Control Flow
+## `if` Statements (Conditional Blocks)
 
-The statements in a Java main method normally run or _execute one at a time_ in the order they are found, _from top to bottom_.  **If statements** (also called **conditionals** or **selection**) change the flow of control through the program so that some code is only run when something is true. **If statements** are found in all programming languages as a way to _make choices_. 
+The statements in a Java main method normally run or _execute one at a time_ in the order they are found, sequentially from top to bottom. **`if` statements** (also called **conditionals** or **selection**) are blocks of code that change the flow of control through the program so that some code is only run when some condition is true. 
+
+**If statements** are found in all programming languages as a way to _make choices_. 
 * In an if statement, if the condition is `true` then the next statement or a block of statements will execute.
 * If the condition is `false` then the next statement or block of statements is skipped.
 
-![image](Figures/Condition.png)
+![image-small](Figures/Condition.png)
 
 A **conditional** uses the keyword ``if`` followed by a **boolean expression** inside of  an open parenthesis ``(`` and a close parenthesis ``)`` and then followed by a single statement or block of statements. The open curly brace ``{`` and a close curly brace ``}`` are used to group a block of statements together.  
 
@@ -75,22 +77,6 @@ Most if statements have a boolean condition that uses **relational operators** l
 
 {:.warning}
 A common mistake in if statements is using `=` instead of `==` in the condition. You should always use `==` in the condition of an if statement to test a variable. One equal sign (`=`) _assigns_ a value to a variable, and two equal signs (`==`) _test_ if a variable has a certain value.
-
-#### 💻 In-Class Activity
-{:.no_toc}
-
-Have you ever seen a **Magic 8 ball**? You ask it a yes-no question and then shake it to get a random response like ``Signs point to yes!``, ``Very doubtful``, etc. If you've never seen a Magic 8 ball, check out this [simulator](https://magic-8ball.com/).
-
-<div class="task" markdown="block">
-
-🔮 Write a short program in your `Unit-3-Notes` repository that does the following:
-
-1. Choose a **random number** from 1 to 8
-> If you need help with random numbers, see [lesson 2.9](ttps://runestone.academy/runestone/books/published/csawesome/Unit2-Using-Objects/topic-2-9-Math.html)
-2. Come up with **8 possible responses** to yes-no questions.
-3. Use **if statements** to test the number and print out a different response for each number.
-
-</div>
 
 <!--
 **If statements** are found in all programming languages as a way to choose between different paths in an algorithm. An if statement is a type of **selection** statement that changes the sequential execution. It affects the flow of control by executing different segments of code based on the value of a **Boolean expression**.
