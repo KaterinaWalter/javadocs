@@ -53,15 +53,20 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ---
 
-## ACTIVITY #1: 
+## 🔮 ACTIVITY #1: Magic 8 Ball
 
-In this activity, you'll...
+Have you ever seen a **Magic 8 ball**? You ask it a yes-no question and then shake it to get a random response like ``Signs point to yes!``, ``Very doubtful``, etc. If you've never seen a Magic 8 ball, check out this [simulator](https://magic-8ball.com/).
 
 ### PART A:
 
 <div class="task" markdown="block">
 
-1. Step 1
+Write a branching program in the `main()` method that does the following:
+
+1. Choose a **random integer** from 1 to 10
+  > To review generating random numbers, see [📓 1.11: Math Class](https://coderina.dev/javadocs/docs/unit1/notes111.html)
+2. Come up with **10 possible responses** to yes-no questions.
+3. Use **if statements** to test the number and print out a different response for each number.
 
 </div>
 
