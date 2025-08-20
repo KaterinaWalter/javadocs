@@ -126,14 +126,17 @@ To understand why **ORDER MATTERS**, consider this pseudocode algorithm for buyi
 #### Group Challenge: Algorithm Design
 {:.no_toc}
 
+![image-small](Figures/algorithms.png)
+
 <div class="task" markdown="block">
 
-🍫 In this group activity, design an algorithm for a common problem: **choosing a snack**! Write **pseudocode** that includes both selection and repetition, and draw a **flowchart**.
+🍫 In small groups, design an algorithm for a common problem: **choosing a snack**! Write **pseudocode** that includes both _selection_ and _repetition_, and then draw a **flowchart**. Make it customized to your own preferences and experiences. 
 
-_For example:_
-- If the snack today includes something salty, like Cheez-its or Goldfish, grab an extra one for Mrs. Walter. 
-- If there are no Oreos in the Upper School lounge, go check the Middle School snack shelves. 
-- You may want to consider every item in both snack areas, or leftover candy in your locker, before deciding.
+_Examples:_
+- If there are Oreos today, grab one immediately and head back to class. 
+- If there are no good options in the Upper School lounge, go check the Middle School snack shelves. 
+  - You may want to consider every item in both snack areas, or search all the leftover candy in your locker, before deciding.
+- If there is something salty, like Cheez-its or Goldfish, grab an extra one for Mrs. Walter. 
 
 </div>
 
