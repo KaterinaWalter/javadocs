@@ -19,10 +19,12 @@ nav_order: 1
 
 ---
 
+## Algorithms with Control Structures
+
 Every **algorithm** consists of a _sequence of steps_. Up until now, we have been writing code instructions one line at a time, which then gets executed by the computer in that **sequential order** by default. However, we can create more complex algorithms that do not follow the default sequential order. 
 
 {:.important}
-🧱 The building blocks of all algorithms are: **sequencing**, **selection/branching**, and **repetition/iteration**. 
+🧱 _Control structures_ are the building blocks of all algorithms: **sequencing**, **selection/branching**, and **repetition/iteration**. 
 
 In this unit, we will learn to:
 * 🔀 _Branch_ the code into different paths using **SELECTION**
@@ -30,13 +32,12 @@ In this unit, we will learn to:
 * 🔁 _Repeat_ a block of code using **ITERATION**
   > **Loop** structures (`while`, `for`, `for each`) 
 
-
 ![Sequence, Selection, and Repetition](Figures/algorithms.png)
 > In fact, it's been proven that _all algorithms_ for problems that can be solved on a computer can be constructed by using just these **three control structures**: sequence, selection, and repetition.
 
-## Selection
+### Selection (Branching)
 
-Selection is the process of making a choice based on a true or false decision. In programming, selection (also called branching) occurs when a choice of how the execution of an algorithm will proceed is based on a true or false decision. An algorithm may take different paths based on certain conditions, often using true/false logic.
+🔀 Selection is the process of making a choice based on a true or false decision. In programming, selection (also called branching) occurs when a choice of how the execution of an algorithm will proceed is based on a true or false decision. An algorithm may take different paths based on certain conditions, often using true/false logic.
 
 <div class="task" markdown="block">
 
@@ -59,9 +60,9 @@ Selections are made based on a true or false decision. Look for the word "if" to
 
 </div>
 
-## Repetition
+### Repetition (Iteration)
 
-Repetition is when a process repeats itself until a desired outcome is reached. In programming, repetition is achieved through loops. A **loop** allows an algorithm to repeat certain actions until a specified condition is met. Another term commonly used for repetition is **iteration**.
+🔁 Repetition is when a process repeats itself until a desired outcome is reached. In programming, repetition is achieved through loops. A **loop** allows an algorithm to repeat certain actions until a specified condition is met. Another term commonly used for repetition is **iteration**.
 
 <div class="task" markdown="block">
 
@@ -83,7 +84,7 @@ Repetition is when a process repeats itself until a desired outcome is reached. 
 
 </div>
 
-## Algorithms with Pseudocode and Flowcharts
+### Algorithms with Pseudocode & Flowcharts
 
 For complex problems, it is important to plan your solution before writing code. **Pseudocode** is a simplified, informal way of describing the steps in an algorithm in a human language like English but following the sequence, selection, and repetition structure of a programming language. **Flowcharts** are diagrams that represent the steps in an algorithm. Selection is usually represented as a triangle in a flowchart, and arrows are used to show repetition. Both pseudocode and flowcharts are tools that help you plan your algorithm before writing code.
 
@@ -116,33 +117,27 @@ Pseudocode: Buying a birthday gift for your friend
 Given the pseudocode above:
 
 - If you have $16 to spend, what will be the outcome?
-  - You will buy a gift card, a small cake, some candy, and a card.
-  - You will buy a small cake and some candy.
-  - ✅ You will buy a small cake, some candy, and a card.
-  - You will buy 2 cakes and some candy.
-
 - If you have $22 to spend, what will be the outcome?
-  - You will give them a gift card, a small cake, some candy, and a card.
-  - You will give them a small cake and some candy.
-  - You will give them a small cake, some candy, and a card.
-  - ✅ You will give them 2 cakes, a card, and $1.
 
 </div>
 
-## Coding Challenge: Algorithms
+#### Coding Challenge: Algorithms
+{:.no_toc}
 
 <div class="task" markdown="block">
 
 In this group activity, create an algorithm for a common problem: **choosing a snack**! Write pseudocode that includes both selection and repetition.
 
 For example:
-- If there is no chocolate, keep searching for another snack.
+- If there are no oreos, keep searching for another snack.
 - If you're thirsty, consider the drinks in the fridge.
 - You may want to consider every item in the fridge or leftover Halloween candy before deciding.
 
 Be creative!
 
 </div>
+
+---
 
 ## Summary
 
