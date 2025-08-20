@@ -41,24 +41,20 @@ In this unit, we will learn to:
 
 <div class="task" markdown="block">
 
-**Check Your Understanding**
+🔎 Identify all the **selection** (decision/branching) phrases in the following algorithm:
 
-Identify all the selection (decision or branching) phrases in the following algorithm:
-
-Morning routine:
 1. Wake up.
-2. Snooze for 5 more minutes.
 3. Check your phone and the weather.
-4. **If** there is a text from your friend, answer it.
+4. If there is a text from your bestie, answer it.
 5. Brush teeth and shower.
-6. **If** it’s cold, wear a sweater.
-7. Check **if** you have homework due. If so, pack it in your bag.
-8. Put on your sunglasses **if** it's sunny.
-9. Leave for school or work.
-
-Selections are made based on a true or false decision. Look for the word "if" to identify selections.
+6. If it’s cold, wear a (school-approved) sweater over your polo.
+7. Check if you have homework due. If so, pack it in your bag.
+8. Put on your sunglasses if it's sunny.
+9. Leave for school.
 
 </div>
+
+> **HINT:** Selections are made based on a **true or false** decision. Look out for the word `"if"`, or sometimes `"unless"` or `"otherwise"`, to identify selections.
 
 ### Repetition (Iteration)
 
@@ -66,39 +62,33 @@ Selections are made based on a true or false decision. Look for the word "if" to
 
 <div class="task" markdown="block">
 
-**Check Your Understanding**
+🔎 Identify all the **repetition** (iteration) phrases in the following algorithm:
 
-Identify all the repetition phrases in the following algorithm:
-
-Morning routine 2:
 1. Wake up.
-2. Snooze for 5 more minutes. **Keep** waking up and snoozing for the next 15 minutes.
-3. If there is a text from your friend, answer it. Do this for **all** of your texts.
+2. Snooze for 5 more minutes. Repeat waking up and snoozing for the next 15 minutes.
+3. If there is a text from your friend, answer it. Do this for all of your texts.
 4. Brush teeth and shower.
-5. If it’s cold, wear a sweater.
 6. Check if you have homework due. If so, pack it in your bag.
-7. **Repeat** packing items until your bag is ready.
-8. Leave for school or work.
-
-Repetition is when a process repeats itself until a desired outcome is reached. Look for the words "repeat," "all," or "keep" to identify repetition.
+7. Keep packing items until your bag is ready.
+8. Leave for school.
 
 </div>
 
+> **HINT:** Repetition is when a process repeats itself until a desired outcome is reached. Look for the words `"repeat"`, `"all"`, or `"keep"` to identify repetition.
+
 ### Algorithms with Pseudocode & Flowcharts
 
-For complex problems, it is important to plan your solution before writing code. **Pseudocode** is a simplified, informal way of describing the steps in an algorithm in a human language like English but following the sequence, selection, and repetition structure of a programming language. **Flowcharts** are diagrams that represent the steps in an algorithm. Selection is usually represented as a triangle in a flowchart, and arrows are used to show repetition. Both pseudocode and flowcharts are tools that help you plan your algorithm before writing code.
+For complex problems, it is important to _plan_ your solution before writing code. 
+* **Pseudocode** is a simplified, informal way of describing the steps in an algorithm in a human language like English but following the sequence, selection, and repetition structure of a programming language. 
+* **Flowcharts** are diagrams that represent the steps in an algorithm. Selection is usually represented as a triangle in a flowchart, and arrows are used to show repetition. 
 
 ![Flowchart for Selection branching the code into two paths](Figures/Condition-two.png)
 
-The order in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm.
+The **order** in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm.
 
 <div class="task" markdown="block">
 
-**Check Your Understanding**
-
-Put the steps of the algorithm below in order. Then decide what the outcome will be based on the order of the steps and the conditions.
-
-Pseudocode: Buying a birthday gift for your friend
+Decide what the outcome will be based on the order of the steps and the conditions.
 
 1. Initialize `total` amount of money.
 2. Repeat while still money in `total`:
@@ -108,32 +98,23 @@ Pseudocode: Buying a birthday gift for your friend
    - If `total` more than $1, buy a card and subtract 1 from `total`.
    - Otherwise, give them the change.
 
-</div>
-
-<div class="task" markdown="block">
-
-**Check Your Understanding**
-
-Given the pseudocode above:
-
+_Given the pseudocode above:_
 - If you have $16 to spend, what will be the outcome?
 - If you have $22 to spend, what will be the outcome?
 
 </div>
 
-#### Coding Challenge: Algorithms
+#### Group Challenge: Algorithm Design
 {:.no_toc}
 
 <div class="task" markdown="block">
 
 In this group activity, create an algorithm for a common problem: **choosing a snack**! Write pseudocode that includes both selection and repetition.
 
-For example:
+_For example_
 - If there are no oreos, keep searching for another snack.
 - If you're thirsty, consider the drinks in the fridge.
 - You may want to consider every item in the fridge or leftover Halloween candy before deciding.
-
-Be creative!
 
 </div>
 
