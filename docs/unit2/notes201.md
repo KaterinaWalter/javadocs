@@ -23,17 +23,20 @@ nav_order: 1
 
 Every **algorithm** consists of a _sequence of steps_. Up until now, we have been writing code instructions one line at a time, which then gets executed by the computer in that **sequential order** by default. However, we can create more complex algorithms that do not follow the default sequential order. 
 
-{:.important}
 🧱 _Control structures_ are the building blocks of all algorithms: **sequencing**, **selection/branching**, and **repetition/iteration**. 
 
-In this unit, we will learn to:
+![image-small](Figures/algorithms.png)
+> In fact, it's been proven that _all problems_ that can be solved on a computer can be constructed by using just these three control structures!
+
+<div class="imp" markdown="block">
+  
+**CONTROL STRUCTURES:**
 * 🔀 _Branch_ the code into different paths using **SELECTION**
   > **Conditional** decision-making (`if`, `else if`, `else`)
 * 🔁 _Repeat_ a block of code using **ITERATION**
   > **Loop** structures (`while`, `for`, `for each`) 
 
-![image-small](Figures/algorithms.png)
-> In fact, it's been proven that _all algorithms_ for problems that can be solved on a computer can be constructed by using just these **three control structures**: sequence, selection, and repetition.
+</div>
 
 ### Selection (Branching)
 
@@ -105,17 +108,17 @@ The **order** in which sequencing, selection, and repetition are used contribute
 
 <div class="task" markdown="block">
 
-**Pseudocode:**
-1. Initialize `total` amount of money.
-2. Repeat while still have money in `total`:
+**Pseudocode for buying a birthday gift:**
+1. Initialize `total` amount of money to spend.
+2. **Repeat** while still have money in `total`:
    - If `total` more than $25, buy a gift card and subtract 25 from `total`.
    - If `total` more than $10, buy a small cake and subtract 10 from `total`.
    - If `total` more than $5, buy some candy and subtract 5 from `total`.
    - If `total` more than $1, buy a card and subtract 1 from `total`.
    - Otherwise, give them the change. 
 
-💬 Imagine you're buying a birthday gift, following the algorithm above. Decide what the **outcome** will be if you have `$16` to spend, based on the order of the steps and the conditions. What if you had `$22`?
-  > Afterwards, _switch the order_ of some of the steps and determine how the outcomes change.
+💬 Decide what the **outcome** will be if you have `$16` to spend, based on the order of the steps and the conditions. What if you had `$22`?
+  > Afterwards, _switch the order_ of some of the steps and discuss how the outcomes might change.
 
 </div>
 
