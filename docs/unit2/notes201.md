@@ -109,12 +109,12 @@ _Given the pseudocode above:_
 
 <div class="task" markdown="block">
 
-In this group activity, create an algorithm for a common problem: **choosing a snack**! Write pseudocode that includes both selection and repetition.
+🍫 In this group activity, design an algorithm for a common problem: **choosing a snack**! Write **pseudocode** that includes both selection and repetition, and draw a **flowchart**.
 
-_For example_
-- If there are no oreos, keep searching for another snack.
-- If you're thirsty, consider the drinks in the fridge.
-- You may want to consider every item in the fridge or leftover Halloween candy before deciding.
+_For example:_
+- If the snack today includes something salty, like Cheez-its or Goldfish, grab an extra one for Mrs. Walter. 
+- If there are no Oreos in the Upper School lounge, go check the Middle School snack shelves. 
+- You may want to consider every item in the Middle School snack area or leftover candy in your locker before deciding.
 
 </div>
 
