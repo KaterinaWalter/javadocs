@@ -55,7 +55,9 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ## 🔮 ACTIVITY #1: Magic 8 Ball
 
-Have you ever seen a **Magic 8 ball**? You ask it a yes-no question and then shake it to get a random response like ``Signs point to yes!``, ``Very doubtful``, etc. If you've never seen a Magic 8 ball, check out this [simulator](https://magic-8ball.com/).
+Have you ever used a **Magic 8 ball**? You ask it a yes-no question and then shake it to get a random response like ``Signs point to yes!``, ``Very doubtful``, etc. 
+
+Try out this [Magic 8 Ball Simulator](https://magic-8ball.com/)
 
 ### PART A:
 
