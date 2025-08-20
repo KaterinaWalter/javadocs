@@ -106,8 +106,8 @@ Watch the following video which shows what happens in memory as **primitive data
 
 <iframe width="650" height="415" src="https://www.youtube.com/embed/bO9bejT0jwE?si=a1fY3hrwlivxC043" frameborder="0" allowfullscreen></iframe>
 
-We can also use ``==`` or ``!=`` to test if two **reference** values, like ``Turtle`` and ``String`` objects, _refer to the same object_. 
-> This is NOT the same as saying the values are _equal_!
+{:.highlight}
+So, we can also use ``==`` or ``!=`` to test if two **reference** values, like ``Turtle`` and ``String`` objects, _refer to the exact same object_ stored in memory. 
 
 ![image](Figures/turtleEquality.png)
 > * In the figure above, we are creating two separate ``Turtle`` objects called ``juan`` and ``mia``. _They do NOT refer to same object or turtle!_
