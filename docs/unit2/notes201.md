@@ -32,12 +32,19 @@ In this unit, we will learn to:
 * 🔁 _Repeat_ a block of code using **ITERATION**
   > **Loop** structures (`while`, `for`, `for each`) 
 
-![image](Figures/algorithms.png)
+![image-small](Figures/algorithms.png)
 > In fact, it's been proven that _all algorithms_ for problems that can be solved on a computer can be constructed by using just these **three control structures**: sequence, selection, and repetition.
 
 ### Selection (Branching)
 
-🔀 Selection is the process of making a choice based on a true or false decision. In programming, selection (also called branching) occurs when a choice of how the execution of an algorithm will proceed is based on a true or false decision. An algorithm may take different paths based on certain conditions, often using true/false logic.
+<html>
+  <dl>
+    <dt>Selection (Branching)</dt>
+    <dd>When a <em>choice</em> of how a process will proceed is based on a <strong>true or false decision</strong>.</dd>
+  </dl>
+</html>
+
+🔀 In programming, an algorithm may take different paths (_run different lines of code_) depending on certain **conditions**. 
 
 <div class="task" markdown="block">
 
@@ -47,18 +54,26 @@ In this unit, we will learn to:
 3. Check your phone and the weather.
 4. If there is a text from your bestie, answer it.
 5. Brush teeth and shower.
-6. If it’s cold, wear a (school-approved) sweater over your polo.
-7. Check if you have homework due. If so, pack it in your bag.
-8. Put on your sunglasses if it's sunny.
-9. Leave for school.
+6. If it’s below 50 degrees, wear a sweater over your polo.
+7. Otherwise, pack the sweater in your bag just in case. 
+8. Check if you have homework due. If so, pack it in your bag.
+9. Put on your sunglasses if it's sunny.
+10. Leave for school.
 
 </div>
 
-> **HINT:** Selections are made based on a **true or false** decision. Look out for the word `"if"`, or sometimes `"unless"` or `"otherwise"`, to identify selections.
+> **HINT:** Selections are made based on a **true or false decision**. Look out for the word `"if"`, and sometimes `"otherwise"`, to identify selections.
 
 ### Repetition (Iteration)
 
-🔁 Repetition is when a process repeats itself until a desired outcome is reached. In programming, repetition is achieved through loops. A **loop** allows an algorithm to repeat certain actions until a specified condition is met. Another term commonly used for repetition is **iteration**.
+<html>
+  <dl>
+    <dt>Repetition (Iteration)</dt>
+    <dd>When a process <em>repeats</em> itself until a specified <strong>condition is met</strong>.</dd>
+  </dl>
+</html>
+
+🔁 In programming, repetition is achieved through **loops**, which are code blocks that execute again and again until a desired outcome is reached. 
 
 <div class="task" markdown="block">
 
@@ -79,17 +94,18 @@ In this unit, we will learn to:
 ### Algorithms with Pseudocode & Flowcharts
 
 For complex problems, it is important to _plan_ your solution before writing code. 
+
 * **Pseudocode** is a simplified, informal way of describing the steps in an algorithm in a human language like English but following the sequence, selection, and repetition structure of a programming language. 
 * **Flowcharts** are diagrams that represent the steps in an algorithm. Selection is usually represented as a triangle in a flowchart, and arrows are used to show repetition. 
 
-![image](Figures/Condition-two.png)
+![image-small](Figures/Condition-two.png)
 
-The **order** in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm.
+{:.highlight}
+The **order** in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm. 
 
 <div class="task" markdown="block">
 
-Decide what the outcome will be based on the order of the steps and the conditions.
-
+**Pseudocode:**
 1. Initialize `total` amount of money.
 2. Repeat while still money in `total`:
    - If `total` more than $25, buy a gift card and subtract 25 from `total`.
@@ -98,7 +114,8 @@ Decide what the outcome will be based on the order of the steps and the conditio
    - If `total` more than $1, buy a card and subtract 1 from `total`.
    - Otherwise, give them the change.
 
-_Given the pseudocode above:_
+💬 Decide what the **outcome** will be, based on the order of the steps and the conditions.
+  > Afterwards, _switch the order_ of some of the steps and determine how the outcomes change.
 - If you have $16 to spend, what will be the outcome?
 - If you have $22 to spend, what will be the outcome?
 
