@@ -19,23 +19,25 @@ nav_order: 3
 
 ---
 
-## `if` Statements (Conditional Blocks)
+## One-Way Selection with `if` Statements
 
-Code statements (_instructions_) in a Java main method normally run sequentially, executed line-by-line in the order they are written. One way to change the flow of control through the program is with **If Statements** (also called _conditionals_), which are structures found in all programming languages as a way to **make decisions** about which code to execute. 
+**If statements** (also called **conditionals** or **conditional blocks**) are found in all programming languages as a way to choose between different paths in an algorithm. An if statement is a type of *selection* structure that interrupts the usual sequential execution. It affects the flow of control by executing different segments of code based on the value of a **boolean expression** (also called the **condition**).
 
 * `if` the **condition** is `true`, then the next statement (or block of statements) will _execute_.
 * `if` the **condition** is `false`, then the next statement (or block of statements) is _skipped_. 
 
 ![image-small](Figures/Condition.png)
 
-A **conditional block** uses the keyword ``if`` followed by a **boolean expression** inside of an open parenthesis ``(`` and a close parenthesis ``)`` and then followed by either a single statement, or block of statements. The open curly brace ``{`` and a close curly brace ``}`` are used to **group a block of statements** together.  
+### Syntax of an If Statement
+
+An **if statement** begins with the keyword ``if`` followed by a **boolean expression** (_condition_) inside of an open parenthesis ``(`` and a close parenthesis ``)`` and then followed on the next line by either a single statement, or a block of statements. The open curly brace ``{`` and a close curly brace ``}`` are used to **group a block of statements** together.  
 
 <div class="imp" markdown="block">
 
-Examples of `if` statements: 
+✋ Examples of `if` statements for **one-way selection**: 
 
 ```java
-// A single if statement without {}
+// A single if statement
 if (boolean expression)
   statement;
 
@@ -44,7 +46,7 @@ if (boolean expression) {
   statement;
 }
 
-// An if statement block
+// A block if statement ({} required)
 if (boolean expression) {
   statement1;
   statement2;
@@ -53,17 +55,19 @@ if (boolean expression) {
 }
 ```
 
-> Note that there is no semicolon (`;`) at the end of the **boolean expression** in an if statement. Curly braces (`{ }`) are used to mark the beginning and end of the block of code under the if condition.
+> Note that there is no semicolon (`;`) at the end of the **boolean expression** (_condition_) in an if statement, because it is not the end of an instruction. Curly braces (`{ }`) are used to mark the beginning and end of the conditional's **body**, the block of code that's _dependent_ on the **condition**.
 
 </div>
 
-Examine the example below. Imagine that your cell phone wanted to remind you to take an umbrella `if` it was currently raining in your area when it detected that you were leaving the house:
+Consider the example below. Imagine that your cell phone wanted to remind you to take an umbrella `if` it was currently raining in your area when it detected that you were leaving the house:
 
 ```java
 boolean isRaining = true;
+
 if (isRaining) {
   System.out.println("Take an umbrella!");
 }
+
 System.out.println("Drive carefully");
 ```
 > The variable ``isRaining`` is a boolean variable that is either `true` or `false`. If it is true then the message ``Take an umbrella!`` will be printed and then execution will continue with the next statement which will print ``Drive carefully``.
