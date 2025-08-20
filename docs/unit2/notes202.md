@@ -78,21 +78,20 @@ The **assignment operator**, ONE ``=`` sign, _changes_ the value of a variable. 
 
 <div class="task" markdown="block">
 
-🔮 **Predict:** What will the code below print out? Try to guess before you run it! 
-> Remember that 1 equal sign (``=``) is used for _assigning_ a value and 2 equal signs (``==``) for _testing_ values!
+🔮 **Predict:** What will the code below print out? Try to guess before you run it! Then, add a line of code that re-assigns the `yourAge` variable to 17, and print the boolean expression for whether `yourAge` is equals `drivingAge`.
 
 ```java
-int age = 15;
-int year = 14;
-// Will this print true or false?
-System.out.println(age == year);
-year = 15;
-// Will this print true or false?
-System.out.println(age == year);
-// Will this print true or false?
-System.out.println(age != year);
+int yourAge = 15;
+int drivingAge = 17;
+// 1. Will these print true or false?
+System.out.println(yourAge == drivingAge);
+System.out.println(yourAge != drivingAge);
+// 2. Set yourAge to a new value of 17
+// 3. Print whether yourAge equals drivingAge
 ```
 </div>
+
+> Remember that 1 equal sign (``=``) is used for _assigning_ a value and 2 equal signs (``==``) for _testing_ values!
 
 #### Comparing Primitives vs. References
 Watch the following video which shows what happens in memory as **primitive data types** like ``int`` and **reference (object) types** like ``Dog`` are compared with ``==`` in a physical model of Java memory:
@@ -132,7 +131,7 @@ to” not “equal to or less than”.
 🔮 **Predict:** What will the value of `result` be after execution? 
 
 ```java
-boolean result = (5 % 3 == 0) == (3 > 5);
+boolean result = (5 % 3 == 0) != (3 > 5);
 ```
 
 </div>
