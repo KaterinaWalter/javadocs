@@ -68,7 +68,7 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 * **Boolean variables** are data containers of type `boolean` that can only store either `true` or `false` as values.
   * _Example:_ `boolean lightsOn = true;` 
-* **Boolean expressions** are longer statements with operators that need to be _evaluated_, but will ultimately result in only `true` or `false`.
+* **Boolean expressions** are statements with comparisons/tests that need to be _evaluated_, but will ultimately result in only `true` or `false`.
   * _Example:_
   ```java
   boolean passing = (grade > 60);
@@ -76,18 +76,18 @@ _There are multiple steps to saving in GitHub Codespaces:_
   > `(grade > 60)` is the **boolean expression** that evaluates to `true` if the value of the variable `grade` is greater than 60, or `false` otherwise. That result can be stored in a **boolean variable** like `passing`.
 
 {:.highlight}
-❓ **Boolean expressions** are like simple _questions_ where "yes or no" are the only possible _answers_.
+❓ **Boolean expressions** are like simple _questions_ where "yes or no" are the only possible _responses_.
 
 ### Testing Equality `==`
 
-The **relational operators** ``==`` (equal) and ``!=`` (not equal) can be used to _compare_ two values. Expressions that include relational operators are evaluated and **return** a `true` or `false` boolean value. 
+The **relational operators** ``==`` (equal) and ``!=`` (not equal) can be used to _compare_ two values. Expressions that include relational operators are _evaluated_ and **return** a `true` or `false` boolean value. 
 
 {:.warning}
 The **assignment operator**, ONE ``=`` sign, _changes_ the value of a variable. The **equality operator**, TWO ``==`` equal signs, are used to _test_ if a variable holds a certain value, without changing its value!
 
 <div class="task" markdown="block">
 
-🔮 **Predict:** What will the code below print out? Try to guess before you run it! Then, add a line of code that re-assigns the `yourAge` variable to 17, and print the boolean expression for whether `yourAge` is equals `drivingAge`.
+🔮 **Predict:** What will the code below print out? Try to guess before you run it! Then, add a line of code that _re-assigns_ the `yourAge` variable to 17, and print the boolean expression for whether `yourAge` is equals `drivingAge`.
 
 ```java
 int yourAge = 15;
@@ -103,15 +103,17 @@ System.out.println(yourAge != drivingAge);
 > Remember that 1 equal sign (``=``) is used for _assigning_ a value and 2 equal signs (``==``) for _testing_ values!
 
 #### Comparing Primitives vs. References
+
 Watch the following video which shows what happens in memory as **primitive data types** like ``int`` and **reference (object) types** like ``Dog`` are compared with ``==`` in a physical model of Java memory:
 
-<iframe width="650" height="415" src="https://www.youtube.com/watch?v=bO9bejT0jwE&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" frameborder="0" allowfullscreen></iframe>
+<iframe width="650" height="415" src="https://www.youtube.com/embed/bO9bejT0jwE?si=a1fY3hrwlivxC043" frameborder="0" allowfullscreen></iframe>
 
-We can also use ``==`` or ``!=`` to test if two **reference** values, like ``Turtle`` and ``String`` objects, refer to the same **object**. 
+We can also use ``==`` or ``!=`` to test if two **reference** values, like ``Turtle`` and ``String`` objects, _refer to the same object_. 
+> This is NOT the same as saying the values are _equal_!
 
 ![image](Figures/turtleEquality.png)
 > * In the figure above, we are creating two separate ``Turtle`` objects called ``juan`` and ``mia``. _They do NOT refer to same object or turtle!_
-> * Then, we create a reference variable called ``friend`` that is set to ``mia``. The turtle ``mia`` will have two ways (**references** or **aliases**) to name her – she's both ``mia`` and ``friend``, and these variables _refer_ to the same object (same ``Turtle``) in memory. 
+> * Then, we create a reference variable called ``friend`` that is set to ``mia``. The turtle ``mia`` will have two ways (**references** or **aliases**) to name her – she's both ``mia`` and ``friend``, and these variables _point to the same object_ (same ``Turtle``) in memory. 
 
 ### Relational Operators `<`, `>`
 
@@ -129,7 +131,7 @@ The **relational operators** below in Java are used to compare _numeric_ values 
 > Java only allows these **operators** to be used with _primitive_ type numbers (`int` and `double`), but for _reference/object_ types like `String`, uses the **methods** ``.compareTo()`` and ``.equals()``.
 
 {:.highlight}
-🐊 If you have trouble telling ``<`` and ``>`` apart, use the “hungry alligator” mnemonic beloved by elementary school teachers—think of ``<`` and ``>`` as the mouths of **hungry alligators** which always want to _eat the bigger number_; a ``<`` or ``>`` expression is only ``true`` if the alligator is in fact about to eat the bigger number.
+🐊 If you have trouble telling ``<`` and ``>`` apart, use the “hungry alligator” mnemonic: think of ``<`` and ``>`` as the mouths of **hungry alligators** which always want to _eat the bigger number_. A ``<`` or ``>`` expression is only ``true`` if the alligator is in fact about to eat the bigger number.
 
 To remember the correct **order** of the two characters in ``<=`` and ``>=``, just
 write them in the same order you would say them out loud in English: “less than or equal
@@ -149,8 +151,8 @@ boolean result = (5 % 3 == 0) != (3 > 5);
 
 Here are some common **boolean expressions** that are very useful in coding, noting that the **remainder** operator (`%`) is used in many of them:
 
-- Test if a number, `num`, is **positive**: `num > 0` returns true
-- Test if a number, `num`, is **negative**: `num < 0` returns true
+- Test if a number is **positive**: `number > 0` returns true
+- Test if a number is **negative**: `number < 0` returns true
 - Use the remainder operator it to check for **divisibility by 2**:
   - If ``num % 2 != 0`` is true → ``num`` is **odd**
   - If ``num % 2 == 0`` is true → ``num`` is **even**
