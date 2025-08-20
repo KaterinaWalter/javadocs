@@ -32,7 +32,7 @@ In this unit, we will learn to:
 * 🔁 _Repeat_ a block of code using **ITERATION**
   > **Loop** structures (`while`, `for`, `for each`) 
 
-![Sequence, Selection, and Repetition](Figures/algorithms.png)
+![image](Figures/algorithms.png)
 > In fact, it's been proven that _all algorithms_ for problems that can be solved on a computer can be constructed by using just these **three control structures**: sequence, selection, and repetition.
 
 ### Selection (Branching)
@@ -82,7 +82,7 @@ For complex problems, it is important to _plan_ your solution before writing cod
 * **Pseudocode** is a simplified, informal way of describing the steps in an algorithm in a human language like English but following the sequence, selection, and repetition structure of a programming language. 
 * **Flowcharts** are diagrams that represent the steps in an algorithm. Selection is usually represented as a triangle in a flowchart, and arrows are used to show repetition. 
 
-![Flowchart for Selection branching the code into two paths](Figures/Condition-two.png)
+![image](Figures/Condition-two.png)
 
 The **order** in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm.
 
@@ -114,7 +114,7 @@ _Given the pseudocode above:_
 _For example:_
 - If the snack today includes something salty, like Cheez-its or Goldfish, grab an extra one for Mrs. Walter. 
 - If there are no Oreos in the Upper School lounge, go check the Middle School snack shelves. 
-- You may want to consider every item in the Middle School snack area or leftover candy in your locker before deciding.
+- You may want to consider every item in both snack areas, or leftover candy in your locker, before deciding.
 
 </div>
 
