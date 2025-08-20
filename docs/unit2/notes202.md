@@ -141,51 +141,25 @@ boolean result = (5 % 3 == 0) == (3 > 5);
 
 Here are some common **boolean expressions** that are very useful in coding, noting that the **remainder** operator (`%`) is used in many of them:
 
-```java
-  // Test if a number is positive
-  (number > 0)
-  //Test if a number is negative
-  (number < 0)
-  //Test if a number is even by seeing if the remainder is 0 when divided by 2
-  (number % 2 == 0)
-  //Test if a number is odd by seeing if there is a remainder when divided by 2
-  (number % 2 > 0)
-  //Test if a number is a multiple of x (or divisible by x with no remainder)
-  (number % x == 0)
-
-Use it to get the **last digit** from an integer number: ``num % 10`` gives us the
-  rightmost digit of ``num``.
-```
-
-The **remainder** operator has been used quite a bit on the AP CSA exam, so you should be familiar with it.
-
-- Use it to check for **odd or even** numbers. If ``num % 2 != 0`` is true, ``num``
-  is odd and if ``num % 2 == 0`` is true then ``num`` is even.
-
-- You can also use remainder to check if any number is **evenly divisible** by any
-  other: If ``num1 % num2 == 0`` is true then ``num1`` is evenly divisible by
-  ``num2``.
-
-- Use it to get the **last digit** from an integer number: ``num % 10`` gives us the
-  rightmost digit of ``num``.
-
-- Use it to get the number of minutes left when you **convert** a total number of minutes to hours and minutes:
-
-```java
-     int totalMinutes = 345;
-     int hours = totalMinutes / 60;   // Number of whole hours, i.e. 5
-     int minutes = totalMinutes % 60; // Number of minutes left over, i.e. 45
-```
-
-- Use it whenever you have **limit** in the value, and you need to wrap around to
-  zero if the value goes over the limit: the value of ``num % limit`` will
-  always be in the range from 0 (inclusive) to ``limit`` (exclusive) as long as
-  ``num`` and ``limit`` are both positive.
+- Test if a number, `num`, is **positive**: `num > 0` returns true
+- Test if a number, `num`, is **negative**: `num < 0` returns true
+- Use the remainder operator it to check for **divisibility by 2**:
+  - If ``num % 2 != 0`` is true → ``num`` is **odd**
+  - If ``num % 2 == 0`` is true → ``num`` is **even**
+- You can also use remainder to check if a number is a **evenly divisible** by any another number:
+  - If ``num1 % num2 == 0`` is true → ``num1`` is a **multiple** of ``num2``
+- Use it to get the **last digit** from an integer number: ``int digit = num % 10;``
+- Use it to get the number of minutes **left over** when you convert a total number of minutes to hours and minutes:
+  ```java
+  int totalMins = 345;
+  int hrs = totalMins / 60;  // Number of whole hours
+  int mins = totalMins % 60; // Number of mins left over
+  ```
 
 {:.warning}
-Because Java's ``%`` is a remainder operator, you should always use ``num % 2 != 0`` to **check if a number is odd**. You can’t accurately check if a number is odd with the expression ``num % 2 == 1``. 
+Because Java's ``%`` is a _remainder_ operator, not a true [modulo](https://en.wikipedia.org/wiki/Modulo) operator, you should always use ``num % 2 != 0`` to **check if a number is odd**. You cannot accurately check if a number is odd with the expression ``num % 2 == 1``. 
 
-> That expression breaks with _negative_ numbers. ``num % 2 != 0`` will be ``true`` if ``num`` is positive and odd and ``false`` when ``num`` is even, both of which are correct. BUT if ``num`` is _negative_ and odd, its remainder when divided by 2 is -1, not 1, and this expression will (incorrectly) evaluate to ``false``. 
+> That expression breaks with _negative_ numbers. ``num % 2 != 0`` will be ``true`` if ``num`` is positive and odd and ``false`` when ``num`` is even, both of which are correct. HOWEVER if ``num`` is _negative_ and odd, its remainder when divided by 2 is -1, not 1, and this expression will (incorrectly) evaluate to ``false``. 
 
 <div class="task" markdown="block">
 
@@ -444,18 +418,6 @@ When is the expression below `true`?
 
 </details>
 
-## Relational Operators Practice Game
-
-Try the [Relationals Practice Game](https://csa-games.netlify.app/). Work in pairs and see how high a score you can get.
-
-
-## Summary
-
-* Values or expressions can be compared using `==` and `!=` to determine equality.
-* With primitive types, `==` compares values; with reference types, it compares references.
-* Numeric values can be compared using `<`, `>`, `<=`, `>=`.
-* Relational expressions evaluate to `true` or `false`.
-* `%` can be used to test divisibility.
 -->
 
 ---
