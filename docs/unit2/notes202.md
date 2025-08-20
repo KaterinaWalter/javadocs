@@ -66,22 +66,24 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ## Boolean Variables & Expressions
 
-**Boolean** variables or expressions can only have **true** or **false** values.
+**Boolean variables** are data containers of type `boolean` that can only store either `true` or `false` as values. **Boolean expressions** are longer statements that need to be _evaluated_, but will result in only `true` or `false`. 
+> ❓ **Boolean expressions** are like simple _questions_ where "yes or no" are the only possible _answers_.
 
 ### Testing Equality `==`
 
-The operators ``==`` and ``!=`` (not equal) can be used to compare values. They return true or false boolean values.
+The **relational operators** ``==`` (equal) and ``!=`` (not equal) can be used to _compare_ two values. Expressions that include relational operators are evaluated and **return** a `true` or `false` boolean value. 
 
-{:.important}
-One ``=`` sign changes the value of a variable. Two ``==`` equal signs are used to test if a variable holds a certain value, without changing its value!
+{:.warning}
+The **assignment operator**, ONE ``=`` sign, _changes_ the value of a variable. The **equality operator**, TWO ``==`` equal signs, are used to _test_ if a variable holds a certain value, without changing its value!
 
-Watch the following video which shows what happens in memory as primitive types like ``int`` and reference types like ``Dog`` are compared with ``==`` in a physical model of Java memory:
+Watch the following video which shows what happens in memory as **primitive data types** like ``int`` and **reference (object) types** like ``Dog`` are compared with ``==`` in a physical model of Java memory:
 
 <a href="https://www.youtube.com/watch?v=bO9bejT0jwE&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&ab_channel=colleenlewis" target="_blank"><button type="button" name="button" class="btn btn-purple">📺 Video: Testing Equality</button></a>
 
 <div class="task" markdown="block">
 
-What will the code below print out? Try to guess before you run it! Note that 1 equal sign (``=``) is used for assigning a value and 2 equal signs (``==``) for testing values.
+🔮 **Predict:** What will the code below print out? Try to guess before you run it! 
+> Remember that 1 equal sign (``=``) is used for _assigning_ a value and 2 equal signs (``==``) for _testing_ values!
 
 ```java
 int age = 15;
@@ -98,9 +100,9 @@ System.out.println(age != year);
 
 We can also use ``==`` or ``!=`` to test if two **reference** values, like ``Turtle`` and ``String`` objects, refer to the same **object**. 
 
-In the figure below, we are creating two separate ``Turtle`` objects called ``juan`` and ``mia``. _They do NOT refer to same object or turtle!_ Then, we create a reference variable called ``friend`` that is set to ``mia``. The turtle ``mia`` will have two ways (**references** or **aliases**) to name her -- she's both ``mia`` and ``friend``, and these variables refer to the same object (same ``Turtle``) in memory. If two reference  variables refer to the same object like the turtle on the right in the image below, the test with ``==`` will return true which you can see in the code below.
-
 ![image](Figures/turtleEquality.png)
+> * In the figure above, we are creating two separate ``Turtle`` objects called ``juan`` and ``mia``. _They do NOT refer to same object or turtle!_
+> * Then, we create a reference variable called ``friend`` that is set to ``mia``. The turtle ``mia`` will have two ways (**references** or **aliases**) to name her – she's both ``mia`` and ``friend``, and these variables _refer_ to the same object (same ``Turtle``) in memory. 
 
 ### Relational Operators `<`, `>`
 
