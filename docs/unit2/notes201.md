@@ -106,16 +106,17 @@ For complex problems, it is important to _plan_ your solution before writing cod
 {:.highlight}
 The **order** in which sequencing, selection, and repetition are used contributes to the _outcome_ of the algorithm. 
 
-<div class="task" markdown="block">
+To understand why **ORDER MATTERS**, consider this pseudocode algorithm for buying a birthday gift:
 
-**Pseudocode for buying a birthday gift:**
 1. Initialize `total` amount of money to spend.
 2. **Repeat** while still have money in `total`:
    - If `total` more than $25, buy a gift card and subtract 25 from `total`.
    - If `total` more than $10, buy a small cake and subtract 10 from `total`.
    - If `total` more than $5, buy some candy and subtract 5 from `total`.
    - If `total` more than $1, buy a card and subtract 1 from `total`.
-   - Otherwise, give them the change. 
+   - Otherwise, give them the change.
+
+<div class="task" markdown="block">
 
 💬 Decide what the **outcome** will be if you have `$16` to spend, based on the order of the steps and the conditions. What if you had `$22`?
   > Afterwards, _switch the order_ of some of the steps and discuss how the outcomes might change.
