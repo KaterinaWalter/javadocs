@@ -91,7 +91,7 @@ In this unit, we will learn to:
 
 > **HINT:** Repetition is when a process repeats itself until a desired outcome is reached. Look for the words `"repeat"`, `"all"`, or `"keep"` to identify repetition.
 
-### Algorithms with Pseudocode & Flowcharts
+### Planning with Pseudocode & Flowcharts
 
 For complex problems, it is important to _plan_ your solution before writing code. 
 
