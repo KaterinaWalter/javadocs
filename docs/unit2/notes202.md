@@ -68,7 +68,7 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 * **Boolean variables** are data containers of type `boolean` that can only store either `true` or `false` as values.
   * _Example:_ `boolean lightsOn = true;` 
-* **Boolean expressions** are statements that need to be _evaluated_, but will result in only `true` or `false`.
+* **Boolean expressions** are longer statements with operators that need to be _evaluated_, but will ultimately result in only `true` or `false`.
   * _Example:_
   ```java
   boolean passing = (grade > 60);
