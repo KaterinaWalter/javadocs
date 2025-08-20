@@ -19,11 +19,20 @@ nav_order: 1
 
 ---
 
-Every algorithm consists of a sequence of steps. Up until now, we have been writing code one line at a time in sequence which then gets executed by the computer in that sequential order by default. However, we can create more complex algorithms that do not follow the default sequential order. In this unit, we will learn to branch the code into different paths or repeat a block of code.
+Every **algorithm** consists of a _sequence of steps_. Up until now, we have been writing code instructions one line at a time, which then gets executed by the computer in that **sequential order** by default. However, we can create more complex algorithms that do not follow the default sequential order. 
 
-The building blocks of algorithms are **sequencing**, **selection**, and **repetition**. Algorithms can contain selection, through decision making, and repetition, via looping. In fact, it's been proven that all algorithms for problems that can be solved on a computer can be constructed by using just these three control structures: sequence, selection, and repetition as seen below.
+{:.important}
+🧱 The building blocks of all algorithms are: **sequencing**, **selection/branching**, and **repetition/iteration**. 
+
+In this unit, we will learn to:
+* 🔀 _Branch_ the code into different paths using **SELECTION**
+  > **Conditional** decision-making (`if`, `else if`, `else`)
+* 🔁 _Repeat_ a block of code using **ITERATION**
+  > **Loop** structures (`while`, `for`, `for each`) 
+
 
 ![Sequence, Selection, and Repetition](Figures/algorithms.png)
+> In fact, it's been proven that _all algorithms_ for problems that can be solved on a computer can be constructed by using just these **three control structures**: sequence, selection, and repetition.
 
 ## Selection
 
@@ -137,11 +146,11 @@ Be creative!
 
 ## Summary
 
-- The building blocks of algorithms include sequencing, selection, and repetition.
-- Algorithms can contain selection, through decision making, and repetition, via looping.
-- Selection occurs when a choice of how the execution of an algorithm will proceed is based on a true or false decision.
-- Repetition is when a process repeats itself until a desired outcome is reached.
-- The order in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm.
+- (AP 2.1.A.1) The building blocks of algorithms include sequencing, selection, and repetition.
+- (AP 2.1.A.2) Algorithms can contain selection, through decision making, and repetition, via looping.
+- (AP 2.1.A.3) Selection occurs when a choice of how the execution of an algorithm will proceed is based on a true or false decision.
+- (AP 2.1.A.4) Repetition is when a process repeats itself until a desired outcome is reached.
+- (AP 2.1.A.5) The order in which sequencing, selection, and repetition are used contributes to the outcome of the algorithm.
 
 
 ---
