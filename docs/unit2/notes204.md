@@ -25,12 +25,30 @@ If statements can be **nested** inside other if statements. This is like asking 
 
 ```java
 if (boolean expression) {
-    // This nested if is executed if outer if is true
+    // This nested if is tested when outer if is true
     if (boolean expression) {
         statement;
     }
 }
 ```
+
+### "Dangling" `else`
+
+Sometimes with _nested ifs_ we find a **"dangling else"** that could potentially belong to either `if` statement. 
+
+{:.warning}
+The rule is that the `else` clause will always be a part of the **closest unmatched** `if` statement in the same block of code, regardless of indentation.
+
+```java
+    // Nested if with dangling else
+    if (boolean expression)
+       if (boolean expression)
+          Do statement;
+       else  // belongs to closest if
+          Do other statement;
+```
+
+You can use curly braces (``{}``) to enclose a nested if and have the else clause belong to the top level if clause.
 
 ---
 
@@ -78,33 +96,71 @@ Here is a flowchart for a conditional with 3 options like in the code above:
 {:.highlight}
 Another way to handle 3 or more conditional cases is to use the ``switch`` and ``case`` keywords, but these will not be on the exam. For a tutorial on using switch see the [Java Documentation](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html).
 
+### Separate `if` Statements vs. `else if` Chains
+
 <div class="task" markdown="block">
 
-Finish the following code so that it prints "Plug in your phone!" if the battery is below 50, "Unplug your phone!" if it is equal to 100, and "All okay!" otherwise. Change the battery value to test all 3 conditions.
+**Debug Exercise: Fix the Else-If Chain**
+
+This program uses separate `if` statements instead of `if-else-if`. Fix it by adding `else` to connect the conditions.
 
 ```java
-int battery = 60;
+import java.util.Scanner;
 
-System.out.println("All okay!");
+public class IfDebug {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int score = scan.nextInt();
+        String grade = "";
+
+        if (score >= 90) {
+            grade = "A";
+        }
+        if (score >= 80) {
+            grade = "B";
+        }
+        if (score >= 70) {
+            grade = "C";
+        }
+        if (score >= 60) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        System.out.println(grade);
+    }
+}
 ```
+
 </div>
 
-### "Dangling" `else`
+<div class="task" markdown="block">
 
-{:.warning}
-Sometimes with _nested ifs_ we find a **"dangling else"** that could potentially belong to either `if` statement. The rule is that the `else` clause will always be a part of the **closest unmatched** `if` statement in the same block of code, regardless of indentation.
+**Coding Exercise: Battery Test**
+
+Complete the code so it prints:
+
+* `"Plug in your phone!"` if `battery < 50`
+* `"Unplug your phone!"` if `battery > 100`
+* `"All okay!"` otherwise
 
 ```java
-    // Nested if with dangling else
-    if (boolean expression)
-       if (boolean expression)
-          Do statement;
-       else  // belongs to closest if
-          Do other statement;
+import java.util.Scanner;
+
+public class BatteryTest {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int battery = scan.nextInt();
+
+        // Your if-else-if code here
+    }
+}
 ```
 
-#### 💻 Group Activity: 20 Questions
-{:.no_toc}
+</div>
+
+#### 💻 Coding Challenge: 20 Questions
 
 Have you ever played **20 Questions**? 20 Questions is a game where one person thinks of an object, and the other players ask up to 20 questions to guess what it is.
 
@@ -114,7 +170,7 @@ There is great online version called [Akinator](https://en.akinator.com/) that g
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit3-If-Statements/topic-3-3-if-else.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 3.3</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-2-4-nested-ifs.html"><button type="button" name="button" class="btn">CSAwesome Topic 2.4</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: 20 Questions** activity in pairs.
 
@@ -180,72 +236,6 @@ public class TryElseIf {
 
 ---
 
-<div class="task" markdown="block">
-
-**Debug Exercise: Fix the Else-If Chain**
-
-This program uses separate `if` statements instead of `if-else-if`. Fix it by adding `else` to connect the conditions.
-
-```java
-import java.util.Scanner;
-
-public class IfDebug {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int score = scan.nextInt();
-        String grade = "";
-
-        if (score >= 90) {
-            grade = "A";
-        }
-        if (score >= 80) {
-            grade = "B";
-        }
-        if (score >= 70) {
-            grade = "C";
-        }
-        if (score >= 60) {
-            grade = "D";
-        } else {
-            grade = "F";
-        }
-
-        System.out.println(grade);
-    }
-}
-```
-
-</div>
-
----
-
-<div class="task" markdown="block">
-
-**Coding Exercise: Battery Test**
-
-Complete the code so it prints:
-
-* `"Plug in your phone!"` if `battery < 50`
-* `"Unplug your phone!"` if `battery > 100`
-* `"All okay!"` otherwise
-
-```java
-import java.util.Scanner;
-
-public class BatteryTest {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int battery = scan.nextInt();
-
-        // Your if-else-if code here
-    }
-}
-```
-
-</div>
-
----
-
 ## Dangling Else Statements
 
 With nested ifs, an `else` always attaches to the **closest unmatched** `if` in the same block, regardless of indentation.
@@ -297,80 +287,6 @@ public class DanglingElseTest {
 ```
 
 </div>
-
----
-
-## Group Challenge: Adventure Game
-
-One of the first text adventure games was [Colossal Cave Adventure](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure). Let’s build a mini version.
-
-<div class="task" markdown="block">
-
-Add `else if` branches for `"s"`, `"e"`, and `"w"`, and an `else` for invalid input. Write static methods for each location.
-
-```java
-import java.util.Scanner;
-
-public class Adventure {
-    private static Scanner scan = new Scanner(System.in);
-
-    public static void main(String[] args) {
-        System.out.println("You are on an island surrounded by water.");
-        System.out.println("There is a path north to the forest, south to the sea, ? to the east, and ? to the west.");
-        System.out.println("Which way do you want to go (n,e,s,w)?");
-        String command = scan.next();
-
-        if (command.equals("n")) {
-            System.out.println("You go north.");
-            forest();
-        }
-        // Add else if branches for s, e, w
-        // Add an else message for invalid input
-
-        System.out.println("End of adventure!");
-    }
-
-    public static void forest() {
-        System.out.println("You enter a dark forest and see ?");
-        System.out.println("Do you want to walk e or w?");
-        String command = scan.next();
-        if (command.equals("e")) {
-            System.out.println("You move east and reach the sea");
-            sea();
-        }
-    }
-
-    public static void sea() {
-        // Describe sea location and add movement logic
-    }
-}
-```
-
-</div>
-
----
-
-## Summary
-
-* Nested if statements: if, if-else, or if-else-if within other if structures.
-* Inner conditions only evaluate if the outer condition is true.
-* Multi-way selection (`if-else-if`) checks each condition in order until one matches.
-* Use `{ }` to avoid dangling else confusion.
-
----
-
-## AP Practice
-
-<details>
-<summary><strong>AP Nested If-Else</strong></summary>
-
-**Question:** Which code prints `"High"` if `x >= 66`, `"Medium"` if `33 <= x <= 65`, and `"Low"` if `x < 33`?
-
-**Correct Answer:** **II only**
-
-Reason: II checks `x < 33` first, then `x < 66`, else `"High"`. I has off-by-one logic for 66, and III prints more than one output for some values.
-
-</details>
 
 -->
 
