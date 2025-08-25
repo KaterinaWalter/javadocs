@@ -148,7 +148,12 @@ Another way to handle 3 or more **conditional cases** is to use the ``switch`` a
 
 ### Separate `if` Statements vs. `else if` Chains
 
-The `else if` connection is necessary if you want to chain multiple conditionals together, and operates differently than having a bunch of separate `if` statements.  
+The core difference between multiple separate `if` statements and connected `else if` chains lies in their **execution flow** and the conditions under which their respective blocks of code are evaluated.
+* An `else if` statement is always used in conjunction with an **initial** `if` statement.
+* The **conditions** in an if/else-if/else chain are evaluated _sequentially_.
+* Once a condition is found to be `true`, its corresponding code block is executed, and the rest of the `else if` and `else` blocks in that chain are _skipped_.
+
+This structure is ideal for handling **mutually exclusive conditions**, where only _one outcome is expected_ or desired from a set of possibilities.
 
 <div class="task" markdown="block">
 
