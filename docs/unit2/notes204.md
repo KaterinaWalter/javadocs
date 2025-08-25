@@ -22,11 +22,11 @@ nav_order: 4
 ## Multiway Selection: Nested `if` Statements
 
 If statements can be **nested** _inside_ other if statements. 
-> This is like asking a "follow-up question" _after_ asking passing the first one.
+> This is like asking a "follow-up question" _after_ passing an initial one.
 
 ![image-small](https://www.macalester.edu/russian-studies/wp-content/uploads/sites/535/2013/08/matryoshka646.jpg)
 
-Nested if statements consist of if, if-else, or if-else-if statements within if, if-else, or if-else-if statements. The Boolean expression of the inner nested if statement is evaluated only if the Boolean expression of the outer if statement evaluates to true.
+Nested if statements consist of if, if-else, or if-else-if statements within if, if-else, or if-else-if statements. The Boolean expression of the _inner_ nested if statement is evaluated only if the Boolean expression of the _outer_ if statement evaluates to true.
 
 ```java
 if (boolean expression) {
@@ -37,9 +37,9 @@ if (boolean expression) {
 }
 ```
 
-### "Dangling" `else`
+### "Dangling" `else` Problem
 
-Sometimes with _nested ifs_ we find a **"dangling else"** that could potentially belong to either `if` statement. 
+Sometimes with _nested ifs_ we find a **"dangling else"** clause that could potentially belong to either `if` statement. 
 
 {:.warning}
 The rule is that the `else` clause will always be a part of the **closest unmatched** `if` statement in the same block of code, regardless of indentation.
@@ -53,10 +53,9 @@ The rule is that the `else` clause will always be a part of the **closest unmatc
           anotherStatement;
 ```
 
-You can use curly braces (``{}``) to enclose a nested if and have the else clause belong to the top level if clause like below:
+You can use **curly braces** (``{}``) to enclose a nested if and have the else clause belong to the top level if clause like below:
 
 ```java
-
     // Nested if with dangling else FIXED
     if (boolean expression)
     {
@@ -67,7 +66,7 @@ You can use curly braces (``{}``) to enclose a nested if and have the else claus
       doThatStatement;
 ```
 
-In fact many experienced Java programmers `always` use curly braces, even when
+In fact many experienced Java programmers _always_ use curly braces, even when
 they are not technically required to avoid this kind of confusion.
 
 ---
@@ -184,7 +183,7 @@ public class BatteryTest {
 
 </div>
 
-#### 💻 Coding Challenge: 20 Questions
+#### CSAwesome Activity: 20 Questions
 
 Have you ever played **20 Questions**? 20 Questions is a game where one person thinks of an object, and the other players ask up to 20 questions to guess what it is.
 
