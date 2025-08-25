@@ -149,16 +149,16 @@ Another way to handle 3 or more **conditional cases** is to use the ``switch`` a
 
 ### Separate `if` Statements vs. `else if` Chains
 
+The `else if` connection is necessary if you want to chain multiple conditionals together, and operates differently than having a bunch of separate `if` statements.  
+
 <div class="task" markdown="block">
 
-**Debug Exercise: Fix the Else-If Chain**
-
-This program uses separate `if` statements instead of `if-else-if`. Fix it by adding `else` to connect the conditions.
+This program uses 4 separate `if` statements instead of the `if/else-if` pattern. First, trace through the code to see why it prints out the incorrect grade. Then, fix it by adding `else if` blocks to connect the conditions.
 
 ```java
 import java.util.Scanner;
 
-public class IfDebug {
+public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int score = scan.nextInt();
@@ -175,7 +175,8 @@ public class IfDebug {
         }
         if (score >= 60) {
             grade = "D";
-        } else {
+        }
+        else {
             grade = "F";
         }
 
