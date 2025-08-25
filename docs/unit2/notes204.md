@@ -19,7 +19,7 @@ nav_order: 4
 
 ---
 
-## Nested Ifs and "Dangling Else"
+## Multiway Selection: Nested `if` Statements
 
 If statements can be **nested** inside other if statements. This is like asking a "follow-up question" after asking passing the first one.
 
