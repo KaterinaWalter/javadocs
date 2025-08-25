@@ -21,7 +21,12 @@ nav_order: 4
 
 ## Multiway Selection: Nested `if` Statements
 
-If statements can be **nested** inside other if statements. This is like asking a "follow-up question" after asking passing the first one.
+If statements can be **nested** _inside_ other if statements. 
+> This is like asking a "follow-up question" _after_ asking passing the first one.
+
+![image-small](https://www.macalester.edu/russian-studies/wp-content/uploads/sites/535/2013/08/matryoshka646.jpg)
+
+Nested if statements consist of if, if-else, or if-else-if statements within if, if-else, or if-else-if statements. The Boolean expression of the inner nested if statement is evaluated only if the Boolean expression of the outer if statement evaluates to true.
 
 ```java
 if (boolean expression) {
@@ -43,18 +48,37 @@ The rule is that the `else` clause will always be a part of the **closest unmatc
     // Nested if with dangling else
     if (boolean expression)
        if (boolean expression)
-          Do statement;
+          statement;
        else  // belongs to closest if
-          Do other statement;
+          anotherStatement;
 ```
 
-You can use curly braces (``{}``) to enclose a nested if and have the else clause belong to the top level if clause.
+You can use curly braces (``{}``) to enclose a nested if and have the else clause belong to the top level if clause like below:
+
+```java
+
+    // Nested if with dangling else FIXED
+    if (boolean expression)
+    {
+       if (boolean expression)
+          doThisStatement;
+    }
+    else  // belongs to first if
+      doThatStatement;
+```
+
+In fact many experienced Java programmers `always` use curly braces, even when
+they are not technically required to avoid this kind of confusion.
 
 ---
 
 ## Multiway Selection: `else if` Blocks
 
-A single if/else statement allows us to select between 2 branches of code. With nested if/else statements, we can pick between 3 or more branches of code. A multi-way selection (if-else-if) is used when there are a series of expressions with different segments of code for each condition. Multi-way selection is performed such that no more than one segment of code is executed based on the first expression that evaluates to true. If no expression evaluates to true and there is a trailing else statement, then the body of the else is executed.
+A single if/else statement allows us to select between 2 branches of code. With nested if/else statements, we can pick between 3 or more branches of code. A multi-way selection (if-else-if) is used when there are a series of expressions with different segments of code for each condition. 
+
+![image-small](https://static.producer.com/wp-content/uploads/2017/06/05-GettyImages-497342837-5col.jpg)
+
+Multi-way selection is performed such that no more than one segment of code is executed based on the first expression that evaluates to true. If no expression evaluates to true and there is a trailing else statement, then the body of the else is executed.
 
 Just add **else if** for each possibility after the first **if**, and **else** before the last possibility like below.
 
