@@ -42,32 +42,32 @@ if (boolean expression) {
 Sometimes with _nested ifs_ we find a **"dangling else"** clause that could potentially belong to either `if` statement. 
 
 {:.warning}
-The rule is that the `else` clause will always be a part of the **closest unmatched** `if` statement in the same block of code, regardless of indentation.
+The rule is that the `else` clause will always be a part of the **closest unmatched** `if` statement in the same block of code, _regardless of indentation_.
 
 ```java
-    // Nested if with dangling else
+// Nested if with dangling else
+if (boolean expression)
     if (boolean expression)
-       if (boolean expression)
-          statement;
-       else  // belongs to closest if
-          anotherStatement;
+        doThisStatement;
+else  // belongs to CLOSEST if
+    doThatStatement;
 ```
 
 You can use **curly braces** (``{}``) to enclose a nested if and have the else clause belong to the top level if clause like below:
 
 ```java
-    // Nested if with dangling else FIXED
+// Nested if with dangling else
+if (boolean expression)
+{
     if (boolean expression)
-    {
-       if (boolean expression)
-          doThisStatement;
-    }
-    else  // belongs to first if
-      doThatStatement;
+        doThisStatement;
+}
+else  // belongs to FIRST if
+    doThatStatement;
 ```
 
 In fact many experienced Java programmers _always_ use curly braces, even when
-they are not technically required to avoid this kind of confusion.
+they are not technically required, to avoid this kind of confusion.
 
 ---
 
