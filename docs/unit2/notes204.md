@@ -23,38 +23,6 @@ nav_order: 4
 
 If statements can be **nested** inside other if statements. This is like asking a "follow-up question" after asking passing the first one.
 
-{:.warning}
-Sometimes with _nested ifs_ we find a **"dangling else"** that could potentially belong to either `if` statement. The rule is that the `else` clause will always be a part of the **closest unmatched** `if` statement in the same block of code, regardless of indentation.
-
-```java
-    // Nested if with dangling else
-    if (boolean expression)
-       if (boolean expression)
-          Do statement;
-       else  // belongs to closest if
-          Do other statement;
-```
-
-#### 💻 In-Class Activity: 20 Questions
-{:.no_toc}
-
-Have you ever played **20 Questions**? 20 Questions is a game where one person thinks of an object, and the other players ask up to 20 questions to guess what it is.
-
-There is great online version called [Akinator](https://en.akinator.com/) that guesses whether you are thinking of a real or fictional character by asking you questions. Akinator is a simple _Artificial Intelligence_ algorithm that uses a **decision tree** of yes or no questions to pinpoint the answer.
-> Although Akinator needs a very large decision tree, we can create a guessing game for just animals using a much smaller number of `if`-statements.
-
-
-<div class="task" markdown="block">
-
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit3-If-Statements/topic-3-3-if-else.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 3.3</button></a> 
-2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: 20 Questions** activity in pairs.
-
-</div>
-
-![image](Figures/if-else-example.png)
-
-
 Using if/else statements, you can even pick between 3 or more possibilites. Just add **else if** for each possibility after the first **if**, and **else** before the last possibility.
 
 ```java
@@ -105,6 +73,39 @@ int battery = 60;
 System.out.println("All okay!");
 ```
 </div>
+
+### "Dangling" `else`
+
+{:.warning}
+Sometimes with _nested ifs_ we find a **"dangling else"** that could potentially belong to either `if` statement. The rule is that the `else` clause will always be a part of the **closest unmatched** `if` statement in the same block of code, regardless of indentation.
+
+```java
+    // Nested if with dangling else
+    if (boolean expression)
+       if (boolean expression)
+          Do statement;
+       else  // belongs to closest if
+          Do other statement;
+```
+
+#### 💻 Group Activity: 20 Questions
+{:.no_toc}
+
+Have you ever played **20 Questions**? 20 Questions is a game where one person thinks of an object, and the other players ask up to 20 questions to guess what it is.
+
+There is great online version called [Akinator](https://en.akinator.com/) that guesses whether you are thinking of a real or fictional character by asking you questions. Akinator is a simple _Artificial Intelligence_ algorithm that uses a **decision tree** of yes or no questions to pinpoint the answer.
+> Although Akinator needs a very large decision tree, we can create a guessing game for just animals using a much smaller number of `if`-statements.
+
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit3-If-Statements/topic-3-3-if-else.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 3.3</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: 20 Questions** activity in pairs.
+
+</div>
+
+![image](Figures/if-else-example.png)
 
 
 <!--
