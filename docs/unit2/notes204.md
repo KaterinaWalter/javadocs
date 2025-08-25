@@ -84,7 +84,7 @@ they are not technically required, to avoid this kind of confusion.
 
 ## Multiway Selection: `else if` Blocks
 
-With **nested if/else** structures, we can pick between 3 or more branches of code. Another type of **multi-way selection** is possible with `else if` blocks. This is convenient when there are a _series of related expressions_ to be tested, with different segments of code for each **condition**. 
+With **nested if/else** structures, we can pick between 3 or more branches of code. Another type of **multi-way selection** is possible with `else if` blocks. This is convenient when there are a _series of mutually-exclusive expressions_ to be tested, with different segments of code for each **condition**. 
 
 ![image-small](https://static.producer.com/wp-content/uploads/2017/06/05-GettyImages-497342837-5col.jpg)
 
