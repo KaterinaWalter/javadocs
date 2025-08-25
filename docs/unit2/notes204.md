@@ -23,7 +23,22 @@ nav_order: 4
 
 If statements can be **nested** inside other if statements. This is like asking a "follow-up question" after asking passing the first one.
 
-Using if/else statements, you can even pick between 3 or more possibilites. Just add **else if** for each possibility after the first **if**, and **else** before the last possibility.
+```java
+if (boolean expression) {
+    // This nested if is executed if outer if is true
+    if (boolean expression) {
+        statement;
+    }
+}
+```
+
+---
+
+## Multiway Selection: `else if` Blocks
+
+A single if/else statement allows us to select between 2 branches of code. With nested if/else statements, we can pick between 3 or more branches of code. A multi-way selection (if-else-if) is used when there are a series of expressions with different segments of code for each condition. Multi-way selection is performed such that no more than one segment of code is executed based on the first expression that evaluates to true. If no expression evaluates to true and there is a trailing else statement, then the body of the else is executed.
+
+Just add **else if** for each possibility after the first **if**, and **else** before the last possibility like below.
 
 ```java
 // 3 way choice with if, else if, else
