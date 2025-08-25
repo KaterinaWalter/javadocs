@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.4: Multi-way Selection" 
+title: "📓2.4: Multiway Selection" 
 parent: "2️⃣ Selection & Iteration"
 nav_order: 4
 ---
