@@ -69,7 +69,8 @@ Write a branching program in the `main()` method that does the following:
   > To review generating random numbers, see [📓 1.11: Math Class](https://coderina.dev/javadocs/docs/unit1/notes111.html)
 2. Come up with **10 possible responses** to yes-no questions.
 3. Use **if statements** to test the number and print out a different response for each number.
-4. Add a coin toss method that prints `"Lucky!"` or `"No Luck!"`.
+4. Use Math.random() to toss a coin to choose between 2 choices
+5. Use an if/else statement to test the random number and print out "Lucky!" or else "No Luck!"
 
 </div>
 
