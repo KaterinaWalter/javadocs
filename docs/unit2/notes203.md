@@ -19,9 +19,9 @@ nav_order: 3
 
 ---
 
-## One-Way Selection with `if`
+## One-Way Selection: `if`
 
-**If statements** (also called **conditionals** or **conditional blocks**) are found in all programming languages as a way to choose between different paths in an algorithm. An if statement is a type of *selection* structure that interrupts the usual sequential execution. It affects the flow of control by executing different segments of code based on the value of a **boolean expression** (also called the **condition**).
+**If statements** (also called **conditionals** or **conditional blocks**) are found in all programming languages as a way to choose between different paths in an algorithm. An if statement is a type of *selection* structure that interrupts the usual sequential execution. It affects the program's _flow of control_ by executing different segments of code based on the value of a **boolean expression** (also called the **condition**).
 
 * `if` the **condition** is `true`, then the next statement (or block of statements) will _execute_.
 * `if` the **condition** is `false`, then the next statement (or block of statements) is _skipped_. 
@@ -37,16 +37,16 @@ An **if statement** begins with the keyword ``if`` followed by a **boolean expre
 ✋ Examples of `if` statements for **one-way selection**: 
 
 ```java
-// A single if statement
+// Single if statement → body indented
 if (boolean expression)
   statement;
 
-// A single if statement with {}
+// Single if statement → body in {}
 if (boolean expression) {
   statement;
 }
 
-// A block if statement ({} required)
+// Block if statement → {} REQUIRED!
 if (boolean expression) {
   statement1;
   statement2;
@@ -86,11 +86,12 @@ System.out.println("Summer school is always an option...");
 {:.warning}
 A common mistake in if statements is using `=` instead of `==` in the condition. You should always use `==` in the condition of an if statement to test a variable. One equal sign (`=`) _assigns_ a value to a variable, and two equal signs (`==`) _test_ if a variable has a certain value.
 
-## Two-Way Selection with `if-else`
+## Two-Way Selection: `if-else`
 
-What if you want to pick between two possibilities? If you are trying to decide between a couple of things to do, you might flip a coin and do one thing if it lands as heads and another if it is tails. This is an example of **two-way selection**. 
+What if you want to _pick between two possibilities_?
+> 🪙 If you are trying to decide between two things to do, you might flip a coin and do one thing if it lands as heads, and another if it is tails. This is an example of **two-way selection**.
 
-A **two-way selection** involves two connected conditional blocks: an `if` statement controlled by a **boolean expression** (_condition_), followed by a corresponding `else` statement. It executes the `if` body when the **condition** is true, and the `else` body when false.
+A **two-way selection** involves two connected conditional blocks: an `if` statement controlled by a **boolean expression** (_condition_), followed by a corresponding `else` statement. The program executes the `if` body when the **condition** is true, and the `else` body when the condition is false.
 
 ![image-small](Figures/Condition-two.png)
 
@@ -101,7 +102,7 @@ A **two-way selection** involves two connected conditional blocks: an `if` state
 🔀 If you want to decide between **two possibilities**, use a `if` statement followed by `else`:
 
 ```java
-// if-else block
+// Block if-else
 if (boolean expression) {
     statement1;
     statement2;
@@ -111,8 +112,9 @@ else {
     anotherStatement;
 }
 ```
-
 </div>
+
+> **Note:** an `else` block does not specify a **boolean expression/condition** in parenthesis, because it is simply the _alternative path_ to the `if` statement it comes after. 
 
 <br>
 
