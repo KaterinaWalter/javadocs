@@ -54,7 +54,6 @@ There is great online version called [Akinator](https://en.akinator.com/) that g
 
 ![image](Figures/if-else-example.png)
 
-## Multi-Selection: else-if Statements
 
 Using if/else statements, you can even pick between 3 or more possibilites. Just add **else if** for each possibility after the first **if**, and **else** before the last possibility.
 
@@ -358,6 +357,27 @@ Reason: II checks `x < 33` first, then `x < 66`, else `"High"`. I has off-by-one
 </details>
 
 -->
+
+---
+
+## Summary
+
+- (AP 2.4.A.1) **Nested** if statements consist of if, if-else, or if-else-if statements within if, if-else, or if-else-if statements.
+- (AP 2.4.A.2) The **boolean expression** (condition) of the _inner_ nested if statement is evaluated only if the Boolean expression of the _outer_ if statement evaluates to true.
+- (AP 2.4.A.3) A **multi-way selection** (if-else-if) is used when there are a series of expressions with different segments of code for each condition. Multi-way selection is performed such that no more than one segment of code is executed based on the first expression that evaluates to true. If no expression evaluates to true and there is a trailing else statement, then the body of the else is executed.
+
+```java
+// 3 way choice with else if
+if (boolean expression) {
+    statement1;
+}
+else if (boolean expression) {
+    statement2;
+}
+else {
+    statement3;
+}
+```
 
 ---
 
