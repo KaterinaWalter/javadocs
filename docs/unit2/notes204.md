@@ -19,55 +19,7 @@ nav_order: 4
 
 ---
 
-## Two-way Selection: if-else Statements
-
-What if you want to _pick between two possibilities_?  If you are trying to decide between a couple of things to do, you might flip a coin and do one thing if it lands as heads and another if it is tails.  In programming, you can use the `if` keyword followed by a statement or block of statements, and then the `else` keyword also followed by a statement or block of statements.
-
-<div class="imp" markdown="block">
-  
-```java
-// A block if/else statement
-if (boolean expression) {
-  statement1;
-  statement2;
-}
-else {
-  statement3;
-  statement4;
-}
-```
-</div>
-
-The following flowchart demonstrates that if the **condition** (the _boolean expression_) is `true`, one block of statements is executed, but if the condition is `false`, a different block of statements inside the else clause is executed:
-
-![image](Figures/Condition-two.png)
-
-{:.highlight}
-The `else` block will only execute if the **condition** in the `if`-statement block evaluates to `false`!
-
-### Relational Operators in If-Else Statements
-
-If/else statements can also be used with **relational operators** and numbers like below. If your code has an if/else statement, you should test it with 2 test-cases to make sure that both blocks of the code work.
-
-<div class="task" markdown="block">
-
-1. Test the following code to see what it prints out when the variable `age` is set to the value 16:
-```java
-int age = 16;
-if (age >= 16) {
-  System.out.println("You can get a driver's license in most states!");
-}
-else {
-  System.out.println( "Sorry, you need to be older to get a driver's license.");
-}
-```
-2. Change the variable `age`'s value to 15 or younger, and then run it again to see the result of the print statement in the else part.
-3. Can you modify the if-statement to indicate that you can get a license at age 17 instead of 16? _This is true for the state of New York._
-> Again, try 2 test cases for the value of `age` to test your code to see the results of both print statements.
-
-</div>
-
-### Nested Ifs and "Dangling Else"
+## Nested Ifs and "Dangling Else"
 
 If statements can be **nested** inside other if statements. This is like asking a "follow-up question" after asking passing the first one.
 
