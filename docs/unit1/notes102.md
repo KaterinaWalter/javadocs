@@ -87,15 +87,14 @@ A data type is a set of possible _values_ (a domain) but also a set of _operatio
 
 ### Declaring Variables in Java
 
-Creating a new variable is also called **declaring a variable**. The type must be a recognized keyword like `int`, `double`, or `boolean`, but you get to make up the name for the variable. 
+Creating a new variable is also called **DECLARING a variable**. The type must be a recognized keyword like `int`, `double`, or `boolean`, but you get to make up the name for the variable. 
 
 When you create a **primitive variable** Java will set aside enough bits in memory for that primitive type and associate that _memory location_ with the name that you used.
 > Computers store all values using **bits** (binary digits). A **bit** can represent two values and we usually say that the value of a bit is either 0 or 1. 
 
-![image](Figures/typesAndSpace.png)
-> Examples of variables with names and values. Notice that the different types get a different amount of memory space.
-
 ![image](Figures/variables.png)
+> Notice that the different **data types** get a different amount of **physical memory space**! `boolean` variables require at least `1` bit, `int` variables require `32` bits, and `double` variables require `64` bits.
+
 
 <div class="imp" markdown="block">
 
