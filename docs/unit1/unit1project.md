@@ -36,6 +36,8 @@ nav_order: 18
 
 ### PART A: Basic Receipt
 
+You will start with a basic receipt that you might get after making a purchase from the high school snack bar. In a later activity you will create a more complex version that includes asking the user for information (input) about items purchased so that a custom receipt can be produced for that purchase.  
+
 <div class="task" markdown="block">
 
 1. Copy and paste (or retype) the following starter code into your `Main.java` file:
@@ -81,8 +83,11 @@ nav_order: 18
 </details>
 </html>
 
+<hr>
 
 ### PART B: Enhanced Receipt
+
+The receipt that was generated in Part A prints **String literal** values (contained in quotes) for each of the items, but that is not always the best practice. In this activity you will modify the code from before to include **variables** that will store your high school’s name and the prices of the items available at the snack bar. 
 
 <div class="task" markdown="block">
 
@@ -115,8 +120,11 @@ nav_order: 18
 </details>
 </html>
 
+<hr>
 
-### PART C: Adding Random
+### PART C: Adding Randomness
+
+In this part we are going to add some arithmetic to the program to **calculate** the subtotal, tax, and total for the purchase based on ordering multiples of each of the items. To determine the number ordered of each item, your program should generate a **random** number between 0 and 2, inclusive, which represents the number ordered of each item. Your code should also generate an order number, which is a random number between 1 and 100, inclusive. 
 
 <div class="task" markdown="block">
 
@@ -163,8 +171,11 @@ nav_order: 18
 </details>
 </html>
 
+<hr>
 
 ### PART D: Interactive Receipt
+
+In the previous part we created variables and assigned their values directly. This is a good practice when initially designing a program, but a more robust program includes **getting data values from a user** or another source. In this activity we will use methods from the `Scanner` class to receive input from the user.
 
 <div class="task" markdown="block">
 
@@ -199,7 +210,7 @@ nav_order: 18
 
 <div markdown="block">
 
-* The placement of the statement `import java.util.Scanner;` must be before the `public class Receipt4` header.
+* The placement of the statement `import java.util.Scanner;` must be before the `public class Main` header.
 
 * The placement of the statement `Scanner input = new Scanner(System.in);` should be after the header `public static void main(String[] args)`.
 
@@ -212,8 +223,11 @@ nav_order: 18
 </div>
 </details>
 </html>
+<hr>
 
-### PART E: Design a Receipt
+### BONUS: Design a Receipt
+
+If you complete Parts A-D, start a blank Java program and try this bonus activity!
 
 <div class="task" markdown="block">
 
@@ -252,6 +266,7 @@ double value = ((int)(value * 100)/100.0);
 </details>
 </html>
 
+<br>
 
 <!--
 
