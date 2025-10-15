@@ -7,7 +7,9 @@ nav_order: 18
 ---
 
 
-### Overview
+### Overview & Setup
+
+🛍️ Whenever we shop or dine out, we often spend money and receive a **receipt** in return. This receipt serves as proof of our purchase. The business’s register uses specialized software that prints the receipt in a _specific format_, containing certain predetermined details.
 
 <html>
 <details>
@@ -15,18 +17,19 @@ nav_order: 18
   
 <div class="setup" markdown="block">
 
-1. Go to the `CS2 Unit 1 Project` assignment on **Blackbaud** and follow the provided **GitHub Classroom** link.
-  > 📁 Clicking the link generates a **private repository** for your project with the appropriate starter code. Note that **projects** are stored within the [BWL-CS Organization](https://github.com/BWL-CS), so you _cannot_ access it from the "Your Repositories" page!
-2. Open the repository in a **Codespace** whenever you spend time working on the program, in class or at home. 
-  > ⚠️ Always remember to `commit changes` after every coding session!
-3. When your project is complete, **submit the link to your repository** in the `CS2 Unit 1 Project` assignment on Blackbaud.
+1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
+2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
+3. Specify the **repository name**: `CS2-Digital-Receipt`
+4. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
+    > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 
+5. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
+6. Click `Create Codespace on main` and wait for the environment to load, _then you're ready to code_!
+7. 📝 Write code in this Codespace during class.
 
 </div>
 
 </details>
 </html>
-
-🛍️ Whenever we shop or dine out, we often spend money and receive a receipt in return. This receipt serves as proof of our purchase. The business’s register uses specialized software that prints the receipt in a specific format, containing certain predetermined details.
 
 --- 
 
