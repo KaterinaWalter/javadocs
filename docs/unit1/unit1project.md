@@ -40,10 +40,9 @@ nav_order: 18
 
 1. Copy and paste (or retype) the following starter code into your `Main.java` file:
   ```java
-  public class Main
-  {
-     public static void main(String [] args)
-     {
+  public class Main {
+     public static void main(String [] args) {
+        // RECEIPT PRINTOUT SECTION
         System.out.println("**************************************");
         System.out.println("*                                    *");
         System.out.println("*     High School Snack Bar          *");
@@ -61,6 +60,8 @@ nav_order: 18
 3. If any **errors** occur, fix them so the program compiles and runs successfully.
 
 </div>
+
+<br>
 
 <html>
 <details class="highlight-block">
@@ -85,18 +86,16 @@ nav_order: 18
 
 <div class="task" markdown="block">
 
-1. In your IDE, create a new file called `Receipt2.java`.
-2. Open the code from `Receipt1.java` and copy it into your new file.
-3. Change the class name to `Receipt2` so it matches the file name.
-4. Create a variable to store your high school’s name.
-5. Create separate variables to store the prices of each snack bar item.
-6. Choose the most appropriate data type for each variable.
-7. Replace the literal values in `System.out.println` with string concatenation using your variables.
-8. If your high school name is too long for one line, abbreviate it or split it onto two lines.
-9. Run the program and debug if needed.
-10. Make sure the receipt displays correctly with your variables.
+1. Move the starter code (print statements) **down** several lines.
+4. _Above_ the starter code, but still inside the `main()` method, create a **variable** to store your `highSchoolName`.
+5. Initialize separate variables to store the `price` of each snack bar item.
+  > Choose the most appropriate **data type** for each variable!
+7. Replace the _literal_ values in `System.out.println` with **string concatenation** using your new _variables_.
+  > Run the program and debug if needed. Make sure the receipt displays correctly with your variables before moving on!
 
 </div>
+
+<br>
 
 <html>
 <details class="highlight-block">
@@ -121,11 +120,7 @@ nav_order: 18
 
 <div class="task" markdown="block">
 
-1. Create a new file called `Receipt3.java`.
-2. Copy the code from `Receipt2.java` into your new file.
-3. Change the class name to `Receipt3`.
-4. Add variables for:
-
+4. Declare more **variables** (_before the printout section_):
    * Order number
    * Number of drinks ordered
    * Number of candies ordered
@@ -135,18 +130,18 @@ nav_order: 18
    * Subtotal
    * Total tax
    * Total
-5. Use random numbers to:
-
-   * Assign each item a quantity between 0 and 2 (inclusive).
-   * Assign an order number between 1 and 100 (inclusive).
-6. Update the receipt printout to include:
-
+5. Use `Math.random()` to generate values for the following:
+   * Assign each item a quantity **between 0 and 2** (inclusive).
+   * Assign an order number **between 1 and 100** (inclusive).
+6. Update the **receipt printout** to use the variables for:
    * Order number
    * Quantity, name, and cost for each item
    * Total cost for the order
 7. Run and debug the program.
 
 </div>
+
+<br>
 
 <html>
 <details class="highlight-block">
@@ -173,28 +168,30 @@ nav_order: 18
 
 <div class="task" markdown="block">
 
-1. Create a new file called `Receipt4.java`.
-2. Copy the code from `Receipt3.java` into your new file.
-3. Change the class name to `Receipt4`.
-4. Import the Scanner library at the top of the file:
-   `import java.util.Scanner;`
-5. Create a `Scanner` object for keyboard input:
-   `Scanner input = new Scanner(System.in);`
-6. Prompt the user to enter:
-
+4. Import the `Scanner` library at the top of the file:
+   ```java
+   import java.util.Scanner;
+   ```
+6. Construct a `Scanner` object to handle keyboard input:
+   ```java
+   Scanner input = new Scanner(System.in);
+   ```
+8. Ask the user to enter:
    * Number of drinks
    * Number of candies
    * Number of hot dogs
    * Number of hamburgers
-7. Store these values in the appropriate variables.
-8. Prompt the user to enter the **full high school name**.
-9. Use String methods to create initials from the first letters of each word (e.g., “Birch Wathen Lenox” → “BWL”).
-10. Replace the high school name on the receipt with the generated initials.
-11. Calculate the order’s total cost using the user’s input values.
-12. Print the updated receipt.
-13. Run and debug the program.
+9. Store these values in the appropriate **variables** using `input.nextLine()`
+10. Prompt the user to enter the **full high school name**.
+11. Use `String` class methods to create initials from the first letters of each word (e.g., “Birch Wathen Lenox” → “BWL”).
+12. Replace the high school name on the receipt with the generated initials.
+13. Calculate the order’s total cost using the user’s input values.
+14. Print the updated receipt.
+15. Run and debug the program.
 
 </div>
+
+<br>
 
 <html>
 <details class="highlight-block">
@@ -222,25 +219,23 @@ nav_order: 18
 
 1. Choose a business type for your custom receipt (e.g., store, café, personal business).
 2. Write down details about the business:
-
    * What it sells
    * Information shown on the receipt (store name, location, date, item descriptions, prices, quantities, etc.)
 3. Decide how many items your receipt will include.
 4. Draw your receipt on paper to plan the layout.
 5. Identify all the variables needed to store your data.
 6. Assign data to the variables:
-
    * Some set with literal values
    * Some set from user input
 7. Add creativity by including extra features:
-
    * Generate a receipt number using part of the business name plus a random number.
    * Apply a random “surprise” discount (1%–10%).
-   * Use String and Math methods from the Java Quick Reference.
-8. Write your Java code in a file named `Receipt5.java`.
+   * Use `String` and `Math` class methods from the Java Quick Reference.
 9. Test the program to ensure it displays correctly and works as intended.
 
 </div>
+
+<br>
 
 <html>
 <details class="highlight-block">
@@ -248,7 +243,10 @@ nav_order: 18
 
 <div markdown="block">
 
-* Because of the way decimal numbers are stored, the values of a double variable value will print many decimal places. One way to display **only two decimal places** would be to use the statement `value = ((int)(value * 100)/100.0);`.
+* Because of the way decimal numbers are stored, the values of a `double` variable value will print many decimal places. One way to display **only two decimal places** would be to use the statement:
+```java
+double value = ((int)(value * 100)/100.0);
+```
 
 </div>
 </details>
