@@ -38,11 +38,10 @@ nav_order: 18
 
 <div class="task" markdown="block">
 
-1. Open your IDE and create a new file called `Receipt1.java`.
-2. Copy and paste (or retype) the following starter code into your new file:
+1. Copy and paste (or retype) the following starter code into your `Main.java` file:
 
 ```java
-public class Receipt1
+public class Main
 {
    public static void main(String [] args)
    {
@@ -61,11 +60,8 @@ public class Receipt1
 ```
 
 3. Run the program.
-4. If any errors occur, fix them so the program compiles and runs successfully.
-5. Save the file — you will reuse this code in the next activity.
-
-</div>
-
+4. If any **errors** occur, fix them so the program compiles and runs successfully.
+  
 <html>
 <details>
 <summary><strong>💡 HINTS: </strong></summary>
@@ -84,6 +80,8 @@ public class Receipt1
 </details>
 </html>
 
+</div>
+
 ### PART B: Enhanced Receipt
 
 <div class="task" markdown="block">
@@ -99,7 +97,6 @@ public class Receipt1
 9. Run the program and debug if needed.
 10. Make sure the receipt displays correctly with your variables.
 
-</div>
 
 <html>
 <details>
@@ -118,6 +115,8 @@ public class Receipt1
 </div>
 </details>
 </html>
+
+</div>
 
 ### PART C: Adding Random
 
@@ -148,8 +147,6 @@ public class Receipt1
    * Total cost for the order
 7. Run and debug the program.
 
-</div>
-
 <html>
 <details>
 <summary><strong>💡 HINTS: </strong></summary>
@@ -169,6 +166,8 @@ public class Receipt1
 </div>
 </details>
 </html>
+
+</div>
 
 ### PART D: Interactive Receipt
 
@@ -195,7 +194,6 @@ public class Receipt1
 12. Print the updated receipt.
 13. Run and debug the program.
 
-</div>
 
 <html>
 <details>
@@ -216,6 +214,8 @@ public class Receipt1
 </div>
 </details>
 </html>
+
+</div>
 
 ### PART E: Design a Receipt
 
@@ -255,6 +255,7 @@ public class Receipt1
 </details>
 </html>
 
+</div>
 
 <!--
 
