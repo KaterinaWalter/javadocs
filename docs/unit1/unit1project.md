@@ -39,29 +39,29 @@ nav_order: 18
 <div class="task" markdown="block">
 
 1. Copy and paste (or retype) the following starter code into your `Main.java` file:
+  ```java
+  public class Main
+  {
+     public static void main(String [] args)
+     {
+        System.out.println("**************************************");
+        System.out.println("*                                    *");
+        System.out.println("*     High School Snack Bar          *");
+        System.out.println("*                                    *");
+        System.out.println("*     Drink ..........$1.50          *");                      
+        System.out.println("*     Candy ..........$1.25          *");     
+        System.out.println("*     Hot Dog ........$2.75          *");     
+        System.out.println("*     Hamburger ......$3.50          *");     
+        System.out.println("*                                    *");    
+        System.out.println("**************************************");
+     }
+  }
+  ```
+2. Run the program.
+3. If any **errors** occur, fix them so the program compiles and runs successfully.
 
-```java
-public class Main
-{
-   public static void main(String [] args)
-   {
-      System.out.println("**************************************");
-      System.out.println("*                                    *");
-      System.out.println("*     High School Snack Bar          *");
-      System.out.println("*                                    *");
-      System.out.println("*     Drink ..........$1.50          *");                      
-      System.out.println("*     Candy ..........$1.25          *");     
-      System.out.println("*     Hot Dog ........$2.75          *");     
-      System.out.println("*     Hamburger ......$3.50          *");     
-      System.out.println("*                                    *");    
-      System.out.println("**************************************");
-   }
-}
-```
+</div>
 
-3. Run the program.
-4. If any **errors** occur, fix them so the program compiles and runs successfully.
-  
 <html>
 <details>
 <summary><strong>💡 HINTS: </strong></summary>
@@ -80,7 +80,6 @@ public class Main
 </details>
 </html>
 
-</div>
 
 ### PART B: Enhanced Receipt
 
@@ -97,6 +96,7 @@ public class Main
 9. Run the program and debug if needed.
 10. Make sure the receipt displays correctly with your variables.
 
+</div>
 
 <html>
 <details>
@@ -116,7 +116,6 @@ public class Main
 </details>
 </html>
 
-</div>
 
 ### PART C: Adding Random
 
@@ -147,6 +146,8 @@ public class Main
    * Total cost for the order
 7. Run and debug the program.
 
+</div>
+
 <html>
 <details>
 <summary><strong>💡 HINTS: </strong></summary>
@@ -167,7 +168,6 @@ public class Main
 </details>
 </html>
 
-</div>
 
 ### PART D: Interactive Receipt
 
@@ -194,6 +194,7 @@ public class Main
 12. Print the updated receipt.
 13. Run and debug the program.
 
+</div>
 
 <html>
 <details>
@@ -214,8 +215,6 @@ public class Main
 </div>
 </details>
 </html>
-
-</div>
 
 ### PART E: Design a Receipt
 
@@ -255,7 +254,6 @@ public class Main
 </details>
 </html>
 
-</div>
 
 <!--
 
