@@ -63,7 +63,7 @@ nav_order: 18
 </div>
 
 <html>
-<details>
+<details class="highlight-block">
 <summary><strong>💡 HINTS: </strong></summary>
 
 <div markdown="block">
@@ -99,7 +99,7 @@ nav_order: 18
 </div>
 
 <html>
-<details>
+<details class="highlight-block">
 <summary><strong>💡 HINTS: </strong></summary>
 
 <div markdown="block">
@@ -149,7 +149,7 @@ nav_order: 18
 </div>
 
 <html>
-<details>
+<details class="highlight-block">
 <summary><strong>💡 HINTS: </strong></summary>
 
 <div markdown="block">
@@ -197,7 +197,7 @@ nav_order: 18
 </div>
 
 <html>
-<details>
+<details class="highlight-block">
 <summary><strong>💡 HINTS: </strong></summary>
 
 <div markdown="block">
@@ -243,7 +243,7 @@ nav_order: 18
 </div>
 
 <html>
-<details>
+<details class="highlight-block">
 <summary><strong>💡 HINTS: </strong></summary>
 
 <div markdown="block">
