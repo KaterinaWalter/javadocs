@@ -157,13 +157,19 @@ In this part we are going to add some arithmetic to the program to **calculate**
 
 <div markdown="block">
 
-* The variables for tax rate, subtotal, total tax, and total should be of type `double` because each will contain a real number value. The variables for order number and the number of drinks, candies, hot dogs, and hamburgers should be of type `int` because each will contain a whole number.
+* The variables for tax rate, subtotal, total tax, and total should be of type `double` because each will contain a real number value.
+* The variables for order number and the number of drinks, candies, hot dogs, and hamburgers should be of type `int` because each will contain a whole number.
 
-* To generate the order number, which should be a random number between 1 and 100, inclusive, the `Math.random()` method should be used. The general form of generating a random number between low and high is `(int)(Math.random() * (high - low + 1) + low)`. For the order number example, the code should be `(int)(Math.random() * 100 + 1)`
+* To **generate** the order number, which should be a random number between 1 and 100, inclusive, the `Math.random()` method should be used. The general form of generating a random number between low and high is `(int)(Math.random() * (high - low + 1) + low)`. For the order number example, the code should be `(int)(Math.random() * 100 + 1)`
 
 * If the variable `numDrinks` contains the value that is randomly generated and the variable `drinkCost` contains the value of the cost per drink, then to calculate the total cost for the drinks, you would use the expression `numDrinks * drinkCost`.
 
-* The subtotal can be found by _adding_ each of the item totals. The value for the tax can be found by _multiplying_ the subtotal and tax rate. The order total can be found by _adding_ the subtotal and the tax. 
+* The subtotal can be found by _adding_ each of the item totals. The value for the tax can be found by _multiplying_ the subtotal and tax rate. The order total can be found by _adding_ the subtotal and the tax.
+
+* Because of the way decimal numbers are stored, the values of a `double` variable value will print many decimal places. One way to display **only two decimal places** would be to use the statement:
+```java
+double value = ((int)(value * 100)/100.0);
+```
 
 * The **escape sequence** for adding a new line to an output is `"\n"`. The escape sequence for adding a tab to an output is `"\t"`.
  
@@ -196,7 +202,7 @@ In the previous part we created variables and assigned their values directly. Th
 10. Prompt the user to enter the **full high school name**.
 11. Use `String` class methods to create initials from the first letters of each word (e.g., “Birch Wathen Lenox” → “BWL”).
 12. Replace the high school name on the receipt with the generated initials.
-13. Calculate the order’s total cost using the user’s input values.
+13. **Calculate** the order’s total cost using the user’s input values.
 14. Print the updated receipt.
 15. Run and debug the program.
 
@@ -244,21 +250,6 @@ If you complete Parts A-D, start a blank Java program and try this bonus activit
    * Apply a random “surprise” discount (1%–10%).
    * Use `String` and `Math` class methods from the Java Quick Reference.
 9. Test the program to ensure it displays correctly and works as intended.
-
-<html>
-<details class="highlight-block">
-<summary><strong>💡 HINTS: </strong></summary>
-
-<div markdown="block">
-
-* Because of the way decimal numbers are stored, the values of a `double` variable value will print many decimal places. One way to display **only two decimal places** would be to use the statement:
-```java
-double value = ((int)(value * 100)/100.0);
-```
-
-</div>
-</details>
-</html>
 
 <br>
 
