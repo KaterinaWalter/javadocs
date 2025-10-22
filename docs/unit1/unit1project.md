@@ -229,27 +229,21 @@ In the previous part we created variables and assigned their values directly. Th
 
 If you complete Parts A-D, start a blank Java program and try this bonus activity!
 
-<div class="task" markdown="block">
-
 1. Choose a business type for your custom receipt (e.g., store, café, personal business).
 2. Write down details about the business:
-   * What it sells
+   * What products it sells
    * Information shown on the receipt (store name, location, date, item descriptions, prices, quantities, etc.)
 3. Decide how many items your receipt will include.
 4. Draw your receipt on paper to plan the layout.
-5. Identify all the variables needed to store your data.
-6. Assign data to the variables:
-   * Some set with literal values
-   * Some set from user input
+5. Identify all the **variables** needed to _store_ your data.
+6. **Assign data** to the variables:
+   * Some set with _literal values_
+   * Some set from _user input_
 7. Add creativity by including extra features:
    * Generate a receipt number using part of the business name plus a random number.
    * Apply a random “surprise” discount (1%–10%).
    * Use `String` and `Math` class methods from the Java Quick Reference.
 9. Test the program to ensure it displays correctly and works as intended.
-
-</div>
-
-<br>
 
 <html>
 <details class="highlight-block">
