@@ -22,7 +22,7 @@ nav_order: 5
 ## Compound Boolean Expressions
 
 #### VENN DIAGRAM ACTIVITY
-{.no_toc}
+{:.no_toc}
 
 <div class="task" markdown="block">
   
@@ -33,16 +33,17 @@ nav_order: 5
 
 </div>
 
-> * We can write a **Compound Boolean Expression** that compares the age of each person in the group using ``==``, ``<``, ``>``, and ``&&``, for example Ada's age ``>`` Alan's age ``&&`` Alan's age ``==`` Grace's age. 
+> * We can write a **Compound Boolean Expression** that compares the age of every person in the group using ``==``, ``<``, ``>``, and ``&&``, for example Ada's age ``>`` Alan's age ``&&`` Alan's age ``==`` Grace's age. 
 > * Write a Boolean expression that compares the favorite movies in the group using ``==``, ``!=``, and ``&&``, for example Ada's movie ``==`` Alan's movie ``&&`` Alan's movie ``!=`` Grace's movie. 
 
 ### And (`&&`) Operator
 
-What if you want **two things to be true** before the body of the conditional is executed?  Use ``&&`` as a logical **and** to join two Boolean expressions and the body of the condition will only be executed only if both are true.
+What if you want **two things to be true** before the body of the conditional is executed?  Use ``&&`` as a logical **and** to join two Boolean expressions. The body of the condition will be executed _only if both are true_.
 
-<div class="task" markdown="block">
+<div class="imp" markdown="block">
   
-What if you want to go out and your parents say you can go out if you clean your room and do your homework? Test the code below and try different values for ``cleanedRoom`` and ``didHomework`` and see what they have to be for it to print ``"You can go out"``.
+Let's imagine you have fun plans on a Friday night, but your super strict parents say you only can go out if you clean your room **AND** do your homework? 
+
 ```java
 boolean cleanedRoom = true;
 boolean didHomework = false;
@@ -51,19 +52,21 @@ if (cleanedRoom && didHomework) {
   System.out.println("You can go out");
 }
 else {
-  System.out.println("No, you can't go out");
+  System.out.println("No, you can't go out, and furthermore, you're grounded.");
 }
 ```
+> Test the code and try different values for ``cleanedRoom`` and ``didHomework`` and see what they have to be for it to print ``"You can go out"``.
 
 </div>
 
 ### Or (`||`) Operator
 
-What if it is okay if _only one of two things_ is true? Use ``||`` as a logical **or** to join two Boolean expressions and the body of the condition will be executed if one or both are true.
+What if it is okay if _only one of two things_ is true? Use ``||`` as a logical **or** to join two Boolean expressions. The body of the condition will be executed _if at least one part is true_.
 
-<div class="task" markdown="block">
+<div class="imp" markdown="block">
   
-For example, your parents might say you can go out if you can walk or they don't need the car.  Try different values for ``walking`` and ``carIsAvailable`` and see what the values have to be to print ``"You can go out"``.
+Your parents might say you can go out if you can walk to the event, **OR** if they don't need the car. 
+
 ```java
 boolean walking = false;
 boolean carIsAvailable = false;
@@ -75,6 +78,7 @@ else {
   System.out.println("No, you can't go out");
 }
 ```
+> Try different values for ``walking`` and ``carIsAvailable`` and see what the values have to be to print ``"You can go out"``.
 
 </div>
 
@@ -98,7 +102,7 @@ if (!homeworkDone) {
 If you use ``!`` in expressions with ``&&`` and ``||``, be careful because the results are often the opposite of what you think it will be at first. We'll see examples of this in the next lesson.
 
 {:.highlight}
-In Java, `!` will be executed before `&&`, and `&&` will be executed before `||`, unless there are **parentheses**. Anything inside parentheses is executed first.
+In Java, `!` will be executed before `&&`, and `&&` will be executed before `||`, unless there are **parentheses**. _Anything inside parentheses is executed first._
 
 ### Truth Tables
 
@@ -128,6 +132,18 @@ The following table shows the result for ``P || Q`` when ``P`` and ``Q`` are bot
 |false  |false  |false      |
 
 > 💬: The truth table above is missing one result.  What is the result of ``P || Q`` when ``P = false`` and ``Q = true``?
+
+#### Truth Table Practice
+{:.no_toc}
+
+<div class="task" markdown="imp">
+  
+1. Write the sentence _"If it's sunny, OR if the temperature is greater than 80 and it's not raining, I will go to the beach."_ as a Java if statement using an int variable ``temp`` and boolean variables ``isSunny`` and ``isRaining``. If the conditional is true, print out _"Go to the beach!"_.
+   > So, you will go to the beach on days that it is sunny (in any temperature), OR you will go to the beach on days when the temperature is over 80 degrees AND it's not raining.
+
+3. Complete a **truth table** for the if statement that you wrote with columns for the conditions `isSunny`, `temp > 80`, `isRaining`, and `outcome` (go to the beach).
+
+</div>
 
 ### Short Circuit Evaluation
 
@@ -160,27 +176,17 @@ else {
 ```
 
 </div>
-  
-#### Truth Table Practice
-{:.no_toc}
-   
-1. Write the sentence _"If it's sunny, OR if the temperature is greater than 80 and it's not raining, I will go to the beach."_ as a Java if statement using an int variable ``temp`` and boolean variables ``isSunny`` and ``isRaining``. If the conditional is true, print out _"Go to the beach!"_.
-   > So, you will go to the beach on days that it is sunny (in any temperature), OR you will go to the beach on days when the temperature is over 80 degrees AND it's not raining.
-
-3. Complete a **truth table** for the if statement that you wrote with columns for the conditions `isSunny`, `temp > 80`, `isRaining`, and `outcome` (go to the beach).
 
 
    
 #### Boolean Game
 {:.no_toc}
 
-<div class="task" markdown="block">
-
 🎲 Try the game below written to practice Boolean Expressions. Click on **Booleans**, look at the color and number in the block, and _evaluate the boolean expression_ to select `true` or `false`. Then, check on _Compound_ for an added challenge. See how high a score you can get!
 
 <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
-</div>
+
 
 <!--
 
