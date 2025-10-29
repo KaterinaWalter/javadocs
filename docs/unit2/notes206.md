@@ -102,7 +102,9 @@ For example, applying De Morgan's Laws to ``!(x < 3 && y > 2)`` yields ``!(x < 3
 
 <div class="task" markdown="block">
         
-Explore the following problems with your group. Assume that ``x`` is an integer value, for example -1, 0, or 1.
+📝 Explore the following problems with your group on the worksheet. 
+
+Assume that ``x`` is an _integer_ value, for example -1, 0, or 1.
 
 1. Complete a **truth table** for the boolean expression: ``!(x == 0 || x >= 1)``.
    > * Is this the set of positive or negative numbers?
