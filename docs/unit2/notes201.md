@@ -133,19 +133,18 @@ To understand why **ORDER MATTERS**, consider this pseudocode algorithm for buyi
 
 ![image-small](Figures/algorithms.png)
 
+</div>
+
 _Examples:_
-- If there are Oreos today, grab one immediately and head back to class. 
-- If there are no good options in the Upper School lounge, go check the Middle School snack shelves. 
-  - You may want to consider every item in both snack areas, or search all the leftover candy in your locker, before deciding.
+- If there are Oreos today, grab one immediately and head back to class.
 - If there is something salty, like Cheez-its or Goldfish, grab an extra one for Mrs. Walter. 
 
-</div>
 
 ---
 
 ## Summary
 
-- (AP 2.1.A.1) The building blocks of algorithms include sequencing, selection, and repetition.
+- (AP 2.1.A.1) The building blocks of algorithms include **sequencing**, **selection**, and **repetition**.
 - (AP 2.1.A.2) Algorithms can contain selection, through decision making, and repetition, via looping.
 - (AP 2.1.A.3) Selection occurs when a choice of how the execution of an algorithm will proceed is based on a true or false decision.
 - (AP 2.1.A.4) Repetition is when a process repeats itself until a desired outcome is reached.
