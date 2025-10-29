@@ -116,7 +116,7 @@ The following table shows the result for ``P || Q`` when ``P`` and ``Q`` are bot
 
 ### Short Circuit Evaluation
 
-![image](https://lirp.cdn-website.com/d7a1ea03/dms3rep/multi/opt/What-is-a-short-circuit--ACDC-Electric-llc-640w.jpg)
+![image-small](https://lirp.cdn-website.com/d7a1ea03/dms3rep/multi/opt/What-is-a-short-circuit--ACDC-Electric-llc-640w.jpg)
 
 Both ``&&`` and ``||`` use **short circuit evaluation**.  That means that the second expression (on the right of the operator) isn't necessarily checked, if the result from the first expression is enough to tell if the compound boolean expression is true or false:
 
