@@ -172,13 +172,10 @@ Because Java's ``%`` is a _remainder_ operator, not a true [modulo](https://en.w
 #### Relational Operators Game
 {:.no_toc}
 
-<div class="task" markdown="block">
-
 🎲 Try the game below to practice! Click on _Relationals_, evaluate the relational expression and click on **None**, **All**, or the **numbers** that make the expression `true`. Check on _Compound_ for an added challenge.
 
 <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
-</div>
 
 <!--
 
