@@ -164,9 +164,9 @@ else {
 
 <div class="task" markdown="block">
 
-🎲 Try the game below written to practice Booleans. Click on **Booleans**, look at the color and number in the block and evaluate the boolean expression to choose `true` or `false`. Then, check on Compound for an added challenge. See how high a score you can get!
+🎲 Try the game below written to practice Boolean Expressions. Click on **Booleans**, look at the color and number in the block, and _evaluate the boolean expression_ to select `true` or `false`. Then, check on _Compound_ for an added challenge. See how high a score you can get!
 
-<a href="https://csa-games.netlify.app/" target="_blank"><button class="btn">Boolean Game</button></a>
+<iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
 </div>
 
