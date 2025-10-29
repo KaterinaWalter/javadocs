@@ -187,6 +187,23 @@ else {
 
 <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
+---
+
+## Summary
+
+- (AP 2.5.A.1) Logical operators ``!`` (not), ``&&`` (and), and ``||`` (or) are used with Boolean values.
+
+    - ``A && B`` is ``true`` if both ``A`` and ``B`` are ``true``.
+
+    - ``A || B`` is ``true`` if either ``A`` or ``B`` (or both) are ``true``.
+
+    - ``!A`` is ``true`` if ``A`` is ``false``.
+
+- (AP 2.5.A.1) ``!`` has precedence (is executed before) ``&&`` which has precedence over ``||``. (Parentheses can be used to force the order of execution in a different way.) 
+
+- (AP 2.5.A.1) An expression involving logical operators evaluates to a Boolean value.
+
+- (AP 2.5.A.2)	**Short-circuit evaluation** occurs when the result of a logical operation using  ``&&`` or ``||`` can be determined by evaluating only the first Boolean expression. In this case, the second Boolean expression is not evaluated. (If the first expression is ``true`` in an ``||`` operation, the second expression is not evaluated since the result is true. If the first expression is ``false`` in an ``&&`` operation, the second expression is not evaluated since the result is false.)
 
 
 <!--
