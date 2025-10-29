@@ -33,7 +33,8 @@ b = "at our high school"
 ```
 > This expression means it is **NOT** true that `a` it is a senior and `b` someone at our high school.
 
-{:.highlight} ⚖️ Two Boolean expressions are **equivalent** if they _evaluate to the same value_ in all cases. **Truth tables** can be used to prove Boolean expressions are equivalent.
+{: .highlight } 
+⚖️ Two Boolean expressions are **equivalent** if they _evaluate to the same value_ in all cases. **Truth tables** can be used to prove Boolean expressions are equivalent.
 
 In this lesson, you will learn about De Morgan's Laws which simplify statements like this. We know that !(a senior at our high school) could mean !(a senior) or !(at our high school). Let's learn more about De Morgan's Laws.
 
@@ -64,7 +65,8 @@ b = "at our high school"
 You can also _simplify_ negated boolean expressions that have **relational operators** like ``<``, ``>``, ``==``. You can move the negation inside the parentheses by flipping the relational operator to its opposite sign. 
 > For example, _not (c equals d)_ is the same as saying _c does not equal d_.
 
-{:.highlight} An easy way to remember this kind of _distribution_ is to **move the NOT, flip the sign**. 
+{: .highlight } 
+An easy way to remember this kind of _distribution_ is to **move the NOT, flip the sign**. 
 > Notice that ``==`` becomes ``!=``, but ``<`` becomes ``>=``,  ``>`` becomes ``<=``, ``<=`` becomes ``>``, and ``>=`` becomes ``<`` where the sign is flipped and an equal sign may also be added or removed.
 
   - ``!(c == d)`` is equivalent to ``c != d``
