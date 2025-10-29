@@ -121,6 +121,7 @@ The following table (also called a **truth table**) shows the result for ``P && 
 > 💬: The truth table above is missing one result.  What is the result of ``P && Q`` when ``P = false`` and ``Q = true``?
 
 #### OR (||) TRUTH TABLE
+{:.no_toc}
 
 The following table shows the result for ``P || Q`` when ``P`` and ``Q`` are both expressions that can be ``true`` or ``false``.  As you can see below the result of ``P || Q`` is ``true`` if either ``P`` or ``Q`` is ``true``.  It is also ``true`` when both of them are ``true``.
 
