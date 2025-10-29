@@ -19,7 +19,7 @@ nav_order: 12
 
 ---
 
-## Loop Analysis
+## Loop Runtime Analysis
 
 In this lesson, you will practice **tracing through code with loops** and analyzing loops to determine how many times they run.
 
@@ -114,13 +114,11 @@ The **number of times a nested for loop body is executed** is equal to the numbe
 #### Loop Analysis Game
 {:.no_toc}
 
-<div class="task" markdown="block">
-
 🎲 Try the game below to practice loop analysis. Click on **Loops** and click on the number of times the loop runs. For an added challenge, try the check boxes for `Backwards` and `Nested`. We encourage you to work in pairs and see how high a score you can get.
 
-<a href="https://csa-games.netlify.app/" target="_blank"><button class="btn">Loop Analysis Game</button></a>
+<iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
 
-</div>
+
 
 <!--
 
