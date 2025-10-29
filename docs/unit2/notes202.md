@@ -31,7 +31,7 @@ nav_order: 2
 
 1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
-3. Specify the **repository name**: `CS2-Unit2PartA-Notes`
+3. Specify the **repository name**: `CS2-Unit-2-A-Notes`
 4. For the **description**, write: `Selection/Conditionals (boolean expressions, if-else statements)`
 5. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
     > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 📂
