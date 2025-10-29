@@ -21,6 +21,21 @@ nav_order: 5
 
 ## Compound Boolean Expressions
 
+#### VENN DIAGRAM ACTIVITY
+{.no_toc}
+
+<div class="task" markdown="block">
+  
+1. In the printed **Venn Diagram**, label each circle with the names of the 3 people in your group.
+2. 📝 Write down the `age` of each person in your group in the circles. If two or more people are the same age, put that age in the _intersecting parts_ of their circles as well.
+3. Then, ask each person in your group their favorite `movie`. If two or more people have the same favorite movie, put the movie in the intersecting parts of their circles.
+4. Think of a few more pieces of information to share, finding as much common ground as possible!
+
+</div>
+
+> * We can write a **Compound Boolean Expression** that compares the age of each person in the group using ``==``, ``<``, ``>``, and ``&&``, for example Ada's age ``>`` Alan's age ``&&`` Alan's age ``==`` Grace's age. 
+> * Write a Boolean expression that compares the favorite movies in the group using ``==``, ``!=``, and ``&&``, for example Ada's movie ``==`` Alan's movie ``&&`` Alan's movie ``!=`` Grace's movie. 
+
 ### And (`&&`) Operator
 
 What if you want **two things to be true** before the body of the conditional is executed?  Use ``&&`` as a logical **and** to join two Boolean expressions and the body of the condition will only be executed only if both are true.
@@ -146,16 +161,13 @@ else {
 
 </div>
   
-#### Venn Diagram Activity
+#### Truth Table Practice
 {:.no_toc}
-
-📝 Explore the following problems in a group of 4:
-
-1. Draw or print a [Venn diagram](https://docs.google.com/document/d/1lpjk0LS_KdAddRurMayJZmaFzeyEg4FyhviZcSTXvtU/edit?usp=sharing) of 4 intersecting circles. Put the names of the 4 people in your group one in each circle. Write down the age of each person in your group in the circles. If two or more people are the same age, put the age in the intersecting parts of their circles. Write a Boolean expression that compares the age of each person in the group using ``==``, ``<``, ``>``, and ``&&``, for example Ada's age ``>`` Alan's age ``&&`` Alan's age ``==`` Grace's age. Then, ask each person in your group their favorite movie. If two or more people have the same favorite movie, put the movie in the intersecting parts of their circles. Write a Boolean expression that compares the favorite movies in the group using ``==``, ``!=``, and ``&&``, for example Ada's movie ``==`` Alan's movie ``&&`` Alan's movie ``!=`` Grace's movie. Think of 1 more comparison and write it in the circles and as a Boolean expression. Share the Boolean expressions with the class.
    
-3. Write the sentence "If it's sunny, OR if the temperature is greater than 80 and it's not raining, I will go to the beach." as a Java if statement using an int variable ``temperature`` and boolean variables ``sunny`` and ``raining``.  If the conditional is true, print out "Go to the beach!". So, you will go to the beach on days that it is sunny in any temperature, or you will go to the beach on days when the temperature is over 80 degrees and it's not raining.
+1. Write the sentence _"If it's sunny, OR if the temperature is greater than 80 and it's not raining, I will go to the beach."_ as a Java if statement using an int variable ``temp`` and boolean variables ``isSunny`` and ``isRaining``. If the conditional is true, print out _"Go to the beach!"_.
+   > So, you will go to the beach on days that it is sunny (in any temperature), OR you will go to the beach on days when the temperature is over 80 degrees AND it's not raining.
 
-4. Complete a **truth table** for the if statement that you wrote in #2 with columns for sunny, temperature > 80, raining, and go to the beach.
+3. Complete a **truth table** for the if statement that you wrote with columns for the conditions `isSunny`, `temp > 80`, `isRaining`, and `outcome` (go to the beach).
 
 
    
