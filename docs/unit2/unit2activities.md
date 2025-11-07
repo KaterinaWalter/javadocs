@@ -55,26 +55,58 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ## 🔮 ACTIVITY #1: Magic 8 Ball
 
-Have you ever used a **Magic 8 ball**? You ask it a yes-no question and then shake it to get a random response like ``Signs point to yes!``, ``Very doubtful``, etc. 
+Have you ever used a **Magic 8 ball**? You ask it a yes-no question, and then shake it to get a random answer like ``Signs point to yes!``, ``Very doubtful``, etc. 
 
-Try out this [Magic 8 Ball Simulator](https://magic-8ball.com/)
+{:.highlight} Try out this [Magic 8 Ball Simulator](https://magic-8ball.com/)
 
-### PART A:
+_In this activity, we will:_
+* Generate and use **random** values correctly.
+* Practice **selection** with `if`-`else if`-`else` blocks (chain structures) and **conditions** (`boolean` values or expressions).
+
+### PART A: Printing Randomly-Selected Messages
 
 <div class="task" markdown="block">
 
-Write a branching program in the `main()` method that does the following:
+Write a **branching** program inside the `main()` method that does the following:
 
-1. Choose a **random integer** from 1 to 10
+1. Declare a variable called `num` and assign it a **random integer** between 1 to 10, inclusive.
   > To review generating random numbers, see [📓 1.11: Math Class](https://coderina.dev/javadocs/docs/unit1/notes111.html)
-2. Come up with **10 possible responses** to yes-no questions.
-3. Use **if statements** to test the number and print out a different response for each number.
-4. Use Math.random() to toss a coin to choose between 2 choices
-5. Use an if/else statement to test the random number and print out "Lucky!" or else "No Luck!"
+2. Use **conditional statements** to test the value of `num` and _print out a different message for each number_.
+  > Come up with **10 creative responses** to yes-no questions!
 
 </div>
 
+#### Review: `if`-`else if`-`else`
 
----
+```java
+if ( conditions ) {
+  statement1;
+}
+else if ( condition ) {
+  statement2;
+}
+else {
+  statement3;
+}
+```
+> This structure can accomodate more than 3 choices easily – just add an `else if` block for every possibility _after_ the first `if` statement, and _before_ the final `else` block. 
 
 
+### PART B: Coin Toss
+
+<div class="task" markdown="block">
+
+
+1. Generate another random number at the top of the program, this time a**random double** between 0–1. Store it in a variable called `luck`.
+2. In a **nested** `if` statement, check the value of `luck`. If it is greater than or equal to 0.5, print the message `"LUCKY! 🍀"` 
+
+</div>
+
+<div class="warn" markdown="block">
+
+**Common pitfalls to avoid**
+
+* Off-by-one: `(int) (Math.random() * 10)` gives values between 0–9. Remember to add 1.
+* Isolated `if` statements: use `else if` blocks to avoid multiple messages printing out.
+
+</div>
