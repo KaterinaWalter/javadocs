@@ -57,7 +57,8 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 Have you ever used a **Magic 8 ball**? You ask it a yes-no question, and then shake it to get a random answer like ``Signs point to yes!``, ``Very doubtful``, etc. 
 
-{:.highlight} Try out this [Magic 8 Ball Simulator](https://magic-8ball.com/)
+{: .highlight } 
+Try out this [Magic 8 Ball Simulator](https://magic-8ball.com/)
 
 _In this activity, we will:_
 * Generate and use **random** values correctly.
@@ -77,9 +78,10 @@ Write a **branching** program inside the `main()` method that does the following
 </div>
 
 #### Review: `if`-`else if`-`else`
+{:.no_toc}
 
 ```java
-if ( conditions ) {
+if ( condition ) {
   statement1;
 }
 else if ( condition ) {
@@ -89,7 +91,7 @@ else {
   statement3;
 }
 ```
-> This structure can accomodate more than 3 choices easily – just add an `else if` block for every possibility _after_ the first `if` statement, and _before_ the final `else` block. 
+> This structure can accomodate **more than 3 choices** easily → just add an `else if` block for every possibility _after_ the first `if` statement, and _before_ the final `else` block. 
 
 
 ### PART B: Coin Toss
@@ -97,16 +99,20 @@ else {
 <div class="task" markdown="block">
 
 
-1. Generate another random number at the top of the program, this time a**random double** between 0–1. Store it in a variable called `luck`.
-2. In a **nested** `if` statement, check the value of `luck`. If it is greater than or equal to 0.5, print the message `"LUCKY! 🍀"` 
+1. Generate another random number at the top of the program, this time make it a **random double** between 0–1. Store it in a variable called `luck`.
+2. In a **nested** `if` statement (_inside one of your existing conditional blocks_) test the value of `luck` as a "follow up" after printing the Magic 8 Ball message.
+3. If it is greater than or equal to 0.5, print the message `"LUCKY! 🍀"` 
 
 </div>
 
-<div class="warn" markdown="block">
+#### Review: nested `if`
+{:.no_toc}
 
-**Common pitfalls to avoid**
-
-* Off-by-one: `(int) (Math.random() * 10)` gives values between 0–9. Remember to add 1.
-* Isolated `if` statements: use `else if` blocks to avoid multiple messages printing out.
-
-</div>
+```java
+if ( condition ) {
+  statement1;
+  if ( condition ) {
+    statement2;
+  }
+}
+```
