@@ -155,6 +155,33 @@ You can create a **tracing table** that keeps track of the variable **values** _
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TZss5ukwN8s?si=Ombs6tE86U_nItk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+#### Loop Tracing Practice
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+✍️ To _trace_ through the code, keep track of the variable `x` and its **value**, the **iteration** of the loop, and the **output** every time through the loop.
+
+1. Consider the following code segment. What is count's value after running this code segment?
+  ```java
+     int count = 1;
+     while (count <= 10) {
+         count *= 2;
+     }
+     count = count - 10;
+  ```
+  > Step through the code above with the <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20TraceLoop%20%7B%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20%20int%20count%20%3D%201%3B%0A%20%20%20%20%20%20while%20%28count%20%3C%3D%2010%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20count%20*%3D%202%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20count%20%3D%20count%20-%2010%3B%0A%20%20%20%20%7D%0A%7D&cumulative=false&curInstr=16&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">visualizer</a>
+
+2. What does the following code print?
+  ```java
+     int x = -5;
+     while (x < 0) {
+        x++;
+        System.out.print(x + " ");
+     }
+  ```
+
+</div>
 
 ### Common Errors with Loops
 
@@ -173,7 +200,6 @@ But if we create an infinite loop by accident, our program may seem to get
 stuck. For example look at this loop:
 
 ```java
-
    int i = 0;
    while (i < 10) {
        System.out.println(i);
@@ -183,9 +209,8 @@ stuck. For example look at this loop:
 infinite loop. Can you see why?
 
 {:.warning}
-The problem in this loop—and a common way to **accidentally create an infinite
-``while`` loop**—is that although it includes steps 1 and 2 (_initializing the loop
-variable and testing it_) it forgot step 3 and never changes the loop variable.
+The problem in this loopis that although it includes steps 1 and 2 (_initializing the loop
+variable and testing it_) it forgot step 3 and **never changes the loop variable**.
 The loop variable, ``i``, starts at ``0`` and the loop loops as long as ``i <
 10`` which will always be true because there’s no code in the loop that changes
 ``i``. The simple fix is to add a line that increments ``i``:
@@ -206,17 +231,25 @@ test condition) and using the incorrect relational operator ``<`` or ``<=``.
 
 ### Input-Controlled Loops
 
-You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above. 
+You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown in previou. 
 
 {:.highlight}
 However, a ``while`` loop is typically used _when you do NOT know how many times_ the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. 
 
-For example, in the <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie chatbot lab on replit.com</a> below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
+For example, with the `Scanner` code below, the while loop **stops** when you type in "Bye". The stopping value is often called the **sentinel value** for the loop, here the stopping value is `userInput`. 
 
-<html>
-<iframe height="700px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe> 
-</html>
+```java
+    Scanner scan = new Scanner(System.in);
+    String userInput = scan.nextLine();
 
+    while (!userInput.equals("Bye"))
+    {
+        System.out.println("You entered: " + userInput);
+        userInput = scan.nextLine();
+    }
+```
+
+> Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to `false` initially, the _loop body is not executed at all_. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
 
 #### 💻 In-Class Activity: Guessing Game
 {:.no_toc}
@@ -228,6 +261,38 @@ For example, in the <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-C
 3. Complete the **Programming Challenge: Guessing Game** activity in pairs.
 
 </div>
+
+---
+
+## Summary
+
+- (AP 2.7.A.1) Iteration statements (loops) change the flow of control by repeating a segment of code zero or more times as long as the Boolean expression controlling the loop evaluates to true. Iteration is a form of repetition.
+- (AP 2.7.B.1) A **while loop** is a type of iterative statement. In while loops, the Boolean expression is evaluated before each iteration of the loop body, including the first. When the expression evaluates to true, the loop body is executed. This continues until the Boolean expression evaluates to false, whereupon the iteration terminates. Here is the general form of a while loop:
+  ```java
+  
+      // The statements in a while loop run zero or more times,
+      // determined by how many times the condition is true
+      int count = 0; // initialize the loop variable
+      while (count < 10)  // test the loop variable
+      {
+          // repeat this code 
+          // update the loop variable
+          count++;
+      }
+  ```
+
+- Loops often have a **loop control variable** that is used in the boolean condition of the loop. Remember the 3 steps of writing a loop:
+  ```
+  1. Initialize the loop variable
+  2. Test the loop variable
+  3. Update the loop variable
+  ```
+
+- (AP 2.7.A.2) An **infinite loop** occurs when the Boolean expression in an iterative statement always evaluates to true.
+- (AP 2.7.A.3) The loop body of an iterative statement will not execute if the Boolean expression initially evaluates to false.
+- (AP 2.7.A.4) **Off by one errors** occur when the iteration statement loops one time too many or one time too few.
+
+- **Input-controlled loops** often use a **sentinel value** that is input by the user like "bye" or -1 as the condition for the loop to stop. Input-controlled loops are not on the AP CSA exam, but are very useful to accept data from the user.
 
 <!--
 
