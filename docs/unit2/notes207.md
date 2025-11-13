@@ -70,24 +70,17 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 When you play a song on Spotify, you can set it to **loop**, which means that when it reaches
 the end, it starts over at the beginning. 
+> When does a loop like this stop?
 
-🔁 A **loop** in programming, also called **iteration** or **repetition**, is a way to repeat one or more statements. If
-you didn't have loops to allow you to repeat code, your programs would get very
-long very quickly! Using a sequence of code, selection (ifs), and repetition
-(loops), the **control structures** in programming, you can construct an
-algorithm to solve almost any programming problem!
+🔁 A **loop** in programming, also called **iteration** or **repetition**, is a way to _repeat_ one or more statements. If
+you didn't have loops to allow you to repeat actions, your programs would get very long very quickly! Using a sequence of code, selection (ifs), and repetition (loops), the **control structures** in programming, you can construct an algorithm to solve almost any programming problem!
 
-A ``while`` loop executes the body of the loop as long as (or while) a ``boolean``
-condition is true. When the condition is false, we exit the loop and continue
-with the statements that are after the body of the ``while`` loop. If the
-condition is false the first time you check it, the body of the loop will not
-execute.
+A ``while`` loop **executes the body** of the loop _as long as_ (or _while_) a ``boolean``
+**condition** is `true`. 
+* When the condition is `false`, we exit the loop and proceed to the statements that are after the body of the ``while`` loop.
+* If the condition is `false` the first time you check it, the body of the loop will not execute at all.
 
-Notice the ``while`` statement looks a lot like an ``if`` statement, but it runs
-more than once. The curly braces (``{}``) are optional when there is just 1
-statement following the condition, but required if there are more than 1
-statement in the loop. In the AP exam, they will always use curly braces, which
-is a good practice to follow.
+Notice the ``while`` statement looks a lot like an ``if`` statement, but it runs more than once:
 
 ```java
     // The statements in an IF run one time if the condition
@@ -102,10 +95,12 @@ is a good practice to follow.
         statements;
     }
 ```
+> The curly braces (``{}``) are optional when there is only 1 statement following the condition, but required if there are more than 1 statement in the loop. In the AP exam, they will always use curly braces, which is a good practice to follow.
 
-Here's what the flow of control looks like in a Java while loop. Notice that while the condition is true, the loop body is repeated.
+Here's what the _flow of control_ looks like in a Java `while` loop:
 
 ![image-small](Figures/WhileLoopFlow.png)
+> Notice that while the condition is `true`, the loop body is repeated.
 
 ### Three Steps to Writing a Loop
 
@@ -162,7 +157,7 @@ You can create a **tracing table** that keeps track of the variable **values** _
 
 ✍️ To _trace_ through the code, keep track of the variable `x` and its **value**, the **iteration** of the loop, and the **output** every time through the loop.
 
-1. Consider the following code segment. What is count's value after running this code segment?
+1. Consider the following code segment. What is `count`'s value after running this code segment?
   ```java
      int count = 1;
      while (count <= 10) {
@@ -191,42 +186,44 @@ infinite loop is one that never stops because the _condition is always true_.
 Sometimes we will write an infinite loop on purpose like this:
 
 ```java
-   while (true) {
-       System.out.println("This is a loop that never ends");
-   }
+while (true) {
+  System.out.println("I love you forever");
+}
 ```
 
 But if we create an infinite loop by accident, our program may seem to get
 stuck. For example look at this loop:
 
 ```java
-   int i = 0;
-   while (i < 10) {
-       System.out.println(i);
-   }
+int i = 0;
+while (i < 10) {
+  System.out.println(i);
+}
 ```
 > That loop looks a lot like loops earlier in this chapter but it is actually an
 infinite loop. Can you see why?
 
 {:.warning}
 The problem in this loopis that although it includes steps 1 and 2 (_initializing the loop
-variable and testing it_) it forgot step 3 and **never changes the loop variable**.
+variable and testing it_) it forgot step 3 and **never changes the loop variable**!
+
 The loop variable, ``i``, starts at ``0`` and the loop loops as long as ``i <
-10`` which will always be true because there’s no code in the loop that changes
-``i``. The simple fix is to add a line that increments ``i``:
+10`` which will always be `true` because there’s no code in the loop that changes
+``i``. 
+
+The simple fix is to add a line that **increments** ``i``:
 
 ```java
-   int i = 0;
-   while (i < 10) {
-       System.out.println(i);
-       i++;
-   }
+int i = 0;
+while (i < 10) {
+  System.out.println(i);
+  i++;
+}
 ```
 
 {:.warning}
 Another common error with loops is an **off-by-one error** where the loop runs
-one too many or one too few times. This is usually a problem with step 2 (the
-test condition) and using the incorrect relational operator ``<`` or ``<=``.
+one too many or one too few times. This is usually a problem with step 2 (**test condition**) and using the incorrect relational operator ``<`` or ``<=``.
 
 
 ### Input-Controlled Loops
