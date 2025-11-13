@@ -106,17 +106,19 @@ is a good practice to follow.
 
 Here's what the flow of control looks like in a Java while loop. Notice that while the condition is true, the loop body is repeated.
 
-![image](Figures/WhileLoopFlow.png)
+![image-small](Figures/WhileLoopFlow.png)
 
 ### Three Steps to Writing a Loop
 
-The simplest loops are **counter-controlled loops** like below, where the **loop control variable** is a counter that controls how many times to repeat the loop. There are 3 steps to writing a loop using this loop control variable as seen below in a loop that counts from 1 to 10.
+The simplest loops are **counter-controlled loops** like below, where the **loop control variable** is a counter that controls how many times to repeat the loop. 
+
+There are 3 steps to writing a loop using this loop control variable, as seen below in a loop that counts from 1 to 10:
 
 ![image](Figures/loop3steps.png)
 
 <div class="imp" markdown="block">
 
-🔄 Remember these 3 steps to writing a loop:
+🔄 Remember these _3 steps_ to writing a **loop**:
 
 1. **Initialize** the loop variable (before the ``while`` loop)
 2. **Test** the loop variable (in the loop header)
@@ -130,7 +132,7 @@ A really important skill to develop is the ability to trace the values of variab
 
 You can create a **tracing table** that keeps track of the variable values each time through the loop as shown below.  This is very helpful on the exam. Studies have shown that students who create tables like this do much better on code tracing problems on multiple choice exams.
 
-![image](Figures/traceTable.png)
+![image-small](Figures/traceTable.png)
 
 > A trace table shows the values of all of the **variables** each time through the loop. `Iteration 0` means **before** the loop. When you are tracing through code, pretend to be the computer running the code line by line, repeating the code in the loop, and keeping track of the variable values and output.
 
