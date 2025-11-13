@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "💻 Unit 1 Project"
-projectname: "Digital Receipt"
+projectname: "Digital Receipt Generator"
 parent: "1️⃣ Objects & Methods"
 nav_order: 18
 ---
@@ -13,7 +13,7 @@ nav_order: 18
 
 <html>
 <details>
-<summary>📥 <strong class="text-green-200">PROJECT SETUP & SUBMISSION INSTRUCTIONS</strong></summary>
+<summary>📥 <strong class="text-green-200">PROJECT PROGRAM SETUP INSTRUCTIONS</strong></summary>
   
 <div class="setup" markdown="block">
 
