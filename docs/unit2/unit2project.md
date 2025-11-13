@@ -39,14 +39,80 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 
 ---
 
-### Part A: 
+### Instructions
 
-#### 1. Section
+#### PART A: Planning
+
 <div class="task" markdown="block">
 
 1. Steps
 
 </div> 
+
+#### PART B: Starter Code
+
+<div class="task" markdown="block">
+
+1. Replace the content in your `Main.java` file with the following starter code:
+    ```java
+    import java.util.Scanner;
+    public class Main 
+    {
+       public static void main(String []args) 
+       {
+          System.out.println("Starting a new adventure...\n");
+          String command = ""; // stores the user's choices
+          
+       } // END OF MAIN METHOD
+    
+       /** Method to prompt & process input for the next command
+         * @param prompt to display to user, asks for specific input
+         * @return user's input command as a lowercase String
+       */
+       public static String getCommand(String prompt) 
+       {
+          System.out.println("\n▶︎▶︎▶︎ " + prompt);
+          Scanner scan = new Scanner(System.in);
+          String command = scan.nextLine().toLowerCase();
+          scan.close();
+          return command;
+       } // END OF METHOD
+    } // END OF CLASS
+    ```
+2. Incorporate this starter scenario _inside_ your `main` method, after the existing statements:
+    ```java
+      // STEP #1: Describe the scenario scene
+      System.out.println("You are at a crossroads.");
+      // STEP #2: Get user command (prompt & take input)
+      command = getCommand("Do you take the path on the LEFT (l) or RIGHT (r)?");
+      // STEP #3: Process user command (choose a path)
+      if (command.equals("l")) 
+      {
+         System.out.println("You turned left.");
+      }
+      else if (command.equals("r")) 
+      {
+         System.out.println("You turned right.");
+      }
+      else 
+      {
+         System.out.println("Bad input. Press RUN to restart!");
+      }
+    ```
+
+</div> 
+
+#### PART C: Write your own Branches
+
+<div class="task" markdown="block">
+
+1. Steps
+
+</div> 
+
+---
+
+### Extensions
 
 <!--
 
