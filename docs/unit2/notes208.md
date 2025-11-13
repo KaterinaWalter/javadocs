@@ -30,7 +30,7 @@ Another type of loop in Java is a **for loop**. This is usually used when _you k
 A `for`-loop combines all 3 parts of writing a loop in one line to **initialize**, **test condition**, and **change** the loop control variable. The 3 parts are separated by **semicolons** (``;``):
 ```java
 // LOOP HEADER
-for (initialize; test condition; change) {
+for (initialize; testcondition; change) {
      // LOOP BODY
 }
 ```
@@ -93,7 +93,7 @@ for (int i = 5; i > 0; i--) {
 
 </div>
 
-#### 💻 In-Class Activity: Turtle Loops
+#### 💻 Coding Practice: Turtle Loops
 {:.no_toc}
 
 <div class="task" markdown="block">
