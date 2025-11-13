@@ -230,11 +230,16 @@ You can use a counter variable inside a loop to determine the frequency with whi
 The AP exam often gives a boolean method for students to use to determine some criteria in a set of values. For example, in the following challenge, you can count the number of prime numbers from 1 to 100 given a boolean method to use ``isPrime(n)`` which returns true or false. 
 
 
-#### 💻 Coding Practice
+#### 💻 Coding Practice: Prime Number Finder
 {:.no_toc}
 
-Coding Challenge : Prime Number Finder
+<div class="task" markdown="block">
 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-2-9-loop-algorithms.html"><button type="button" name="button" class="btn">CSAwesome Topic 2.9</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Prime Number Finder** activity in pairs.
+
+</div>
 
 ---
 
