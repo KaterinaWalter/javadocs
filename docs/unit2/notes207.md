@@ -90,14 +90,13 @@ statement in the loop. In the AP exam, they will always use curly braces, which
 is a good practice to follow.
 
 ```java
-
-    // The statements in an if run one time if the condition is
+    // The statements in an IF run one time if the condition
     // is true and zero times if it is false.
     if (condition) {
         statements;
     }
 
-    // The statements in a while loop run zero or more times,
+    // The statements in a WHILE loop run zero or more times,
     // determined by how many times the condition is true
     while (condition) {
         statements;
@@ -126,17 +125,36 @@ There are 3 steps to writing a loop using this loop control variable, as seen be
 
 </div>
 
-### Tracing Loops
+Here is a `while` loop that counts from 1 to 5 that demonstrates the 3 steps of writing a loop:
+```java
+// 1. INITIALIZE the loop variable
+int count = 1;
 
-A really important skill to develop is the ability to trace the values of variables and how they change during each iteration of a loop. 
+// 2. TEST the loop variable
+while (count <= 5) {
+  System.out.println(count);
+  // 3. UPDATE the loop variable
+  count++;
+}
+```
+> Can you change it to count from 2 to 10?
 
-You can create a **tracing table** that keeps track of the variable values each time through the loop as shown below.  This is very helpful on the exam. Studies have shown that students who create tables like this do much better on code tracing problems on multiple choice exams.
+### Tracing Loop Iterations
+
+✍️ A really important skill to develop is the ability to **trace** the values of variables and how they change _during each iteration_ of a loop. 
+
+You can create a **tracing table** that keeps track of the variable **values** _each time through the loop_ as shown below.
+> This is very helpful on the exam! Studies have shown that students who create tables like this do much better on code tracing problems on multiple choice exams.
 
 ![image-small](Figures/traceTable.png)
 
-> A trace table shows the values of all of the **variables** each time through the loop. `Iteration 0` means **before** the loop. When you are tracing through code, pretend to be the computer running the code line by line, repeating the code in the loop, and keeping track of the variable values and output.
+> * A trace table shows the **values** of all of the **variables** _each time through the loop_.
+> * `Iteration 0` means **before** the loop.
 
-<a href="https://www.youtube.com/watch?v=TZss5ukwN8s" target="_blank"><button type="button" name="button" class="btn">📺 VIDEO: Loop Tracing</button></a>
+📺 Watch the following video for a tracing demo. When you are tracing through code, **pretend to be the computer** running the code line by line, repeating the code in the loop, and keeping track of the variable values and output.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZss5ukwN8s?si=Ombs6tE86U_nItk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ### Common Errors with Loops
 
