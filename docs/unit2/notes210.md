@@ -21,7 +21,7 @@ nav_order: 10
 
 ## Loops & Strings
 
-Loops are often used for **String Traversals** or **String Processing** where the code steps through a string character by character. In topic 2.6 and 2.7, we learned to use `String` **objects** and built-in string **methods** to process strings. In this lesson, we will write our own **loops** to process strings.
+Loops are often used for **String Traversals** or **String Processing** where the code steps through a string character by character. We previously learned to use `String` **objects** and built-in string **methods** to process strings. In this lesson, we will write our own **loops** to process strings.
 
 <div class="imp" markdown="block">
 
@@ -29,11 +29,11 @@ Remember that `String` objects are a **sequence of characters** where each chara
 
 ![image](Figures/stringIndicies.png)
 
-🔄 **Loops** that process strings should initialize the **loop control variable** (_counter_) at `0`... recall that the _first_ character in a Java `String` is located at **index** `0` and the _last_ character is at `length() - 1`.
+🔄 **Loops** that process Strings should initialize the **loop control variable** (_counter_) at `0`... recall that the _first_ character in a Java `String` is located at **index** `0` and the _last_ character is at `length() - 1`.
 
 </div>
 
-The **String methods** (covered in lesson 2.7 and given in the [AP CSA Reference Sheet](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference_0.pdf)) that are most often used to process strings are:
+The **String methods** (covered in [📓1.15 Notes](https://coderina.dev/javadocs/docs/unit1/notes115.html) lesson and given in the [AP CSA Reference Sheet](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference_0.pdf)) that are most often used to process strings are:
 
 - **`int length()`** : returns the **number of characters** in a String object.
 
@@ -136,6 +136,21 @@ System.out.println(s + " reversed is " + sReversed);
 > * What would happen if you started the loop at 1 instead?
 > * What would happen if you used the `<=` operator instead of `<`?
 > * What would happen if you changed the **order** in which you added the `ithLetter`?
+
+---
+
+## Summary
+
+- Loops can be used to **traverse** or **process** a string.
+
+- (AP 2.10.A.1) There are standard **string algorithms** to:
+
+    * Find if one or more substrings has a particular property
+    * Determine the number of substrings that meet specific criteria
+    * Create a new string with the characters reversed
+
+{:.highlight}
+For more practice with string processing, see the **Free Response Question** in the "Practice and Summary" section of this unit on [CSAwesome](https://runestone.academy/ns/books/published/csawesome2) .
 
 <!--
 
