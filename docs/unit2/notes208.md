@@ -21,7 +21,10 @@ nav_order: 8
 
 ## For Loops
 
-Another type of loop in Java is a **for loop**. This is usually used when _you know how many times_ you want the loop to execute. It is often a simple **counter-controlled loop** to run the loop body a set number of times.
+Another type of loop in Java is a **FOR loop**. This is usually used when _you know how many times_ you want the loop to execute. It is often a simple **counter-controlled loop** intended to run the loop body a **set number of times**.
+
+{:.highlight}
+A `for` loop is basically a specific instance of `while` loops, for **counter-controlled** repetition. 
 
 ### Three Parts of a For Loop
 
@@ -99,7 +102,7 @@ for (int i = 5; i > 0; i--) {
 
 </div>
 
-#### 💻 Coding Practice: Turtle Loops
+#### 🐢 Coding Practice: Turtle Loops
 {:.no_toc}
 
 <div class="task" markdown="block">
