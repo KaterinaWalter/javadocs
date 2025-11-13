@@ -98,11 +98,22 @@ for (int i = 5; i > 0; i--) {
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-2-for-loops.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 4.2</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-2-8-for-loops.html"><button type="button" name="button" class="btn">CSAwesome Topic 2.8</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Turtles Drawing Shapes** activity in pairs.
 
 </div>
+
+---
+
+## Summary
+
+- (AP 2.8.A.1) A ``for`` loop is a type of **iterative** statement.
+  - There are three parts in a for loop header: the **initialization** (of the loop control variable or counter), the boolean **condition** (testing the loop variable), and the **update** (to change the loop variable).
+- (AP 2.8.A.2) In a ``for`` loop, the initialization statement is only executed once before the first Boolean expression evaluation. The variable being initialized is referred to as a **loop control variable**. 
+- (AP 2.8.A.2) The ``for`` loop  Boolean expression is evaluated immediately after the loop control variable is initialized and then followed by each execution of the increment (or update) statement until it is false. 
+- (AP 2.8.A.2) In each iteration of the ``for`` loop, the update is executed after the entire loop body is executed and before the Boolean expression is evaluated again.
+- (AP 2.8.A.3) A ``for`` loop can be rewritten into an equivalent ``while`` loop (and vice versa).
 
 <!--
 ## For Loops
