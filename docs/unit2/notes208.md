@@ -21,34 +21,40 @@ nav_order: 8
 
 ## For Loops
 
-Another type of loop in Java is a **for loop**. This is usually used when _you know how many times_ you want the loop to execute. It is often a simple **counter-controlled loop** to do the loop body a set number of times.
+Another type of loop in Java is a **for loop**. This is usually used when _you know how many times_ you want the loop to execute. It is often a simple **counter-controlled loop** to run the loop body a set number of times.
 
 ### Three Parts of a For Loop
 
 <div class="imp" markdown="block">
   
-A `for`-loop combines all 3 parts of writing a loop in one line to **initialize**, **test condition**, and **change** the loop control variable. The 3 parts are separated by **semicolons** (``;``):
+🔁 A `for` loop combines all 3 parts of writing a loop in one line to **initialize**, **test** condition, and **change** the loop control variable. The 3 parts are separated by **semicolons** (``;``):
+
 ```java
 // LOOP HEADER
-for (initialize; testcondition; change) {
+for (initialize; test; change)
+{
      // LOOP BODY
 }
 ```
 </div>
 
-> The `for`-loop is like a **shortcut** way to write a `while` loop, with **all three steps** that you need in one line.
+> The `for` loop is like a **shortcut** way to write a **counter-controlled** `while` loop, with *all 3 steps* organized in one line.
 
 ![image](Figures/compareForAndWhile.png)
 
-Watch the following <a href="https://www.youtube.com/watch?v=SEDnzXeb2hU&list=PLHqz-wcqDQIEP6p1_0wOb9l9aQ0qFijrP&index=9&ab_channel=colleenlewis"><button class="btn">📺 VIDEO</button></a> which **compares** a while loop and for loop line by line.
+📺 Watch the following video which **compares** a `while` loop and `for` loop, line by line.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SEDnzXeb2hU?si=aJGuybtl4oC-4iwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Here is a **control flow diagram** for a `for` loop:
 
-![image](Figures/ForLoopFlow.png)
+![image-small](Figures/ForLoopFlow.png)
 > * The code in the **initialization** area is executed only _one time_ before the loop begins
 > * The **test condition** is _checked each time_ through the loop and the loop continues as long as the condition is `true`
 > * The **loop control variable change** is done at the _end_ of each execution of the body of the loop, just like a `while` loop.
 > * When the loop condition becomes `false`, execution will continue at the next statement _after_ the body of the loop.
+
+### Incrementing Loops
 
 {:.highlight}
 Two common _patterns_ in `for`-loops are to **count from `0` up to an number** (using `<`) or **count from `1` to a number** including the number (using `<=`). Remember that if you start at 0 use `<`, and if you start at 1, use `<=`. 
