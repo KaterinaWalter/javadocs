@@ -47,16 +47,24 @@ for (int row = 1; row <= 3; row++) {
 
 ❄️ Try nested loops with `Turtle` objects to create a snowflake design!
 
-#### 💻 In-Class Activity: Turtle Snowflakes
+#### 🐢 Coding Practice: Turtle Snowflakes
 {:.no_toc}
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-4-nested-loops.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 4.4</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-2-11-nested-loops.html"><button type="button" name="button" class="btn">CSAwesome Topic 2.11</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Turtle Snowflake** activity in pairs.
 
 </div>
+
+--- 
+
+## Summary
+
+- **Nested** iteration statements are iteration statements that appear _inside the body of another_ iteration statement.
+
+- When a loop is nested inside another loop, the **inner** loop must complete all its iterations _before_ the **outer** loop can continue.
 
 <!--
 
