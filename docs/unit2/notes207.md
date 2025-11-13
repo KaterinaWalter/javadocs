@@ -248,12 +248,12 @@ For example, with the `Scanner` code below, the while loop **stops** when you ty
 
 > Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to `false` initially, the _loop body is not executed at all_. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
 
-#### 💻 In-Class Activity: Guessing Game
+#### 💻 Coding Practice: Guessing Game
 {:.no_toc}
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit4-Iteration/topic-4-1-while-loops.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 4.1</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-2-7-while-loops.html"><button type="button" name="button" class="btn">CSAwesome Topic 2.7</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Guessing Game** activity in pairs.
 
@@ -263,7 +263,7 @@ For example, with the `Scanner` code below, the while loop **stops** when you ty
 
 ## Summary
 
-- (AP 2.7.A.1) Iteration statements (loops) change the flow of control by repeating a segment of code zero or more times as long as the Boolean expression controlling the loop evaluates to true. Iteration is a form of repetition.
+- (AP 2.7.A.1) Iteration statements (loops) change the flow of control by **repeating** a segment of code zero or more times as long as the Boolean expression controlling the loop evaluates to true. Iteration is a form of repetition.
 - (AP 2.7.B.1) A **while loop** is a type of iterative statement. In while loops, the Boolean expression is evaluated before each iteration of the loop body, including the first. When the expression evaluates to true, the loop body is executed. This continues until the Boolean expression evaluates to false, whereupon the iteration terminates. Here is the general form of a while loop:
   ```java
   
