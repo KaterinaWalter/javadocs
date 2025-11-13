@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓2.10: Implementing String Algorithms" 
+title: "📓2.10: Loops & Strings" 
 parent: "2️⃣ Selection & Iteration"
 nav_order: 10
 ---
@@ -19,7 +19,7 @@ nav_order: 10
 
 ---
 
-## Loops & Strings
+## Implementing String Algorithms with Loops
 
 Loops are often used for **String Traversals** or **String Processing** where the code steps through a string character by character. We previously learned to use `String` **objects** and built-in string **methods** to process strings. In this lesson, we will write our own **loops** to process strings.
 
