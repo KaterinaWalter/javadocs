@@ -248,7 +248,7 @@ For example, with the `Scanner` code below, the while loop **stops** when you ty
 
 > Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to `false` initially, the _loop body is not executed at all_. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
 
-#### 💻 Coding Practice: Guessing Game
+#### 🐢 Coding Practice: Guessing Game
 {:.no_toc}
 
 <div class="task" markdown="block">
