@@ -109,7 +109,8 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 <div class="task" markdown="block">
 
 🔀 Add more _branches_ to expand the gameplay by **nesting** conditional blocks.
-  > Review [📓 2.4: Multiway Selection](https://coderina.dev/javadocs/docs/unit2/notes204.html#multiway-selection-nested-if-statements) notes on _Nested if Statements_.
+    > * Review [📓 2.4: Multiway Selection](https://coderina.dev/javadocs/docs/unit2/notes204.html#multiway-selection-nested-if-statements) notes on _Nested if Statements_.
+    > * Follow your **map/flowchart** carefully as you write code for the branches you designed.
 
 ##### EXAMPLE:
 ```java
@@ -134,12 +135,11 @@ if (command.equals("l"))
 
 #### 💡 TIPS:
 
-* Follow your **map/flowchart** as you write code for the paths you designed.
 * Don't forget to get the user's input (the **command**) before opening the next conditional block!
   ```java
   command = getCommand("prompt");
   ```
-* You do not need to keep the command options as `l` and `r` every time. You can even have _more than two choices_ ( like`n`,`s`,`e`,`w`) by providing more `else if` statements for that block. 
+* You do not need to keep the command options as `l` and `r` every time. You can even have _more than two choices_ ( like`n`,`e`,`s`,`w`) by providing more `else if` statements for that block. 
   * Just make sure you tell the user what the options are in the **prompt**!
 
 
