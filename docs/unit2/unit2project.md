@@ -33,9 +33,9 @@ One of the first games coded for early computers in the 1970s was called [Coloss
 
 You can try [playing adventure](http://www.web-adventures.org/cgi-bin/webfrotz?s=Adventure) recreated online following some of the commands in this [walkthrough](https://adventuregamers.com/walkthrough/full/colossal-cave). Part of the challenge is finding the commands that the code will understand.
 
-In a game like Adventure, `if`, `else if`, and `else` statements can be used to respond to commands from the user like `n`, `s`, `e`, `w`.
+In a game like Adventure, `if`, `else if`, and `else` statements can be used to respond to commands from the user like `n`, `e`, `s`, `w`.
 
-![image](Figures/adventure.jpg)
+![image-small](Figures/adventure.jpg)
 
 ---
 
@@ -109,15 +109,14 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 <div class="task" markdown="block">
 
 🔀 Add more _branches_ to expand the gameplay by **nesting** conditional blocks.
-    > * Review [📓 2.4: Multiway Selection](https://coderina.dev/javadocs/docs/unit2/notes204.html#multiway-selection-nested-if-statements) notes on _Nested if Statements_.
-    > * Follow your **map/flowchart** carefully as you write code for the branches you designed.
+> * Review [📓 2.4: Multiway Selection](https://coderina.dev/javadocs/docs/unit2/notes204.html#multiway-selection-nested-if-statements) notes on _Nested if Statements_.
+> * Follow your **map/flowchart** carefully as you write code for the branches you designed.
 
 ##### EXAMPLE:
 ```java
 if (command.equals("l")) 
 {
   System.out.println("You turned left and continued walking.");
-
   // NEXT BRANCH...
   command = getCommand("Do you pick the pretty flower 🌺 on the path? (y/n)");
   if (command.equals("y"))
