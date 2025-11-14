@@ -45,9 +45,9 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 
 <div class="task" markdown="block">
 
-1. Come up with a **unique location** for your adventure.
-  > Your adventure could be set anywhere – a place you are familiar with (like BWL or Manhattan), a place you'd like to visit, or even a fantasy/fictional world.
-2. 📝 **PLAN & DRAW OUT YOUR MAP** on paper before coding!!! 
+1. 🧠 Come up with a **unique location** for your adventure.
+  > Your adventure could be set anywhere... a place you are _familiar_ with (like BWL or Manhattan), a place you'd _like to visit_, or even a _fantasy/fictional_ world.
+2. 📝 **PLAN & DRAW OUT YOUR MAP** on paper before coding!!! Alternatively, make a **FLOWCHART**. 
 
 </div> 
 
@@ -108,9 +108,10 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 
 <div class="task" markdown="block">
 
-Expand the gameplay by adding more _branches_ (by **nesting** conditional blocks).
+🔀 Add more _branches_ to expand the gameplay by **nesting** conditional blocks.
+> Review [📓 2.4: Multiway Selection](https://coderina.dev/javadocs/docs/unit2/notes204.html#multiway-selection-nested-if-statements) notes on _Nested if Statements_.
 
-_EXAMPLE:_
+##### EXAMPLE:
 ```java
 if (command.equals("l")) 
 {
@@ -131,7 +132,7 @@ if (command.equals("l"))
 
 </div> 
 
-##### 💡 TIPS:
+#### 💡 TIPS:
 
 * Follow your **map/flowchart** as you write code for the paths you designed.
 * Don't forget to get the user's input (the **command**) before opening the next conditional block!
