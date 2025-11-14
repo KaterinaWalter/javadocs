@@ -45,7 +45,9 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 
 <div class="task" markdown="block">
 
-1. Steps
+1. Come up with a **unique location** for your adventure.
+  > Your adventure could be set anywhere – a place you are familiar with (like BWL or Manhattan), a place you'd like to visit, or even a fantasy/fictional world.
+2. 📝 **PLAN & DRAW OUT YOUR MAP** on paper before coding!!! 
 
 </div> 
 
@@ -88,11 +90,11 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
       // STEP #3: Process user command (choose a path)
       if (command.equals("l")) 
       {
-         System.out.println("You turned left.");
+         System.out.println("You turned left and continued walking.");
       }
       else if (command.equals("r")) 
       {
-         System.out.println("You turned right.");
+         System.out.println("You turned right and continued walking.");
       }
       else 
       {
@@ -106,13 +108,46 @@ In a game like Adventure, `if`, `else if`, and `else` statements can be used to 
 
 <div class="task" markdown="block">
 
-1. Steps
+Expand the gameplay by adding more _branches_ (by **nesting** conditional blocks).
+
+_EXAMPLE:_
+```java
+if (command.equals("l")) 
+{
+  System.out.println("You turned left and continued walking.");
+
+  // NEXT BRANCH...
+  command = getCommand("Do you pick the pretty flower on the path or keep going? (y/n)");
+  if (command.equals("y")
+  {
+    System.out.println("The flower explodes!");
+  }
+  else if (command.equals("n")
+  {
+    System.out.println("You keep walking down the path.");
+  }
+}
+```
 
 </div> 
+
+##### 💡 TIPS:
+
+* Follow your **map/flowchart** as you write code for the paths you designed.
+* Don't forget to get the user's **command** before opening your next conditional block!
+  ```java
+  command = getCommand("prompt");
+  ```
+* You do not need to keep the commands as `l` and `r` every time.
+  * Just make sure you tell the user what the options are in the **prompt**!
+
 
 ---
 
 ### Extensions
+
+{:.highlight}
+Turn your **text-based** adventure into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo)
 
 <!--
 
