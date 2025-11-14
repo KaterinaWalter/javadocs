@@ -117,10 +117,10 @@ if (command.equals("l"))
   System.out.println("You turned left and continued walking.");
 
   // NEXT BRANCH...
-  command = getCommand("Do you pick the pretty flower on the path or keep going? (y/n)");
+  command = getCommand("Do you pick the pretty flower 🌺 on the path? (y/n)");
   if (command.equals("y")
   {
-    System.out.println("The flower explodes!");
+    System.out.println("The flower explodes! 💣💥");
   }
   else if (command.equals("n")
   {
@@ -134,11 +134,11 @@ if (command.equals("l"))
 ##### 💡 TIPS:
 
 * Follow your **map/flowchart** as you write code for the paths you designed.
-* Don't forget to get the user's **command** before opening your next conditional block!
+* Don't forget to get the user's input (the **command**) before opening the next conditional block!
   ```java
   command = getCommand("prompt");
   ```
-* You do not need to keep the commands as `l` and `r` every time.
+* You do not need to keep the command options as `l` and `r` every time. You can even have _more than two choices_ ( like`n`,`s`,`e`,`w`) by providing more `else if` statements for that block. 
   * Just make sure you tell the user what the options are in the **prompt**!
 
 
