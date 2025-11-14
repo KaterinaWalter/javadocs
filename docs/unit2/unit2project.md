@@ -119,11 +119,11 @@ if (command.equals("l"))
 
   // NEXT BRANCH...
   command = getCommand("Do you pick the pretty flower 🌺 on the path? (y/n)");
-  if (command.equals("y")
+  if (command.equals("y"))
   {
     System.out.println("The flower explodes! 💣💥");
   }
-  else if (command.equals("n")
+  else if (command.equals("n"))
   {
     System.out.println("You keep walking down the path.");
   }
@@ -150,46 +150,3 @@ if (command.equals("l"))
 {:.highlight}
 Turn your **text-based** adventure into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo)
 
-<!--
-
-### Instructions & Requirements
-
-Copy in the **starter code** below and run the program. This is a very simple adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north.
-```java
-import java.util.Scanner;
-public class Main {
-  public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
-
-    // SCENARIO #1
-    System.out.println("\n\n You are on an island surrounded by water.\n There is a path to the woods to the NORTH, the sea to the SOUTH, and a beach shack to the EAST. \n Which way do you want to go (n,e,s,w)?");
-    String command = scan.nextLine();
-    if (command.equals("n")) {
-        System.out.println("You enter the forest and hear some rustling. \nThere may be tigers here or maybe it's just monkeys.");
-    }
-    // Add else-ifs for s, e, w, and an else for any other input. Be creative!
-    
-  }
-}
-```
-
-<div class="task" markdown="block">
-
-1. Add in `else if` statements to go in the directions of `"s"` for south, `"e"` for east, `"w"` for west, and an `else` statement that says "You can't go in that direction". Be creative and come up with different situations in each direction!
-3. How many **test-cases** are needed to _test all branches_ of your code at this point? 💬 Write your answer in a `//comment`, and try out your test-cases.
-4. Next, come up with a **unique location** for your adventure and replace the deserted island theme with scenarios for your location.
-> * Your adventure could be set anywhere – a place you are familiar with (like BWL or Manhattan), a place you'd like to visit, or even a fantasy/fictional world.
-> * 📝 **PLAN & DRAW OUT YOUR MAP** on paper before coding!!! 
-6. Expand the gameplay by adding more branches (**nesting** conditional blocks).
-> * You do not need to keep the commands as `n`, `s`, `e`, `w` every time. Just make sure you tell the user what the options are!
-> * Don't forget to take **input** (`scan.nextLine()`) for the user's command before your next conditional block.
-> * Follow your map (or flowchart) as you write code for the paths you designed.
-
-</div> 
-
-### Extension
-
-{:.highlight}
-Turn your **text-based** adventure into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo)
-
--->
