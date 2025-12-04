@@ -19,90 +19,98 @@ nav_order: 8
 
 ---
 
+## Scope & Access of Variables
 
-**Scope** refers to where a variable can be _accessed_ in a program.  
-**Access modifiers** determine which parts of a program can use a variable or method.
+🔎 The **scope** of a variable is defined as where a variable is _accessible_ or can be used. The scope is determined by where you **declare** the variable when you write your programs. When you **declare** a variable (like `int age;` or `String name;`), look for the _closest enclosing curly braces_ (``{ }``) -- this is its **scope**.
 
+<div class="imp" markdown="block">
+  
+Java has 3 levels of _SCOPE_ that correspond to different types of variables:
 
+- **Class Level Scope** for **instance variables** declared inside a class.
 
-## Variable Scope
+- **Method Level Scope** for **local variables** (including **parameter variables**) inside a method.
 
-- **Local variables**: Declared inside a method, only accessible within that method.
-- **Instance variables**: Declared inside a class but outside any method, accessible to all methods in that class.
-- **Class (static) variables**: Declared with `static`, shared by all objects.
+- **Block Level Scope** for **loop variables** and other local variables defined inside of blocks of code with `{ }`.
 
-Example:
+</div>
 
-```java
-public class Example {
-    private int instanceVar = 10; // instance scope
+The image below shows these 3 levels of scope.
 
-    public void method() {
-        int localVar = 5; // local scope
-        System.out.println(localVar);
-    }
-}
-````
+![image](Figures/scopeDiagram.png)
 
----
+**Local variables** are variables that are declared inside a method, usually at the top of the method. These variables can only be used _within the method_ and do not exist outside of the method. **Parameter variables** are also considered local variables that only exist for that method. It's good practice to declare any variables that are used by just one method as local variables in that method.
 
-## Access Modifiers
+**Instance variables** at class scope are shared by all the methods in the class and can be marked as `public` or `private` with respect to their access outside of the class. They have **Class scope** regardless of whether they are public or private.
 
-* `public`: Accessible from any other class.
-* `private`: Accessible only within the same class.
-* `protected`: Accessible within the same package and subclasses.
-* No modifier: Package-private (accessible only within the same package).
+🏠 Another way to look at scope is that a variable's scope is where it **lives** and exists. _You cannot use the variable in code outside of its scope._ The variable does not exist outside of its scope.
 
----
-
-## Example
+Try the following code to see that you cannot access the variables outside of their scope levels in the `toString()` method. Explain to someone sitting next to you why you can't access these. Try to fix the errors by either using variables that are in scope or moving the variable declarations so that the variables have larger scope.
 
 ```java
 public class Person {
-    public String name;       // public: accessible anywhere
-    private int age;          // private: only inside this class
+      private String name;
+      private String email;
 
-    public Person(String n, int a) {
-        name = n;
-        age = a;
-    }
+      public Person(String initName, String initEmail) {
+          name = initName;
+          email = initEmail;
+      }
 
-    public int getAge() {     // provides controlled access
-        return age;
-    }
+      public String toString() {
+          for (int i = 0; i < 5; i++) {
+              int id = i;
+          }
+          // Can you access the blockScope variables i or id?
+          System.out.println("i at the end of the loop is " + i);
+          System.out.println("The last id is " + id);
+
+          // Can toString() access parameter variables in Person()?
+          return initName + ": " + initEmail;
+      }
+
+      // main method for testing
+      public static void main(String[] args) {
+          // call the constructor to create a new person
+          Person p1 = new Person("Sana", "sana@gmail.com");
+          System.out.println(p1);
+      }
 }
 ```
 
+{:.warning}
+If there is a local variable with the **same name** as an instance variable, the variable name will refer to the local variable instead of the instance variable. We'll see in the next lesson, that we can distinguish between the local variable and the instance variable using the keyword this to refer to this object's instance variables.
+
+```java
+public String toString() {
+          String name = "unknown";
+          // The local variable name here will be used,
+          //  not the instance variable name.
+          return name + ": " + email;
+}
+```
+
+#### 💻 In-Class Activity: Debugging
+{:.no_toc}
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-8-scope-access.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.8</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Debugging** activity in pairs.
+
+</div>
+
 ---
 
-## Best Practices
+## ⭐️ Summary
 
-* Keep variables **private** and use getter/setter methods to control access.
-* Use the most restrictive access modifier possible to reduce unintended interactions.
+- **Scope** is defined as where a variable is _accessible_ or can be used.
 
----
+- **Formal parameters** declared in the _header/signature_ of a method or constructor may only be used within the constructor or method and cannot be declared to be `public` or `private`. Same goes for any **local variables** declared inside the _body_ of a method or constructor. 
 
-## Summary
-
-* **Scope**: Where a variable exists and can be used.
-* **Access modifiers**: Control who can see or modify a variable or method.
-* Favor `private` for encapsulation and maintainability.
-
----
-
-## AP Practice
-
-<details>
-<summary><strong>Question</strong></summary>
-
-What is the scope of a variable declared inside a method?
-
-* A. Class scope
-* B. Local scope ✅
-* C. Global scope
-* D. Instance scope
-
-</details>
+- When there is a local variable with the same name as an instance variable, the variable name will refer to the local variable instead of the instance variable. Watch out!
+  
 
 
 ---
