@@ -88,30 +88,41 @@ What **classes** would you need to create a computer version of this game? (Reme
 
 **Abstraction** is the process of reducing complexity by focusing on the main idea. By hiding details irrelevant to the question at hand and bringing together related and useful details, abstraction reduces complexity and allows one to focus on the idea.
 
-The class diagram above is an example of abstraction. It shows the main idea of the Turtle class without showing all the details of the class. The diagram shows the attributes and methods of the class, but it does not show the details of how the methods are implemented.
+> The **class diagram** above is an example of abstraction. It shows the main idea of the `Turtle class` without showing all the details of the class. The diagram shows only the key info about the **attributes** and **methods** of the class, but it does not show the details of how the methods are implemented.
 
 
 #### Data Abstraction
 
-**Data abstraction** provides a separation between the abstract properties of a data type and the concrete details of its representation. For example, we can use the ``Turtle`` class and type without needed to know how it is implemented. Data abstraction manages complexity by giving data a name without referencing the specific details of the representation. Data can take the form of a single variable or a collection of data, such as in a class like ``Turtle``.
+**Data abstraction** provides a separation between the abstract properties of a data type and the concrete details of its representation. **Data** can take the form of a single variable or a collection of data, such as the``Turtle`` class.
+> For example, we can use the ``Turtle`` class as a **data type** without needed to know _how_ it is implemented. Data abstraction manages complexity by giving data a **name** without referencing the specific details of the representation. 
 
-An **attribute** is a type of data abstraction that is defined in a class, for example the width or height of a Turtle object.  An **instance variable** is an attribute whose value is unique to each instance of the class. For example, each turtle object could have different width or height values.  A **class variable** is an attribute shared by all instances of the class. For example, we could keep a count of how many turtles have been created in a class variable. We will see more examples of these in the next lesson.
+* An **attribute** is a type of data abstraction that is defined in a `class`.
+    > For example the `width` or `height` of a `Turtle` object.  
+* An **instance variable** is an attribute whose value is _unique_ to each **instance** of the class. 
+    > For example, each turtle **object** could have different width or height values.
+* A **class variable** is an attribute shared by _all_ instances of the class.
+    > For example, we could keep a count of how many turtles have been created in a class variable. We will see more examples of these in the next lesson.
 
 #### Procedural Abstraction
 
-**Procedural abstraction** provides a name for a process and allows a method to be used only knowing what it does, not how it does it. Through **method decomposition**, a programmer breaks down larger behaviors of the class into smaller behaviors by creating methods to represent each individual smaller behavior.  For example, in the Turtle class, the ``forward()`` method is a procedural abstraction that allows the turtle to move forward without needing to know exactly how the turtle is animated to move forward.  
+**Procedural abstraction** provides a name for a _process_ and allows a method to be used only knowing what it does, not how it does it. Through **method decomposition**, a programmer _breaks down larger behaviors_ of the class into smaller behaviors by creating methods to represent each individual smaller behavior.
+> For example, in the Turtle class, the ``forward()`` method is a procedural abstraction that allows the turtle to move forward without needing to know exactly how the turtle is animated to move forward.  
 
+<div class="imp" markdown="block">
+    
 Here are some of the main reasons to use procedural abstraction and multiple methods in your programs:
 
-- Organization and Reducing Complexity: organize your program into small sections of code by function to reduce its complexity. Divide a problem into subproblems to solve it a piece at a time.
-- Reusing Code: avoid repetition of code. Reuse code by putting it in a method and calling it whenever needed.
-- Maintainability and Debugging: smaller methods are easier to debug and understand than searching through a large main method.
+- **Organization and Reducing Complexity:** organize your program into small sections of code by function to reduce its complexity. Divide a problem into subproblems to solve it a piece at a time.
+- **Reusing Code:** avoid repetition of code. Reuse code by putting it in a method and calling it whenever needed.
+- **Maintainability and Debugging:** smaller methods are easier to debug and understand than searching through a large main method.
 
-Using procedural abstraction in a program allows programmers to change the internals of a method (to make it faster, more efficient, use less storage, etc.) without needing to notify method users of the change as long as the method signature and what the method does is preserved. For example, we could change the way the Turtle class is implemented to make it faster without needing to change the way the ``forward()`` method is called.
+</div>
 
-Another reason to use procedural abstraction is to avoid repetition of code. For example, when we were deconstructing songs into methods in Unit 1, we found that we could reuse the ``chorus()`` or ``verse()`` method for each verse of the song. A procedural abstraction may extract shared features to generalize functionality instead of duplicating code. This allows for code reuse, which helps manage complexity. 
+Using procedural abstraction in a program allows programmers to change the internal workings of a method (_to make the process faster, more efficient, use less storage, etc._) without needing to notify the method **users** of the change as long as the method signature and what the method does is preserved. 
+> For example, we could change the way the `Turtle` class is implemented to make it faster without needing to change the way the ``forward()`` method is _called_.
 
-Adding parameters to methods allows for even more abstraction and flexibility in code. Parameters allow procedures to be generalized, enabling the procedures to be reused with a range of input values or arguments.
+{: .highlight }
+Adding **parameters** to methods allows for even more abstraction and flexibility in code. Parameters allow procedures to be _generalized_, enabling the procedures to be _reused_ with a range of **input** values or **arguments**.
 
 #### 💻 Coding Practice: Riddle Class
 {:.no_toc}
