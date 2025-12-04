@@ -29,7 +29,11 @@ The creation of programs has **impacts** on _society_, the _economy_, and _cultu
 
 ⚖️ **Legal issues** and intellectual property (IP) concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** and often purchase the code before integrating it into their program. There are also newly arising issues with the use of generative AI in coding.
 
-🧠 The fields of **AI (Artificial Intelligence)** and **Machine Learning** increasingly pose ethical questions in our world. For example, self-driving cars that use machine learning to learn to follow lanes and avoid collisions could make our world much safer. Self-driving cars do not get distracted by text messages and don't drink and drive. However, what if the car needs to make an **ethical decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life? _Who makes these decisions?_ The software? the programmers? If you were a programmer for a self-driving car, how would you approach such decisions? 
+🧠 The fields of **AI (Artificial Intelligence)** and **Machine Learning** increasingly pose ethical questions in our world. 
+* For example, self-driving cars that use machine learning to learn to follow lanes and avoid collisions could make our world much safer. Self-driving cars do not get distracted by text messages and don't drink and drive.
+* However, what if the car needs to make an **ethical decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
+
+_Who makes these decisions?_ The software? the programmers? If you were a programmer for a self-driving car, how would you approach such decisions? 
 
 Watch the following video to explore the ethical challenge of self-driving cars:
 
