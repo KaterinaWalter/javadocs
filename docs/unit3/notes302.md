@@ -53,11 +53,9 @@ Prepare a short presentation for your class.
 
 </div>
 
-### Technology is NOT Neutral
+### Technology is Not Neutral
 
-Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s famous first law of technology argues that “technology is neither good nor bad; _nor is it neutral._”
-
-> Also see the presentation ["Technology is Not Neutral" by Stephanie Hare, PhD](https://indico.cern.ch/event/1214023/attachments/2556457/4405409/Hare_CERN%20_28-29Nov2022.pdf)
+Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s famous first law of technology argues that “technology is neither good nor bad; _nor is it neutral._” On a similar note, see the presentation ["Technology is Not Neutral"](https://indico.cern.ch/event/1214023/attachments/2556457/4405409/Hare_CERN%20_28-29Nov2022.pdf) by Stephanie Hare, PhD.
 
 {: .highlight }
 "As we’re designing the system, we’re designing society. Ethical rules that we choose to put into that design [impact society]… Nothing is self-evident. Everything has to be put out there as something that we think will be a good idea as a component of our society" - **Sir Tim Berners-Lee**, Creator of the World Wide Web
