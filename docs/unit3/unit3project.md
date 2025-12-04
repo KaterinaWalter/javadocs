@@ -1,13 +1,20 @@
 ---
 layout: project
 title: "💻 Unit 3 Project"
-projectname: "Interactive Pet"
+projectname: "Creature Class"
 parent: "3️⃣ Class Creation"
 nav_order: 11
 ---
 
 
-### Overview
+### Overview & Setup
+
+In this project, you will practice defining and working with Java classes by creating an interactive `Creature` class. You'll demonstrate understanding of:
+* instance variables
+* constructors
+* getter and setter methods
+* the toString method
+* behavior methods
 
 <html>
 <details>
@@ -15,18 +22,12 @@ nav_order: 11
   
 <div class="setup" markdown="block">
 
-1. Go to the `CS2 Unit 3 Project` assignment on **Blackbaud** and follow the provided **GitHub Classroom** link.
-  > 📁 Clicking the link generates a **private repository** for your project with the appropriate starter code. Note that **projects** are stored within the [BWL-CS Organization](https://github.com/BWL-CS), so you _cannot_ access it from the "Your Repositories" page!
-2. Open the repository in a **Codespace** whenever you spend time working on the program, in class or at home. 
-  > ⚠️ Always remember to `commit changes` after every coding session!
-3. When your project is complete, **submit the link to your repository** in the `CS2 Unit 3 Project` assignment on Blackbaud.
+
 
 </div>
 
 </details>
 </html>
-
-In this project, you will practice defining and working with Java classes by creating an interactive `Pet` class. You'll demonstrate their understanding of instance variables, constructors, getter and setter methods, the toString method, and behavior methods.
 
 ---
 
@@ -39,7 +40,7 @@ In this project, you will practice defining and working with Java classes by cre
 
 </div> 
 
-<!--
+
 ### Instructions & Requirements
 
 <div class="task" markdown="block">
@@ -115,4 +116,3 @@ while (!userInput.equals("quit") {
 You can also turn your text-based interactive version into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo) and make sure to copy your completed `Creature.java` file in the repository too. 
 
 
--->
