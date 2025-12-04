@@ -31,9 +31,14 @@ The creation of programs has **impacts** on _society_, the _economy_, and _cultu
 
 🧠 The fields of **AI (Artificial Intelligence)** and **Machine Learning** increasingly pose ethical questions in our world. For example, self-driving cars that use machine learning to learn to follow lanes and avoid collisions could make our world much safer. Self-driving cars do not get distracted by text messages and don't drink and drive. However, what if the car needs to make an **ethical decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life? _Who makes these decisions?_ The software? the programmers? If you were a programmer for a self-driving car, how would you approach such decisions? 
 
-Watch the following video to explore this ethical challenge:
+Watch the following video to explore the ethical challenge of self-driving cars:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ixIoDYVfKA0?si=q62KFv-lYsw-IGVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Here are some other interesting videos about the impacts of AI in different domains:
+
+- AI in Healthcare: [Using artificial intelligence in radiology clinical practice](https://www.youtube.com/watch?v=dCDuMyzWS8Q)
+- AI in Agriculture: [New farm machines to kill weeds and harvest crops](https://www.youtube.com/watch?v=DjHGG7eQevY)
 
 <div class="task" markdown="block">
 
