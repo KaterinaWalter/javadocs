@@ -31,7 +31,7 @@ nav_order: 3
 
 1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
-3. Specify the **repository name**: `CS2-Unit3-Notes`
+3. Specify the **repository name**: `CS2-Unit-3-Notes`
 4. For the **description**, write: `Class creation for objects`
 5. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
     > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 📂
@@ -67,10 +67,12 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ## Anatomy of a Java Class
 
-In Unit 2, we learned to use **classes** and **objects** that are built-in to
+In Unit 1, we learned to use **classes** and **objects** that are built-in to
 Java or written by other programmers. In this unit, you will learn to _write your
-own classes_ and make your own objects! Watch this video to review the concept of **Object-Oriented Programming**:
-<a href="https://www.youtube.com/watch?v=X3cFiJnxUBY" target="_blank"><button class="btn">📺 VIDEO</button></a>
+own classes_ and make your own objects! 
+
+Watch this video to review the concept of **Object-Oriented Programming**:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X3cFiJnxUBY?si=PpKXf20AdOCvpYLi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 {:.highlight}
 💡 Remember that a **class** in Java defines a _blueprint_ for creating objects. When
@@ -328,11 +330,25 @@ What **classes** would you need to create a computer version of this game? (Reme
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-1-parts-of-class.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.1</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-3-anatomy-of-class.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.3</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Riddle Class** activity in pairs.
 
 </div>
+
+---
+
+## Summary
+
+- (AP 3.3.A.1) **Data encapsulation** is a technique in which the implementation details of a class are kept hidden from external classes. 
+- (AP 3.3.A.1) The keywords ``public`` and ``private`` affect the access of classes, data, constructors, and methods. The keyword ``private`` restricts access to the declaring class, while the keyword ``public`` allows access from classes outside the declaring class. 
+- (AP 3.3.A.2) In this course, classes are always designated ``public`` and are declared with the keyword ``class``.
+- (AP 3.3.A.3) In this course, constructors are always designated ``public``.
+- (AP 3.3.A.4) **Instance variables** belong to the object, and each object has its own copy of the variables.
+- (AP 3.3.A.5) Access to attributes should be kept internal to the class in order to accomplish encapsulation. Therefore, it is good programming practice to designate the instance variables for these attributes as ``private`` unless the class specification states otherwise.
+- **Instance Variables** define the attributes or data needed for objects, and
+  **methods** define the behaviors or functions of the object.
+
 
 <!--
 
