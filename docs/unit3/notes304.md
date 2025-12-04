@@ -21,7 +21,7 @@ nav_order: 4
 
 ## Writing Constructors
 
-In Unit 2, we learned how to create objects by calling **constructors**. 
+In Unit 1, we learned how to _create objects_ by calling **constructors**. 
 
 <div class="imp" markdown="block">
     
