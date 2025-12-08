@@ -77,10 +77,14 @@ of the methods indicate that they are public.
 
 <div class="task" markdown="block">
     
-Say you wanted to make a computer game from a board game that you are playing. Think about what objects are in the game. For example, here is the description for **Monopoly** (trademark Hasbro games):
+🎲 Say you wanted to make a _digital_ computer game from a _physical_ board game. First, you'll need to think about what physical **objects** are in the game. 
+
+For example, here is the description for **Monopoly** (trademark Hasbro games):
 > "Buy, sell, dream and scheme your way to riches. Players buy, sell and trade to win. Build houses and hotels on your properties and bankrupt your opponents to win it all. Chance and Community Chest cards can change everything." 
 
-What **classes** would you need to create a computer version of this game? (Remember to look for the _nouns_). Take one of the classes you listed, and try to come up with 2 pieces of _data_ in that class that will be the **instance variables**.
+1. What **classes** would you need to create a computer version of this game? (Remember to look for the _nouns_).
+2. Take one of the classes you listed, and try to come up with 2 pieces of _data_ in that class that will be the **instance variables**.
+3. Repeat this design process for another board game of your choice. 
 
 </div>
 
