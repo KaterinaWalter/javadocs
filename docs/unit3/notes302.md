@@ -32,6 +32,8 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 ⚖️ Legal issues and **intellectual property (IP)** concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** for (and often purchase) the code before integrating it into their program. 
 > 💬 **DISCUSS:** Do you see IP addressed anywhere on my website? 
 
+### Ethical Issues in AI/ML
+
 🧠 The fields of **Artificial Intelligence (AI)** and **Machine Learning (ML)** increasingly pose ethical questions in our world. 
 
 #### EXAMPLES
@@ -47,10 +49,10 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 
 ### Ethical Design of Technology
 
-*Who is responsible for these decisions around ethical issues?* 
-* Software? 
+*Who is **responsible** for decisions around ethical issues in technology design?* 
+
 * Programmers? 
-* Companies? 
+* Companies?
 * Governments?
 * Users? 
 
@@ -106,12 +108,12 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 💬 **DISCUSS & RESEARCH:**
 1. How the software works → highlight specific **design choices**
 2. Weigh the **benefits** and possible **harmful** effects → from the perspective of different _stakeholders_
-3. Describe **ethical issues** that may arise while making **design choices**
+3. Describe **ethical issues** that may arise → during the design process or later consequences
  > Current events and real examples would be helpful to include here!
 
 🗣️ Prepare a short **PRESENTATION** for your class:
 * You could make it visual on Google Slides/Canva (3-5 slides max)
-* OR just write a script/notes for a speech
+* OR you could just write a script/notes for a speech
 * Use one or more of the **ethical frameworks** below to structure your _decision-making_ suggestions.
 
 </div>
