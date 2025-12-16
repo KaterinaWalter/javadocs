@@ -27,19 +27,20 @@ We are living in an age of rapid development in technology and automation. Softw
 {:.highlight}
 The creation of programs has **impacts** on _society_, the _economy_, and _culture_. These impacts can be both beneficial and harmful. Programs meant to fill a need or solve a problem can have _unintended harmful effects_ beyond their intended use.
 
-⚖️ **Legal issues** and intellectual property (IP) concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** and often purchase the code before integrating it into their program. There are also newly arising issues with the use of generative AI in coding.
+⚖️ **Legal issues** and intellectual property (IP) concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** and often purchase the code before integrating it into their program. 
+> 💬 **DISCUSS:** Where do you see IP addressed on my website? 
 
 🧠 The fields of **AI (Artificial Intelligence)** and **Machine Learning** increasingly pose ethical questions in our world. 
 * For example, self-driving cars that use machine learning to learn to follow lanes and avoid collisions could make our world much safer. Self-driving cars do not get distracted by text messages and don't drink and drive.
 * However, what if the car needs to make an **ethical decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
 
-_Who makes these decisions?_ The software? the programmers? If you were a programmer for a self-driving car, how would you approach such decisions? 
+⁉️_Who makes these decisions?_ The software? the programmers? If you were a programmer for a self-driving car, how would you approach such decisions? 
 
 Watch the following video to explore the ethical challenge of self-driving cars:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ixIoDYVfKA0?si=q62KFv-lYsw-IGVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Here are some other interesting videos about the impacts of AI in different domains:
+📺 Here are some other interesting videos about the impacts of AI in different domains:
 
 - AI in Healthcare: [Using artificial intelligence in radiology clinical practice](https://www.youtube.com/watch?v=dCDuMyzWS8Q)
 - AI in Agriculture: [New farm machines to kill weeds and harvest crops](https://www.youtube.com/watch?v=DjHGG7eQevY)
