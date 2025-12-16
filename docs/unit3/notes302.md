@@ -25,12 +25,12 @@ We are living in an age of rapid development in technology and automation. Softw
 > However, sometimes programs have _unintended consequences_. It can be difficult to ensure **system reliability**, which refers to a program being able to perform its tasks as expected under stated conditions without failure. Programmers should make an effort to maximize system reliability by **testing** the program with a variety of conditions.
 
 {:.highlight}
-The creation of programs has **impacts** on _society_, the _economy_, and _culture_. These impacts can be both beneficial and harmful. Programs meant to fill a need or solve a problem can have _unintended harmful effects_ beyond their intended use.
+The design and creation of software has **impacts** on _society_, the _economy_, and _culture_. These impacts can be both beneficial and harmful. Programs meant to fill a need or solve a problem can have _unintended harmful effects_ beyond their intended use.
 
-⚖️ **Legal issues** and intellectual property (IP) concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** and often purchase the code before integrating it into their program. 
-> 💬 **DISCUSS:** Where do you see IP addressed on my website? 
+⚖️ Legal issues and **intellectual property (IP)** concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** and often purchase the code before integrating it into their program. 
+> 💬 **DISCUSS:** Do you see IP addressed anywhere on my website? 
 
-🧠 The fields of **AI (Artificial Intelligence)** and **Machine Learning** increasingly pose ethical questions in our world. 
+🧠 The fields of **Artificial Intelligence (AI)** and **Machine Learning (ML)** increasingly pose ethical questions in our world. 
 * For example, self-driving cars that use machine learning to learn to follow lanes and avoid collisions could make our world much safer. Self-driving cars do not get distracted by text messages and don't drink and drive.
 * However, what if the car needs to make an **ethical decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
 
@@ -47,7 +47,7 @@ Watch the following video to explore the ethical challenge of self-driving cars:
 
 ### Technology is Not Neutral
 
-Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s famous first law of technology argues that “technology is neither good nor bad; _nor is it neutral._” For more information on this topic, see the presentation ["Technology is Not Neutral"](https://indico.cern.ch/event/1214023/attachments/2556457/4405409/Hare_CERN%20_28-29Nov2022.pdf) by Stephanie Hare, PhD, which also includes counterpoints to the argument. 
+Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s famous first law of technology argues that “technology is neither good nor bad; _nor is it neutral._” For more information on this topic, see the presentation ["Technology is Not Neutral"](https://indico.cern.ch/event/1214023/attachments/2556457/4405409/Hare_CERN%20_28-29Nov2022.pdf) by Stephanie Hare, PhD, which also includes strong counterpoints to the argument. 
 
 {: .highlight }
 "As we’re designing the system, we’re designing society. Ethical rules that we choose to put into that design [impact society]… Nothing is self-evident. Everything has to be put out there as something that we think will be a good idea as a component of our society" - **Sir Tim Berners-Lee**, Creator of the World Wide Web
