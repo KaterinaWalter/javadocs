@@ -85,24 +85,13 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 
 💻 In small groups, choose a modern **software application** to investigate its social and ethical implications. 
 
-<html>
-  <details>
-    <summary><strong>IDEAS: </strong></summary>
+> ***IDEAS:***
+> * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
+> * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
+> * Gig economy apps (Uber, DoorDash, etc.)
+> * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
+> * Mental health chatbots or "companions"
 
-    <div markdown="block">
-    
-    * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
-    * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
-    * Gig economy apps (Uber, DoorDash, etc.)
-    * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
-    * Facial recognition software
-    * Health tracking apps
-    * Mental health chatbots
-    
-    </div>
-    
-  </details>
-</html>
 
 💬 **DISCUSS & RESEARCH:**
 1. How the software **works** → highlight specific *design choices*
