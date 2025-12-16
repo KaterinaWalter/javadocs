@@ -15,7 +15,7 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is a condensed version of [CSAwesome Topic 3.2](https://runestone.academy/ns/books/published/csawesome2/topic-3-2-impacts.html) 
+📖 This page is an adapted & expanded version of [CSAwesome Topic 3.2](https://runestone.academy/ns/books/published/csawesome2/topic-3-2-impacts.html) 
 
 ---
 
@@ -27,7 +27,7 @@ We are living in an age of rapid development in technology and automation. Softw
 {:.highlight}
 The design and creation of software has **impacts** on _society_, the _economy_, and _culture_. These impacts can be both beneficial and harmful. Programs meant to fill a need or solve a problem can have _unintended harmful effects_ beyond their intended use.
 
-⚖️ Legal issues and **intellectual property (IP)** concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** and often purchase the code before integrating it into their program. 
+⚖️ Legal issues and **intellectual property (IP)** concerns can also arise when creating programs. Programmers often _reuse_ code written by others and published as **open source** which is free to use. Incorporation of code that is _not_ published as open source requires the programmer to obtain **permission** for (and often purchase) the code before integrating it into their program. 
 > 💬 **DISCUSS:** Do you see IP addressed anywhere on my website? 
 
 🧠 The fields of **Artificial Intelligence (AI)** and **Machine Learning (ML)** increasingly pose ethical questions in our world. 
@@ -36,7 +36,7 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 
 ⁉️ *Who makes these decisions?* The software? the programmers? If you were a programmer for a self-driving car, how would you approach such decisions? 
 
-Watch the following video to explore the ethical challenge of self-driving cars:
+Watch and discuss the following video to explore the ethical challenge of self-driving cars:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ixIoDYVfKA0?si=q62KFv-lYsw-IGVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -68,8 +68,11 @@ In groups, choose a **software application** that has social and ethical implica
 * the **ethical issues** that may arise and how programmers can try to avoid them
 
 🗣️ Prepare a short presentation (on Google Slides, Canva, or a speech script/notes) for your class.
+> Use one or more of the **ethical frameworks** below to structure your argument(s).
 
 </div>
+
+![image](Figures/ethics.png)
 
 ---
 
