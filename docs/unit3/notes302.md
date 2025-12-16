@@ -81,19 +81,19 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 
 <div class="task" markdown="block">
 
-In small groups, choose a **software application** that has social and ethical implications. 
+💻 In small groups, choose a modern **software application** that has social and ethical implications. 
 > Pick a _specific_ website or app feature!
 
 <html>
   <details>
-    <summary>🧠 <strong>IDEAS:</strong></summary>
+    <summary><strong><em>IDEAS:</em></strong></summary>
 
 <div markdown="block">
 
 * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
 * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
-* * Gig economy apps (Uber, DoorDash, etc.)
-* Deepfakes: realistic AI-generated media
+* Gig economy apps (Uber, DoorDash, etc.)
+* Deepfakes: realistic AI-generated media (Sora, Dall-E, etc.)
 * Facial recognition software
 * Health tracking apps
 * Mental health chatbots
@@ -114,7 +114,8 @@ In small groups, choose a **software application** that has social and ethical i
 
 ![image](Figures/ethics.png)
 
-> This graphic is from a lesson I gave in one of my graduate school courses, check out the presentation: [Deceptive UI/UX Patterns]()
+{:.highlight}
+This graphic is from a lesson about [Deceptive Patterns in UI/UX Design](https://docs.google.com/presentation/d/1jBcJP9cxtTC6OXv3xFz9hhdh1MwTX7pLsSpyCkoi128/present) that I gave in one of my graduate school courses. The topic relates to what we learned last year in our **Intro to Web Development** course, check it out 😊
 
 ---
 
