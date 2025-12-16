@@ -24,6 +24,8 @@ nav_order: 2
 We are living in an age of rapid development in technology and automation. Software and hardware developers increasingly have real **impacts** on people's lives. In computer science, we follow the following [ACM Professional Code of Ethics](https://ethics.acm.org/) which includes guidelines such as _"avoid harm"_ and _"respect privacy"_.
 > However, sometimes programs have _unintended consequences_. It can be difficult to ensure **system reliability**, which refers to a program being able to perform its tasks as expected under stated conditions without failure. Programmers should make an effort to maximize system reliability by **testing** the program with a variety of conditions.
 
+![image-small](https://lh6.googleusercontent.com/proxy/M65uqCSj_9pz3VSnqAS6fMCcH3rKckoPTRfYQSabtYhSm0G_3CmeFJt00afbn3qlRiVrqtfFLwzh9ikgFk6Ud4GmtHgZFEV5x1tGLVPcqtvVSAUpCOx7VlbW3qddJynCqbw_o5mgYVot4uQwPWBEhop_jtlp1trhc8Q2)
+
 {:.highlight}
 The design and creation of software has **impacts** on _society_, the _economy_, and _culture_. These impacts can be both beneficial and harmful. Programs meant to fill a need or solve a problem can have _unintended harmful effects_ beyond their intended use.
 
@@ -43,11 +45,10 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 * Governments?
 * Users? 
 
-Watch and discuss the following video to explore the ethical challenge of self-driving cars:
+Watch the following video to explore the ethical challenge of self-driving cars:
+> 💬 **DISCUSS:** If you were a programmer for autonomous vehicle software, how would *you* approach such decisions? 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ixIoDYVfKA0?si=q62KFv-lYsw-IGVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> 💬 **DISCUSS:** If you were a programmer for a self-driving car, how would *you* approach such decisions? 
 
 Interested in exploring the **trolley problem** more? Check out this [Neal.fun]() game <a href=""><button class="btn btn-primary">Absurd Trolley Problems</button></a>
 
@@ -73,6 +74,13 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 
 In small groups, choose a **software application** that has social and ethical implications. 
 
+<html>
+  <details>
+    <summary>🧠 <strong>IDEAS:</strong></summary>
+
+    
+  </details>
+</html>
 
 💬 **DISCUSS:**
 * the **beneficial** and possible **harmful** effects of this software application
