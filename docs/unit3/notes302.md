@@ -33,29 +33,33 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 > 💬 **DISCUSS:** Do you see IP addressed anywhere on my website? 
 
 🧠 The fields of **Artificial Intelligence (AI)** and **Machine Learning (ML)** increasingly pose ethical questions in our world. 
+
+#### EXAMPLES
+{:.no_toc}
+
 * Facial recognition software
 * Deepfake photos and videos
 * Insurance data analysis
 * Hiring algorithms
 * Autonomous vehicles (*self-driving cars*) use machine learning to learn to follow lanes and avoid collisions, which could make our world much safer.
-  * Self-driving cars do not get distracted by text messages and don't drink and drive.
+  * Self-driving cars do not get distracted by text messages, they don't drink and drive...
   * However, what if the car needs to make an **moral decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
 
 ### Ethical Design of Technology
 
-*Who makes these decisions around ethical issues? Who is responsible?* 
+*Who is responsible for these decisions around ethical issues?* 
 * Software? 
 * Programmers? 
 * Companies? 
 * Governments?
 * Users? 
 
-Watch the following video to explore the ethical challenge of self-driving cars:
+Watch the following video to explore the ethical dilemmas of self-driving cars:
 > 💬 **DISCUSS:** If you were a programmer for autonomous vehicle software, how would *you* approach such decisions? 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ixIoDYVfKA0?si=q62KFv-lYsw-IGVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Interested in exploring the **trolley problem** more? Check out this [Neal.fun]() game <a href=""><button class="btn btn-primary">Absurd Trolley Problems</button></a>
+🎮 Interested in exploring the **trolley problem** more? Check out this [Neal.fun](https://neal.fun/) game to develop your intuition for decision-making: <a href="https://neal.fun/absurd-trolley-problems/"><button class="btn btn-primary">Absurd Trolley Problems</button></a>
 
 📺 Here are some other interesting videos about the impacts of AI in different domains:
 
@@ -69,7 +73,7 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 {: .highlight }
 "As we’re designing the system, we’re designing society. Ethical rules that we choose to put into that design [impact society]… Nothing is self-evident." ~ **Tim Berners-Lee**, Creator of the World Wide Web
 
-🎮 Try this game that illustrates **non-neutrality** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
+🎮 Try this game about **non-neutrality** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
 
 > From the creators: "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
 
@@ -83,6 +87,17 @@ In small groups, choose a **software application** that has social and ethical i
   <details>
     <summary>🧠 <strong>IDEAS:</strong></summary>
 
+<div markdown="block">
+
+* Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
+* Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
+* Deepfakes: realistic AI-generated media
+* Gig economy apps (Uber, DoorDash, etc.)
+* Facial recognition software
+* Health tracking apps
+* Mental health chatbots
+
+</div>
     
   </details>
 </html>
