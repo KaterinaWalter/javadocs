@@ -21,7 +21,7 @@ nav_order: 2
 
 ## Impact of Program Design
 
-We are living in an age of rapid development in technology and automation. Software and hardware developers increasingly have real **impacts** on people's lives. In computer science, we follow the following [ACM Professional Code of Ethics](https://ethics.acm.org/) which includes broad guidelines such as _"avoid harm"_ and _"respect privacy"_.
+We are living in an age of rapid development in technology and automation. Software and hardware developers increasingly have real **impacts** on people's lives. In Computer Science, we follow the following [ACM Professional Code of Ethics](https://ethics.acm.org/) which includes broad guidelines such as _"avoid harm"_ and _"respect privacy"_.
 > However, sometimes programs have _unintended consequences_. It can be difficult to ensure **system reliability**, which refers to a program being able to perform its tasks as expected under stated conditions without failure. Programmers should make an effort to maximize system reliability by **testing** the program with a variety of conditions.
 
 ![image-small](https://lh6.googleusercontent.com/proxy/M65uqCSj_9pz3VSnqAS6fMCcH3rKckoPTRfYQSabtYhSm0G_3CmeFJt00afbn3qlRiVrqtfFLwzh9ikgFk6Ud4GmtHgZFEV5x1tGLVPcqtvVSAUpCOx7VlbW3qddJynCqbw_o5mgYVot4uQwPWBEhop_jtlp1trhc8Q2)
@@ -40,9 +40,9 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 #### EXAMPLES:
 {:.no_toc}
 
+* "Deepfake" AI-generated media (videos, photos)
+* Automated hiring algorithms (resume-scanning)
 * Facial recognition software (biometric data at airport security)
-* "Deepfake" AI-generated media
-* Automated resume-scanning and hiring algorithms
 * Autonomous vehicles (*self-driving cars*) use machine learning to learn to follow lanes and avoid collisions, which could make our world much safer.
   * Self-driving cars do not get distracted by text messages, they don't drink and drive...
   * However, what if the car needs to make an **moral decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
@@ -87,19 +87,19 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 
 <html>
   <details>
-    <summary><strong><em>IDEAS:</em></strong></summary>
+    <summary><strong>IDEAS: </strong></summary>
 
-<div markdown="block">
-
-* Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
-* Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
-* Gig economy apps (Uber, DoorDash, etc.)
-* Deepfakes and AI-generated media (Sora, Dall-E, etc.)
-* Facial recognition software
-* Health tracking apps
-* Mental health chatbots
-
-</div>
+    <div markdown="block">
+    
+    * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
+    * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
+    * Gig economy apps (Uber, DoorDash, etc.)
+    * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
+    * Facial recognition software
+    * Health tracking apps
+    * Mental health chatbots
+    
+    </div>
     
   </details>
 </html>
