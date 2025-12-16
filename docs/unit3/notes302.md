@@ -15,7 +15,7 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is an adapted & expanded version of [CSAwesome Topic 3.2](https://runestone.academy/ns/books/published/csawesome2/topic-3-2-impacts.html) 
+📖 This page is an adapted & expanded version of [CSAwesome Lesson 3.2](https://runestone.academy/ns/books/published/csawesome2/topic-3-2-impacts.html) from **Runestone Academy** (Barb Ericson, Beryl Hoffman, Peter Seibel)
 
 ---
 
@@ -33,15 +33,15 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 > 💬 **DISCUSS:** Do you see IP addressed anywhere on my website? 
 
 ### Ethical Issues in AI/ML
+{:.no_toc}
 
 🧠 The fields of **Artificial Intelligence (AI)** and **Machine Learning (ML)** increasingly pose ethical questions in our world. 
 
-#### EXAMPLES
+#### EXAMPLES:
 {:.no_toc}
 
-* Facial recognition software
-* Deepfake photos and videos
-* Insurance data analysis for pricing
+* Facial recognition software (biometric data at airport security)
+* "Deepfake" AI-generated media
 * Automated resume-scanning and hiring algorithms
 * Autonomous vehicles (*self-driving cars*) use machine learning to learn to follow lanes and avoid collisions, which could make our world much safer.
   * Self-driving cars do not get distracted by text messages, they don't drink and drive...
@@ -49,7 +49,7 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 
 ### Ethical Design of Technology
 
-*Who is **responsible** for decisions around ethical issues in technology design?* 
+⚠️ *Who is **responsible*** for decisions around ethical issues in technology design?
 
 * Programmers? 
 * Companies?
@@ -83,8 +83,7 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 
 <div class="task" markdown="block">
 
-
-💻 In small groups, choose a modern **software application** that has social and ethical implications. 
+💻 In small groups, choose a modern **software application** to investigate its social and ethical implications. 
 
 <html>
   <details>
