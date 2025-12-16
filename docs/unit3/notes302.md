@@ -39,8 +39,8 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 
 * Facial recognition software
 * Deepfake photos and videos
-* Insurance data analysis
-* Hiring algorithms
+* Insurance data analysis for pricing
+* Automated resume-scanning and hiring algorithms
 * Autonomous vehicles (*self-driving cars*) use machine learning to learn to follow lanes and avoid collisions, which could make our world much safer.
   * Self-driving cars do not get distracted by text messages, they don't drink and drive...
   * However, what if the car needs to make an **moral decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
@@ -82,6 +82,7 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 <div class="task" markdown="block">
 
 In small groups, choose a **software application** that has social and ethical implications. 
+> Pick a _specific_ website or app feature!
 
 <html>
   <details>
@@ -91,8 +92,8 @@ In small groups, choose a **software application** that has social and ethical i
 
 * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
 * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
+* * Gig economy apps (Uber, DoorDash, etc.)
 * Deepfakes: realistic AI-generated media
-* Gig economy apps (Uber, DoorDash, etc.)
 * Facial recognition software
 * Health tracking apps
 * Mental health chatbots
