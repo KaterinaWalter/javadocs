@@ -81,8 +81,10 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 
 #### In-Class Activity: Ethics Exploration
 
+<div class="task" markdown="block">
+
+
 💻 In small groups, choose a modern **software application** that has social and ethical implications. 
-> Pick a _specific_ website or app feature to investigate!
 
 <html>
   <details>
@@ -93,7 +95,7 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
 * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
 * Gig economy apps (Uber, DoorDash, etc.)
-* Deepfakes: realistic AI-generated media (Sora, Dall-E, etc.)
+* Deepfakes and AI-generated media (Sora, Dall-E, etc.)
 * Facial recognition software
 * Health tracking apps
 * Mental health chatbots
@@ -103,10 +105,8 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
   </details>
 </html>
 
-<div class="task" markdown="block">
-
 💬 **DISCUSS & RESEARCH:**
-1. How the software works → highlight specific **design choices**
+1. How the software **works** → highlight specific *design choices*
 2. Weigh the **benefits** and possible **harmful** effects → from the perspective of different _stakeholders_
 3. Describe **ethical issues** that may arise → during the design process or later consequences
  > Current events and real examples would be helpful to include here!
@@ -114,7 +114,7 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 🗣️ Prepare a short **PRESENTATION** for your class:
 * You could make it visual on Google Slides/Canva (3-5 slides max)
 * OR you could just write a script/notes for a speech
-* Use one or more of the **ethical frameworks** below to structure your _decision-making_ suggestions.
+* Use one or more of the **ethical frameworks** below to structure _decision-making_ arguments.
 
 </div>
 
