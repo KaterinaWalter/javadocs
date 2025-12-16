@@ -51,7 +51,9 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 {: .highlight }
 "As we’re designing the system, we’re designing society. Ethical rules that we choose to put into that design [impact society]… Nothing is self-evident. Everything has to be put out there as something that we think will be a good idea as a component of our society" - **Sir Tim Berners-Lee**, Creator of the World Wide Web
 
-🎮 Try this game that illustrates how the design of technology can encode bias: <a href="https://survivalofthebestfit.com"><button class="btn">Survival of the Best Fit</button></a>
+🎮 Try this **game** that illustrates how software design is not neutral: <a href="https://survivalofthebestfit.com"><button class="btn">Survival of the Best Fit</button></a>
+
+> "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human biases and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have agency over. We want to change that by helping people understand the technology, and demand more accountability from those building increasingly pervasive software systems."
 
 #### In-Class Activity: Mini Ethics Presentations
 
