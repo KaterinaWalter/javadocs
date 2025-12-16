@@ -33,8 +33,13 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 > 💬 **DISCUSS:** Do you see IP addressed anywhere on my website? 
 
 🧠 The fields of **Artificial Intelligence (AI)** and **Machine Learning (ML)** increasingly pose ethical questions in our world. 
-* For example, self-driving cars that use machine learning to learn to follow lanes and avoid collisions could make our world much safer. Self-driving cars do not get distracted by text messages and don't drink and drive.
-* However, what if the car needs to make an **ethical decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
+* Facial recognition software
+* Deepfake photos and videos
+* Insurance data analysis
+* Hiring algorithms
+* Autonomous vehicles (*self-driving cars*) use machine learning to learn to follow lanes and avoid collisions, which could make our world much safer.
+  * Self-driving cars do not get distracted by text messages and don't drink and drive.
+  * However, what if the car needs to make an **moral decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
 
 ### Ethical Design of Technology
 
