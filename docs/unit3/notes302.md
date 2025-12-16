@@ -78,14 +78,14 @@ In small groups, choose a **software application** that has social and ethical i
 * the **beneficial** and possible **harmful** effects of this software application
 * the **ethical issues** that may arise while making **design choices** and how programmers can try to avoid them
 
-🗣️ Prepare a short presentation (on Google Slides, Canva, or a speech script/notes) for your class.
+🗣️ Prepare a short **presentation** (either make it visual on Google Slides/Canva, or write a script/notes for a speech) for your class.
 > Use one or more of the **ethical frameworks** below to structure your arguments.
 
 </div>
 
 ![image](Figures/ethics.png)
 
-> Graphics from a lesson I gave in one of my graduate school courses, check out the presentation: [Deceptive UI/UX Patterns]()
+> This graphic is from a lesson I gave in one of my graduate school courses, check out the presentation: [Deceptive UI/UX Patterns]()
 
 ---
 
