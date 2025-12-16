@@ -34,41 +34,43 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 * For example, self-driving cars that use machine learning to learn to follow lanes and avoid collisions could make our world much safer. Self-driving cars do not get distracted by text messages and don't drink and drive.
 * However, what if the car needs to make an **ethical decision** about avoiding a collision with a pedestrian by causing an accident that may also lead to the loss of life?
 
-⁉️ *Who makes these decisions?* The software? the programmers? If you were a programmer for a self-driving car, how would you approach such decisions? 
+⁉️ *Who makes these decisions?* The software? the programmers? If you were a programmer for a self-driving car, how would *you* approach such decisions? 
 
 Watch and discuss the following video to explore the ethical challenge of self-driving cars:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ixIoDYVfKA0?si=q62KFv-lYsw-IGVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Interested in exploring the trolley problem more? Check out this [Neal.fun]() game [Absurd Trolley Problems]()
+
 📺 Here are some other interesting videos about the impacts of AI in different domains:
 
-- AI in Healthcare: [Using artificial intelligence in radiology clinical practice](https://www.youtube.com/watch?v=dCDuMyzWS8Q)
-- AI in Agriculture: [New farm machines to kill weeds and harvest crops](https://www.youtube.com/watch?v=DjHGG7eQevY)
+- AI in **Healthcare**: [Using artificial intelligence in radiology clinical practice](https://www.youtube.com/watch?v=dCDuMyzWS8Q)
+- AI in **Agriculture**: [New farm machines to kill weeds and harvest crops](https://www.youtube.com/watch?v=DjHGG7eQevY)
 
 ### Technology is Not Neutral
 
-Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s famous first law of technology argues that “technology is neither good nor bad; _nor is it neutral._” For more information on this topic, see the presentation ["Technology is Not Neutral"](https://indico.cern.ch/event/1214023/attachments/2556457/4405409/Hare_CERN%20_28-29Nov2022.pdf) by Stephanie Hare, PhD, which also includes strong counterpoints to the argument. 
+Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s famous first law of technology argues that “technology is neither good nor bad; _nor is it neutral._” For more information on this topic, see Stephanie Hare's presentation [Technology is Not Neutral](https://indico.cern.ch/event/1214023/attachments/2556457/4405409/Hare_CERN%20_28-29Nov2022.pdf), which also examines strong counterpoints. 
 
 {: .highlight }
-"As we’re designing the system, we’re designing society. Ethical rules that we choose to put into that design [impact society]… Nothing is self-evident. Everything has to be put out there as something that we think will be a good idea as a component of our society" - **Sir Tim Berners-Lee**, Creator of the World Wide Web
+"As we’re designing the system, we’re designing society. Ethical rules that we choose to put into that design [impact society]… Nothing is self-evident." - **Sir Tim Berners-Lee**, Creator of the World Wide Web
 
-🎮 Try this game that illustrates **non-neutrality** in software design: <a href="https://survivalofthebestfit.com"><button class="btn">Survival of the Best Fit</button></a>
+🎮 Try this game that illustrates **non-neutrality** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
 
-> "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
+> From the creators: "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
 
-#### In-Class Activity: Mini Ethics TedTalk
+#### In-Class Activity: Ethics Exploration
 
 <div class="task" markdown="block">
 
-In groups, choose a **software application** that has social and ethical implications. 
-> If you chose an AI application, make sure you narrow it to a particular domain or use.
+In small groups, choose a **software application** that has social and ethical implications. 
+> If you chose an AI application, make sure you *narrow* it to a particular domain or use.
 
 💬 **DISCUSS:**
 * the **beneficial** and possible **harmful** effects of this software application
-* the **ethical issues** that may arise and how programmers can try to avoid them
+* the **ethical issues** that may arise while making **design choices** and how programmers can try to avoid them
 
 🗣️ Prepare a short presentation (on Google Slides, Canva, or a speech script/notes) for your class.
-> Use one or more of the **ethical frameworks** below to structure your argument(s).
+> Use one or more of the **ethical frameworks** below to structure your arguments.
 
 </div>
 
