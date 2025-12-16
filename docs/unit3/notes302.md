@@ -21,7 +21,7 @@ nav_order: 2
 
 ## Impact of Program Design
 
-We are living in an age of rapid development in technology and automation. Software and hardware developers increasingly have real **impacts** on people's lives. In computer science, we follow the following [ACM Professional Code of Ethics](https://ethics.acm.org/) which includes guidelines such as _"avoid harm"_ and _"respect privacy"_.
+We are living in an age of rapid development in technology and automation. Software and hardware developers increasingly have real **impacts** on people's lives. In computer science, we follow the following [ACM Professional Code of Ethics](https://ethics.acm.org/) which includes broad guidelines such as _"avoid harm"_ and _"respect privacy"_.
 > However, sometimes programs have _unintended consequences_. It can be difficult to ensure **system reliability**, which refers to a program being able to perform its tasks as expected under stated conditions without failure. Programmers should make an effort to maximize system reliability by **testing** the program with a variety of conditions.
 
 ![image-small](https://lh6.googleusercontent.com/proxy/M65uqCSj_9pz3VSnqAS6fMCcH3rKckoPTRfYQSabtYhSm0G_3CmeFJt00afbn3qlRiVrqtfFLwzh9ikgFk6Ud4GmtHgZFEV5x1tGLVPcqtvVSAUpCOx7VlbW3qddJynCqbw_o5mgYVot4uQwPWBEhop_jtlp1trhc8Q2)
@@ -79,10 +79,8 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 
 #### In-Class Activity: Ethics Exploration
 
-<div class="task" markdown="block">
-
 💻 In small groups, choose a modern **software application** that has social and ethical implications. 
-> Pick a _specific_ website or app feature!
+> Pick a _specific_ website or app feature to investigate!
 
 <html>
   <details>
@@ -103,12 +101,18 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
   </details>
 </html>
 
-💬 **DISCUSS:**
-* the **beneficial** and possible **harmful** effects of this software application
-* the **ethical issues** that may arise while making **design choices** and how programmers can try to avoid them
+<div class="task" markdown="block">
 
-🗣️ Prepare a short **presentation** (either make it visual on Google Slides/Canva, or write a script/notes for a speech) for your class.
-> Use one or more of the **ethical frameworks** below to structure your arguments.
+💬 **DISCUSS & RESEARCH:**
+1. How the software works → highlight specific **design choices**
+2. Weigh the **benefits** and possible **harmful** effects → from the perspective of different _stakeholders_
+3. Describe **ethical issues** that may arise while making **design choices**
+ > Current events and real examples would be helpful to include here!
+
+🗣️ Prepare a short **PRESENTATION** for your class:
+* You could make it visual on Google Slides/Canva (3-5 slides max)
+* OR just write a script/notes for a speech
+* Use one or more of the **ethical frameworks** below to structure your _decision-making_ suggestions.
 
 </div>
 
