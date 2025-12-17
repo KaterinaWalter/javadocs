@@ -15,7 +15,7 @@ nav_order: 2
 ---
 
 {:.note}
-📖 This page is an adapted & expanded version of [CSAwesome Lesson 3.2](https://runestone.academy/ns/books/published/csawesome2/topic-3-2-impacts.html) from **Runestone Academy** (Barb Ericson, Beryl Hoffman, Peter Seibel)
+📖 This page is an **expanded** version of [CSAwesome Lesson 3.2](https://runestone.academy/ns/books/published/csawesome2/topic-3-2-impacts.html) from **Runestone Academy** (Barb Ericson, Beryl Hoffman, Peter Seibel)
 
 ---
 
@@ -84,25 +84,24 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 <div class="task" markdown="block">
 
 💻 In small groups, choose a modern **software application** to investigate its social and ethical implications. 
-
-> ***IDEAS:***
-> * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
-> * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
-> * Gig economy apps (Uber, DoorDash, etc.)
-> * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
-> * Mental health chatbots or "companions"
+  > * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
+  > * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
+  > * Gig economy apps (Uber, DoorDash, etc.)
+  > * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
+  > * Mental health chatbots or "companions"
 
 
-💬 **DISCUSS & RESEARCH:**
+📚 **RESEARCH:**
 1. How the software **works** → highlight specific *design choices*
 2. Weigh the **benefits** and possible **harmful** effects → from the perspective of different _stakeholders_
 3. Describe **ethical issues** that may arise → during the design process or later consequences
- > Current events and real examples would be helpful to include here!
+  > Current events and real examples would be helpful to include here!
 
 🗣️ Prepare a short **PRESENTATION** for your class:
 * You could make it visual on Google Slides/Canva (3-5 slides max)
 * OR you could just write a script/notes for a speech
-* Use one or more of the **ethical frameworks** below to structure _decision-making_ arguments.
+* Use one or more of the **ethical frameworks** below to guide any _decision-making_ arguments ⬇️
+  > **EX:** "From a utilitarian standpoint, we think this app is ethical because helps more people than it harms"
 
 </div>
 
