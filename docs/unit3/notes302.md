@@ -21,7 +21,7 @@ nav_order: 2
 
 ## Impact of Program Design
 
-We are living in an age of rapid development in technology and automation. Software and hardware developers increasingly have real **impacts** on people's lives. In Computer Science, we follow the following [ACM Professional Code of Ethics](https://ethics.acm.org/) which includes broad guidelines such as _"avoid harm"_ and _"respect privacy"_.
+We are living in an age of rapid development in technology and automation. Software and hardware developers increasingly have real **impacts** on people's lives. As Computer Scientists, we follow the following [ACM Professional Code of Ethics](https://ethics.acm.org/) which includes broad guidelines such as _"avoid harm"_ and _"respect privacy"_.
 > However, sometimes programs have _unintended consequences_. It can be difficult to ensure **system reliability**, which refers to a program being able to perform its tasks as expected under stated conditions without failure. Programmers should make an effort to maximize system reliability by **testing** the program with a variety of conditions.
 
 ![image-small](https://lh6.googleusercontent.com/proxy/M65uqCSj_9pz3VSnqAS6fMCcH3rKckoPTRfYQSabtYhSm0G_3CmeFJt00afbn3qlRiVrqtfFLwzh9ikgFk6Ud4GmtHgZFEV5x1tGLVPcqtvVSAUpCOx7VlbW3qddJynCqbw_o5mgYVot4uQwPWBEhop_jtlp1trhc8Q2)
@@ -37,7 +37,7 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 
 🧠 The fields of **Artificial Intelligence (AI)** and **Machine Learning (ML)** increasingly pose ethical questions in our world. 
 
-#### EXAMPLES:
+#### HOT TOPICS:
 {:.no_toc}
 
 * "Deepfake" AI-generated media (videos, photos)
@@ -87,14 +87,14 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
  > * Social media feed algorithms (pick a *specific* app to look into, like TikTok or Instagram)
  > * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
  > * Gig economy apps (Uber, DoorDash, etc.)
- > * Mental health chatbots or "companions" (Friend)
+ > * Mental health chatbots or companions (Friend, "ghostbots")
  > * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
 
 📚 **RESEARCH:**
 1. How the software **works** → highlight specific *design choices*
 2. Weigh the **benefits** and possible **harmful** effects → from the perspective of different _stakeholders_
 3. Describe **ethical issues** that may arise → during the design process or later consequences
-  > Current events and real examples would be helpful to include here!
+  > **TIP:** Current events and real examples would be helpful to include here!
 
 🗣️ Prepare a short **PRESENTATION** for your class:
 * You could make it visual on Google Slides/Canva (3-5 slides max)
