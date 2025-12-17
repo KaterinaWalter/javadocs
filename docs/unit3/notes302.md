@@ -56,7 +56,7 @@ The design and creation of software has **impacts** on _society_, the _economy_,
 * Governments?
 * Users? 
 
-Watch the following video to explore the ethical dilemmas of self-driving cars:
+Watch the following video to explore **ethical dilemmas** in designing self-driving cars:
 > 💬 **DISCUSS:** If you were a programmer for autonomous vehicle software, how would *you* approach such decisions? 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ixIoDYVfKA0?si=q62KFv-lYsw-IGVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -84,12 +84,11 @@ Historian [Melvin Kranzberg](https://en.wikipedia.org/wiki/Melvin_Kranzberg)’s
 <div class="task" markdown="block">
 
 💻 In small groups, choose a modern **software application** to investigate its social and ethical implications. 
-  > * Social media algorithms (pick a specific one to look into, like TikTok or Instagram)
-  > * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
-  > * Gig economy apps (Uber, DoorDash, etc.)
-  > * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
-  > * Mental health chatbots or "companions"
-
+ > * Social media feed algorithms (pick a *specific* app to look into, like TikTok or Instagram)
+ > * Deceptive UI/UX patterns (disguised ads, trick wording, fake scarcity, "confirmshaming")
+ > * Gig economy apps (Uber, DoorDash, etc.)
+ > * Mental health chatbots or "companions" (Friend)
+ > * Deepfakes and AI-generated media (Sora, Dall-E, etc.)
 
 📚 **RESEARCH:**
 1. How the software **works** → highlight specific *design choices*
@@ -118,7 +117,7 @@ This graphic is from a lesson about [Deceptive Patterns in UI/UX Design](https:/
 
 - (AP 3.2.A.2) The creation of programs has impacts on society, the economy, and culture. These impacts can be both beneficial and harmful. Programs meant to fill a need or solve a problem can have unintended harmful effects beyond their intended use.
 
-- (AP 3.1.A.3) Legal issues and intellectual property concerns arise when creating programs. Programmers often reuse code written by others and published as **open source** and free to use. Incorporation of code that is not published as open source requires the programmer to obtain permission and often purchase the code before integrating it into their program.
+- (AP 3.2.A.3) Legal issues and intellectual property concerns arise when creating programs. Programmers often reuse code written by others and published as **open source** and free to use. Incorporation of code that is not published as open source requires the programmer to obtain permission and often purchase the code before integrating it into their program.
 
 ---
 
