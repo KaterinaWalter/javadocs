@@ -21,16 +21,18 @@ nav_order: 7
 
 ## Static Variables & Methods
 
-In Unit 2, we explored the `Math` class and its many **static methods** like `Math.random()`, and we've always used a `main` method which is `static`. In this lesson, you will learn to write your own **static variables** and **static methods**.
+In Unit 1, we explored the `Math` class and its many **static methods** like `Math.random()`, and we've always used a `main` method which is `static`. In this lesson, you will learn to write your own **static variables** and **static methods**.
+
+There is only one copy of a class variable or method for the whole class. For example, the main method is a class (static) method because there should only be 1 main method. If the method is in the same class, you can call it with or without the class name from other static methods in the class: ``Classname.methodName();`` or ``staticMethodName();`` or even with an object of the class: ``objectName.methodName();``.
 
 <div class="imp" markdown="block">
   
-- **Static** variables and methods belong to a class, and are called with the `Class` name rather than using object variables, like `ClassName.methodName()`;
+- **Static** variables and methods _belong to a class_, and are called with the `Class` name rather than using object variables, like `ClassName.methodName()`;
   
 - There is only **ONE COPY** of a static variable or method for the whole class.
   > For example, the `main` method is `static` because there should only be 1 main method to run your program.
 
-- Static methods can be `public` or `private`.
+- Static **methods** can be `public` or `private`.
 
 - The `static` **keyword** is placed right after the **access modifier** (public or private) and right before the **data type** of variables and methods in their declarations.
 
@@ -56,7 +58,32 @@ ClassName.staticMethod();
 
 </div>
 
+### Class Methods
+
+Class methods _belong to the class_ overall, rather than to a specific object of the class. They are called with the class name and the dot operator, like ``ClassName.methodName();``, for example the Math methods like ``Math.random();``. 
+
+```java
+    // Calling class methods
+    // ClassName.methodName();
+    int x = Math.sqrt(9);
+
+     // If the method is in the same class,
+     // you can call it with or without the class name 
+     // from other static methods in the class
+     ClassName.methodName();
+     methodName();
+```
+
+Let's revisit the following flowchart to compare three different ways of calling methods. Class (`static`) methods are called using the **class name** rather than an individual object's name: 
+
+![image](Figures/FlowChartCallingMethods.png)
+
+{:.warning}
 Static methods only have **access** to other static variables and static methods. Static methods cannot access or change the values of instance variables or the this reference (since there is no calling object for them), and static methods cannot call non-static methods. However, non-static methods have access to all variables (instance or static) and methods (static or non-static) in the class. 
+
+### Class Variables
+
+**Class variables** belong to the class, with all objects of a class_ sharing a single copy_ of the class variable. Class variables are designated with the ``static`` keyword before the variable type. Class variables that are designated ``public`` are accessed outside of the class by using the class name and the dot operator, since they are associated with a class, not objects of a class.
 
 {:.highlight}
 Since there is only **1 copy** of a ``static`` variable or method, static variables are often used to _count how many objects are generated_. 
@@ -80,7 +107,6 @@ public static void main(String[] args) {
 _Class definition:_
 
 ```java
-
 public class Person {
       // instance variables
       private String name;
@@ -140,21 +166,24 @@ public class Temperature {
 }
 ```
 
+### `final` keyword
+
+The keyword **final** can be used in front of a variable declaration to make it a **constant value** that cannot be modified. 
+> Constant names are traditionally _capitalized_.
+	
+```java
+  final double PI = 3.14 ;
+```
+
 ---
 
 ## ⭐️ Summary
 
-- Static methods and variables include the keyword static  before their name in the header or declaration. They can be public or private.
-
-- Static variables belong to the class, with all objects of a class sharing a single static variable.
-
-- Static methods are associated with the class, not objects of the class.
-
-- Static variables are used with the class name and the dot operator, since they are associated with a class, not objects of a class.
-
-- Static methods cannot access or change the values of instance variables, but they can access or change the values of static variables.
-
-- Static methods cannot call non-static methods.
+- (AP 3.7.A.1) Class methods cannot access or change the values of instance variables or call instance methods without being passed an instance of the class via a parameter.
+- (AP 3.7.A.2) Class methods can access or change the values of class variables and can call other class methods.
+- (AP 3.7.B.1) Class variables belong to the class, with all objects of a class sharing a single copy of the class variable. Class variables are designated with the **static** keyword before the variable type.
+- (AP 3.7.B.2)	Class variables that are designated ``public`` are accessed outside of the class by using the class name and the dot operator, since they are associated with a class, not objects of a class.
+- (AP 3.7.B.3) When a variable is declared ``final``, its value cannot be modified.
 
 ---
 
