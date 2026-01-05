@@ -92,14 +92,14 @@ public String toString() {
 }
 ```
 
-#### 💻 In-Class Activity: Debugging
+#### 💻 Coding Activity: Debugging
 {:.no_toc}
 
 <div class="task" markdown="block">
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-8-scope-access.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.8</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: Debugging** activity in pairs.
+3. Complete the **Coding Challenge: Debugging** activity in pairs.
 
 </div>
 
