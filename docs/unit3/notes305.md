@@ -370,7 +370,7 @@ Compare the **difference** between setters and getters in the following figure:
 
 ---
 
-#### 💻 In-Class Activity: Class Pet
+#### 💻 Coding Activity: Class Pet
 {:.no_toc}
 
 You've been hired to create a software system for the Awesome Animal Clinic! They would like to keep track of their animal patients. Here are some **attributes** (_data/fields/instance variables_) of the pets that they would like to track:
@@ -387,7 +387,7 @@ You've been hired to create a software system for the Awesome Animal Clinic! The
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-5-methods.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.5</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: Class Pet** activity in pairs.
+3. Complete the **Coding Challenge: Class Pet** activity in pairs.
 
 #### CLASS CHECKLIST:
 {: .no_toc }
