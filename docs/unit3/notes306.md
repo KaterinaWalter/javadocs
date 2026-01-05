@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓3.6: Methods that Pass or Return Objects" 
+title: "📓3.6: Passing & Returning Objects" 
 parent: "3️⃣ Class Creation"
 nav_order: 6
 ---
