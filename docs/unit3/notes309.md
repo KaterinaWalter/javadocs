@@ -100,6 +100,12 @@ Here is an image that shows how ``this``, ``myPay`` and ``p`` all refer to the *
 #### 💻 In-Class Activity: Bank Account
 {:.no_toc}
 
+Many people keep their money in a bank account. The bank may keep track of the account holder's name, the acount balance which is the amount of money in the account, and assign an account number to each account. At the bank or an ATM (automatic teller machine) or on a phone app, the account holder can deposit (add) or withdraw (subtract) an amount from their account. 
+
+🏧 Here's a ATM video that breaks down _the steps to use an ATM_ to withdraw money from a bank acount. Phone apps like Venmo and Paypal connect to your bank account or credit card to send and get money from businesses or friends.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YpD1tJK9vIA?si=OP_UCtUtsBmsp2-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <div class="task" markdown="block">
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-9-this.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.9</button></a> 
