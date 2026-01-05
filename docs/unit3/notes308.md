@@ -39,6 +39,8 @@ The image below shows these 3 levels of scope.
 
 ![image](Figures/scopeDiagram.png)
 
+### Local Variables
+
 **Local variables** are variables that are declared inside a method, usually at the top of the method. These variables can only be used _within the method_ and do not exist outside of the method. **Parameter variables** are also considered local variables that only exist for that method. It's good practice to declare any variables that are used by just one method as local variables in that method.
 
 **Instance variables** at class scope are shared by all the methods in the class and can be marked as `public` or `private` with respect to their access outside of the class. They have **Class scope** regardless of whether they are public or private.
@@ -95,7 +97,7 @@ public String toString() {
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-8-scope-access.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.8</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-8-scope-access.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.8</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Debugging** activity in pairs.
 
@@ -105,12 +107,10 @@ public String toString() {
 
 ## ⭐️ Summary
 
-- **Scope** is defined as where a variable is _accessible_ or can be used.
-
-- **Formal parameters** declared in the _header/signature_ of a method or constructor may only be used within the constructor or method and cannot be declared to be `public` or `private`. Same goes for any **local variables** declared inside the _body_ of a method or constructor. 
-
-- When there is a local variable with the same name as an instance variable, the variable name will refer to the local variable instead of the instance variable. Watch out!
-  
+- **Scope** is defined as _where_ a variable is accessible or can be used.
+- (AP 3.8.A.1) **Local variables** are variables declared in the headers or bodies of blocks of code. Local variables can only be accessed in the block in which they are declared. 
+- (AP 3.8.A.1) Parameters to constructors or methods are also considered local variables. These variables may only be used within the constructor or method and cannot be declared to be ``public`` or ``private``.
+- (AP 3.8.A.2) When there is a local variable or parameter with the same name as an instance variable, the variable name will refer to the local variable instead of the instance variable within the body of the constructor or method.
 
 
 ---
