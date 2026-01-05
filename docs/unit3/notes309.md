@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓3.9: this Keyword" 
+title: "📓3.9: The this Keyword" 
 parent: "3️⃣ Class Creation"
 nav_order: 9
 ---
@@ -19,7 +19,7 @@ nav_order: 9
 
 ---
 
-## this Keyword
+## The `this` Keyword
 
 {:.highlight}
 The keyword ``this`` can be used in a class to refer to the **current calling object**.
