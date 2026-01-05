@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓3.9: The THIS Keyword" 
+title: "📓3.9: THIS Keyword" 
 parent: "3️⃣ Class Creation"
 nav_order: 9
 ---
@@ -97,7 +97,7 @@ Here is an image that shows how ``this``, ``myPay`` and ``p`` all refer to the *
 
 ![image](Figures/thisTrace.png)
 
-#### 💻 In-Class Activity: Bank Account
+#### 💻 Coding Activity: Bank Account
 {:.no_toc}
 
 Many people keep their money in a bank account. The bank may keep track of the account holder's name, the acount balance which is the amount of money in the account, and assign an account number to each account. At the bank or an ATM (automatic teller machine) or on a phone app, the account holder can deposit (add) or withdraw (subtract) an amount from their account. 
@@ -110,7 +110,7 @@ Many people keep their money in a bank account. The bank may keep track of the a
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-9-this.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.9</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: Bank Account** activity in pairs.
+3. Complete the **Coding Challenge: Bank Account** activity in pairs.
 
 </div>
 
