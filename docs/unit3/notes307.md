@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓3.7: The STATIC Keyword" 
+title: "📓3.7: STATIC Keyword" 
 parent: "3️⃣ Class Creation"
 nav_order: 7
 ---
@@ -19,7 +19,7 @@ nav_order: 7
 
 ---
 
-## The `static` Keyword: Class Variables & Methods
+## The `static` Keyword for Class Variables & Methods
 
 In Unit 1, we explored the `Math` class and its many **static methods** like `Math.random()`, and we've always used a `main` method which is `static`. In this lesson, you will learn to write your own **static variables** and **static methods**.
 
@@ -168,7 +168,7 @@ public class Temperature {
 
 ---
 
-## The `final` Keyword: Constant Values
+## The `final` Keyword for Constant Values
 
 The keyword **final** can be used in front of a variable declaration to make it a **constant value** that cannot be modified. 
 > Constant names are traditionally _capitalized_.
