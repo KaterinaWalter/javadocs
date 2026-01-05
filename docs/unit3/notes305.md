@@ -301,8 +301,7 @@ By the same token, if we want to allow code outside the class to `change` the va
 argument of the same type as the instance variable to be set. 
 > The **effect** of a setter, as you would probably expect, is to assign the provided value to the instance variable.
 
-Just as you shouldn't reflexively write a getter for every instance variable,
-you should think even harder about whether you want to write a setter. Not all
+Not all
 instance variables are meant to be **manipulated directly** by code outside the
 class.
 > For example, consider the ``Turtle`` class. It provides getters ``getXPos`` and
@@ -367,6 +366,33 @@ Compare the **difference** between setters and getters in the following figure:
 
 * Getters `return` an instance variable's **current value**, have the _same return type_ as this variable, and accept **NO parameters**. 
 * Setters have a `void` return type and **accept a new value as a parameter** to change the value of the instance variable.
+
+### Parameters & Arguments
+
+A **parameter** is a <span class="highlighter">placeholder variable</span> in a method's header that is used to pass in data that the method needs to do its job. In a setter, the parameter is the new value that you want to assign to the instance variable. Methods with parameters receive values through those parameters and use those values in accomplishing the method's task.
+
+An **argument** is an <span class="highlighter">actual value</span> that is _passed_ into a method when the method is called. It is saved into a parameter variable.
+
+![image](Figures/method-param-arg.png)
+
+<div class="imp" markdown="block">
+
+🤵‍♀️🤵🤵‍♂️ When you **define** your own method, the variables you specify for it in the method header are called **formal parameters**. 
+
+📣 When you **call** the method to do its job, you give or pass in **arguments** or **actual parameters** to it that are then saved in these local parameter variables.
+
+</div>
+
+When a method is called, the right method definition is found by checking the **method signature** or **header** at the top of the method definition to *match* the following:
+
+1. The method **name**
+2. The **number** of arguments
+3. The **data types** for the arguments
+4. The `return` type (either `void` or a data type like `int`, `String`, etc.)
+
+The arguments passed to a method must be compatible in number and order with the types identified in the parameter list of the method signature. When calling methods, arguments are passed using call by value. **Call by value** initializes the parameters with copies of the arguments.
+
+> When an argument is a **primitive** value, the parameter is initialized with a **copy** of that value. Changes to the parameter have no effect on the corresponding argument.
 
 ---
 
