@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓3.7: The static Keyword" 
+title: "📓3.7: The STATIC Keyword" 
 parent: "3️⃣ Class Creation"
 nav_order: 7
 ---
