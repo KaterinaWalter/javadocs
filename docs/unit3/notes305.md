@@ -132,9 +132,11 @@ public void methodName()
 📝 The **method header** for a <span class="highlighter">non-void method</span> is written like this:
 
 ```java
-public void methodName()
+public returnType methodName()
 {
   // method body
+  ...
+  return valueOrExpression;
 }
 ```
 
@@ -365,6 +367,8 @@ Compare the **difference** between setters and getters in the following figure:
 
 * Getters `return` an instance variable's **current value**, have the _same return type_ as this variable, and accept **NO parameters**. 
 * Setters have a `void` return type and **accept a new value as a parameter** to change the value of the instance variable.
+
+---
 
 #### 💻 In-Class Activity: Class Pet
 {:.no_toc}
