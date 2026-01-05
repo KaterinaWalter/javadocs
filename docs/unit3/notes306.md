@@ -97,6 +97,19 @@ String studentName = student.getName();
 
 ---
 
+#### 💻 Coding Challenge: Friends & Birthdays
+{:.no_toc}
+
+In this activity, you will create a class `Friend` which keeps track of your friends’ names and birthdays using another class called `Date`. 
+
+<div class="task" markdown="block">
+
+1. Go to <a href="https://runestone.academy/ns/books/published/bwl_apcs_25-26/topic-3-6-methods-references.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.6</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Coding Challenge: Friends and Birthdays** activity in pairs.
+
+---
+
 ## ⭐️ Summary
 
 - (AP 3.4.A.3) When a mutable object is a constructor parameter, the instance variable should be initialized with a copy of the referenced object. In this way, the instance variable does not hold a reference to the original object, and methods are prevented from modifying the state of the original object.
