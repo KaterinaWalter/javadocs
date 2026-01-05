@@ -44,7 +44,6 @@ Methods are **defined** _inside_ a `class`, and have direct access the `private`
 For example, the `print()` method below prints the instance variables of the `Person` object, `p`:
 
 ```java
-
     public class Person
     {
         // instance variables
@@ -52,14 +51,12 @@ For example, the `print()` method below prints the instance variables of the `Pe
         private String email;
 
         // Method DEFINITION
-        public void print()
-        {
+        public void print() {
             System.out.println("Name: " + name);
             System.out.println("Email: " + email);
         }
 
-        public static void main(String[] args)
-        {
+        public static void main(String[] args) {
             Person p = new Person();
             p.print();  // Method CALL
         }
@@ -95,11 +92,11 @@ There are three steps to writing & using custom _instance methods_:
 
 </div>
 
-The following flowchart can be used to compare three different ways of calling methods:
+The following flowchart can be used to compare three different ways of **calling methods**:
 
 ![image](Figures/FlowChartCallingMethods.png)
 
-* _Class methods_ (`static` methods) are called using the class name itself.
+* _Class methods_ (`static` methods) are called using the **class name** itself.
 * _Instance methods_ (which we are discussing in this lesson) are called on a specific **object** of the class.
   * If you are calling the instance method from the `main()` method or from _another_ class, you must first **create an object instance** of that class and then call its methods using ``object.methodName()``.
   > Most common scenario in this course!
