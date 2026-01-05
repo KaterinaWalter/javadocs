@@ -19,7 +19,7 @@ nav_order: 7
 
 ---
 
-## Static Variables & Methods
+## Class (`static`) Variables & Methods
 
 In Unit 1, we explored the `Math` class and its many **static methods** like `Math.random()`, and we've always used a `main` method which is `static`. In this lesson, you will learn to write your own **static variables** and **static methods**.
 
