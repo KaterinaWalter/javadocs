@@ -22,7 +22,14 @@ nav_order: 9
 ## this Keyword
 
 {:.highlight}
-The keyword ``this`` can be used in a class to refer to the **current calling object**. 
+The keyword ``this`` can be used in a class to refer to the **current calling object**.
+
+Within a class' instance method or a constructor, the keyword ``this`` acts as a special variable that holds a **reference to the current object** — the specific object whose method or constructor is being _called_.
+
+{:.warning}
+The ``this`` variable can only be used in instance methods and constructors. **Static methods** cannot refer to `this` or instance variables because they are called with the _classname_, not an object, so there is no `this` object.
+
+### `this.instanceVariable`
 
 The keyword `this` is sometimes used by programmers to _distinguish between variables_. Programmers can give the parameter variables the same names as the instance variables and this can distinguish them and avoid a naming conflict. 
 
@@ -40,8 +47,7 @@ public Person(String name) {
 ```
 > Here, ``this.variable`` is a way to indicate that we are referring to the **instance variables** of this object instead of **a local variable**.
 
-{:.warning}
-**Static methods** cannot refer to `this` or instance variables because they are called with the _classname_, not an object, so there is no `this` object.
+### `this` as an Argument
 
 The ``this`` variable can be used anywhere you would use an object variable! You can even _pass it to another method_ as an **argument**. 
 
@@ -94,10 +100,9 @@ Here is an image that shows how ``this``, ``myPay`` and ``p`` all refer to the *
 #### 💻 In-Class Activity: Bank Account
 {:.no_toc}
 
-
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-9-this.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.9</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-9-this.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.9</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Bank Account** activity in pairs.
 
@@ -107,14 +112,13 @@ Here is an image that shows how ``this``, ``myPay`` and ``p`` all refer to the *
 
 ## ⭐️ Summary
 
-- Within a **non-static method** or a constructor, the keyword `this` is a reference to the **current object**, the object whose method or constructor is being called.
+- (AP 3.9.A.1) Within an instance method or a constructor, the keyword ``this`` acts as a special variable that holds a reference to the current object—the object whose method or constructor is being called.
 
-- `this.instanceVariable` can be used to distinguish between this object's instance variables and local parameter variables that may have the same variable names.
+- ``this.instanceVariable`` can be used to distinguish between this object's instance variables and local parameter variables that may have the same variable names.
 
-- **Static methods** do not have a `this` reference.
+- (AP 3.9.A.2) The keyword ``this`` can be used to pass the current object as an argument in a method call.
 
-- The `this` variable can be used anywhere you would use an object variable, even to pass it to another method as an argument.
-  
+- (AP 3.9.A.3) Class methods do not have a ``this`` reference.
 
 
 
