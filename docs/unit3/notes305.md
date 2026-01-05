@@ -49,7 +49,7 @@ Methods are **defined** inside a class, and can access the instance variables of
         private String name;
         private String email;
 
-        // Method definition: uses instance variables name and email
+        // Method DEFINITION
         public void print()
         {
             System.out.println("Name: " + name);
@@ -59,7 +59,7 @@ Methods are **defined** inside a class, and can access the instance variables of
         public static void main(String[] args)
         {
             Person p = new Person();
-            p.print();  // Method call
+            p.print();  // Method CALL
         }
     }
 ```
@@ -70,32 +70,38 @@ There are three steps to creating and calling a method:
 
 1. **Method Definition**: In the object-class, write the method's **header** and **body** code like below:
   ```java
-        // Step 1: Define the method in the template class
-        // method HEADER/SIGNATURE
-        public void methodName()
-        {
-              // method BODY for the code
-        }
+  // Step 1: DEFINE the method in the template class
+  // method HEADER/SIGNATURE
+  public void methodName()
+  {
+    // method BODY code
+  }
   ```
-> In the past units, this first step has _already been done_ for you by another programmer.
+> In the past units, this first step has _already been done_ for you by another programmer!
 
 2. **Object of the Class**: Declare an object of your class in the main method or from outside the class.
   ```java
-       // Step 2: declare an object in main or from outside the class
-       ClassName objectName = new ClassName();
+  // Step 2: CREATE an object in main or from outside the class
+  ClassName objectName = new ClassName();
   ```
 
 3. **Method Call**: whenever you want to use the method, call objectName.methodName();
   ```java
-       // Step 3: call the object's method
-       objectName.methodName(); //Step 2
+  // Step 3: CALL the object's method
+  objectName.methodName();
   ```
 
 </div>
 
-The following flowchart can be used to compare three different ways of calling methods. Class (static) methods are called using the class name. Instance methods which are discussing in this lesson are called using an object of the class. If you are calling the instance method from the main method or from another class, you must first create an object of that class and then call its methods using ``object.methodName()``. If you are calling the method from within the same class, you can just call the method using ``methodName()`` which will refer to the current object.
+The following flowchart can be used to compare three different ways of calling methods:
 
-![image-small](Figures/FlowChartCallingMethods.png)
+![image](Figures/FlowChartCallingMethods.png)
+
+* _Class methods_ (`static` methods) are called using the class name itself.
+* _Instance methods_ (which we are discussing in this lesson) are called using a specific **object** of the class.
+  * If you are calling the instance method from the `main()` method or from _another_ class, you must first **create an object instance** of that class and then call its methods using ``object.methodName()``.
+  * If you are calling the method from _within_ the same class, you can just call the method using ``methodName()`` which will refer to the current object.
+  > This scenario is like having different methods "talk to each other" within the class, like helping each other work. 
 
 ---
 
