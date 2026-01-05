@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: "📓3.9: The this Keyword" 
+title: "📓3.9: The THIS Keyword" 
 parent: "3️⃣ Class Creation"
 nav_order: 9
 ---
