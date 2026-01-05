@@ -19,12 +19,28 @@ nav_order: 5
 
 ---
 
+## Writing Methods in Object Classes
+
+In object-oriented programming, the three main parts of a `class` are:
+
+- the **instance variables** which hold data/attributes/values associated with each object, 
+- the **constructors** whose job is to initialize the instance variables, 
+- and the **methods** which contain the code for the behaviors of an object and which can use the instance variables defined in the class.
+
+In Unit 1, we used ``Turtle`` objects and called methods like ``forward`` which changed the ``x`` and ``y`` coordinates (instance variables) of the turtle. We also defined static methods that did not work with objects.  In this unit, we will learn how to _write our own methods_ in our own classes.
+
+### Defining Methods
+
+---
+
 ## Accessor Methods (_Getters_)
 
 Since the instance variables in a class are usually marked as ``private`` to the
 class, if you want code outside the class to be able to access the value of an
 instance variable, you need to write what is formally called an **accessor
 methods** but which everyone actually just calls a **getter**. 
+
+### How to Define a Getter
 
 <div class="imp" markdown="block"> 
   
@@ -93,7 +109,6 @@ Some common errors when _writing_ and _using_ getters are:
 
 </div>
 
-
 ### The ``toString`` Method
 
 📜 While not strictly speaking a getter, another important method that returns a
@@ -137,18 +152,6 @@ object:
   }
 ```
 > The ``toString`` method will return a ``String`` that is then printed out.
-
-#### 💻 In-Class Activity: Class Pet
-{:.no_toc}
-
-
-<div class="task" markdown="block">
-
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-4-accessor-methods.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.4</button></a> 
-2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: Class Pet** activity in pairs.
-
-</div>
 
 ---
 
@@ -224,11 +227,12 @@ public class Student
 }
 ```
 
-Compare the **difference** between setters and getters in the following figure.
-* Getters `return` an instance variable's **value** and have the same return type as this variable and **no parameters**. 
-* Setters have a `void` return type and **take a new value as a parameter** to change the value of the instance variable.
+Compare the **difference** between setters and getters in the following figure:
 
 ![image](Figures/get-set-comparison.png)
+
+* Getters `return` an instance variable's **current value**, have the _same return type_ as this variable, and accept **NO parameters**. 
+* Setters have a `void` return type and **accept a new value as a parameter** to change the value of the instance variable.
 
 #### 💻 In-Class Activity: Class Pet
 {:.no_toc}
@@ -250,6 +254,7 @@ You've been hired to create a software system for the Awesome Animal Clinic! The
 3. Complete the **Programming Challenge: Class Pet** activity in pairs.
 
 #### CLASS CHECKLIST:
+{: .no_toc }
 
 - [ ] First declare what **instance variables** are needed in the `class` and their data types.
   > Make sure you use ``int``, ``double``, and ``String`` data types. Make the instance variables ``private``.
@@ -258,7 +263,7 @@ You've been hired to create a software system for the Awesome Animal Clinic! The
 
 - [ ] Write **accessor/getter** **methods** for each of the instance variables.
 
-- [ ] Write a ``toString`` **method** that returns all the information in a ``Pet``.
+- [ ] Write a ``toString`` **method** that returns a text string of the data in a ``Pet`` record.
 
 - [ ] Write **mutator/setter** **methods** for each of the instance variables.
 
