@@ -246,37 +246,27 @@ Compare the **difference** between setters and getters in the following figure.
 
 ## ⭐️ Summary
 
-- An **accessor method**, or **getter**, allows other objects to _obtain the value_ of instance variables or
-  static variables.
+- (AP 3.5.A.1) A ``void`` method does not return a value. Its header contains the keyword ``void`` before the method name.
+- (AP 3.5.A.2)	A **non-void method** returns a single value. Its header includes the return type in place of the keyword ``void``.
 
-- A non-void method returns a single value. Its header includes the **return type**
-  in place of the keyword `void`.
-  - A getter is a non-void method that returns the value of an instance variable.
-  - Its return type matches the type of the instance variable.
+- (AP 3.5.A.3) In non-void methods, a return expression compatible with the return type is evaluated, and the value is returned. This is referred to as **return by value**.
+- (AP 3.5.A.4) The ``return`` keyword is used to return the flow of control to the point where the method or constructor was called. Any code that is sequentially after a return statement will never be executed. Executing a return statement inside a selection or iteration statement will halt the statement and exit the method or constructor.
+- (AP 3.5.A.5) An **accessor method** (getter) allows objects of other classes to obtain a copy of the value of instance variables or class variables. An accessor method is a non-void method.
+- (AP 3.5.A.6) A **mutator (modifier) method** (setter) is a method that changes the values of the instance variables or class variables. A mutator method is often a void method.
+- Comparison of accessor/getters and mutator/setters syntax:
 
-- Methods "return by value" where a copy of the value is returned. When the
-  value is a primitive type, the value is copied. When the value is a reference
-  to an object, the reference is copied, not the object.
-
-- The ``return`` keyword is used to return the flow of control to the point
-  immediately following where the method or constructor was called.
+![image-small](Figures/get-set-comparison.png)
+  
+- (AP 3.5.A.7) Methods with **parameters** receive values through those parameters and use those values in accomplishing the method's task.
+- (AP 3.5.A.8)	When an argument is a primitive value, the parameter is initialized with a copy of that value. Changes to the parameter have no effect on the corresponding argument.
 
 - The ``toString`` method is an overridden method that is included in classes to
   provide a description of a specific object. It generally includes what values
-  are stored in the instance data of the object.
-
-- If ``System.out.print`` or ``System.out.println`` is passed an object, that
+  are stored in the instance data of the object. If ``System.out.print`` or ``System.out.println`` is passed an object, that
   object’s ``toString`` method is called, and the returned ``String`` is
-  printed.
-
-- An object’s ``toString`` method is also used to get the ``String``
-  representation used when concatenating the object to a ``String`` with the
+  printed. An object’s ``toString`` method is also used to get the ``String``
+  representation when concatenating the object to a ``String`` with the
   ``+`` operator.
-
-- A void method does not return a value. Its header contains the keyword ``void`` before the method name.
-
-- A **mutator method** or **setter** is a void method that _changes the values_ of an instance or static
-  variable.
   
 
 ---
