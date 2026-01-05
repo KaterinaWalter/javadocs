@@ -233,7 +233,7 @@ Compare the **difference** between setters and getters in the following figure.
 #### 💻 In-Class Activity: Class Pet
 {:.no_toc}
 
-🐶🐱🐹🐰🐸 You've been hired to create a software system for the Awesome Animal Clinic! They would like to keep track of their animal patients. Here are some **attributes** (_data/fields/instance variables_) of the pets that they would like to track:
+You've been hired to create a software system for the Awesome Animal Clinic! They would like to keep track of their animal patients. Here are some **attributes** (_data/fields/instance variables_) of the pets that they would like to track:
 
 - `name`
 - `age`
@@ -241,7 +241,7 @@ Compare the **difference** between setters and getters in the following figure.
 - `type` (dog, cat, lizard, etc.)
 - `breed`
 
-Your task is to create a `class` that defines a `Pet` object to keep track of the attributes listed above for pet records at the animal clinic.
+🐶🐱🐹🐰🐸 Your task is to create a `class` that defines a `Pet` object to keep track of pet records at the animal clinic. Your class should include all the key _object-defining class_ components covered so far: **instance variables**, **constructors**, **accessor/getter methods**, a **toString** **method**, and **mutator/setter methods**.
 
 <div class="task" markdown="block">
 
@@ -251,20 +251,18 @@ Your task is to create a `class` that defines a `Pet` object to keep track of th
 
 #### CLASS CHECKLIST:
 
-- [ ] First decide what **instance variables** are needed in the `class` and their data
-   types.
+- [ ] First declare what **instance variables** are needed in the `class` and their data types.
   > Make sure you use ``int``, ``double``, and ``String`` data types. Make the instance variables ``private``.
 
-- [ ] Write a **constructor** with many parameters to initialize all the instance
-   variables.
+- [ ] Write a **constructor** with many parameters to initialize values for all the instance variables.
 
-- [ ] Write **accessor/getter** methods for each of the instance variables.
+- [ ] Write **accessor/getter** **methods** for each of the instance variables.
 
-- [ ] Write a ``toString`` method that returns all the information in a ``Pet``.
+- [ ] Write a ``toString`` **method** that returns all the information in a ``Pet``.
 
-- [ ] Write **mutator/setter** methods for each of the instance variables.
+- [ ] Write **mutator/setter** **methods** for each of the instance variables.
 
-- [ ] In the ``main`` method, create 2 new ``Pet`` objects with different values
+- [ ] In the ``main`` method, **test** your object class: create 2 new ``Pet`` objects with different values
    and call the constructor, accessor methods, mutator methods, and ``toString`` methods to test all your code.
 
 </div>
@@ -282,13 +280,13 @@ Your task is to create a `class` that defines a `Pet` object to keep track of th
 - (AP 3.5.A.6) A **mutator (modifier) method** (setter) is a method that changes the values of the instance variables or class variables. A mutator method is often a void method.
 - Comparison of accessor/getters and mutator/setters syntax:
 
-![image-small](Figures/get-set-comparison.png)
+![image](Figures/get-set-comparison.png)
   
 - (AP 3.5.A.7) Methods with **parameters** receive values through those parameters and use those values in accomplishing the method's task.
 - (AP 3.5.A.8)	When an argument is a primitive value, the parameter is initialized with a copy of that value. Changes to the parameter have no effect on the corresponding argument.
 
 - The ``toString`` method is an overridden method that is included in classes to
-  provide a description of a specific object. It generally includes what values
+  provide a text description of a specific object. It generally includes what values
   are stored in the instance data of the object. If ``System.out.print`` or ``System.out.println`` is passed an object, that
   object’s ``toString`` method is called, and the returned ``String`` is
   printed. An object’s ``toString`` method is also used to get the ``String``
