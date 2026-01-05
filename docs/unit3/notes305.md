@@ -233,12 +233,39 @@ Compare the **difference** between setters and getters in the following figure.
 #### 💻 In-Class Activity: Class Pet
 {:.no_toc}
 
+🐶🐱🐹🐰🐸 You've been hired to create a software system for the Awesome Animal Clinic! They would like to keep track of their animal patients. Here are some **attributes** (_data/fields/instance variables_) of the pets that they would like to track:
+
+- `name`
+- `age`
+- `weight`
+- `type` (dog, cat, lizard, etc.)
+- `breed`
+
+Your task is to create a `class` that defines a `Pet` object to keep track of the attributes listed above for pet records at the animal clinic.
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit5-Writing-Classes/topic-5-5-mutator-methods.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 5.5</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-5-methods.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.5</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Class Pet** activity in pairs.
+
+#### CLASS CHECKLIST:
+
+- [ ] First decide what **instance variables** are needed in the `class` and their data
+   types.
+  > Make sure you use ``int``, ``double``, and ``String`` data types. Make the instance variables ``private``.
+
+- [ ] Write a **constructor** with many parameters to initialize all the instance
+   variables.
+
+- [ ] Write **accessor/getter** methods for each of the instance variables.
+
+- [ ] Write a ``toString`` method that returns all the information in a ``Pet``.
+
+- [ ] Write **mutator/setter** methods for each of the instance variables.
+
+- [ ] In the ``main`` method, create 2 new ``Pet`` objects with different values
+   and call the constructor, accessor methods, mutator methods, and ``toString`` methods to test all your code.
 
 </div>
 
