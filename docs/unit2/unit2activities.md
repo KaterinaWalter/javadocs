@@ -22,7 +22,7 @@ nav_order: 13
 
 1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
-3. Specify the **repository name**: `CS2-Unit2-Activity#`
+3. Specify the **repository name**: `CS2-Unit-2-Activity`
     > Replace `#` with the specific _activity number_.
 4. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
     > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 📂
@@ -31,29 +31,12 @@ nav_order: 13
 
 </div>
 
-<br>
-
-<div class="warn" markdown="block">
-
-🛑 When class ends, don't forget to **SAVE YOUR WORK**! **Codespaces** are TEMPORARY editing environments, so you need to COMMIT changes properly in order to update the main **repository** for your program. 
-
-_There are multiple steps to saving in GitHub Codespaces:_
-
-1. Navigate to the `Source Control` menu on the _LEFT_ sidebar
-2. Click the <button type="button" name="button" class="btn btn-green">commit changes</button> button on the _LEFT_ menu
-3. Type a brief **commit message** at the top of the file that opens, for example: `updated main.py`
-4. Click the small `✔️` **checkmark** in the _TOP RIGHT_ corner
-5. Click the <button type="button" name="button" class="btn btn-green">sync changes</button> button on the _LEFT_ menu
-6. _Finally you can close your Codespace!_
-
-</div>
-
   </details>
 </html>
 
 ---
 
-## 🔮 ACTIVITY #1: Magic 8 Ball
+## ACTIVITY #1: Magic 8 Ball 🔮
 
 Have you ever used a **Magic 8 ball**? You ask it a yes-no question, and then shake it to get a random answer like ``Signs point to yes!``, ``Very doubtful``, etc. 
 
