@@ -99,7 +99,7 @@ instance variables to the _default value_ for their data type:
 
 In the (rare) case where those default values are sufficient to put your object into a valid state, you may not need to write a constructor at all.
 
-#### Parameterized Constructors (accepts arguments)
+#### Parameterized Constructors
 
 Usually, however, if you are writing a class that has instance variables, you
 need to initialize your instance values to **some specific values** provided by the user. In that case you
