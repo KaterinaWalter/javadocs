@@ -21,7 +21,15 @@ nav_order: 4
 
 ## Writing Constructors
 
-In Unit 1, we learned how to _create objects_ by calling **constructors**. 
+<html>
+    <dl>
+        <dt>Constructor</dt>
+        <dd>A unique type of method whose job is to <strong>create objects</strong> of a class by <strong>initializing values</strong> for each of the instance variables. A class can have multiple constructors, and constructors always have the <em>same identifier/name as the class.</em></dd>
+    </dl>
+</html>
+In Unit 1, we learned how to _create objects_ by calling **constructors**. Now it's time to learn to write our own constructors!
+
+### How to Create Object Instances
 
 <div class="imp" markdown="block">
     
@@ -40,12 +48,10 @@ objects as _instances_ of their classes.
 
 </div>
 
-Now it's time to learn to write our own constructors.
-
 ### Constructor Signature
 
-In the source code for a class, constructors are usually written after the
-instance variables and before any methods.
+In the source code for a class, constructors are usually written _after_ the
+instance variables are declared and _before_ any methods are defined.
 
 ➰🖋️ The **signature** of a constructor is similar to the signature of a method except
 there is **no return type**, not even ``void``, and instead of a method name, the
@@ -82,7 +88,7 @@ variables to "useful" values. But what does “useful” mean?
 Classes can have zero or more constructors but they should all produce an object
 in a **valid, usable state**.
 
-#### Default no-argument constructor
+#### Default Constructor (no-argument)
 The easiest way to write a constructor is to *not* write one. If you do not
 write a constructor, your class will **automatically** get what is called the
 **default no-argument constructor**. This constructor will initialize all your
@@ -93,10 +99,10 @@ instance variables to the _default value_ for their data type:
 
 In the (rare) case where those default values are sufficient to put your object into a valid state, you may not need to write a constructor at all.
 
-#### Constructors that take arguments
+#### Parameterized Constructors (accepts arguments)
 
 Usually, however, if you are writing a class that has instance variables, you
-need to initialize your instance values to **some specific values**. In that case you
+need to initialize your instance values to **some specific values** provided by the user. In that case you
 probably need to write a constructor that **takes arguments and uses them** to
 initialize your instance variables.
 
