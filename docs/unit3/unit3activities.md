@@ -53,31 +53,31 @@ Your class must include all the key _object-defining class_ components covered s
 
 <div class="task" markdown="block">
 
-1. Navigate to your Codespace's **File Explorer** tab. Click the **Create New File** icon and name it `Pet.java`.
-2. In `Pet.java`, write the class header and include a set of curly brackets to set up the file.
+1. Navigate to your Codespace's **📁 File Explorer** tab then **➕ Create** a new file named `Pet.java`.
+2. In `Pet.java`, write the class header and include a set of curly brackets to set up the file structure.
 3. Declare what **instance variables** are needed in the `class` and their data types.
-  > * Make sure you use ``int``, ``double``, `boolean`, and ``String`` data types.
-  > * Make all the instance variables ``private``.
-5. Write a **constructor** that initializes the instance variables. This constructor should accept many parameters such that the user can provide values for each of the instance variables. 
-6. Write **accessor/getter** **methods**, one for each of the instance variables.
-7. Write a ``toString`` **method** that returns a text string of the data in a ``Pet`` record.
-8. Write **mutator/setter** **methods**, one for each of the instance variables.
+  > Remember you can pick from ``int``, ``double``, `boolean`, and ``String`` data types, and make all the instance variables ``private``!
+4. Write a **constructor** with a **parameter list**. This constructor should accept an argument for each of the instance variables. 
+  > _Link to notes section:_ [📓 3.4 Writing Constructors - Parameterized]() 
+5. Write **accessor/getter** **methods**, one for each of the instance variables.
+  > _Link to notes section:_ [📓 3.5 Writing Methods - Getters](https://coderina.dev/javadocs/docs/unit3/notes305.html#how-to-define-a-getter) 
+6. Write a ``toString`` **method** that returns a text string of the data in a ``Pet`` record.
+  > _Link to notes section:_ [📓 3.5 Writing Methods - toString](https://coderina.dev/javadocs/docs/unit3/notes305.html#the-tostring-method) 
+7. Write **mutator/setter** **methods**, one for each of the instance variables.
+  > _Link to notes section:_ [📓 3.5 Writing Methods - Setters](https://coderina.dev/javadocs/docs/unit3/notes305.html#how-to-define-a-setter) 
 
 </div>
 
 #### Outline for `Pet.java`
 
 ```java
-/**
- * Pet class
- * @author
- */
 public class Pet {
-    // 1. INSTANCE VARIABLES
+    // 1. Declare INSTANCE VARIABLES
 
-    // 2. CONSTRUCTORS
+    // 2. Define CONSTRUCTOR
 
-    // 3. METHODS
+    // 3. Define METHODS (getters, toString, setters)
+
 }
 ```
 
@@ -87,7 +87,9 @@ public class Pet {
 
 1. Navigate back to `Main.java`, this "client" file is where you can **run/test** your `Pet` class code as a user.
 2. Inside the ``main()`` method, **create** 2 new ``Pet`` objects with different values by calling the constructor and passing in arguments.
+  > _Link to notes section:_ [📓 3.4 Writing Constructors - Creating Objects]() 
 3. **Call** each of your accessor methods, mutator methods, and ``toString`` methods to demonstrate how they work.
+  > _Link to notes section:_ [📓 3.5 Writing Methods - Calling Void vs. Non-Void Methods]() 
 
 </div>
 
