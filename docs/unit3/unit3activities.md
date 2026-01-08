@@ -67,16 +67,16 @@ Your class must include all the key _object-defining class_ components covered s
     > Because we don't have a `Pet` class defined, we can't work with any Pet objects in this file yet...
 2. Navigate to your Codespace's **📁 File Explorer** tab then **➕ Create** a new file named `Pet.java`.
 3. In `Pet.java`, write the class header and include a set of curly brackets to set up the file structure.
-  ```java
-  public class Pet {
-      // 1. Declare INSTANCE VARIABLES
-  
-      // 2. Define CONSTRUCTOR
-  
-      // 3. Define METHODS (getters, toString, setters)
-  
-  }
-  ```
+    ```java
+    public class Pet {
+        // 1. Declare INSTANCE VARIABLES
+    
+        // 2. Define CONSTRUCTOR
+    
+        // 3. Define METHODS (getters, toString, setters)
+    
+    }
+    ```
     
 </div>
 
