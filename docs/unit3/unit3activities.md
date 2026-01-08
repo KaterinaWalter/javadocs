@@ -111,14 +111,18 @@ Your class must include all the key _object-defining class_ components covered s
 #### REVIEW: CALLING METHODS
 {:.no_toc}
 
+Remember that if you want to use an object's instance method in _another_ class, you must first **create an object instance** of that class, and then call its methods using the syntax pattern ``objectName.methodName()``. 
+
+Here are some examples, assuming `turt` is an object of the `Turtle` class:
+
 ```java
 // Calling a VOID method (no return)
-obj.forward();
+turt.forward();
 
 // Calling a NON-VOID method (store the return value)
-int xPosition = obj.getXPos();
+int xPosition = turt.getXPos();
 // OR just use it immediately (if you don't need it later)
-System.out.println( obj.getXPos() );
+System.out.println( turt.getXPos() );
 ```
 
 
