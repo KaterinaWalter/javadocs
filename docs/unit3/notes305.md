@@ -356,20 +356,29 @@ Compare the **difference** between setters and getters in the following figure:
 * Getters `return` an instance variable's **current value**, have the _same return type_ as this variable, and accept **NO parameters**. 
 * Setters have a `void` return type and **accept a new value as a parameter** to change the value of the instance variable.
 
+## Using Methods
+
 ### Calling Void vs. Non-Void Methods
 
 The following flowchart can be used to compare three different ways of **calling methods**:
 
 ![image](Figures/FlowChartCallingMethods.png)
 
-* _Class methods_ (`static` methods) are called using the **class name** itself.
-* _Instance methods_ (which we are discussing in this lesson) are called on a specific **object** of the class.
+* _Class methods_ (`static` methods, see lesson #3.7) are called using the **class name** itself.
+* _Instance methods_ (topic of this lesson) are called on a specific **object** of the class.
   * If you are calling the instance method from the `main()` method or from _another_ class, you must first **create an object instance** of that class and then call its methods using ``object.methodName()``.
     > Most common scenario in this course!
   * If you are calling the method from _within_ the same class, you can just call the method using ``methodName()`` which will refer to the current object.
     > This scenario is like having different methods "talk to each other" within the class, like helping each other work.
 
-#### Examples
+#### Examples:
+
+```java
+// Calling a VOID method (no return)
+
+// Calling a NON-VOID method (must handle the return value)
+
+```
 
 ### Parameters & Arguments
 
