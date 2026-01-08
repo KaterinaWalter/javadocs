@@ -45,36 +45,32 @@ While the theme is travel, you have the creative freedom to decide what *kind* o
 
 <div class="task" markdown="block">
 
-Create a class to represent a travel booking. 
+Leave the Main class alone for now and create another class to represent a **travel booking object**. Define this class as described below. All variables should be declared as `private` and all methods as `public`. 
 
-**Class Name:** Choose a name that fits your specific theme (e.g., `VacationPackage`, `TeenTour`, etc.).
+**CLASS NAME:** Choose a name that fits your specific trip theme (e.g., `VacationPackage`, `TeenTour`, etc.)
 
-**Static Variable:** 
-* `processingFeePerDay` = 45 (this represents a flat daily administrative fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
+**STATIC VARIABLE:** 
+  * `processingFeePerDay` = 45 (this represents a flat daily administrative fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
 
-**Instance Variables:**
+**INSTANCE VARIABLES:**
 Declare at least **six** private instance variables.
 
-1. `travelerName` (String)
-2. `destination` (String)
-3. `durationInDays` (int)
-4. Your choice of **boolean** (e.g., `isInternational`)
-5. Your choice of **double** (e.g., `starRating`, `luggageWeight`)
-6. `totalPackageCost` (int) — *This will be a calculated field.*
+  1. `travelerName` (String)
+  2. `destination` (String)
+  3. `durationInDays` (int)
+  4. Your choice of **boolean** (e.g., `isInternational`)
+  5. Your choice of **double** (e.g., `starRating`, `luggageWeight`)
+  6. `totalPackageCost` (int) → *this will be a calculated field*
 
-**Instance Methods:**
+**INSTANCE METHODS:**
 
-1. **Default Constructor:** Sets generic default values for all fields.
-2. **Parameterized Constructor:** Accepts arguments for the first four variables (use the same variable names for the parameters as the instance variables).
-* **Calculation:** The `totalPackageCost` should be set by multiplying the `durationInDays` by the static `processingFeePerDay`.
-
-
-3. **Accessor Methods:** "Getters" for every field.
-4. **Mutator Methods:** "Setters" for every field.
-* **The Cost Mutator:** The mutator for `totalPackageCost` must accept `durationInDays` as a parameter and recalculate the cost using the static `processingFeePerDay`.
-
-
-5. **toString():** Returns a formatted, multi-line string. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`.
+  1. **Default Constructor:** Sets generic default values for all fields (_instance variables_).
+  2. **Parameterized Constructor:** Accepts arguments for the first four variables (use the same variable names for the parameters as the instance variables).
+    * **Calculation:** The `totalPackageCost` should be set by multiplying the `durationInDays` by the static `processingFeePerDay`.
+  3. **Accessor Methods:** "Getters" for every field.
+  4. **Mutator Methods:** "Setters" for every field.
+    * **The Cost Mutator:** The mutator for `totalPackageCost` must accept `durationInDays` as a parameter and recalculate the cost using the static `processingFeePerDay`.
+  5. **toString():** Returns a formatted, multi-line string. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`.
 
 </div> 
 
@@ -121,6 +117,16 @@ In the `main` method, set up the user interface:
 You can also turn your text-based interactive version into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo) and make sure to copy your completed class file in the repository too. 
 
 <!--
+
+Create a static method below the main method to get user inputs, this method should:
+Have one parameter to pass in the scanner that will be created in the main method (Scanner scan).  This is necessary because this method will need to get user input, but the scanner will be out of scope from the main method unless you send it in through a parameter.
+Create a CollegeStudent object using the default constructor.
+Prompt the user for the inputs – First Name, Last Name (as one String), course title, course number, and number of credits.  It should not ask for the course fee.
+Use the mutator methods to set those values for the object.  Remember that the mutator for the course fee needs the credits.
+Return the CollegeStudent with the values given by the user.
+The main method should use a while loop to accept input until the user indicates there are no more inputs.  Use a boolean flag to control the loop.
+In the loop, call the method to get the input for the College Student and then display the CollegeStudent object nicely formatted.  Then prompt the user if they would like to input information for another student (Y for yes and N for no) and set the boolean flag for the loop accordingly.
+
 
 ## OLD PROJECT
 
