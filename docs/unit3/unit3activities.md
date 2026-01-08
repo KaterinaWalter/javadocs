@@ -87,7 +87,7 @@ public class Pet {
 
 1. Navigate back to `Main.java`, this "client" file is where you can **run/test** your `Pet` class code as a user.
 2. Inside the ``main()`` method, **create** 2 new ``Pet`` objects with different values by calling the constructor and passing in arguments.
-  > _Link to notes section:_ [📓 3.4 Writing Constructors - Creating Objects]() 
+  > _Link to notes section:_ [📓 3.4 Writing Constructors - Creating Objects](https://coderina.dev/javadocs/docs/unit3/notes304.html#constructors-create-objects) 
 3. **Call** each of your accessor methods, mutator methods, and ``toString`` methods to demonstrate how they work.
   > _Link to notes section:_ [📓 3.5 Writing Methods - Calling Void vs. Non-Void Methods]() 
 
