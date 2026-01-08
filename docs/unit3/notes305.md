@@ -27,7 +27,7 @@ In object-oriented programming, the three main parts of a `class` are:
 2. 🏗️ **Constructors** whose job is to <span class="highlighter">initialize (assign values)</span> for the instance variables, 
 3. 🏃‍♂️ **Methods** which contain code for the <span class="highlighter">behaviors/actions/processes</span> of an object, which can use the instance variables defined in the class.
 
-In Unit 1, we used ``Turtle`` objects and called methods like ``forward()`` which changed the ``x`` and ``y`` coordinates (**instance variables**) of the turtle. We also defined generic `static` methods that did not need specific objects to work. In this unit, we will learn how to _write our own methods_ in our own classes.
+In Unit 1, we created ``Turtle`` objects and used methods like ``forward()`` which changed the ``x`` and ``y`` coordinates (**instance variables**) of the turtle. We also defined generic `static` methods that did not need specific objects to work. In this unit, we will learn how to _write our own methods_ in our own classes.
 
 ### What are Methods?
 
