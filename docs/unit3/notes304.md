@@ -29,7 +29,7 @@ nav_order: 4
 </html>
 In Unit 1, we learned how to _create objects_ by calling **constructors**. Now it's time to learn to write our own constructors!
 
-### How to Create Object Instances
+### Constructors Create Objects
 
 <div class="imp" markdown="block">
     
