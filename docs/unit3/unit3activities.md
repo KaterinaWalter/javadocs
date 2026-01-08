@@ -78,7 +78,7 @@ Your class must include all the key _object-defining class_ components covered s
     }
     ```
     
-</div>
+</div> 
 
 ### PART B: Define the Class
 
