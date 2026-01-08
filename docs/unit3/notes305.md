@@ -315,8 +315,6 @@ Compare the **difference** between setters and getters in the following figure:
 
 ## Calling Instance Methods
 
-The choices a programmer makes when defining a method determine how the method gets implemented by **users** in practice. 
-
 <div class="imp" markdown="block">
   
 There are three steps to writing & using custom _instance methods_:
@@ -344,11 +342,11 @@ There are three steps to writing & using custom _instance methods_:
   > **NOTE:** There are different ways to call methods, depending on some details (see below).
 </div>
 
-The following flowchart can be used to compare three different ways of **calling methods**:
+The choices a programmer makes when defining a method determine how the method gets implemented by **users** in practice. The following flowchart can be used to compare three different ways of **calling methods**:
 
 ![image](Figures/FlowChartCallingMethods.png)
 
-* _Class methods_ (`static` methods, see lesson #3.7) are called using the **class name** itself.
+* _Class methods_ (`static` methods, see [lesson 📓 3.7](https://coderina.dev/javadocs/docs/unit3/notes307.html)) are not specific to object instances, so they are called using the **class name** itself.
 * _Instance methods_ (topic of this lesson) are called on a specific **object** of the class.
   * If you are calling the instance method from the `main()` method or from _another_ class, you must first **create an object instance** of that class and then call its methods using ``object.methodName()``.
     > Most common scenario in this course!
