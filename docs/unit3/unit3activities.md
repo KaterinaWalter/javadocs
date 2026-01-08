@@ -39,7 +39,7 @@ nav_order: 10
 
 You've been hired to create a software system for the Awesome Animal Clinic! They would like to keep track of their animal patients. Your task is to write a complete `class` that defines a `Pet` object to keep track of pet records at the animal clinic. 
 
-Here are some **attributes** (_data/fields/instance variables_) of the pets that they would like to track:
+Here are some **attributes** (_data/fields/instance variables_) of the pets that the clinic wants to track:
 
 - `name`
 - `age`
@@ -57,14 +57,14 @@ Your class must include all the key _object-defining class_ components covered s
     ```java
     public class Main {
         public static void main(String[] args) {
-            // Create 2 Pet objects using the constructor
+            // CREATE 2 Pet objects with different initial values
     
-            // Test all of your methods (accessors, toString, mutators)
+            // TEST all Pet methods (getters, toString, setters)
     
         }
     }
     ```
-    > Because we don't have a `Pet` class defined, we can't work with any Pet objects in this file yet...
+    > Because we don't have a `Pet` class defined, we can't actually work with any Pet objects in this file yet... we will come back to this file in Part C. 
 2. Navigate to your Codespace's **📁 File Explorer** tab then **➕ Create** a new file named `Pet.java`.
 3. In `Pet.java`, write the class header and include a set of curly brackets to set up the file structure.
     ```java
@@ -84,8 +84,8 @@ Your class must include all the key _object-defining class_ components covered s
 
 <div class="task" markdown="block">
 
-1. In the `Pet` class, declare what **instance variables** are needed and their data types.
-  > Remember you can pick from ``int``, ``double``, `boolean`, and ``String`` data types, and make all the instance variables ``private``!
+1. Inside the `Pet` class, start by declaring the 5 **instance variables** with appropriate **data types**.
+  > Remember to make all the instance variables ``private``!
 2. Write a **constructor** with a **parameter list**. This constructor should accept an argument for each of the instance variables. 
   > _Link to notes section:_ [📓 3.4 Writing Constructors - Parameterized](https://coderina.dev/javadocs/docs/unit3/notes304.html#parameterized-constructors) 
 3. Write **accessor/getter** **methods**, one for each of the instance variables.
@@ -105,11 +105,9 @@ Your class must include all the key _object-defining class_ components covered s
 2. Inside the ``main()`` method, **create** 2 new ``Pet`` objects with different values by calling the constructor and passing in arguments.
   > _Link to notes section:_ [📓 3.4 Writing Constructors - Creating Objects](https://coderina.dev/javadocs/docs/unit3/notes304.html#constructors-create-objects) 
 3. **Call** each of your accessor methods, mutator methods, and ``toString`` methods to demonstrate how they work.
-  > _Link to notes section:_ [📓 3.5 Writing Methods - Calling Void vs. Non-Void Methods](https://coderina.dev/javadocs/docs/unit3/notes305.html#calling-void-vs-non-void-methods) 
+  > _Link to notes section:_ [📓 3.5 Writing Methods - Calling Void vs. Non-Void](https://coderina.dev/javadocs/docs/unit3/notes305.html#calling-void-vs-non-void-methods) 
 
 </div>
 
-
----
 
 
