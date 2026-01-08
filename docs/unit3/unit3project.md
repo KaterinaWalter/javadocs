@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "💻 Unit 3 Project"
-projectname: "Creature Class"
+projectname: "Travel Booking System"
 parent: "3️⃣ Class Creation"
 nav_order: 11
 ---
@@ -9,12 +9,14 @@ nav_order: 11
 
 ### Overview & Setup
 
-In this project, you will practice defining and working with Java classes by creating an interactive `Creature` class. You'll demonstrate understanding of:
-* instance variables
-* constructors
-* getter and setter methods
-* the toString method
-* behavior methods
+You are a software engineer for a high-end travel agency, **"Wanderlust Solutions."** Your task is to create a system that tracks custom travel bookings. 
+
+While the theme is travel, you have the creative freedom to decide what *kind* of travel item you are modeling, for example:
+* All-Inclusive Vacation Packages
+* Luxury Cruise
+* Backpacking Trip
+* Teen Tour
+* Space Tourism Ticket
 
 <html>
 <details>
@@ -31,17 +33,101 @@ In this project, you will practice defining and working with Java classes by cre
 
 ---
 
-### Part A: 
+### PART A: Define the Travel Class
 
-#### 1. Section
 <div class="task" markdown="block">
 
 1. Steps
 
 </div> 
 
+Create a class to represent a travel booking. This class should be placed below the closing curly brace of your `Main` class.
 
-### Instructions & Requirements
+**Class Name:** Choose a name that fits your specific theme (e.g., `VacationPackage`, `BackpackingTrip`, `TeenTour`).
+
+**Static Variable:** 
+* `processingFeePerDay` = 45 (this represents a flat daily administrative fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
+
+**Instance Variables:**
+Declare at least **six** private instance variables.
+
+1. `travelerName` (String)
+2. `destination` (String)
+3. `durationInDays` (int)
+4. Your choice of **boolean** (e.g., `isInternational`)
+5. Your choice of **double** (e.g., `starRating`, `luggageWeight`)
+6. `totalPackageCost` (int) — *This will be a calculated field.*
+
+**Instance Methods:**
+
+1. **Default Constructor:** Sets generic default values for all fields.
+2. **Parameterized Constructor:** Accepts arguments for the first four variables (use the same variable names for the parameters as the instance variables).
+* **Calculation:** The `totalPackageCost` should be set by multiplying the `durationInDays` by the static `processingFeePerDay`.
+
+
+3. **Accessor Methods:** "Getters" for every field.
+4. **Mutator Methods:** "Setters" for every field.
+* **The Cost Mutator:** The mutator for `totalPackageCost` must accept `durationInDays` as a parameter and recalculate the cost using the static `processingFeePerDay`.
+
+
+5. **toString():** Returns a formatted, multi-line string. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`.
+
+
+--- 
+
+### PART B: Test the System
+
+<div class="task" markdown="block">
+
+1. Steps
+
+</div> 
+
+Complete the `Main` class to test your travel object:
+
+**1. Create a Static Method for Input:**
+Create a static method below the `main` method (but inside the `Main` class) to handle user inputs.
+
+* **Parameter:** It must accept a `Scanner` object from the main method.
+* **Object Creation:** Start by creating a travel object using the **default constructor**.
+* **Prompts:** Ask the user for all the details (Name, Destination, Duration, and your custom variables). **Do not** ask for the total package cost.
+* **Logic:** Use your **mutator methods** to update the object’s values based on what the user typed.
+* **Return:** Return the completed travel object to the `main` method.
+
+**2. The Main Loop:**
+In the `main` method, set up the user interface:
+
+* Create a `Scanner`.
+* Use a `while` loop controlled by a `boolean` flag.
+* Inside the loop:
+1. Call your static input method to get a travel object.
+2. Display the object's details using the `toString()` method.
+3. Ask: `"Would you like to log another trip? (Y/N)"`.
+4. Update the `boolean` flag to either run the loop again or exit.
+
+
+---
+
+#### Creative Requirements Checklist:
+
+* [ ] Does my class use a unique travel-related name?
+* [ ] Did I include a `double` and a `boolean` as instance variables?
+* [ ] Does my `toString()` look like an actual travel receipt or itinerary?
+* [ ] Did I remember to use `this.variableName` in my parameterized constructor?
+
+{:.highlight}
+You can also turn your text-based interactive version into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo) and make sure to copy your completed class file in the repository too. 
+
+<!--
+
+## OLD PROJECT
+
+In this project, you will practice defining and working with Java classes by creating an interactive `Creature` class. You'll demonstrate understanding of:
+* instance variables
+* constructors
+* getter and setter methods
+* the toString method
+* behavior methods
 
 <div class="task" markdown="block">
 
@@ -110,42 +196,4 @@ while (!userInput.equals("quit") {
 }
 ```
 > Different types of methods (`void` or _returns_ data, if it needs _input_ or not) will require different handling as seen in the example above.
-
-
-{:.highlight}
-You can also turn your text-based interactive version into a visual one with a **GUI** (Graphical User Interface)! See my `Java Swing` demo: [GitHub Swing GUI](https://github.com/katerinanavab/JavaGUI-Demo) and make sure to copy your completed `Creature.java` file in the repository too. 
-
-<!--
-
-For this problem, you will be creating a class and using the Main class to test your output.  Leave the Main class alone for now and create another class called CollegeStudent.  This class should go below the closing curly brace for the Main class.  Define this class as described below.  All variables should be declared as private and all methods as public.  
-
-Class Name:	CollegeStudent (do not put public on the class line)
-
-Static Variable:	costPerHour = 125 (this should be an int)
-
-Instance Variables:	
-name – String (in the format lastName, firstName – Example: Smith, John)
-courseTitle – String
-courseNumber – String
-credits – int
-courseFee – int
-
-Instance Methods: 	
-A default constructor
-A constructor that accepts arguments for name, courseTitle, courseNumber, and credits (use the same variable name for the parameter as the instance variables).  Course fee should be set by multiplying the credits and the costPerHour.
-accessor methods for each of the class fields
-mutator methods for each of the class fields – the mutator for courseFee should use the credits as a parameter and calculate the fee using the costPerHour (use credits as the parameter variable)
-toString() a method to display the fields of an instance of the class in an easy to read format (preferable on separate lines).  Use this when referencing the instance variables.
-
-Complete the Main class to test your CollegeStudent class as follows:
-Create a static method below the main method to get user inputs, this method should:
-Have one parameter to pass in the scanner that will be created in the main method (Scanner scan).  This is necessary because this method will need to get user input, but the scanner will be out of scope from the main method unless you send it in through a parameter.
-Create a CollegeStudent object using the default constructor.
-Prompt the user for the inputs – First Name, Last Name (as one String), course title, course number, and number of credits.  It should not ask for the course fee.
-Use the mutator methods to set those values for the object.  Remember that the mutator for the course fee needs the credits.
-Return the CollegeStudent with the values given by the user.
-The main method should use a while loop to accept input until the user indicates there are no more inputs.  Use a boolean flag to control the loop.
-In the loop, call the method to get the input for the College Student and then display the CollegeStudent object nicely formatted.  Then prompt the user if they would like to input information for another student (Y for yes and N for no) and set the boolean flag for the loop accordingly.
-
-
 
