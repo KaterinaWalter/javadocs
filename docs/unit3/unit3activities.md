@@ -58,7 +58,7 @@ Your class must include all the key _object-defining class_ components covered s
 3. Declare what **instance variables** are needed in the `class` and their data types.
   > Remember you can pick from ``int``, ``double``, `boolean`, and ``String`` data types, and make all the instance variables ``private``!
 4. Write a **constructor** with a **parameter list**. This constructor should accept an argument for each of the instance variables. 
-  > _Link to notes section:_ [📓 3.4 Writing Constructors - Parameterized]() 
+  > _Link to notes section:_ [📓 3.4 Writing Constructors - Parameterized](https://coderina.dev/javadocs/docs/unit3/notes304.html#parameterized-constructors) 
 5. Write **accessor/getter** **methods**, one for each of the instance variables.
   > _Link to notes section:_ [📓 3.5 Writing Methods - Getters](https://coderina.dev/javadocs/docs/unit3/notes305.html#how-to-define-a-getter) 
 6. Write a ``toString`` **method** that returns a text string of the data in a ``Pet`` record.
@@ -89,7 +89,7 @@ public class Pet {
 2. Inside the ``main()`` method, **create** 2 new ``Pet`` objects with different values by calling the constructor and passing in arguments.
   > _Link to notes section:_ [📓 3.4 Writing Constructors - Creating Objects](https://coderina.dev/javadocs/docs/unit3/notes304.html#constructors-create-objects) 
 3. **Call** each of your accessor methods, mutator methods, and ``toString`` methods to demonstrate how they work.
-  > _Link to notes section:_ [📓 3.5 Writing Methods - Calling Void vs. Non-Void Methods]() 
+  > _Link to notes section:_ [📓 3.5 Writing Methods - Calling Void vs. Non-Void Methods](https://coderina.dev/javadocs/docs/unit3/notes305.html#calling-void-vs-non-void-methods) 
 
 </div>
 
