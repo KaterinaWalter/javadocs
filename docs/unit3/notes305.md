@@ -394,45 +394,6 @@ The arguments passed to a method must be compatible in number and order with the
 
 > When an argument is a **primitive** value, the parameter is initialized with a **copy** of that value. Changes to the parameter have no effect on the corresponding argument.
 
----
-
-#### 💻 Coding Activity: Class Pet
-{:.no_toc}
-
-You've been hired to create a software system for the Awesome Animal Clinic! They would like to keep track of their animal patients. Here are some **attributes** (_data/fields/instance variables_) of the pets that they would like to track:
-
-- `name`
-- `age`
-- `weight`
-- `type` (dog, cat, lizard, etc.)
-- `breed`
-
-🐶🐱🐹🐰🐸 Your task is to create a `class` that defines a `Pet` object to keep track of pet records at the animal clinic. Your class should include all the key _object-defining class_ components covered so far: **instance variables**, **constructors**, **accessor/getter methods**, a **toString** **method**, and **mutator/setter methods**.
-
-<div class="task" markdown="block">
-
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-3-5-methods.html"><button type="button" name="button" class="btn">CSAwesome Topic 3.5</button></a> 
-2. Make sure you **SIGN IN**!
-3. Complete the **Coding Challenge: Class Pet** activity in pairs.
-
-#### CLASS CHECKLIST:
-{: .no_toc }
-
-- [ ] First declare what **instance variables** are needed in the `class` and their data types.
-  > Make sure you use ``int``, ``double``, and ``String`` data types. Make the instance variables ``private``.
-
-- [ ] Write a **constructor** with many parameters to initialize values for all the instance variables.
-
-- [ ] Write **accessor/getter** **methods** for each of the instance variables.
-
-- [ ] Write a ``toString`` **method** that returns a text string of the data in a ``Pet`` record.
-
-- [ ] Write **mutator/setter** **methods** for each of the instance variables.
-
-- [ ] In the ``main`` method, **test** your object class: create 2 new ``Pet`` objects with different values
-   and call the constructor, accessor methods, mutator methods, and ``toString`` methods to test all your code.
-
-</div>
 
 ---
 
