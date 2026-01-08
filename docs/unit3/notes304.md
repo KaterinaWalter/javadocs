@@ -88,6 +88,8 @@ variables to "useful" values. But what does “useful” mean?
 Classes can have zero or more constructors but they should all produce an object
 in a **valid, usable state**.
 
+### How to Write Constructors
+
 #### Default Constructor (no-argument)
 The easiest way to write a constructor is to *not* write one. If you do not
 write a constructor, your class will **automatically** get what is called the
@@ -123,7 +125,7 @@ _One important note:_ if you DO write a constructor, Java will NOT generate the 
 
 > With this constructor in place, for instance, there’s no way to construct a ``Person`` object without providing the three required ``String`` values.
 
-#### Overloading constructors
+#### Overloading
 
 Sometimes you will want to write _more than one constructor_ so there are
 different ways of making an instance of your class. 
