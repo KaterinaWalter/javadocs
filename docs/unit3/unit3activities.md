@@ -105,9 +105,20 @@ Your class must include all the key _object-defining class_ components covered s
 2. Inside the ``main()`` method, **create** 2 new ``Pet`` objects with different values by calling the constructor and passing in arguments.
   > _Link to notes section:_ [📓 3.4 Writing Constructors - Creating Objects](https://coderina.dev/javadocs/docs/unit3/notes304.html#constructors-create-objects) 
 3. **Call** each of your accessor methods, mutator methods, and ``toString`` methods to demonstrate how they work.
-  > _Link to notes section:_ [📓 3.5 Writing Methods - Calling Void vs. Non-Void](https://coderina.dev/javadocs/docs/unit3/notes305.html#calling-void-vs-non-void-methods) 
 
 </div>
 
+#### REVIEW: CALLING METHODS
+{:.no_toc}
+
+```java
+// Calling a VOID method (no return)
+obj.forward();
+
+// Calling a NON-VOID method (store the return value)
+int xPosition = obj.getXPos();
+// OR just use it immediately (if you don't need it later)
+System.out.println( obj.getXPos() );
+```
 
 
