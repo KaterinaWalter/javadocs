@@ -87,13 +87,13 @@ Declare at least **six** private instance variables.
 Complete the `Main` class to test your travel object:
 
 **1. Create a Static Method for Input:**
-Create a static method below the `main` method (but inside the `Main` class) to handle user inputs.
+Write a `static` method below the `main` method (but inside the `Main` class) to handle user inputs.
 
-* **Parameter:** It must accept a `Scanner` object from the main method.
-* **Object Creation:** Start by creating a travel object using the **default constructor**.
-* **Prompts:** Ask the user for all the details (Name, Destination, Duration, and your custom variables). **Do not** ask for the total package cost.
-* **Logic:** Use your **mutator methods** to update the object’s values based on what the user typed.
-* **Return:** Return the completed travel object to the `main` method.
+  * **Parameter:** It must accept a `Scanner` object from the main method.
+  * **Object Creation:** Start by creating a travel object using the **default constructor**.
+  * **Prompts:** Ask the user for all the details (Name, Destination, Duration, and your custom variables). **Do not** ask for the total package cost.
+  * **Logic:** Use your **mutator methods** to update the object’s values based on what the user typed.
+  * **Return:** Return the completed travel object to the `main` method.
 
 **2. The Main Loop:**
 In the `main` method, set up the user interface:
@@ -199,3 +199,4 @@ while (!userInput.equals("quit") {
 ```
 > Different types of methods (`void` or _returns_ data, if it needs _input_ or not) will require different handling as seen in the example above.
 
+-->
