@@ -9,22 +9,30 @@ nav_order: 11
 
 ### Overview & Setup
 
-You are a software engineer for a high-end travel agency, **"Wanderlust Solutions."** Your task is to create a system that tracks custom travel bookings. 
+✈️ You are a software engineer for a high-end travel agency, *"Wanderlust Solutions."* Your task is to create a system that tracks custom travel bookings, using **object-oriented class design**. 
 
 While the theme is travel, you have the creative freedom to decide what *kind* of travel item you are modeling, for example:
-* All-Inclusive Vacation Packages
-* Luxury Cruise
-* Backpacking Trip
-* Teen Tour
-* Space Tourism Ticket
+* All-Inclusive Vacation Packages 🏖️
+* Luxury Cruise 🚢
+* Backpacking Adventure 🎒
+* Disney Trip 👑
+* Teen Tour 🧳
+* Space Tourism Ticket 🚀
 
 <html>
 <details>
-<summary>📥 <strong class="text-green-200">PROJECT SETUP & SUBMISSION INSTRUCTIONS</strong></summary>
+<summary>📥 <strong class="text-green-200">PROJECT PROGRAM SETUP INSTRUCTIONS</strong></summary>
   
 <div class="setup" markdown="block">
 
-
+1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
+2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
+3. Specify the **repository name**: `CS2-Travel-Booking-System`
+4. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
+    > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 
+5. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
+6. Click `Create Codespace on main` and wait for the environment to load, _then you're ready to code_!
+7. 📝 Write code in this Codespace during class.
 
 </div>
 
@@ -37,13 +45,9 @@ While the theme is travel, you have the creative freedom to decide what *kind* o
 
 <div class="task" markdown="block">
 
-1. Steps
+Create a class to represent a travel booking. 
 
-</div> 
-
-Create a class to represent a travel booking. This class should be placed below the closing curly brace of your `Main` class.
-
-**Class Name:** Choose a name that fits your specific theme (e.g., `VacationPackage`, `BackpackingTrip`, `TeenTour`).
+**Class Name:** Choose a name that fits your specific theme (e.g., `VacationPackage`, `TeenTour`, etc.).
 
 **Static Variable:** 
 * `processingFeePerDay` = 45 (this represents a flat daily administrative fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
@@ -72,16 +76,13 @@ Declare at least **six** private instance variables.
 
 5. **toString():** Returns a formatted, multi-line string. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`.
 
+</div> 
 
 --- 
 
 ### PART B: Test the System
 
 <div class="task" markdown="block">
-
-1. Steps
-
-</div> 
 
 Complete the `Main` class to test your travel object:
 
@@ -105,6 +106,7 @@ In the `main` method, set up the user interface:
 3. Ask: `"Would you like to log another trip? (Y/N)"`.
 4. Update the `boolean` flag to either run the loop again or exit.
 
+</div> 
 
 ---
 
