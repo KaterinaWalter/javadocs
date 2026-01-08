@@ -142,7 +142,7 @@ Adding **parameters** to methods allows for even more abstraction and flexibilit
 
 ---
 
-## Summary
+## ⭐️ Summary
 
 - (AP 3.1.A.1) **Abstraction** is the process of reducing complexity by focusing on the main idea. By hiding details irrelevant to the question at hand and bringing together related and useful details, abstraction reduces complexity and allows one to focus on the idea.
 
