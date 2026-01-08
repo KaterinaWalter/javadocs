@@ -124,6 +124,8 @@ In this activity, you will create a class `Friend` which keeps track of your fri
 2. Make sure you **SIGN IN**!
 3. Complete the **Coding Challenge: Friends and Birthdays** activity in pairs.
 
+</div>
+
 ---
 
 ## ⭐️ Summary
