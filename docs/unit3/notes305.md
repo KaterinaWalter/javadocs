@@ -65,32 +65,17 @@ For example, the `print()` method below prints the instance variables of the `Pe
 
 <div class="imp" markdown="block">
   
-There are three steps to writing & using custom _instance methods_:
-
-1. 📝 **Method Definition**: Write the method's **HEADER** (like a "label" or "overview") and **BODY** (the actual "process" or "steps") code in the object's template/blueprint `class`.
+📝 **How to Define a Method:** Write the method's **HEADER** (like a "label" or "overview") and **BODY** (the actual "process" or "steps") code in the object's template/blueprint `class`.
   ```java
-  // Step 1: DEFINE the method in the template class
   // method HEADER/SIGNATURE
   public void methodName()
   {
       // method BODY code in curly brackets
   }
   ```
-  > In the past units, this first step has _already been done_ for you by another programmer!
-
-2. 🏗️ **Object Construction**: Create an **object instance** of that class type in a `main()` method, either in the object's class or in another class file (like `Main.java`). 
-  ```java
-  // Step 2: CREATE an object in main or from outside the class
-  ClassName objectName = new ClassName();
-  ```
-
-3. 📣 **Method Call**: Whenever you want to use the method, **call** it using the **DOT OPERATOR**. 
-  ```java
-  // Step 3: CALL the object's method
-  objectName.methodName(); 
-  ```
-  > **NOTE:** There are other ways to call methods, depending on how they work. See the [Calling Void vs. Non-Void Methods](#) section below.
+  > In the past units, this has _already been done_ for you by another programmer!
 </div>
+
 
 ### Void vs. Non-Void Methods
 
@@ -356,7 +341,37 @@ Compare the **difference** between setters and getters in the following figure:
 * Getters `return` an instance variable's **current value**, have the _same return type_ as this variable, and accept **NO parameters**. 
 * Setters have a `void` return type and **accept a new value as a parameter** to change the value of the instance variable.
 
+---
+
 ## Using Methods
+
+<div class="imp" markdown="block">
+  
+There are three steps to writing & using custom _instance methods_:
+
+1. 📝 **Method Definition**: Write the method's **HEADER** (like a "label" or "overview") and **BODY** (the actual "process" or "steps") code in the object's template/blueprint `class`.
+  ```java
+  // Step 1: DEFINE the method in the template class
+  public void methodName()
+  {
+      ...
+  }
+  ```
+  > In the past units, this first step has _already been done_ for you by another programmer!
+
+2. 🏗️ **Object Construction**: Create an **object instance** of that class type in a `main()` method, either in the object's class or in another class file (like `Main.java`). 
+  ```java
+  // Step 2: CREATE an object in main or from outside the class
+  ClassName objectName = new ClassName();
+  ```
+
+3. 📣 **Method Call**: Whenever you want to use the method, **call** it using the **DOT OPERATOR**. 
+  ```java
+  // Step 3: CALL the object's method
+  objectName.methodName(); 
+  ```
+  > **NOTE:** There are different ways to call methods, depending on how they were written. See the section below.
+</div>
 
 ### Calling Void vs. Non-Void Methods
 
@@ -372,6 +387,7 @@ The following flowchart can be used to compare three different ways of **calling
     > This scenario is like having different methods "talk to each other" within the class, like helping each other work.
 
 #### Examples:
+{:.no_toc}
 
 ```java
 // Calling a VOID method (no return)
