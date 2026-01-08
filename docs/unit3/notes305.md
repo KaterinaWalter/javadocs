@@ -44,9 +44,7 @@ Methods are **defined** _inside_ a `class`, and have direct access the `private`
 For example, the `print()` method below prints the instance variables of the `Person` object, `p`:
 
 ```java
-    public class Person
-    {
-        // instance variables
+    public class Person {
         private String name;
         private String email;
 
@@ -143,10 +141,7 @@ In Unit 1, we used `static` non-void methods like `` Math.random()`` which retur
 
 ## Accessor Methods (_Getters_)
 
-Since the instance variables in a class are usually marked as ``private`` to the
-class, if you want code outside the class to be able to access the value of an
-instance variable, you need to write what is formally called an **accessor
-methods** but which everyone actually just calls a **getter**. 
+Since the instance variables in a class are usually marked as ``private`` to the class, if you want code outside the class to be able to access the value of an instance variable, you need to write what is formally called an **accessor methods** but which everyone actually just calls a **getter**. 
 
 ### How to Define a Getter
 
@@ -156,20 +151,16 @@ methods** but which everyone actually just calls a **getter**.
 ``private`` instance variable. 
 
 ```java
-class ExampleTemplate
-{
-  // Instance variable declaration
-  private typeOfVar varName;
-
-  // Accessor (getter) method template
-  public typeOfVar getVarName()
-  {
-    return varName;
-  }
+// Instance variable declaration
+private typeOfVar varName;
+...
+// Getter method template
+public typeOfVar getVarName() {
+  return varName;
 }
 ```
 > Notice that the getter’s return type is the **same as the type of the instance
-variable** and all the body of the getter does is return the value of the variable
+variable**, and all the body of the getter does is return the value of the variable
 using a ``return`` statement.
 
 </div>
@@ -179,20 +170,17 @@ class which also demonstrates how to call ``getName`` using a ``Student``
 object:
 
 ```java
-public class Student
-{
-  //Instance variable name
+public class Student {
+  // Instance variable name
   private String name;
 
   /** getName() example
   *  @return name */
-  public String getName()
-  {
+  public String getName() {
     return name;
   }
 
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     // To call a get method, use objectName.getVarName()
     Student s = new Student();
     System.out.println("Name: " + s.getName() );
@@ -259,49 +247,34 @@ object:
       }
   }
 ```
-> The ``toString`` method will return a ``String`` that is then printed out.
+> The ``toString`` method will **return** a ``String`` that is then printed out.
 
 ---
 
 ## Mutator Methods (_Setters_)
 
-As we saw in the last section, since we typically make instance variables
-``private``, we have to define getters if we want to allow code outside the
-class to access the value of particular instance variables.
+As we saw in the last section, since we typically make instance variables ``private``, we have to define getters if we want to allow code outside the class to access the value of particular instance variables. By the same token, if we want to allow code outside the class to `change` the value of an instance variable we have to provide what is formally called a **mutator method** but which everyone actually calls a **setter**.
 
 {:.highlight} 
-By the same token, if we want to allow code outside the class to `change` the value of an instance variable we have to provide what is formally called a
-**mutator method** but which everyone actually calls a **setter**. A setter is a `void` method with a name that starts with ``set`` and that takes a single
-argument of the same type as the instance variable to be set. 
-> The **effect** of a setter, as you would probably expect, is to assign the provided value to the instance variable.
+A **setter** is a `void` method with a name that starts with ``set`` and that takes a **single argument** (of the same type as the instance variable) to be set. The *effect** of a setter is to assign the new provided value to the instance variable.
 
-Not all
-instance variables are meant to be **manipulated directly** by code outside the
-class.
-> For example, consider the ``Turtle`` class. It provides getters ``getXPos`` and
-``getYPos`` but it _does not provide corresponding setters_. There are, however,
-methods that change a ``Turtle``\ ’s position like ``forward`` and ``moveTo``.
-But they do more than just changing the values of instance variables; they also
-take care of drawing lines on the screen if the pen is down. 
+⚠️ Not _all_ instance variables are meant to be **manipulated directly** by code outside the class!
+> For example, consider the ``Turtle`` class. It provides getters ``getXPos`` and ``getYPos`` but it _does not provide corresponding setters_. There are, however, methods that change a ``Turtle``\ ’s position like ``forward`` and ``moveTo``. But they do more than just changing the values of instance variables; they also take care of drawing lines on the screen if the pen is down. 
 
 ### How to Define a Setter
 
 <div class="imp" markdown="block">
 
-🪄 A setter is a `void` method with a name that starts with ``set`` and that takes a **single
-argument** of the same type as the instance variable to be set.
+🪄 A setter is a `void` method with a name that starts with ``set`` and that takes a **single argument** of the same type as the instance variable to be set.
 
 ```java
-public class ExampleTemplate
-{
-     // Instance variable declaration
-     private typeOfVar varName;
+// Instance variable declaration
+private typeOfVar varName;
+...
 
-     // Setter method template
-     public void setVarName(typeOfVar newValue)
-     {
-          varName = newValue;
-     }
+// Setter method template
+public void setVarName(typeOfVar newValue) {
+  varName = newValue;
 }
 ```
 > The effect of a setter is to *assign the new provided value* to the object's **instance variable**. 
@@ -311,8 +284,7 @@ public class ExampleTemplate
 Here's an example of the ``Student`` class with a setter for the ``name`` variable:
 
 ```java
-public class Student
-{
+public class Student {
      // Instance variable name
      private String name;
 
@@ -320,13 +292,11 @@ public class Student
      * setName sets name to newName
      * @param newName
      */
-     public void setName(String newName)
-     {
+     public void setName(String newName) {
           name = newName;
      }
 
-     public static void main(String[] args)
-     {
+     public static void main(String[] args) {
           // To call a set method, use objectName.setVar(newValue)
           Student s = new Student();
           s.setName("Ayanna");
@@ -334,16 +304,16 @@ public class Student
 }
 ```
 
-Compare the **difference** between setters and getters in the following figure:
+---
+
+## Using Methods
+
+The choices a programmer makes when defining a method determine how the method gets implemented by **users** in practice. Compare the **difference** between setters and getters in the following figure:
 
 ![image](Figures/get-set-comparison.png)
 
 * Getters `return` an instance variable's **current value**, have the _same return type_ as this variable, and accept **NO parameters**. 
 * Setters have a `void` return type and **accept a new value as a parameter** to change the value of the instance variable.
-
----
-
-## Using Methods
 
 <div class="imp" markdown="block">
   
