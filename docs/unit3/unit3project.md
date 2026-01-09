@@ -84,18 +84,18 @@ Declare at least **six** private instance variables.
 
 ```java
 public String toString() {
-  String itinerary = "--------------------------------------------\n" +
-           "         ✨⛺️ GLAMPING ITINERARY ⛺️✨        \n" +
-           "--------------------------------------------\n" +
-           "GUEST NAME:       " + travelerName + "\n" +
-           "DESTINATION:      " + destination + "\n" +
-           "STAY DURATION:    " + durationInDays + " Nights\n" +
-           "LUXURY RATING:    " + tentLuxuryRating + " / 5.0 Stars\n" +
-           "--------------------------------------------\n" +
-           "TOTAL BOOKING:    $" + totalPackageCost + ".00\n" +
-           "--------------------------------------------\n" +
-           "  Thank you for choosing Wanderlust Solutions! \n";
-  return itinerary;  
+  String itinerary = "-----------------------------------------\n" +
+                     "       ✨⛺️ GLAMPING ITINERARY ⛺️✨        \n" +
+                     "-----------------------------------------\n" +
+                     "GUEST NAME:    " + travelerName + "\n" +
+                     "DESTINATION:   " + destination + "\n" +
+                     "STAY DURATION: " + durationInDays + " Nights\n" +
+                     "LUXURY RATING: " + tentLuxuryRating + " / 5.0 ⭐️\n" +
+                     "-----------------------------------------\n" +
+                     "TOTAL COST:  $" + totalPackageCost + ".00\n" +
+                     "-----------------------------------------\n" +
+                     "  Thank you for booking with Wanderlust! \n";
+return itinerary;  
 }
 ```
 
