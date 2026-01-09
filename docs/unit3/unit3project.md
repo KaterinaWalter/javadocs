@@ -94,7 +94,7 @@ public String toString() {
                      "TOTAL COST:  $" + totalPackageCost + ".00\n" +
                      "-----------------------------------------\n" +
                      "  Thank you for booking with Wanderlust! \n";
-return itinerary;  
+  return itinerary;  
 }
 ```
 
