@@ -50,7 +50,7 @@ Leave the Main class alone for now and create another class to represent a **tra
 **CLASS NAME:** Choose a name that fits your specific trip theme (e.g., `VacationPackage`, `TeenTour`, etc.)
 
 **STATIC VARIABLE:** 
-  * `processingFeePerDay` = 45 (this represents a flat daily administrative fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
+  * `processingFeePerDay` = 45 (this represents a flat daily fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
 
 **INSTANCE VARIABLES:**
 Declare at least **six** private instance variables.
@@ -95,7 +95,7 @@ Write a `static` method below the `main` method (but inside the `Main` class) to
 In the `main` method, set up the user interface:
 
 * Create a `Scanner`.
-* Use a `while` loop controlled by a `boolean` flag.
+* Use a `while` loop controlled by a `boolean` flag variable.
 * Inside the loop:
 1. Call your static input method to get a travel object.
 2. Display the object's details using the `toString()` method.
@@ -118,17 +118,9 @@ You can also turn your text-based interactive version into a visual one with a *
 
 <!--
 
-Create a static method below the main method to get user inputs, this method should:
-Have one parameter to pass in the scanner that will be created in the main method (Scanner scan).  This is necessary because this method will need to get user input, but the scanner will be out of scope from the main method unless you send it in through a parameter.
-Create a CollegeStudent object using the default constructor.
-Prompt the user for the inputs – First Name, Last Name (as one String), course title, course number, and number of credits.  It should not ask for the course fee.
-Use the mutator methods to set those values for the object.  Remember that the mutator for the course fee needs the credits.
-Return the CollegeStudent with the values given by the user.
-The main method should use a while loop to accept input until the user indicates there are no more inputs.  Use a boolean flag to control the loop.
-In the loop, call the method to get the input for the College Student and then display the CollegeStudent object nicely formatted.  Then prompt the user if they would like to input information for another student (Y for yes and N for no) and set the boolean flag for the loop accordingly.
+## OLD PROJECT: Creature Class
 
-
-## OLD PROJECT
+### Overview 
 
 In this project, you will practice defining and working with Java classes by creating an interactive `Creature` class. You'll demonstrate understanding of:
 * instance variables
@@ -136,6 +128,8 @@ In this project, you will practice defining and working with Java classes by cre
 * getter and setter methods
 * the toString method
 * behavior methods
+
+### Instructions 
 
 <div class="task" markdown="block">
 
