@@ -106,23 +106,27 @@ return itinerary;
 
 Complete the `Main` class to test your travel object:
 
-1. **Static Method for Creating Objects:**
-Write a `static` method below the `main` method (but inside the `Main` class) to create objects.
-  * _**Method Name:**_ `bookTrip`
-  * _**Return Type:**_ An object whose "data type" is the name of the custom class you wrote in Part A (e.g., `VacationPackage`, `TeenTour`, etc.)
-  * _**Parameter:**_ It must accept a `Scanner` object from the main method.
-  * _**Method Body:**_
-    1. **Object Creation:** Start by creating a blank travel object using the **default constructor**.
-    2. Ask the user for all the details (Name, Destination, Duration, and your custom variables).
-       > _Do **NOT** ask for the total package cost, since this is a calculated value._
-    4. Call all of your **mutator methods** to _update_ the object’s values based on what the user typed.
-    5. _Return_ the completed **travel object** back to the `main` method.
+#### Static Method for Creating Objects:
+{:.no_toc}
 
-2. **Main Interaction Loop:**
+Write a `static` method below the `main` method (but inside the `Main` class) to create objects.
+* _**Method Name:**_ `bookTrip`
+* _**Return Type:**_ An object whose "data type" is the name of the custom class you wrote in Part A (e.g., `VacationPackage`, `TeenTour`, etc.)
+* _**Parameter:**_ It must accept a `Scanner` object from the main method.
+* _**Method Body:**_
+  1. Start by creating a blank travel object using the **default constructor**.
+  2. Ask the user for all the details (Name, Destination, Duration, and your custom variables).
+    > _Do **NOT** ask for the total package cost, since this is a calculated value._
+  3. Call all of your **mutator methods** to _update_ the object’s values based on what the user typed.
+  4. _Return_ the completed **travel object** back to the `main` method.
+
+#### Main Interaction Loop:
+{:.no_toc}
+
 In the `main` method, set up the user interface:
 
-  * Create a `Scanner` object called `input`.
-  * Use a `while` loop controlled by a `boolean` flag variable called `bookTrip`.
+* Create a `Scanner` object called `input`.
+* Use a `while` loop controlled by a `boolean` flag variable called `bookTrip`.
 
 🔁 _Inside the loop:_
   1. Call your static `bookTravel()` method to create a new travel object.
