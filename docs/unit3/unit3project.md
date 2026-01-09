@@ -72,11 +72,10 @@ Declare at least **six** private instance variables.
   1. **Default Constructor:** Sets generic default values for all fields (_instance variables_).
   2. **Parameterized Constructor:** Accepts arguments for the first four variables (use the same variable names for the parameters as the instance variables).
     * **Calculation:** The `totalPackageCost` should be set by multiplying the `durationInDays` by the static `processingFeePerDay`.
-  3. **Accessor Methods:** "Getters" for every field.
-  4. **Mutator Methods:** "Setters" for every field.
+  3. **Accessor Methods:** "Getters" for every data field.
+  4. **Mutator Methods:** "Setters" for every data field.
     * **The Cost Mutator:** The mutator for `totalPackageCost` must accept `durationInDays` as a parameter and recalculate the cost using the static `processingFeePerDay`.
-  5. **toString():** Returns a formatted, multi-line string that represents the object's state. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`.
-
+  5. **toString():** Returns a formatted, multi-line string that represents the object's state. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`. _See below for an example._
 </div> 
 
 #### Example String Representation:
@@ -109,10 +108,10 @@ Complete the `Main` class to test your travel object:
 
 1. **Static Method for Creating Objects:**
 Write a `static` method below the `main` method (but inside the `Main` class) to create objects.
-  * **Method Name:** `bookTrip`
-  * **Return Type:** An object whose "data type" is the name of the custom class you wrote in Part A (e.g., `VacationPackage`, `TeenTour`, etc.)
-  * **Parameter:** It must accept a `Scanner` object from the main method.
-  * **Method Body:**
+  * _**Method Name:**_ `bookTrip`
+  * _**Return Type:**_ An object whose "data type" is the name of the custom class you wrote in Part A (e.g., `VacationPackage`, `TeenTour`, etc.)
+  * _**Parameter:**_ It must accept a `Scanner` object from the main method.
+  * _**Method Body:**_
     1. **Object Creation:** Start by creating a blank travel object using the **default constructor**.
     2. Ask the user for all the details (Name, Destination, Duration, and your custom variables).
        > _Do **NOT** ask for the total package cost, since this is a calculated value._
