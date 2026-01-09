@@ -47,12 +47,16 @@ While the theme is travel, you have the creative freedom to decide what *kind* o
 
 Leave the Main class alone for now and create another class to represent a **travel booking object**. Define this class as described below. All variables should be declared as `private` and all methods as `public`. 
 
-**CLASS NAME:** Choose a name that fits your specific trip theme (e.g., `VacationPackage`, `TeenTour`, etc.)
+#### CLASS NAME: 
+{:.no_toc}
+* Choose a name that fits your specific trip theme (e.g., `VacationPackage`, `TeenTour`, etc.)
 
-**STATIC VARIABLE:** 
-  * `processingFeePerDay` = 45 (this represents a flat daily fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
+#### STATIC VARIABLE:
+{:.no_toc}
+* `processingFeePerDay` = 45 (this represents a flat daily fee for the travel agency, feel free to adjust the value to reflect a higher or lower standard of service).
 
-**INSTANCE VARIABLES:**
+#### INSTANCE VARIABLES:
+{:.no_toc}
 Declare at least **six** private instance variables.
 
   1. `travelerName` (String)
@@ -62,7 +66,8 @@ Declare at least **six** private instance variables.
   5. Your choice of **double** (e.g., `starRating`, `luggageWeight`)
   6. `totalPackageCost` (int) → *this will be a calculated field*
 
-**INSTANCE METHODS:**
+#### INSTANCE METHODS:
+{:.no_toc}
 
   1. **Default Constructor:** Sets generic default values for all fields (_instance variables_).
   2. **Parameterized Constructor:** Accepts arguments for the first four variables (use the same variable names for the parameters as the instance variables).
@@ -70,9 +75,29 @@ Declare at least **six** private instance variables.
   3. **Accessor Methods:** "Getters" for every field.
   4. **Mutator Methods:** "Setters" for every field.
     * **The Cost Mutator:** The mutator for `totalPackageCost` must accept `durationInDays` as a parameter and recalculate the cost using the static `processingFeePerDay`.
-  5. **toString():** Returns a formatted, multi-line string. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`.
+  5. **toString():** Returns a formatted, multi-line string that represents the object's state. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`.
 
 </div> 
+
+#### Example String Representation:
+{:.no_toc}
+
+```java
+public String toString() {
+  String itinerary = "--------------------------------------------\n" +
+           "         ✨⛺️ GLAMPING ITINERARY ⛺️✨        \n" +
+           "--------------------------------------------\n" +
+           "GUEST NAME:       " + travelerName + "\n" +
+           "DESTINATION:      " + destination + "\n" +
+           "STAY DURATION:    " + durationInDays + " Nights\n" +
+           "LUXURY RATING:    " + tentLuxuryRating + " / 5.0 Stars\n" +
+           "--------------------------------------------\n" +
+           "TOTAL BOOKING:    $" + totalPackageCost + ".00\n" +
+           "--------------------------------------------\n" +
+           "  Thank you for choosing Wanderlust Solutions! \n";
+  return itinerary;  
+}
+```
 
 --- 
 
@@ -82,25 +107,30 @@ Declare at least **six** private instance variables.
 
 Complete the `Main` class to test your travel object:
 
-**1. Create a Static Method for Input:**
-Write a `static` method below the `main` method (but inside the `Main` class) to handle user inputs.
-
+1. **Static Method for Creating Objects:**
+Write a `static` method below the `main` method (but inside the `Main` class) to create objects.
+  * **Method Name:** `bookTrip`
+  * **Return Type:** An object whose "data type" is the name of the custom class you wrote in Part A (e.g., `VacationPackage`, `TeenTour`, etc.)
   * **Parameter:** It must accept a `Scanner` object from the main method.
-  * **Object Creation:** Start by creating a travel object using the **default constructor**.
-  * **Prompts:** Ask the user for all the details (Name, Destination, Duration, and your custom variables). **Do not** ask for the total package cost.
-  * **Logic:** Use your **mutator methods** to update the object’s values based on what the user typed.
-  * **Return:** Return the completed travel object to the `main` method.
+  * **Method Body:**
+    1. **Object Creation:** Start by creating a blank travel object using the **default constructor**.
+    2. Ask the user for all the details (Name, Destination, Duration, and your custom variables).
+       > _Do **NOT** ask for the total package cost, since this is a calculated value._
+    4. Call all of your **mutator methods** to _update_ the object’s values based on what the user typed.
+    5. _Return_ the completed **travel object** back to the `main` method.
 
-**2. The Main Loop:**
+2. **Main Interaction Loop:**
 In the `main` method, set up the user interface:
 
-* Create a `Scanner`.
-* Use a `while` loop controlled by a `boolean` flag variable.
-* Inside the loop:
-1. Call your static input method to get a travel object.
-2. Display the object's details using the `toString()` method.
-3. Ask: `"Would you like to log another trip? (Y/N)"`.
-4. Update the `boolean` flag to either run the loop again or exit.
+  * Create a `Scanner` object called `input`.
+  * Use a `while` loop controlled by a `boolean` flag variable called `bookTrip`.
+
+🔁 _Inside the loop:_
+  1. Call your static `bookTravel()` method to create a new travel object.
+  2. Display the object's details using the `toString()` method.
+  3. Ask the user: `"Would you like to log another trip? (Y/N)"`.
+  4. Use a `Scanner` method to accept user input, and store their response in a variable called `response`. 
+  5. Use an `if-else` conditional block to test their response, and set the `boolean` flag to either run the loop again, or exit.
 
 </div> 
 
