@@ -12,12 +12,12 @@ nav_order: 11
 ✈️ You are a software engineer for a high-end travel agency, *"Wanderlust Solutions."* Your task is to create a system that tracks custom travel bookings, using **object-oriented class design**. 
 
 While the theme is travel, you have the creative freedom to decide what *kind* of travel item you are modeling, for example:
-* All-Inclusive Vacation Packages 🏖️
-* Luxury Cruise 🚢
+* All-Inclusive Vacation Package 🏖️
+* Space Tourism Ticket 🚀
 * Backpacking Adventure 🎒
+* Luxury Cruise 🚢
 * Disney Trip 👑
 * Teen Tour 🧳
-* Space Tourism Ticket 🚀
 
 <html>
 <details>
