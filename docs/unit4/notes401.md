@@ -19,7 +19,7 @@ nav_order: 1
 
 ---
 
-## Ethical Issues around Data Collection
+## Ethical Issues with Data Collection
 
 ### Data Privacy
    
@@ -27,27 +27,40 @@ nav_order: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bqWuioPHhz0?si=RxCz5FBuxH45Rw2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-🗺️ If you have ever used your phone to give you directions to go somewhere, it probably still tracks your **location**. Follow the directions in this [article](https://www.lifewire.com/location-history-google-maps-iphone-1683392) to see if you have location history settings on. You can also turn off location tracking, but it is useful when you want directions, and it's free. 
-> 💬 **DISCUSS:** Do the _benefits_ of apps that provide driving directions outweigh the _lack of privacy_ for you? In what situations would it be beneficial or harmful for the app to track your location? 
+{:.highlight}
+As users, we often don't realize how much personal **data** we are giving away. If you use a computer or phone at all, it means your personal **privacy** is at risk. 
+
+![image-small](https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyZ2xueHlvYmFoNXd4dnJrNWtxajUybm5wNjRwaHd5anRld3cwMDZ5ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ktcUyw6mBlMVa/giphy.gif)
+
+#### Location Tracking
+
+🗺️ If you have ever used your phone to give you directions to go somewhere, it probably still tracks your **location** data. Follow the directions in this [article](https://www.lifewire.com/location-history-google-maps-iphone-1683392) to see if you have location history settings on. You can also turn off location tracking, but it is useful when you want directions, and it's free...
 
 ![image](Figures/googletimeline.png)
 
-{:.highlight}
-As users, we often don't realize how much personal **data** we are giving away. If you use a computer or phone, your personal **privacy** is at risk. 
-
-As computer programmers, we must be aware of the risks to data privacy when our code collects and stores personal data on computer systems. Programmers should attempt to safeguard the personal privacy of the user. Legally and ethically, we must ask the users for permission to access and store their data. And if there are data breaches where the data is stolen, we must inform the affected users. The laws are slowly catching up to our technology, and many countries and states are passing laws to protect data privacy.
-
-Computer use and programs have **beneficial** and/or **harmful** impacts on personal security. Software apps for maps and driving directions are very useful, but they have impacts on personal security and privacy if they keep track of your location. 
-> * This information could be **beneficial**, for example if you are lost and need to be found.
-> * But it could be **harmful** and unsafe if someone unauthorized gains access to your location.
-
 <div class="task" markdown="block">
 
-💬 **DISCUSS:** Explore a popular app or web site and its data collecting practices. Explain the risks to privacy from collecting and storing personal data on computer systems. Discuss the ethical and legal problems that may arise and how programmers can try to avoid them. 
+💬 **DISCUSS:** Do the _benefits_ of apps that provide driving directions outweigh the _lack of privacy_ for you? In what situations would it be beneficial or harmful for the app to track your location?
 
 </div>
 
-Here are some interesting video resources about data collection and data privacy:
+
+As computer programmers, we must be aware of the **risks** to data privacy when our code collects and stores personal data on computer systems. The laws are slowly catching up to our technology, and many countries and states are passing laws to protect data privacy. 
+
+💻 Programmers have a responsibility to attempt to _safeguard_ the **personal privacy** of the user: 
+* Legally and ethically, we must _ask_ the users for permission to access and store their data.
+* And if there are data breaches where the data is stolen, we must _inform_ the affected users. 
+
+Computer use and programs have **beneficial** and/or **harmful** impacts on personal security. Software apps for maps and driving directions are very useful, but they have impacts on personal security and privacy if they keep track of your location. 
+* This information could be **beneficial**, for example if you are lost and need to be found. But it could be **harmful** and unsafe if someone unauthorized gains access to your location.
+
+<div class="task" markdown="block">
+
+💬 **DISCUSS:** Explore a popular app or web site and its _data collecting practices_. Explain the risks to privacy from collecting and storing personal data on computer systems. Discuss the ethical and legal problems that may arise and how programmers can try to avoid them. 
+
+</div>
+
+📺 Here are some interesting video resources about data collection and data privacy:
 
 * A short <a href="https://www.cnbc.com/video/2018/03/23/everything-you-need-to-know-about-the-cambridge-analytica-scandal.html" target="_blank">1 minute video</a> about the Facebook Cambridge Analytica incident and a longer <a href="https://www.pbs.org/wgbh/frontline/film/facebook-dilemma/#video-2" target="_blank">1 hour PBS special</a> on Facebook.
 * <a href="https://www.youtube.com/watch?v=gXiEBcb0Vs8"  target="_blank">What is Geo-fencing (2 mins)</a>
@@ -71,6 +84,10 @@ Watch the following <a href="https://www.youtube.com/watch?v=TWWsW1w-BVo" target
 
 </div>
 
+🎮 Try this game about **non-neutrality** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
+
+> From the creators: "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
+
 Here are some other interesting videos to watch about bias in algorithms:
 
 * <a href="https://www.youtube.com/watch?v=QxuyfWoVV98" target="_blank">AI, Ain't I a Woman?</a>, a poem by Joy Buolamwini
@@ -87,14 +104,16 @@ It is important for programmers and data scientists to take steps to mitigate bi
 - Involve diverse teams in the development and testing of algorithms.
 - Implement ethical guidelines and standards for the use of AI and machine learning.
 
+#### In-Class Activity: Dataset Critique
 
 <div class="task" markdown="block">
   
-Go to [Google Dataset Search](https://datasetsearch.research.google.com/) and search for a dataset for "face recognition" or another topic you are interested in. Find an **appropriate** ("good") dataset and an **inappropriate** ("bad") dataset for your topic. 
+🔍 Go to [Google Dataset Search](https://datasetsearch.research.google.com/) and search for a dataset for the topic of "face recognition" (or another topic you are interested in). Find an **appropriate** ("good") dataset and an **inappropriate** ("bad") dataset for your topic. 
 
-_Be prepared to share out:_
-* Why the datasets are appropriate or inappropriate, for example, the inappropriate dataset might be too small or incomplete or biased.
-* How the choice of your dataset could affect the results of a program that uses the data. 
+🗣️ _Be prepared to share out:_
+* Explanation of why you think the datasets are either **appropriate** or **inappropriate**.
+   > For example, the inappropriate dataset might be too small, or incomplete, or biased.
+* How the choice of your dataset could affect the **results** of a program that uses the data. 
 
 </div>
 
