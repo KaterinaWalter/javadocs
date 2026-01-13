@@ -19,7 +19,7 @@ nav_order: 1
 
 ---
 
-
+## Ethics of Data Collection
 
 
 ---
