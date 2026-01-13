@@ -255,7 +255,7 @@ One powerful feature in the array **data abstraction** is that we can use **vari
 
 <div class="task" markdown="block">
 
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-1-array-basics.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.1</button></a> 
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-4-3-array-basics.html"><button type="button" name="button" class="btn">CSAwesome Topic 4.3</button></a> 
 2. Make sure you **SIGN IN**!
 3. Complete the **Programming Challenge: Countries Array** activity in pairs. 🗺
 
