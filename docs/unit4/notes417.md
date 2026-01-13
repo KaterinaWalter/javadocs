@@ -25,7 +25,7 @@ In this lesson, we will take a look at a **recursive binary search** algorithm a
 
 ### Recursive Binary Search
 
-In [Unit 7](https://coderina.dev/javadocs/docs/unit07/notes705.html), we learned about two search algorithms, **Linear Search** and **Binary Search**. Linear search searches for an element in an array or `ArrayList` by checking each element in order. 
+We've learned about two search algorithms, **Linear Search** and **Binary Search**. Linear search searches for an element in an array or `ArrayList` by checking each element in order. 
 > Binary search is more efficient (faster) because it starts at the **middle** of a sorted array or `ArrayList` and **eliminates half** of the array or `ArrayList` each pass through the algorithm.
 
 Binary search only works on **sorted** data! It can be written with _iteration_ (using a loop) like below, or _recursively_.
@@ -183,6 +183,16 @@ For example, here is how you could write down the trace of ``mergeSort(arr1)`` w
 
 ## ⭐️ Summary
 
+- (AP 4.17.A.1)	Recursion can be used to traverse ``String`` objects, arrays, and ``ArrayList`` objects.
+	
+- (AP 4.17.B.1)	Data must be in sorted order to use the binary search algorithm. **Binary search** starts at the middle of a sorted array or ``ArrayList`` and eliminates half of the array or ``ArrayList`` in each recursive call until the desired value is found or all elements have been eliminated.
+- (AP 4.17.B.2) Binary search is typically more efficient than linear search.
+- (AP 4.17.B.3) The binary search algorithm can be written either iteratively or recursively.
+
+- (AP 4.17.C.1) **Merge sort** is a recursive sorting algorithm that can be used to sort elements in an array or ``ArrayList``.
+
+- (AP 4.17.C.2)	Merge sort repeatedly divides an array into smaller subarrays until each subarray is one element and then recursively merges the sorted subarrays back together in sorted order to form the final sorted array.
+  
 ---
 
 #### Acknowledgement
