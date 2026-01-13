@@ -23,7 +23,6 @@ nav_order: 5
 
 In this lesson, you will study different Free Response Questions and responses that develop algorithms using arrays.
 
-
 Here are some common **algorithms** that you should be familiar with for the AP CSA exam:
 
 - 🔍 **Searching Algorithms:**
