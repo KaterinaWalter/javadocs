@@ -174,6 +174,21 @@ String name = seatingInfo[0][1];
 
 ## ⭐️ Summary
 
+- (AP 4.11.A.1) A **2D array** is stored as an array of arrays. Therefore, the way 2D arrays are created and indexed is similar to 1D array objects. The size of a 2D array is established at the time of creation and cannot be changed. 2D arrays can store either primitive data or object reference data. Nonrectangular 2D array objects (with varying column length for each row) are outside the scope of the AP Computer Science A course and exam.
+
+- 2D arrays are declared and created with the following syntax: ``datatype[][] variableName = new datatype[numberRows][numberCols]``;
+
+- (AP 4.11.A.2)	When a 2D array is created using the keyword ``new``, all of its elements are initialized to the default values for the element data type. The default value for ``int`` is ``0``, for ``double`` is ``0.0``, for ``boolean`` is ``false``, and for a reference type is ``null``.
+
+- (AP 4.11.A.3) The initializer list used to create and initialize a 2D array consists of initializer lists that represent 1D arrays; for example, ``int[][] arr2D = { {1, 2, 3}, {4, 5, 6} };``.
+
+- (AP 4.11.A.4) The square brackets ``[row][col]`` are used to access and modify an element in a 2D array. For the purposes of the AP exam, when accessing the element at ``arr[first][second]``, the ``first`` index is used for rows, the ``second`` index is used for columns.
+
+- **Row-major order** refers to an ordering of 2D array elements where traversal occurs across each row, while **column-major order** traversal occurs down each column.
+
+- (AP 4.11.A.5)	A single array that is a row of a 2D array can be accessed using the 2D array name and a single set of square brackets containing the row index.
+- (AP 4.11.A.6) The number of rows contained in a 2D array can be accessed through the ``length`` attribute. The valid row index values for a 2D array are ``0`` through one less than the number of rows or the length of the array, inclusive. The number of columns contained in a 2D array can be accessed through the ``length`` attribute of one of the rows. The valid column index values for a 2D array are ``0`` through one less than the number of columns or the length of any given row of the array, inclusive. For example, given a 2D array named ``values``, the number of rows is ``values.length`` and the number of columns is ``values[0].length```. Using an index value outside of these ranges will result in an ``ArrayIndexOutOfBoundsException``.
+
 ---
 
 #### Acknowledgement
