@@ -158,6 +158,24 @@ String name = seatingInfo[0][1];
 ```
 > The code above will get the `int` value at row index 1 and column index 0 from ``ticketInfo``. It will also get the `String` value at row index 0 and column index 1 from ``seatingChart``.
 
+### Row and Column length 
+
+Arrays _know_ their length (how many elements they can store).  The length is a public read-only attribute for array objects. 
+The number of rows contained in a 2D array can be accessed through the array name and the ``length`` attribute:  ``arrayName.length``.  The number of columns contained in a 2D array can be accessed through the ``length`` attribute of one of the rows, for example ``arrayName[0].length``, which gives a single array that is a row of a 2D array using the 2D array name and a single set of square brackets containing the row index.
+
+```java
+  ticketInfo.length // returns the number of rows
+  ticketInfo[0].length // returns the number of columns
+```
+
+{:.highlight}
+Note that length is an attribute and not a method, so you don't add parentheses after length.  However, if you use parentheses after length during the exam, you won't lose any points. Since for the AP CSA exam all two-dimensional arrays are rectangular arrays (arrays that have the same number of columns in each row) you can just use the length of the first inner array as the number of columns as shown by ``ticketInfo[0].length``.
+
+* The **valid** row index values for a 2D array are ``0`` through one less than the number of rows or the length of the array, inclusive.
+* The valid column index values for a 2D array are ``0`` through one less than the number of columns or the length of any given row of the array, inclusive.
+
+> For example, given a 2D array named ``values``, the number of rows is ``values.length`` and the number of columns is ``values[0].length``. Using an index value outside of these ranges will result in an ``ArrayIndexOutOfBoundsException``.
+
 #### 💻 In-Class Activity: ASCII Art
 {:.no_toc}
 
