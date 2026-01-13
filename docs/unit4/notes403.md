@@ -271,7 +271,6 @@ Try the game below to practice! Click on **Arrays** and click on the element of 
 
 <html>
         <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
-    <script>      window.scrollTo(0, 0);</script>
 </html>
 
 ---
