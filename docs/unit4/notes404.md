@@ -162,28 +162,6 @@ When attempting to process ("visit") all array elements, be careful to **start**
 * Usually loops are written so that the index starts at 0, and continues while the index is less than ``arrayName.length`` since (``arrayName.length - 1``) is the index for the last element in the array.
   * Make sure you do not use ``<=`` instead of ``<``! If the index is less than 0 or greater than (``arrayName.length - 1``), an `ArrayIndexOutOfBoundsException` will be  thrown. 
 
-
-#### 💻 In-Class Activity: SpellChecker
-{:.no_toc}
-
-<div class="task" markdown="block">
-
-1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-4-4-array-traversal.html"><button type="button" name="button" class="btn">CSAwesome Topic 4.4</button></a> 
-2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: SpellChecker** activity in pairs.
-
-</div>
-
-#### 🎲 Practice Game: Loops with Arrays
-{:.no_toc}
-
-Try the game below to practice! Click on **Arrays** and click on the element of the `*` array that would be printed out by the given code. If you're stuck, check on Labels to see the indices. We encourage you to work in pairs and see how high a score you can get.
-
-<html>
-        <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
-    <script>      window.scrollTo(0, 0);</script>
-</html>
-
 ---
 
 ## Traversing Arrays with For-Each Loops
@@ -231,19 +209,28 @@ Because only the **temporary variable** in the loop changes, _not the real array
 
 </div>
 
+---
 
-#### 💻 In-Class Activity: 
+#### 💻 In-Class Activity: SpellChecker
 {:.no_toc}
-
 
 <div class="task" markdown="block">
 
 1. Go to <a href="https://runestone.academy/ns/books/published/csawesome2/topic-4-4-array-traversal.html"><button type="button" name="button" class="btn">CSAwesome Topic 4.4</button></a> 
 2. Make sure you **SIGN IN**!
-3. Complete the **Programming Challenge: SpellChecker 2** activity in pairs.
+3. Complete the **Programming Challenge: SpellChecker** activity in pairs.
 
 </div>
 
+#### 🎲 Practice Game: Loops with Arrays
+{:.no_toc}
+
+Try the game below to practice! Click on **Arrays** and click on the element of the `*` array that would be printed out by the given code. If you're stuck, check on Labels to see the indices. We encourage you to work in pairs and see how high a score you can get.
+
+<html>
+        <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
+    <script>      window.scrollTo(0, 0);</script>
+</html>
 
 ---
 
