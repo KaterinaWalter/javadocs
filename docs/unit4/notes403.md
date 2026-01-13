@@ -67,195 +67,220 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 # Array Creation and Access
 
-To keep track of 10 exam scores, we could declare 10 separate variables:
+## Array Creation and Access
+
+To keep track of 10 exam scores, we could declare 10 separate variables: int score1, score2, score3, … , score10; _But what if we had 100 exam scores?_ That would be a lot of variables! 
+
+📋 Most programming languages have a simple **data structure** for a _collection of related data_ that makes this easier. In some programming languages, this is called a **list**. In Java and many programming languages, this is called an **array**.
+
+<html>
+<dl>
+  <dt>Array</dt>
+  <dd>A block of memory that stores a <strong>collection</strong> of data items (elements) of the <em>same type</em> under one variable name.
+  </dd>
+</dl>
+</html>
+
+Arrays are useful whenever you have _many elements of data_ of the same type that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the _position_ of an item in the array. 
+
+<html>
+<dl>
+  <dt>Index</dt>
+  <dd>An integer that represents a <strong>location</strong> in a collection such as an Array. In Java, the first element in an array is stored at index <code>0</code>.
+  </dd>
+</dl>
+</html>
+
+You can make arrays of ints, doubles, Strings, and even object classes that you have written like Students. Here's a fun <a href="https://youtu.be/G7aF-OuLfl4" target="_blank"><button class="btn">📺 VIDEO</button></a> that introduces the concept of an array and gives an example.
+
+#### ANALOGY
+{:.no_toc}
+
+An array is like a row of small lockers, except that you can't cram lots of stuff into it. You can only **store one value** at each locker: 
+
+![image](Figures/rowLockers.jpg)
+
+An array **index** is like a locker number.  It helps you find a particular place to store your stuff and retrieve stuff.  You can _get_ or store a _value_ from or to an array using its index.
+
+{:.highlight}
+Arrays and lists in most programming languages start counting elements from the number 0, so the first element in an array is at index 0. This is similar to how Strings are indexed in Java -- the first character is at index 0. 
+
+> 💬 **DISCUSS:** Can you think of another example of something that is like an array?
+
+### Declaring an Array
+
+When we **declare** a variable, we specify its _type_ and then the variable _identifier_ (name). To make a variable into an array, we put square brackets after the data type:
 
 ```java
-int score1, score2, score3, … , score10;
-````
-
-But what if we had 100 exam scores? That would be a lot of variables! Most programming languages have a simple **data structure** for a collection of related data that makes this easier. In many block-based programming languages like App Inventor and Scratch, this is called a **list**. In Java and many programming languages, this is called an **array**.
-
-An **array** is a block of memory that stores a collection of data items (**elements**) of the same type under one name. Arrays are useful whenever you have many elements of data of the same type that you want to keep track of, but you don't need to name each one. Instead, you use the array name and a number (called an **index**) for the position of an item in the array.
-
-You can make arrays of `int`, `double`, `String`, and even classes that you have written, like `Student`.
-
-Here’s a [video](https://youtu.be/G7aF-OuLfl4) that introduces the concept of an array and gives an example.
-
-<iframe width="700" height="400" src="https://www.youtube.com/embed/G7aF-OuLfl4" frameborder="0" allowfullscreen></iframe>
-
----
-
-An array is like a row of small lockers, except that you can’t cram lots of stuff into it — you can only store one value in each locker.
-
-![A row of lockers](Figures/rowLockers.jpg)
-
-You can store a value in an array using an **index** (location in the array). An array index is like a locker number — it helps you find a particular place to store or retrieve something.
-
----
-
-## Index Basics
-
-Arrays and lists in most programming languages start counting elements at **0**. This means:
-
-* The first element is at index `0`.
-* The second element is at index `1`.
-* The last element is at index `array.length - 1`.
-
-**Example:**
-
-```java
-int[] scores = {90, 85, 78, 92};
-System.out.println(scores[0]); // prints 90
-System.out.println(scores[3]); // prints 92
+   // Declaration for a single int variable
+   int score;
+   // Declaration for an ARRAY of ints
+   int[] scores;
 ```
+> For example, ``int[] scores`` means we have an array called `scores` that contains `int` type values.
 
-If you try to use an index less than `0` or greater than `array.length - 1`, you will get an **ArrayIndexOutOfBoundsException**.
+The declarations _do not create the actual array_. Arrays are **objects** in Java, so any variable that declares an array holds a 👉 **reference** to an object. If the array hasn't been created yet and you try to print the value of the variable, it will print `null` (meaning it doesn't reference any object yet).
 
----
+There are two ways to create an array. You can use the keyword **new** to get new memory or use an **initializer list** to set up the values in the array.
 
-## Activity: Image Array
+Watch the following <a href="https://youtu.be/IbPFjw1FNkE" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows the two ways of creating an array with a physical model of Java memory.
+
+### Using `new` to Create Empty Arrays
+
+To create an empty array after declaring the variable, use the **new** keyword with the type and the size of the array (the number of elements it can hold). This will actually create the array in memory.  You can do the declaration and the creation all in one step, see the String array names below. The size of an array is set at the time of creation and cannot be changed after that.
+
+```java
+  //declare an array variable
+  int[] highScores;
+  // create the array
+  highScores = new int[5];
+  // declare and create array in 1 step!
+  String[] names = new String[5];
+```
 
 <div class="task" markdown="block">
 
-Type this in your Codespace, press run, and experiment with the `index` variable:
+Add two more array declarations:
+
+1. One that creates an array of 5 doubles called `prices`
+2. Another array of 5 Strings called `names`.
+
+</div>
+
+What happens in the computer's memory when you declare arrays?
+
+<div class="imp" markdown="block">
+
+Array elements are initialized to **default values** like the following:
+
+- `0` for elements of type ``int``
+- `0.0` for elements of type ``double``
+- `false` for elements of type ``boolean``
+- `null` for elements of type ``String`` or any other **object**
+
+![image](Figures/arrayIndicies.png)
+
+> Two 5 element arrays with their values set to the default values for integer and object arrays.
+
+</div>
+
+### Initializer Lists to Create Arrays with Values
+
+Another way to create an array is to use an **initializer list**. You can initialize (set) the values in the array to a list of values in curly braces (``{}``) when you create it, like below. In this case you don't specify the size of the array, it will be determined from the number of values that you specify.
 
 ```java
-public class ImageEx {
-    public static void main(String[] args) {
-        String[] images = {
-            "cow.jpg", "kitten.jpg", "puppy.jpg", "pig.jpg", "reindeer.jpg"
-        };
+  int[ ] highScores = {99,98,98,88,68};
+  String[ ] names = {"Jamal", "Emily", "Destiny", "Mateo", "Sofia"};
+```
 
-        ImageEx obj = new ImageEx();
-        int index = 0; // change this to show a different image
-        obj.printHTMLimage(images[index]);
-    }
+When you create an array of a **primitive type** (like ``int``) with initial values specified, space is allocated for the specified number of items of that type and the values in the array are set to the specified values.  When you create an array of an **object type** (like ``String``) with initial values, space is set aside for that number of object references.  The objects are created and the object references set so that the objects can be found.
 
-    public void printHTMLimage(String filename) {
-        String baseURL = "https://raw.githubusercontent.com/bhoffman0/CSAwesome/master/_sources/Unit6-Arrays/6-1-images/";
-        System.out.print("<img src=" + baseURL + filename + " width=500px />");
-    }
+![image](Figures/intAndStringArrays.png)
+
+
+Watch the following <a href="https://youtu.be/T-YZvVvPOac" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows an array of String objects with a physical model of Java memory.
+
+### Array Length
+
+Arrays know their **length** (_how many elements they can store_).  It is a `public` read-only **instance variable** so you can use **dot-notation** to access the instance variable (``arrayName.length``).  
+> **Dot-notation** is using variable name followed by a ``.`` and then the instance variable (property) name or a method name. 
+
+```java
+    System.out.println(highScores.length);
+```
+> Try adding another value to the `highScores` **initializer list** and run again to see the `length` value change.
+
+{:.highlight}
+Note that `length` is an **instance variable** and not a method, unlike the String ``length()`` method, so you don't add _parentheses_ after length. The length instance variable is declared as a ``public final int``.  ``public`` means you can access it and ``final`` means the value can't change.
+
+### Access and Modify Array Values
+
+To access the items in an array, we use an **indexed array variable** which is the array name and the index inside of square bracket `[ ]`. Remember that an **index** is a number that indicates the _position_ of an item in a list, starting at `0`. 
+
+An indexed variable like **arrayname[index]** can be used anywhere a regular variable can be used, for example to assign a new value or to get a value from the array like below.
+
+
+```java
+  // assign a new value 99 to the first element in the array
+  highScores[0] = 99;
+  // print the first element of the array
+  System.out.println( highScores[0] );
+```
+
+{:.highlight} 
+The _first value_ in an array is stored at index `0` and the index of the _last value_ is the `length - 1` (since length is the number of items and the starting index is 0). Use `arrayname[index]` to **access** or **modify** array items.
+
+Watch the following <a href="https://youtu.be/uagEJw6bTM4" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows a physical model of Java memory setting array values.
+
+#### Parallel Arrays
+If you want to keep track of the top 5 highest scores in a game and the names of the people with those scores, you could use two **parallel arrays**. One array could keep track of the scores and the other the names. 
+> With parallel arrays, you have to make sure you keep them in the **same order** so that the same index can be used to get correponding names and scores.
+
+<div class="task" markdown="block">
+
+Try out the following code which has two parallel arrays, `highScores` and `names`. 
+
+1. Can you print out Mateo's score?
+2. Can you change Sofia's score to 97 using an assignment statement in the code?
+3. Can you modify the arrays so that they have 6 elements, add your name and score, and print them out?
+
+```java
+public static void main(String[] args) {
+    // declare, create, initialize arrays
+    int[] highScores = {99, 98, 98, 88, 68};
+    String[] names = {"Jamal", "Emily", "Destiny", "Mateo", "Sofia"};
+
+    // Print corresponding names and scores
+    System.out.println(names[0] + " has a score of " + highScores[0]);
+    System.out.println(names[1] + " has a score of " + highScores[1]);
 }
 ```
-
-1. Change `index` to show the puppy image, then the reindeer.
-2. Try all images — what indices did you use?
-3. Replace `index` with a random number: `(int)(Math.random() * images.length)`.
-
 </div>
 
----
+> 💬 **DISCUSS:** What happens if you try to access an element that is not there? Try to access a ``highScore`` or ``name`` at index 7 above to see what happens. The index must be between 0 and the length of the array - 1 or it will give an error message called ``ArrayIndexOutOfBoundsException``.
 
-## Coding Challenge: Countries Array
+{:.warning}
+⚠️ Using an **index** value outside of the range `0 - (length-1)` will result in an `ArrayIndexOutOfBoundsException` being thrown.
 
-![US Map](array-images/US.jpg)
+One powerful feature in the array **data abstraction** is that we can use **variables** for the index! As long as the variable holds an integer, we can use it as an index:a
+
+```java
+  // use a variable for the index
+  int index = 3;
+  System.out.println(  highScores[index] );
+```
+
+#### 🗺 In-Class Challenge: Countries Arrays
+{:.no_toc}
 
 <div class="task" markdown="block">
 
-1. Create 4 parallel arrays for:
-
-   * Countries: China, Egypt, France, Germany, India, Japan, Kenya, Mexico, United Kingdom, United States
-   * Capitals
-   * Languages
-   * Image filenames
-2. Add more entries for countries you are interested in.
-3. Pick a random index using `Math.random()` and array `.length`.
-4. Print the country, its capital, its language, and its image using that index.
+1. Go to <a href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/topic-6-1-array-basics.html?mode=browsing"><button type="button" name="button" class="btn">CSAwesome Topic 6.1</button></a> 
+2. Make sure you **SIGN IN**!
+3. Complete the **Programming Challenge: Countries Array** activity in pairs. 🗺
 
 </div>
 
----
+#### 🎲 Practice Game: Array Indices
+{:.no_toc}
 
-## Arrays of Objects
+Try the game below to practice! Click on **Arrays** and click on the element of the `*` array that would be printed out by the given code. If you're stuck, check on Labels to see the indices. We encourage you to work in pairs and see how high a score you can get.
 
-You can create arrays of objects just like you create arrays of primitives. You must call the constructor for each object when initializing the array.
-
-**Example:**
-
-```java
-ClassName[] array = new ClassName[size];
-array[index] = new ClassName();
-array[index].method();
-```
+<html>
+        <iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
+    <script>      window.scrollTo(0, 0);</script>
+</html>
 
 ---
 
-## Activity: Turtle Array
+## ⭐️ Summary
 
-<div class="task" markdown="block">
-
-```java
-import java.awt.*;
-
-public class TurtleArray {
-    public static void main(String[] args) {
-        World world = new World(300, 300);
-        Turtle[] turtarray = new Turtle[2];
-        turtarray[0] = new Turtle(world);
-        turtarray[1] = new Turtle(world);
-        turtarray[0].forward();
-        turtarray[1].turnLeft();
-        turtarray[1].forward();
-        world.show(true);
-    }
-}
-```
-
-**Task:**
-
-1. Change the array size to `3`.
-2. Add another turtle at index 2.
-3. Make the new turtle turn right and move forward.
-
-</div>
-
----
-
-## Community Challenge: Array of Your Class
-
-<div class="task" markdown="block">
-
-1. Copy your class from [Lesson 3.5](../Unit3-Class-Creation/topic-3-5-methods.html#groupwork-design-a-class-for-your-community).
-2. Create an array of 3 objects of your class.
-3. Initialize each element using your class constructor.
-4. Call the `print` method for each object.
-
-</div>
-
----
-
-## Summary
-
-* **(AP 4.3.A.1)** Arrays store multiple values of the same type — primitives or object references.
-* **(AP 4.3.A.2)** The size is fixed at creation and accessed via `.length`.
-* **(AP 4.3.A.3)** When created with `new`, elements are initialized to default values (`0`, `0.0`, `false`, or `null`).
-* **(AP 4.3.A.4)** Initializer lists can create and populate arrays in one step.
-* **(AP 4.3.A.5)** Square brackets `[]` are used to access or modify elements by index.
-* **(AP 4.3.A.6)** Valid indices are `0` to `length - 1`; accessing outside this range throws an error.
-
----
-
-## AP Practice
-
-**Example Problem:**
-
-```java
-public void mystery(int[] a, int i) {
-    a[i] = a[i-1] * 2;
-}
-```
-
-If `array` is `{4, 10, 15}`, `mystery(array, 2)` → `{4, 10, 20}`.
-
----
-
-## Arrays Game
-
-Try this [array practice game](https://csa-games.netlify.app/).
-Click **Arrays** and guess which element will be printed. Turn on Labels if needed.
-
-<iframe height="700px" width="100%" style="margin-left:10%;max-width:80%" src="https://csa-games.netlify.app/"></iframe>
-
+- (AP 4.3.A.1) An **array** stores multiple values of the same type. The values can be either primitive values or object references.
+- (AP 4.3.A.2) The length (size) of an array is established at the time of creation and cannot be changed. The length of an array can be accessed through the ``length`` attribute.
+- (AP 4.3.A.3) When an array is created using the keyword ``new``, all of its elements are initialized to the default values for the element data type. The default value for ``int `` is ``0``, for ``double`` is ``0.0``, for ``boolean`` is ``false``, and for a reference type (like ``String`` or a class you have created) is ``null``.
+- (AP 4.3.A.4) Initializer lists can be used to create and initialize arrays.
+- (AP 4.3.A.5) Square brackets ``[]`` are used to access and modify an element in a 1D (one dimensional) array using an index.
+- (AP 4.3.A.6) The valid index values for an array are ``0`` through one less than the length of the array, inclusive. Using an index value outside of this range will result in an ``ArrayIndexOutOfBoundsException``.
 
 ---
 
