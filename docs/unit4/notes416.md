@@ -30,7 +30,7 @@ nav_order: 16
     </dl>
 </html>
 
-![image-small](recursion-briefcase.gif)
+![image-small](Figures/recursion-briefcase.gif)
 
 > Check out more [recursion visualizations](https://giphy.com/explore/recursion)!
 
@@ -251,6 +251,14 @@ So ``bunnyEars(5)`` returns 10.
 
 ## ⭐️ Summary
 
+- (AP 4.16.A.1)	A **recursive method** is a method that calls itself. 
+- (AP 4.16.A.1) Recursive methods contain at least one **base case**, which halts the recursion, and at least one **recursive call**. (unless it is a case of **infinite recursion**).
+- (AP 4.16.A.1) Recursion is another form of repetition.
+- (AP 4.16.A.2)	Each recursive call has its own set of local variables, including the parameters. Parameter values capture the progress of a recursive process, much like loop control variable values capture the progress of a loop.
+- (AP 4.16.A.3)	Any recursive solution can be replicated through the use of an iterative approach and vice versa. (although the recursive solution may have memory limitations for the recursive call stack, and the iterative approach may require additional data structures).
+- Note that writing recursive code is outside the scope of the AP Computer Science A course and exam.
+- Recursion can be used to traverse ``String``\ s, arrays, and ``ArrayList``\ s.
+  
 ---
 
 #### Acknowledgement
