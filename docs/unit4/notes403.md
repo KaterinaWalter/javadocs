@@ -189,7 +189,7 @@ Arrays know their **length** (_how many elements they can store_).  It is a `pub
 > **Dot-notation** is using variable name followed by a ``.`` and then the instance variable (property) name or a method name. 
 
 ```java
-    System.out.println(highScores.length);
+System.out.println(highScores.length);
 ```
 > Try adding another value to the `highScores` **initializer list** and run again to see the `length` value change.
 
