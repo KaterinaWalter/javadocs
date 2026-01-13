@@ -23,6 +23,14 @@ nav_order: 1
 
 ### Data Privacy
 
+.. |video1| raw:: html
+
+   <a href="https://www.youtube.com/watch?v=bqWuioPHhz0" target="_blank">video</a>
+
+.. |location| raw:: html
+
+   <a href="https://www.lifewire.com/location-history-google-maps-iphone-1683392" target="_blank">https://www.lifewire.com/location-history-google-maps-iphone-1683392</a>
+   
 Your phone keeps a lot of information about you, including where you have been, what you buy, what games you play, etc. Here's a |video1| about the massive amounts of data our smart phones and computers collect about us. If you have used your phone to give you directions to go somewhere, it probably tracks your location. Follow the directions in |location| to see if you have location history settings on. You can also turn off location tracking, but it is useful when you want directions and it's free. Do the benefits of apps that provide driving directions outweigh the lack of privacy for you? In what situations would it be beneficial or harmful for the app to track your location? 
 
 ![image](Figures/googletimeline.png)
