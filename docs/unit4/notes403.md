@@ -65,11 +65,9 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ---
 
-# Array Creation and Access
-
 ## Array Creation and Access
 
-To keep track of 10 exam scores, we could declare 10 separate variables: int score1, score2, score3, … , score10; _But what if we had 100 exam scores?_ That would be a lot of variables! 
+To keep track of 10 exam scores, we could declare 10 separate variables: `int score1, score2, score3, … , score10;` _But what if we had 100 exam scores?_ That would be a lot of variables! 
 
 📋 Most programming languages have a simple **data structure** for a _collection of related data_ that makes this easier. In some programming languages, this is called a **list**. In Java and many programming languages, this is called an **array**.
 
@@ -81,7 +79,8 @@ To keep track of 10 exam scores, we could declare 10 separate variables: int sco
 </dl>
 </html>
 
-Arrays are useful whenever you have _many elements of data_ of the same type that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the _position_ of an item in the array. 
+Arrays are useful whenever you have _many elements of data_ of the **same type** that you want to keep track of, but you don't need to name each one. Instead you use the array name and a number (called an **index**) for the _position_ of an item in the array. 
+> You can make arrays of ints, doubles, Strings, and even object classes that you have written like Students. 
 
 <html>
 <dl>
@@ -91,7 +90,9 @@ Arrays are useful whenever you have _many elements of data_ of the same type tha
 </dl>
 </html>
 
-You can make arrays of ints, doubles, Strings, and even object classes that you have written like Students. Here's a fun <a href="https://youtu.be/G7aF-OuLfl4" target="_blank"><button class="btn">📺 VIDEO</button></a> that introduces the concept of an array and gives an example.
+📺 Here's a video that introduces the concept of an array and gives an example:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G7aF-OuLfl4?si=jxdwtAeuuWRTW2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### ANALOGY
 {:.no_toc}
@@ -178,7 +179,9 @@ When you create an array of a **primitive type** (like ``int``) with initial val
 ![image](Figures/intAndStringArrays.png)
 
 
-Watch the following <a href="https://youtu.be/T-YZvVvPOac" target="_blank"><button class="btn">📺 VIDEO</button></a> which shows an array of String objects with a physical model of Java memory.
+📺 Watch the following video which shows an array of String objects with a **physical model of Java memory**: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T-YZvVvPOac?si=RW2AdMvzUCu3Whm9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Array Length
 
