@@ -57,6 +57,25 @@ When would you ever use `Integer.MIN_VALUE` or `Integer.MAX_VALUE`?  They are ha
 
 ## ⭐️ Summary
 
+- The ``Integer`` class and ``Double`` class are **wrapper classes** that create objects from primitive types.
+
+- (AP 4.7.A.1) The ``Integer`` class and ``Double`` class are part of the ``java.lang`` package. 
+
+- (AP 4.7.A.1) An ``Integer`` object is immutable, meaning once an ``Integer`` object is created, its attributes cannot be changed. A ``Double`` object is immutable, meaning once a ``Double`` object is created, its attributes cannot be changed.
+
+- (AP 4.7.A.2) **Autoboxing** is the automatic conversion that the Java compiler makes between primitive types and their corresponding object wrapper classes. This includes converting an ``int`` to an ``Integer`` and a ``double`` to a ``Double``. The Java compiler applies autoboxing when a primitive value is:
+
+    - passed as a parameter to a method that expects an object of the corresponding wrapper class
+    - assigned to a variable of the corresponding wrapper class
+
+- (AP 4.7.A.3) **Unboxing** is the automatic conversion that the Java compiler makes from the wrapper class to the primitive type. This includes converting an ``Integer`` to an ``int`` and a ``Double`` to a ``double``. The Java compiler applies unboxing when a wrapper class object is:
+
+    - passed as a parameter to a method that expects a value of the corresponding primitive type
+    - assigned to a variable of the corresponding primitive type
+
+- (AP 4.7.A.4) The following class ``Integer`` method—including what it does and when it is used—is part of the Java Quick Reference: ``static int parseInt(String s)`` returns the ``String`` argument as a signed ``int``.
+- (AP 4.7.A.5) The following class ``Double`` method—including what it does and when it is used—is part of the Java Quick Reference: ``static double parseDouble(String s)`` returns the ``String`` argument as a signed ``double``.
+
 
 ---
 
