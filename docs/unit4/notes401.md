@@ -34,7 +34,7 @@ As users, we often don't realize how much personal **data** we are giving away. 
 
 #### Location Tracking
 
-🗺️ If you have ever used your phone to give you directions to go somewhere, it probably still tracks your **location** data. Follow the directions in this [article](https://www.lifewire.com/location-history-google-maps-iphone-1683392) to see if you have location history settings on. You can also turn off location tracking, but it is useful when you want directions, and it's free...
+🗺️ If you have ever used your phone to give you directions to go somewhere, it probably still tracks your **location** data. Follow the directions in this [article](https://www.lifewire.com/location-history-google-maps-iphone-1683392) to see if you have location history settings on for various applications. You can always turn off location tracking, but it _is_ useful when you want directions, it's free... and some apps won't work at all without location permissions! 
 
 ![image](Figures/googletimeline.png)
 
@@ -47,12 +47,13 @@ As users, we often don't realize how much personal **data** we are giving away. 
 
 As computer programmers, we must be aware of the **risks** to data privacy when our code collects and stores personal data on computer systems. The laws are slowly catching up to our technology, and many countries and states are passing laws to protect data privacy. 
 
-💻 Programmers have a responsibility to attempt to _safeguard_ the **personal privacy** of the user: 
+💻 Programmers have a responsibility to _safeguard_ the **personal privacy** of the user: 
 * Legally and ethically, we must _ask_ the users for permission to access and store their data.
 * And if there are data breaches where the data is stolen, we must _inform_ the affected users. 
 
-Computer use and programs have **beneficial** and/or **harmful** impacts on personal security. Software apps for maps and driving directions are very useful, but they have impacts on personal security and privacy if they keep track of your location. 
-* This information could be **beneficial**, for example if you are lost and need to be found. But it could be **harmful** and unsafe if someone unauthorized gains access to your location.
+Computer applications and programs have **beneficial** and/or **harmful** impacts on personal security. Software can be very useful, but has impacts on personal security and privacy depending on what data they track. 
+* Location-tracking information could be **beneficial**, for example if you are lost and need to be found.
+* But it could be **harmful** and unsafe if someone unauthorized gains access to your location.
 
 <div class="task" markdown="block">
 
