@@ -45,39 +45,47 @@ As users, we often don't realize how much personal **data** we are giving away. 
 </div>
 
 
-As computer programmers, we must be aware of the **risks** to data privacy when our code collects and stores personal data on computer systems. The laws are slowly catching up to our technology, and many countries and states are passing laws to protect data privacy. 
-
-💻 Programmers have a responsibility to _safeguard_ the **personal privacy** of the user: 
+As computer programmers, we must be aware of the **risks** to data privacy when our code collects and stores personal data on computer systems. The laws are _slowly_ catching up to our technology, and many countries and states are passing laws to protect data privacy. Programmers have a responsibility to safeguard the **personal privacy** of the user: 
 * Legally and ethically, we must _ask_ the users for permission to access and store their data.
 * And if there are data breaches where the data is stolen, we must _inform_ the affected users. 
 
-Computer applications and programs have **beneficial** and/or **harmful** impacts on personal security. Software can be very useful, but has impacts on personal security and privacy depending on what data they track. 
-* Location-tracking information could be **beneficial**, for example if you are lost and need to be found.
-* But it could be **harmful** and unsafe if someone unauthorized gains access to your location.
+Software (computer programs, mobile apps, etc.) can have **beneficial** and/or **harmful** impacts on personal security and privacy, depending on the types of information tracked and stored. 
+* Location-tracking data could be **useful**, for example if you are lost and need to be found.
+* But it could be **unsafe** if someone unauthorized gains access to your location.
 
 <div class="task" markdown="block">
 
-💬 **DISCUSS:** Explore a popular app or web site and its _data collecting practices_. Explain the risks to privacy from collecting and storing personal data on computer systems. Discuss the ethical and legal problems that may arise and how programmers can try to avoid them. 
+💬 **DISCUSS:** Pick a popular app or web site and look into its _data collecting practices_. Explain the risks to privacy from collecting and storing personal data on computer systems. 
 
 </div>
 
-📺 Here are some interesting video resources about data collection and data privacy:
+📺 Here are some interesting video resources about **data collection** and **data privacy**:
 
-* A short <a href="https://www.cnbc.com/video/2018/03/23/everything-you-need-to-know-about-the-cambridge-analytica-scandal.html" target="_blank">1 minute video</a> about the Facebook Cambridge Analytica incident and a longer <a href="https://www.pbs.org/wgbh/frontline/film/facebook-dilemma/#video-2" target="_blank">1 hour PBS special</a> on Facebook.
-* <a href="https://www.youtube.com/watch?v=gXiEBcb0Vs8"  target="_blank">What is Geo-fencing (2 mins)</a>
-* <a href="https://www.youtube.com/watch?v=j6wwBqfSk-o"  target="_blank">The European General Data Protection Regulation (GDPR) (3 mins)</a>
+* A short [1 minute video](https://www.cnbc.com/video/2018/03/23/everything-you-need-to-know-about-the-cambridge-analytica-scandal.html") about the Facebook Cambridge Analytica incident and a longer [1 hour PBS special](https://www.pbs.org/wgbh/frontline/film/facebook-dilemma/#video-2) on Facebook's data practices.
+* [What is Geo-fencing (2 mins)](https://www.youtube.com/watch?v=gXiEBcb0Vs8)
+* [The European General Data Protection Regulation (GDPR) (3 mins)](https://www.youtube.com/watch?v=j6wwBqfSk-o)
 
 
 ### Data and Bias
 
-The fields of **AI (Artificial Intelligence)** and **Machine Learning (ML)** are rapidly growing and increasingly involve ethical questions about data collection, privacy, and resource use. Machine learning algorithms to create software like ChatGPT require massive amounts of data to learn from as well as massive amounts of energy use. But where does this data come from? Often the data is collected from the internet, and the internet is full of biases. For example, if you search for professions like "programmer", "doctor", "CEO" in https://images.google.com/, you will probably see mostly images of white men. This reflects a bias in our world that AIs may learn. An AI could then generate text or images that are biased against historically underrepresented groups. For example, a prominent tech company in 2014 started building an automated hiring tool, a resume filtering AI trained on their current employees resumes, and ended up with an AI system that was biased against women [as described in this article](https://www.aclu.org/news/womens-rights/why-amazons-automated-hiring-tool-discriminated-against). This is a problem because the AI is learning from biased data and then creating biased outcomes that could affect people's lives. 
+The fields of **AI (Artificial Intelligence)** and **Machine Learning (ML)** are rapidly growing and increasingly involve ethical questions about data collection, privacy, and resource use. Machine learning algorithms to create software like ChatGPT require **massive amounts of data** to learn from (as well as massive amounts of energy use). _But where does this data come from?_ 
+* **Collection:** Often the data is collected from the internet, and the internet is full of biases. For example, if you search for professions like "programmer", "doctor", "CEO" in [Google Images](https://images.google.com/), you will probably see mostly images of white men. This reflects an existing bias in our world that AIs may learn.
+* **Usage:** An AI could then generate text or images that are biased against historically underrepresented groups.
 
-**Algorithmic bias** describes systemic and repeated errors in a program that create unfair outcomes for a specific group of users. 
-* Bias in data can lead to unfair and unethical outcomes. For instance, facial recognition software has been shown to have higher error rates for people with darker skin tones.
-* This is because the data used to train these algorithms often _contains fewer examples_ of people with darker skin tones. As a result, the software is less accurate for these individuals, which can lead to discriminatory practices.
+{:.highlight}
+For example, a prominent tech company in 2014 started building an automated hiring tool, a **resume-filtering AI system** trained on their current employees resumes, and ended up with an AI system that was biased against women [as described in this article](https://www.aclu.org/news/womens-rights/why-amazons-automated-hiring-tool-discriminated-against). This is a problem because the AI is learning from biased data, and then **creating biased outcomes** that could affect people's lives.
 
-Watch the following <a href="https://www.youtube.com/watch?v=TWWsW1w-BVo" target="_blank">Gender Shades video</a> about gender and race bias in face recognition algorithms by computer scientist <a href="https://www.poetofcode.com/" target="_blank">Joy Buolamwini</a> (MIT Media Lab and Algorithmic Justice League).
+🎮 Try this game about **algorithmic bias** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
 
+> From the creators: "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
+
+**Algorithmic bias** describes systemic and repeated errors in a program that create _unfair outcomes_ for a specific group of users. Watch the following video about gender and racial bias in **face recognition algorithms** by MIT computer scientist [Joy Buolamwini](https://www.poetofcode.com/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TWWsW1w-BVo?si=EXrpvXkNQXqJBs2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> * Bias in data can lead to unfair and unethical outcomes.
+> * For instance, facial recognition software has been shown to have **higher error rates** for people with **darker** skin tones.
+> * This is because the data used to train these algorithms often _contains fewer examples_ of people with darker skin tones. As a result, the software is less accurate for these individuals, which can lead to discriminatory practices.
 
 <div class="task" markdown="block">
 
@@ -85,19 +93,20 @@ Watch the following <a href="https://www.youtube.com/watch?v=TWWsW1w-BVo" target
 
 </div>
 
-🎮 Try this game about **algorithmic bias** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
-
-> From the creators: "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
-
-Here are some other interesting videos to watch about bias in algorithms:
+📺 Here are some other interesting videos to watch about **bias** in algorithms:
 
 * <a href="https://www.youtube.com/watch?v=QxuyfWoVV98" target="_blank">AI, Ain't I a Woman?</a>, a poem by Joy Buolamwini
 * Ted Talk video on <a href="https://www.youtube.com/watch?v=UG_X_7g63rY" target="_blank">Bias in Facial Recognition</a> by Joy Buolamwini
 * <a href="https://www.youtube.com/watch?v=7lpCWxlRFAw" target="_blank">A report on police crime prediction software and bias</a>
 
-Programmers should be aware of the data set collection method and the potential for bias before using the data to extrapolate new information or drawing conclusions. Some data sets are incomplete or contain inaccurate data. Using such data in the development or use of a program can cause the program to work incorrectly or inefficiently. Or the contents of a data set might be related to a specific question or topic and might not be appropriate to give correct answers or extrapolate information for a different question or topic.
+Programmers should be aware of the data set **collection methods** and identify any potential for bias _before using the data_ to extrapolate new information or drawing conclusions. 
+* Some data sets are **incomplete** or contain **inaccurate** data. Using such data in the development or use of a program can cause the program to work incorrectly or inefficiently.
+* Or the contents of a data set might be related to a highly **specific** question or topic, and might not be appropriate to give correct answers or extrapolate information for a different question or topic.
 
-It is important for programmers and data scientists to take steps to mitigate bias in data collection and use. This can include using diverse and representative datasets, regularly testing algorithms for bias, and being transparent about the limitations of the software. Here are some steps that can be taken to address bias in machine learning:
+{:.highlight}
+It is important for programmers and data scientists to take steps to mitigate bias in data collection and usage. This can include picking **diverse** and **representative** datasets, regularly **testing algorithms** for biased results, and being **transparent** with users about the limitations of the software. 
+
+Here are some steps that can be taken to address bias in machine learning:
 
 - Use diverse and representative data sets to train algorithms.
 - Regularly test algorithms for bias and accuracy.
@@ -105,15 +114,15 @@ It is important for programmers and data scientists to take steps to mitigate bi
 - Involve diverse teams in the development and testing of algorithms.
 - Implement ethical guidelines and standards for the use of AI and machine learning.
 
-#### In-Class Activity: Dataset Critique
+#### 💻 Group Activity: Dataset Critique
 
 <div class="task" markdown="block">
   
 🔍 Go to [Google Dataset Search](https://datasetsearch.research.google.com/) and search for a dataset for the topic of "face recognition" (or another topic you are interested in). Find an **appropriate** ("good") dataset and an **inappropriate** ("bad") dataset for your topic. 
 
-🗣️ _Be prepared to share out:_
-* Explanation of why you think the datasets are either **appropriate** or **inappropriate**.
-   > For example, the inappropriate dataset might be too small, or incomplete, or biased.
+🗣️ _Be prepared to share:_
+* Explain why you believe the datasets are **appropriate** or **inappropriate**, mentioning specific considerations.
+   > For example, one dataset might be "bad" if it is too small, incomplete, or biased.
 * How the choice of your dataset could affect the **results** of a program that uses the data. 
 
 </div>
