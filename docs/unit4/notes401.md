@@ -32,7 +32,7 @@ As users, we often don't realize how much personal **data** we are giving away. 
 
 ![image-small](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm03OXJlYzl2MXd0cDA1ZXNvcjVtdW90MjAwOHIwcGN5ZHc4cjg5cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5eFp76zhsq3uw/giphy.gif)
 
-#### Location Tracking
+#### Example: Location Tracking
 
 🗺️ If you have ever used your phone to give you directions to go somewhere, it probably still tracks your **location** data. Follow the directions in this [article](https://www.lifewire.com/location-history-google-maps-iphone-1683392) to see if you have location history settings on for various applications. You can always turn off location tracking, but it _is_ useful when you want directions, it's free... and some apps won't work at all without location permissions! 
 
@@ -69,17 +69,22 @@ Software (computer programs, mobile apps, etc.) can have **beneficial** and/or *
 ### Data and Bias
 
 The fields of **AI (Artificial Intelligence)** and **Machine Learning (ML)** are rapidly growing and increasingly involve ethical questions about data collection, privacy, and resource use. Machine learning algorithms to create software like ChatGPT require **massive amounts of data** to learn from (as well as massive amounts of energy use). _But where does this data come from?_ 
-* **Collection:** Often the data is collected from the internet, and the internet is full of biases. For example, if you search for professions like "programmer", "doctor", "CEO" in [Google Images](https://images.google.com/), you will probably see mostly images of white men. This reflects an existing bias in our world that AIs may learn.
-* **Usage:** An AI could then generate text or images that are biased against historically underrepresented groups.
+* **Data Collection:** Often the data is collected from the internet, and the internet is full of biases. For example, if you search for professions like "programmer", "doctor", "CEO" in [Google Images](https://images.google.com/), you will probably see mostly images of white men. This reflects an _existing bias_ in our world that AIs may learn. An AI could then generate text or images that are biased against historically underrepresented groups.
 
 {:.highlight}
+**Algorithmic bias** describes systemic and repeated errors in a program that create _unfair outcomes_ for a specific group of users. 
+
+#### Example: Automated Hiring Algorithms
+
 For example, a prominent tech company in 2014 started building an automated hiring tool, a **resume-filtering AI system** trained on their current employees resumes, and ended up with an AI system that was biased against women [as described in this article](https://www.aclu.org/news/womens-rights/why-amazons-automated-hiring-tool-discriminated-against). This is a problem because the AI is learning from biased data, and then **creating biased outcomes** that could affect people's lives.
 
-🎮 Try this game about **algorithmic bias** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
+🎮 Try this game about **algorithmic bias**: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
 
-> From the creators: "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
+> From the creators: *"Survival of the Best Fit"* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
 
-**Algorithmic bias** describes systemic and repeated errors in a program that create _unfair outcomes_ for a specific group of users. Watch the following video about gender and racial bias in **face recognition algorithms** by MIT computer scientist [Joy Buolamwini](https://www.poetofcode.com/).
+#### Example: Facial Recognition Software
+
+Watch the following video about gender and racial bias in **face recognition algorithms** by MIT computer scientist [Joy Buolamwini](https://www.poetofcode.com/).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TWWsW1w-BVo?si=EXrpvXkNQXqJBs2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
