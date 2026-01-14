@@ -80,11 +80,11 @@ Watch the following <a href="https://www.youtube.com/watch?v=TWWsW1w-BVo" target
 
 <div class="task" markdown="block">
 
-💬 **DISCUSS:** Explain the importance of recognizing data quality and potential issues such as data bias when using a data set in AI/ML applications. (A data set or dataset is a collection or set of data.) We encourage you to work on this activity in pairs or groups.
+💬 **DISCUSS:** Explain the importance of recognizing _data quality_ and potential issues such as _data bias_ when using a data set in AI/ML applications.
 
 </div>
 
-🎮 Try this game about **non-neutrality** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
+🎮 Try this game about **algorithmic bias** in software design: <a href="https://survivalofthebestfit.com"><button class="btn btn-primary">Survival of the Best Fit</button></a>
 
 > From the creators: "*Survival of the Best Fit* is an educational game about hiring bias in AI. We aim to explain how the misuse of AI can make machines inherit human **biases** and further inequality. Much of the public debate on AI has presented it as a threat imposed on us, rather than one that we have **agency** over. We want to change that by helping people understand the technology, and demand more **accountability** from those building increasingly pervasive software systems."
 
