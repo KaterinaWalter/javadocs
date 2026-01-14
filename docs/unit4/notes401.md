@@ -30,7 +30,7 @@ nav_order: 1
 {:.highlight}
 As users, we often don't realize how much personal **data** we are giving away. If you use a computer or phone at all, it means your personal **privacy** is at risk. 
 
-![image-small](https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyZ2xueHlvYmFoNXd4dnJrNWtxajUybm5wNjRwaHd5anRld3cwMDZ5ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ktcUyw6mBlMVa/giphy.gif)
+![image-small](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm03OXJlYzl2MXd0cDA1ZXNvcjVtdW90MjAwOHIwcGN5ZHc4cjg5cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5eFp76zhsq3uw/giphy.gif)
 
 #### Location Tracking
 
