@@ -30,7 +30,13 @@ nav_order: 6
   </dl>
 </html>
 
-For example in a previous lesson, you created a ``SpellChecker`` class that reads in a dictionary file into an array of words, and a ``spellcheck`` method that uses this array to verify if a word is spelled correctly. Input files, like the dictionary, enable us to handle large amounts of data _efficiently_. Instead of manually entering data into our program every time it runs, we can store the data in a file and read it as needed. Another benefit of using files is the ability to separate the data from the code, allowing for more modular and flexible software design. 
+For example in a previous lesson, you created a ``SpellChecker`` class that reads in a dictionary file into an array of words, and a ``spellcheck`` method that uses this array to verify if a word is spelled correctly. 
+
+#### Benefits of using input files:
+{:no_toc}
+
+* Input files, like the dictionary, enable us to handle large amounts of data _efficiently_. Instead of manually typing data into our program every time it runs, we can store the data in a file and read it as needed.
+* Another benefit of using files is the ability to _separate_ the data from the code, allowing for more flexible and **modular software design**. 
 
 ### Java ``File``, ``Scanner``, and ``IOException`` Classes
 
