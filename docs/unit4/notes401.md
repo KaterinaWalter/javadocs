@@ -14,11 +14,6 @@ nav_order: 1
 
 ---
 
-{:.note}
-📖 This page is a condensed version of [CSAwesome Topic 4.1](https://runestone.academy/ns/books/published/csawesome2/topic-4-1-data-ethics.html) 
-
----
-
 ## Ethical Issues with Data Collection
 
 ### Data Privacy
@@ -66,7 +61,7 @@ Software (computer programs, mobile apps, etc.) can have **beneficial** and/or *
 * [The European General Data Protection Regulation (GDPR) (3 mins)](https://www.youtube.com/watch?v=j6wwBqfSk-o)
 
 
-### Data and Bias
+### Data & Bias
 
 The fields of **AI (Artificial Intelligence)** and **Machine Learning (ML)** are rapidly growing and increasingly involve ethical questions about data collection, privacy, and resource use. Machine learning algorithms to create software like ChatGPT require **massive amounts of data** to learn from (as well as massive amounts of energy use). _But where does this data come from?_ 
 * **Data Collection:** Often the data is collected from the internet, and the internet is full of biases. For example, if you search for professions like "programmer", "doctor", "CEO" in [Google Images](https://images.google.com/), you will probably see mostly images of white men. This reflects an _existing bias_ in our world that AIs may learn. An AI could then generate text or images that are biased against historically underrepresented groups.
