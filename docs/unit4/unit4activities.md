@@ -36,49 +36,11 @@ nav_order: 18
 
 ---
 
-## ACTIVITY #1: 
+## 🔴 ACTIVITY #1: Pokemon Dataset
 
-In this activity, you'll...
+In this activity, you'll practice using **arrays** and working with **text files** with a dataset about [Pokemon](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
 
-### PART A:
-
-<div class="task" markdown="block">
-
-1. Step 1
-
-</div>
-
-
-### Loop to Read in a File
-
-A ``while`` loop is usually used to read in a file with multiple lines. The loop can use the method ``hasNext`` as the loop condition to detect if the file still contains elements to
-read. A loop with this condition will terminate when there are no more lines to read in the file. After the loop is finished reading the data, the ``close`` method from Scanner should be called to close the file.
-
-```java
-   while (scan.hasNext())
-   {
-      String line = scan.nextLine();
-      ...
-   }
-   scan.close();
-```
-
-### Save File Data into an Array
-
-We can save a file line by line into an array. In the ``SpellChecker`` class, we read the data file of words into a dictionary array with the following code. Note that we had to know the number lines or words in the file to declare an array of the right size. We'll learn about better data structures like the ``ArrayList`` in the next lessons where we do not need to know the size of the data in advance. 
-
-```java
-   String[] dictionary = new String[10000];
-   int i = 0;
-   while(scan.hasNext())
-   {
-        String line = scan.nextLine();
-        dictionary[i] = line;
-        i++;
-    }
-```
-
-### Pokemon Activity
+### PART A: Create Array from the Data File
 
 The following exercise reads in a data file about Pokemon and prints out the first 10 lines in the file. This file has the extension `.csv` which stands for **Comma Separated Values**. All spreadsheets can be saved as CSV text files, and spreadsheet software can easily open CSV files as spreadsheets.
 
@@ -88,12 +50,18 @@ The following exercise reads in a data file about Pokemon and prints out the fir
 2. Complete the code in the main method below to read in the first 10 lines of the pokemon file using the Scanner class, save each line into the pokemonLines array, and print it out. Make sure you check that the line counter i is less than 10 in the condition of the loop. 
 
 ```java
-       public static void main(String[] args) throws IOException
-       {
-           File myFile = new File("pokemon.csv");
-           Scanner scan = new Scanner(myFile);
-           String[] pokemonLines = new String[10];
+public static void main(String[] args) throws IOException {
+...
+}
+```
 
+```java
+File myFile = new File("pokemon.csv");
+Scanner scan = new Scanner(myFile);
+String[] pokemonLines = new String[10];
+```
+
+```java
            int i = 0;
            // 1. Add in the loop condition that checks if scan has another line of input
            //    and that i is less than 10.
@@ -110,7 +78,40 @@ The following exercise reads in a data file about Pokemon and prints out the fir
             scan.close();           
       }
 ```
+
 </div>
+
+
+#### Loop to Read in a File
+
+A ``while`` loop is usually used to read in a file with multiple lines. The loop can use the method ``hasNext`` as the loop condition to detect if the file still contains elements to
+read. A loop with this condition will terminate when there are no more lines to read in the file. After the loop is finished reading the data, the ``close`` method from Scanner should be called to close the file.
+
+```java
+   while (scan.hasNext())
+   {
+      String line = scan.nextLine();
+      ...
+   }
+   scan.close();
+```
+
+#### Save File Data into an Array
+
+We can save a file line by line into an array. In the ``SpellChecker`` class, we read the data file of words into a dictionary array with the following code. Note that we had to know the number lines or words in the file to declare an array of the right size. We'll learn about better data structures like the ``ArrayList`` in the next lessons where we do not need to know the size of the data in advance. 
+
+```java
+   String[] dictionary = new String[10000];
+   int i = 0;
+   while(scan.hasNext())
+   {
+        String line = scan.nextLine();
+        dictionary[i] = line;
+        i++;
+    }
+```
+
+### PART B: Display Names & Images
 
 #### Split Strings
 
@@ -209,6 +210,8 @@ Try the exercise below to display Pokemon images using the ``split`` method to e
     }
 ```
 
+### PART C: Organize Data with Object-Oriented Design
+
 #### Object-Oriented Design with CSV Files
 
 To better organize and work with this data, we can create a ``Pokemon`` class that corresponds to these attributes using object-oriented design. A CSV data file can be saved into an array of ``Pokemon`` objects by splitting each line (except the header) into the attributes for one ``Pokemon`` object.
@@ -243,11 +246,7 @@ We can use the ``split`` method to extract the individual pieces of data from ea
 
 Note that sometimes you may need to skip the 0th row in the file if it is column headers. For this file, it will just get split into strings, but if your data file contains numbers that need to be processed, you could skip one like: ``if (i == 0) scan.nextLine();``.
 
-Let's try the code to read into an array of Pokemon objects in the challenge exercise below.
-
-#### Array of Pokemon from Input File
-
-Let's end with a challenge that combines all the skills you have learned so far. You could work in pairs for this challenge. Create a class Pokemon that has at least 3 attributes that can be found in the Pokemon file, including its name, type1, and imagefile, and any other attributes from the file that you would like. Write a constructor and getters for these attributes. Then, read in the data from the pokemon file, split each line, and save the data in an array of Pokemon objects. Write a ``findType`` method that returns to the type of a Pokemon given its name as an argument. It should loop through the array to find the right Pokemon object using the ``getName`` and ``getType`` methods that you will write. It should also display the image for the Pokemon.
+Let's try the code to read into an array of Pokemon objects in the challenge exercise below. Create a class Pokemon that has at least 3 attributes that can be found in the Pokemon file, including its name, type1, and imagefile, and any other attributes from the file that you would like. Write a constructor and getters for these attributes. Then, read in the data from the pokemon file, split each line, and save the data in an array of Pokemon objects. Write a ``findType`` method that returns to the type of a Pokemon given its name as an argument. It should loop through the array to find the right Pokemon object using the ``getName`` and ``getType`` methods that you will write. It should also display the image for the Pokemon.
 
 Design the class Pokemon that has at least 3 attributes that can be found in the Pokemon file, including its name, type1, and imagefile, and any other attributes from the file that you would like. Write a constructor and getters for these attributes. Then, read in the data from the pokemon file, split each line, and save the data in an array of Pokemon objects. Write a ``findType`` method that loops through the array to find the Pokemon with the given name as argument and print out and return its type and its image. 
 
