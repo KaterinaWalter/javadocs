@@ -27,7 +27,7 @@ While the theme is travel, you have the creative freedom to decide what *kind* o
 
 1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
-3. Specify the **repository name**: `CS2-Travel-Booking-System`
+3. Specify the **repository name**: `CS2-Booking-System`
 4. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
     > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 
 5. Now on your repository, click <button type="button" name="button" class="btn btn-green"> < > Code </button> and select the `Codespaces` tab
@@ -64,18 +64,19 @@ Declare at least **six** private instance variables.
   3. `durationInDays` (int)
   4. Your choice of **boolean** (e.g., `isInternational`)
   5. Your choice of **double** (e.g., `starRating`, `luggageWeight`)
-  6. `totalPackageCost` (int) → *this will be a calculated field*
+  6. `totalPackageCost` (double) → *this will be a calculated field*
 
 #### INSTANCE METHODS:
 {:.no_toc}
 
   1. **Default Constructor:** Sets generic default values for all fields (_instance variables_).
   2. **Parameterized Constructor:** Accepts arguments for the first four variables (use the same variable names for the parameters as the instance variables).
-    * **Calculation:** The `totalPackageCost` should be set by multiplying the `durationInDays` by the static `processingFeePerDay`.
-  3. **Accessor Methods:** "Getters" for every data field.
-  4. **Mutator Methods:** "Setters" for every data field.
-    * **The Cost Mutator:** The mutator for `totalPackageCost` must accept `durationInDays` as a parameter and recalculate the cost using the static `processingFeePerDay`.
-  5. **toString():** Returns a formatted, multi-line string that represents the object's state. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`. _See below for an example._
+     * **Calculation:** The `totalPackageCost` should be set by multiplying the `durationInDays` by the static `processingFeePerDay`.
+  4. **Accessor Methods:** "Getters" for every data field.
+  5. **Mutator Methods:** "Setters" for every data field.
+     * **The Cost Mutator:** The mutator for `totalPackageCost` must accept `durationInDays` as a parameter and recalculate the cost using the static `processingFeePerDay`.
+  7. **toString():** Returns a formatted, multi-line string that represents the object's state. Use creative labels like `--- TRIP ITINERARY FOR [Name] ---`. _See below for an example._
+
 </div> 
 
 #### Example String Representation:
