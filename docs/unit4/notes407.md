@@ -66,7 +66,11 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ## Wrapper Classes: Integer and Double
 
-For every primitive type in Java, there is a built-in object type called a wrapper class. The wrapper class for int is called Integer, and for double it is called Double.   Sometimes you may need to create a wrapped object for a primitive type so that you can give it to a method that is expecting an object. To wrap a value, call the constructor for the wrapper class in earlier versions of Java. In Java 9 on, this is **deprecated** which means it's not the best way to do this anymore, and you should instead just set it equal to a value. The AP CSA Exam covers Java 7 which does allow using the constructor.
+For every primitive type in Java, there is a built-in object type called a **wrapper class**. The wrapper class for `int` is called `Integer`, and for `double` it is called `Double`. _Why do this?_ Sometimes you may need to create a **wrapped OBJECT** version of a **primitive type**, so that you can give it to a method that is expecting an object. 
+
+![image-small](https://external-preview.redd.it/G_XR_y2ep9Sl4c45tXhLfwwATWZ-6RHlLQ2KKbbw05s.jpg?width=640&crop=smart&auto=webp&s=0409a7c9298ec38d6bb6e91dc884b23bd0761114)
+
+🎁 To **wrap** a value, call the _constructor_ for the wrapper class in earlier versions of Java. In Java 9 on, this is **deprecated** which means it's not the best way to do this anymore, and you should instead just set it equal to a value. The AP CSA Exam covers Java 7 which does allow using the constructor.
 
 ```java
    // in older versions of Java (and on the AP exam)
