@@ -62,10 +62,10 @@ The following exercise reads in a data file about Pokemon and prints out the fir
   Scanner scan = new Scanner(myFile);
   String[] pokemonLines = new String[10];
   ```
-4. Complete the `while` loop to **read in the first 10 lines** of the pokemon file using the `Scanner` class, save each line into the `pokemonLines` array, and print it out.
-  ```java
-  int i = 0; // line counter
+4. Complete the `while` loop to **read in the first 10 lines** of the pokemon file using the `Scanner` class, save each line into the `pokemonLines` array, and print it out. _Here is the loop structure:_
 
+```java
+  int i = 0; 
   // 1. Add in the loop conditions
   while (         ) {
     // 2. Read in the next line of the file
@@ -77,7 +77,7 @@ The following exercise reads in a data file about Pokemon and prints out the fir
     i++; // increment line counter
   }
   scan.close();           
-  ```
+```
   > * Your **loop condition** should check if scan has another line of input (`scan.hasNext()`) _AND_ also check that the line **counter** `i` is less than 10.
   > * To _read_ in the next line of the file, use: `String line = scan.nextLine();`
   > * To _assign_ the line to the array, use: `pokemonLines[i] = line;`
