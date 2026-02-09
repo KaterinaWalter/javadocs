@@ -50,46 +50,48 @@ The following exercise reads in a data file about Pokemon and prints out the fir
 <div class="task" markdown="block">
 
 1. Add the `pokemon.csv` file (_that I emailed to you_) to your repository by dragging it into the **File Explorer** tab.
-2. Include `throws IOException` in the main method header like below:
+2. Include `throws IOException` in the **main method HEADER** like below:
   ```java
   public static void main(String[] args) throws IOException {
-  ...
+    ...
   }
   ```
-3. Set up `File` and `Scanner` objects at the beginning of the main method:
+3. Set up `File`, `Scanner`, and `String[]` (_array_) objects at the beginning of the **main method's BODY**:
   ```java
   File myFile = new File("pokemon.csv");
   Scanner scan = new Scanner(myFile);
   String[] pokemonLines = new String[10];
   ```
 4. Complete the `while` loop to **read in the first 10 lines** of the pokemon file using the `Scanner` class, save each line into the `pokemonLines` array, and print it out.
-  > Your **loop condition** should check if scan has another line of input (`scan.hasNext()`) _AND_ also check that the line **counter** `i` is less than 10. 
   ```java
-  int i = 0;
-  // 1. Add in the loop condition
+  int i = 0; // line counter
+
+  // 1. Add in the loop conditions
   while (         ) {
     // 2. Read in the next line of the file
+
     // 3. Assign the line to the ith element of the pokemonLines array
+
     // 4. Print out the line
+
     i++; // increment line counter
   }
   scan.close();           
   ```
-5. To _read_ in the next line of the file, use: `String line = scan.nextLine();`
-6. To _assign_ the line to the array, use: `pokemonLines[i] = line;`
-7. Finally, _print_ out the line before incrementing the line counter!
+  > * Your **loop condition** should check if scan has another line of input (`scan.hasNext()`) _AND_ also check that the line **counter** `i` is less than 10.
+  > * To _read_ in the next line of the file, use: `String line = scan.nextLine();`
+  > * To _assign_ the line to the array, use: `pokemonLines[i] = line;`
+  > * Finally, _print_ out the line before incrementing the line counter!
 
 </div>
 
 ### PART B: Display Names & Images
 
-#### Split Strings
-
-If you take a look at the Pokemon CSV file, you'll notice that each line contains multiple data attributes separated by commas. These attributes include each Pokemon's name, type, speed, etc. on each row. Typically, the first line of a CSV file serves as the header, indicating the names of these attributes. 
+If you take a look at the Pokemon CSV file, you'll notice that each line contains multiple **data attributes** separated by commas. These attributes include each Pokemon's name, type, speed, etc. on each row. Typically, the first line of a CSV file serves as the _header_, indicating the names of these attributes. 
 
 ```
-   // The first line of the Pokemon CSV file
-   Number, Pokemon, Type 1, Type 2, HP, Attack, Defense, Speed, PNG, Description
+// The first line of the Pokemon CSV file:
+Number, Pokemon, Type 1, Type 2, HP, Attack, Defense, Speed, PNG, Description
 ```
 
 The Java ``String`` class provides a useful method called ``split(String delimeter)`` that allows us to split a string into an array of substrings based on a specified **delimiter** which is a character like a comma or a space that separates the units of data. This method returns a ``String`` array where each element in the array represents a field of data from the line.  
