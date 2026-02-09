@@ -138,6 +138,9 @@ Your program currently reads in some of the data from the pokemon file into a St
 
 </div>
 
+
+<!--
+
 ### PART C: Organize Data with Object-Oriented Design
 
 To better organize and work with this data, we can create a ``Pokemon`` class that corresponds to these attributes using object-oriented design. A CSV data file can be saved into an array of ``Pokemon`` objects by splitting each line (except the header) into the attributes for one ``Pokemon`` object.
@@ -243,5 +246,7 @@ Design the class Pokemon that has at least 3 attributes that can be found in the
        }
    }
 ```
+
+-->
 
 
