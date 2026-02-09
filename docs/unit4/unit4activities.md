@@ -63,58 +63,23 @@ The following exercise reads in a data file about Pokemon and prints out the fir
   String[] pokemonLines = new String[10];
   ```
 4. Complete the `while` loop to **read in the first 10 lines** of the pokemon file using the `Scanner` class, save each line into the `pokemonLines` array, and print it out.
-  > Make sure you check that the line **counter** `i` is _less than 10_ in the **condition** of the loop. 
-
-
-```java
-           int i = 0;
-           // 1. Add in the loop condition that checks if scan has another line of input
-           //    and that i is less than 10.
-           while (         )
-           {
-               // 2. Read in the next line of the file
-
-               // 3. Assign the line to the ith element of the pokemonLines array
-
-               // 4. Print out the line
-
-               i++; // line count
-            }
-            scan.close();           
-      }
-```
+  > Your **loop condition** should check if scan has another line of input (`scan.hasNext()`) _AND_ also check that the line **counter** `i` is less than 10. 
+  ```java
+  int i = 0;
+  // 1. Add in the loop condition
+  while (         ) {
+    // 2. Read in the next line of the file
+    // 3. Assign the line to the ith element of the pokemonLines array
+    // 4. Print out the line
+    i++; // increment line counter
+  }
+  scan.close();           
+  ```
+5. To _read_ in the next line of the file, use: `String line = scan.nextLine();`
+6. To _assign_ the line to the array, use: `pokemonLines[i] = line;`
+7. Finally, _print_ out the line before incrementing the line counter!
 
 </div>
-
-
-#### Loop to Read in a File
-
-A ``while`` loop is usually used to read in a file with multiple lines. The loop can use the method ``hasNext`` as the loop condition to detect if the file still contains elements to
-read. A loop with this condition will terminate when there are no more lines to read in the file. After the loop is finished reading the data, the ``close`` method from Scanner should be called to close the file.
-
-```java
-   while (scan.hasNext())
-   {
-      String line = scan.nextLine();
-      ...
-   }
-   scan.close();
-```
-
-#### Save File Data into an Array
-
-We can save a file line by line into an array. In the ``SpellChecker`` class, we read the data file of words into a dictionary array with the following code. Note that we had to know the number lines or words in the file to declare an array of the right size. We'll learn about better data structures like the ``ArrayList`` in the next lessons where we do not need to know the size of the data in advance. 
-
-```java
-   String[] dictionary = new String[10000];
-   int i = 0;
-   while(scan.hasNext())
-   {
-        String line = scan.nextLine();
-        dictionary[i] = line;
-        i++;
-    }
-```
 
 ### PART B: Display Names & Images
 
