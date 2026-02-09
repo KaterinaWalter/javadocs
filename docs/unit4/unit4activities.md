@@ -85,106 +85,60 @@ The following exercise reads in a data file about Pokemon and prints out the fir
 
 </div>
 
-### PART B: Display Names & Images
+### PART B: Display Data Attributes
 
 If you take a look at the Pokemon CSV file, you'll notice that each line contains multiple **data attributes** separated by commas. These attributes include each Pokemon's name, type, speed, etc. on each row. Typically, the first line of a CSV file serves as the _header_, indicating the names of these attributes. 
 
 ```
-// The first line of the Pokemon CSV file:
+// pokemonLines[0] contains the first line of the Pokemon CSV file:
 Number, Pokemon, Type 1, Type 2, HP, Attack, Defense, Speed, PNG, Description
 ```
 
+#### Splitting Strings
+{:.no_toc}
+
 The Java ``String`` class provides a useful method called ``split(String delimeter)`` that allows us to split a string into an array of substrings based on a specified **delimiter** which is a character like a comma or a space that separates the units of data. This method returns a ``String`` array where each element in the array represents a field of data from the line.  
 
-```java
-    String sentence = "A quick brown fox jumps";
-    // Split the sentence into words along spaces to create:
-    //  words = {"A", "quick", "brown", "fox", "jumps"}
-    String[] words = sentence.split(" ");
-```
-
-Here is an example of how to use the split method to split a line of data with commas separating the fields from the Pokemon csv file into identifiable chunks of data. The first line of headers in the file indicates that the 0th element of the data array is the Pokemon's number, element 1 is the name, etc. We only need to save the data that we want to use. In this case, we want to save the name, type1, speed, and imageFile. If we want to do math or comparisons with the speed, we can convert it to an int using the ``Integer.parseInt`` method that will be described in the next lesson.
+Here is an example of how to use the `split()` method to split a line of data with commas separating the fields from the Pokemon csv file into _identifiable chunks of data_. 
+> The first line of headers in the file indicates that the 0th element of the data array is the Pokemon's number, element 1 is the name, etc. We only need to save the data that we want to use. In this case, we want to save the name, type1, and speed.
 
 ```java
-   // Split the line of data into an array of Strings
-   String[] data = line.split(",");
-   // Identify the data 
-   // data: Number,Name,Type1,Type2,HP,Attack,Defense,Speed,PNG,Description 
+// Split the line of data into an array of Strings
+String[] data = line.split(",");
+// Identify the data 
+// data: Number,Name,Type1,Type2,HP,Attack,Defense,Speed,PNG,Description 
    String name = data[1];
    String type1 = data[2];
    ...
    String speed = data[7];
    String imageFile = data[8];
 ```
+> If we want to do **math** or comparisons with the speed, we can convert it to an `int` using the ``Integer.parseInt`` method that will be described in the next lesson.
 
-Try the exercise below to display Pokemon images using the ``split`` method to extract names and urls saved in the file.
+<div class="task" markdown="block">
+  
+Your program currently reads in some of the data from the pokemon file into a String array of lines. 
 
-**PokeImages:** This program reads in some of the data from the pokemon file into a String array of lines. Complete the ``randomPokemon`` method to print out a random pokemon name and its image using the split method. Run the program multiple times to see different Pokemon names and images.
+1. Complete a ``randomPokemon()`` method to print out a random pokemon name:
+  ```java
+  /// Write a function that prints out a random Pokemon name
+  public void randomPokemon(int length) {
+    // 1. pick a random number from 1 to length (the 0th row is the headers)
 
-```
-    import java.io.*;
-    import java.util.*;
+    // 2. get the line at that random index from the array pokemonLines
 
-    public class PokeImages
-    {
-        private String filename = "pokemon.csv";
-        private String[] pokemonLines = new String[152];
+    // 3. Use the split method to split the line into a String array data
 
-        /* This method reads in filename into the pokemonLines array */
-        public int readFile() throws IOException
-        {
-            File myFile = new File(filename);
-            Scanner scan = new Scanner(myFile);
-            int i = 0;
-            while (scan.hasNext())
-            {
-                pokemonLines[i] = scan.nextLine();
-                i++; 
-            }
-            System.out.println("Read in " + i + " lines.");
-            scan.close();
-            return i;
-        }
+    // 4. Print out the name using the correct index in the split data
+  }
+  ```
+2. In the **main**, call your new method using: `randomPokemon(i);` where `i` represents the **length** of the file (_number of lines we read in during the loop_)
+3. Run the program multiple times to see different Pokemon names.
+4. Update your `randomPokemon()` method to print out other data attributes, such as `description` or `speed`. 
 
-        /* Write a function randomPokemon that prints out a random Pokemon name and image */
-        public void randomPokemon(int length)
-        {
-            // 1. pick a random number from 1 to length 
-            //    (the 0th row is the headers)
-      
-
-            // 2. get the line at that random index from the array pokemonLines
-
-            // 3. Use the split method to split the line into a String array data
-
-            // 4. Print out the name using the correct index in the split data
-            //   (Check above for the correct index for the name)
-
-            // 5. Call the printHTMLimage method below
-            //    with an element of the data array to print out the image.
-            //    (Check above for the correct index for the image url)
-
-        }
-
-        public static void main(String[] args) throws IOException
-        {
-            PokeImages obj = new PokeImages();
-            // call readFile() to read file into the array pokemonLines
-            int length = obj.readFile();
-            obj.randomPokemon(length);
-        }
-
-        // This method will just work on Runestone to print out images
-        public static void printHTMLimage(String url)
-        {
-            System.out.print("<img src=" + url + " width=300px />");
-        }
-    }
-```
+</div>
 
 ### PART C: Organize Data with Object-Oriented Design
-
-#### Object-Oriented Design with CSV Files
 
 To better organize and work with this data, we can create a ``Pokemon`` class that corresponds to these attributes using object-oriented design. A CSV data file can be saved into an array of ``Pokemon`` objects by splitting each line (except the header) into the attributes for one ``Pokemon`` object.
 
