@@ -22,7 +22,7 @@ nav_order: 18
 
 1. Go to the public template **repository** for our class: [BWL-CS Java Template](https://github.com/BWL-CS/java-template)
 2. Click the <button type="button" name="button" class="btn btn-green">Use this template</button> button above the list of files then select `Create a new repository`
-3. Specify the **repository name**: `CS2-Unit4-Activity#`
+3. Specify the **repository name**: `CS2-Unit-4-Activity-#`
     > Replace `#` with the specific _activity number_.
 4. Click <button type="button" name="button" class="btn btn-green">Create repository</button>
     > Now you have **your own personal copy** of this starter code that you can always access under the `Your repositories` section of GitHub! 📂
@@ -40,14 +40,18 @@ nav_order: 18
 
 In this activity, you'll practice using **arrays** and working with **text files** with a dataset about [Pokemon](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
 
+{:.highlight} 
+First, review the notes on the `File`, `Scanner`, and `IOException` classes: [📓4.6: Using Text Files](https://coderina.dev/javadocs/docs/unit4/notes406.html)
+
 ### PART A: Create Array from the Data File
 
 The following exercise reads in a data file about Pokemon and prints out the first 10 lines in the file. This file has the extension `.csv` which stands for **Comma Separated Values**. All spreadsheets can be saved as CSV text files, and spreadsheet software can easily open CSV files as spreadsheets.
 
 <div class="task" markdown="block">
 
-1. Add the `pokemon.csv` file (that I emailed to you) to your repository.
-2. Complete the code in the main method below to read in the first 10 lines of the pokemon file using the Scanner class, save each line into the pokemonLines array, and print it out. Make sure you check that the line counter i is less than 10 in the condition of the loop. 
+1. Add the `pokemon.csv` file (_that I emailed to you_) to your repository by dragging it into the **File Explorer** tab.
+2. Complete the code in the main method below to **read in the first 10 lines** of the pokemon file using the `Scanner` class, save each line into the `pokemonLines` array, and print it out.
+  > Make sure you check that the line **counter** `i` is _less than 10_ in the **condition** of the loop. 
 
 ```java
 public static void main(String[] args) throws IOException {
