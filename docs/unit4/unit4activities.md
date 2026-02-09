@@ -50,20 +50,21 @@ The following exercise reads in a data file about Pokemon and prints out the fir
 <div class="task" markdown="block">
 
 1. Add the `pokemon.csv` file (_that I emailed to you_) to your repository by dragging it into the **File Explorer** tab.
-2. Complete the code in the main method below to **read in the first 10 lines** of the pokemon file using the `Scanner` class, save each line into the `pokemonLines` array, and print it out.
+2. Include `throws IOException` in the main method header like below:
+  ```java
+  public static void main(String[] args) throws IOException {
+  ...
+  }
+  ```
+3. Set up `File` and `Scanner` objects at the beginning of the main method:
+  ```java
+  File myFile = new File("pokemon.csv");
+  Scanner scan = new Scanner(myFile);
+  String[] pokemonLines = new String[10];
+  ```
+4. Complete the `while` loop to **read in the first 10 lines** of the pokemon file using the `Scanner` class, save each line into the `pokemonLines` array, and print it out.
   > Make sure you check that the line **counter** `i` is _less than 10_ in the **condition** of the loop. 
 
-```java
-public static void main(String[] args) throws IOException {
-...
-}
-```
-
-```java
-File myFile = new File("pokemon.csv");
-Scanner scan = new Scanner(myFile);
-String[] pokemonLines = new String[10];
-```
 
 ```java
            int i = 0;
