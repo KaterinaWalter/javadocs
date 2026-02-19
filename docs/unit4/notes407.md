@@ -64,23 +64,28 @@ _There are multiple steps to saving in GitHub Codespaces:_
 
 ---
 
-## Wrapper Classes: Integer and Double
+## Wrapper Classes: `Integer` and `Double`
 
-For every primitive type in Java, there is a built-in object type called a **wrapper class**. The wrapper class for `int` is called `Integer`, and for `double` it is called `Double`. _Why do this?_ Sometimes you may need to create a **wrapped OBJECT** version of a **primitive type**, so that you can give it to a method that is expecting an object. 
+For every <span class="highlighter">primitive</span> type in Java, there is a built-in <span class="highlighter">object</span> type called a **wrapper class**. The wrapper class for `int` is called `Integer`, and for `double` it is called `Double`. 
+> _Why do this?_ Sometimes you may need to create a **wrapped object** version of **primitive data**, so that you can give it to a method that is expecting an object. 
 
 ![image-small](https://external-preview.redd.it/G_XR_y2ep9Sl4c45tXhLfwwATWZ-6RHlLQ2KKbbw05s.jpg?width=640&crop=smart&auto=webp&s=0409a7c9298ec38d6bb6e91dc884b23bd0761114)
 
-🎁 To **wrap** a value, call the _constructor_ for the wrapper class in earlier versions of Java. In Java 9 on, this is **deprecated** which means it's not the best way to do this anymore, and you should instead just set it equal to a value. The AP CSA Exam covers Java 7 which does allow using the constructor.
+<div class="imp" markdown="block">
+  
+🎁 To **wrap** a value, call the _constructor_ for the wrapper class OR just assign a value as if it's a primitive type but make sure to declare the data type correctly. In Java 9 on, the constructor call is *deprecated* which means it's not the best way to do this anymore, and you should instead just set it equal to a value. 
 
 ```java
-   // in older versions of Java (and on the AP exam)
-   Integer i = new Integer(2); // create an object with 2 in it
-   Double d = new Double(3.5); // create an object with 3.5 in it
+// in older versions of Java (and OK on the AP exam)
+Integer i = new Integer(2); // create an object with 2 in it
+Double d = new Double(3.5); // create an object with 3.5 in it
 
-   // in newer versions of Java (9+)
-   Integer i = 2;
-   Double d = 3.5;
+// in newer versions of Java (9+)
+Integer i = 2;
+Double d = 3.5;
 ```
+
+</div>
 
 These wrapper classes (defined in the `java.lang` included **package**) are also useful because they have some special values (like the minimum and maximum values for the type) and methods that you can use.
 
