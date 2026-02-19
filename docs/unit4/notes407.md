@@ -73,10 +73,11 @@ For every <span class="highlighter">primitive</span> type in Java, there is a bu
 
 <div class="imp" markdown="block">
   
-🎁 To **wrap** a value, call the _constructor_ for the wrapper class OR just assign a value as if it's a primitive type but make sure to declare the data type correctly. In Java 9 on, the constructor call is *deprecated* which means it's not the best way to do this anymore, and you should instead just set it equal to a value. 
+🎁 To **wrap** a value, call the _constructor_ for the wrapper class OR just assign a value as if it's a primitive type but make sure to declare the data type (`Integer` or `Double`) correctly. 
+> In Java version 9 onwards, the constructor call is *deprecated* which means it's not the best way to do this anymore. 
 
 ```java
-// in older versions of Java (and OK on the AP exam)
+// in older versions of Java (still OK on the AP exam)
 Integer i = new Integer(2); // create an object with 2 in it
 Double d = new Double(3.5); // create an object with 3.5 in it
 
@@ -93,14 +94,28 @@ When would you ever use `Integer.MIN_VALUE` or `Integer.MAX_VALUE`?  They are ha
 
 ### Autoboxing and Unboxing 
 
-**Autoboxing** is the automatic conversion that the Java compiler makes between primitive types and their corresponding object wrapper classes. This includes converting an `int` to an `Integer` and a `double` to a `Double`. The Java compiler applies autoboxing when a primitive value is passed as a parameter to a method that expects an object of the corresponding wrapper class or assigned to a variable of the corresponding wrapper class. Here's an example of autoboxing.
+<html>
+  <dl>
+    <dt>Autoboxing</dt>
+    <dd>The automatic conversion that the Java compiler makes between primitive types and their corresponding object wrapper classes.</dd>
+  </dl>
+</html>
+ 
+**Autoboxing** includes converting an `int` to an `Integer` and a `double` to a `Double`. The Java compiler applies autoboxing when a primitive value is passed as a parameter to a method that expects an object of the corresponding wrapper class or assigned to a variable of the corresponding wrapper class. Here's an example of autoboxing.
 
 ```java
    Integer i = 2;
    Double d = 3.5;
 ```
 
-**Unboxing** is the automatic conversion that the Java compiler makes from the wrapper class to the primitive type. This includes converting an Integer to an int and a Double to a double. The Java compiler applies unboxing when a wrapper class object is passed as a parameter to a method that expects a value of the corresponding primitive type or assigned to a variable of the corresponding primitive type. Here's an example of unboxing:
+<html>
+  <dl>
+    <dt>Unboxing</dt>
+    <dd>The automatic conversion that the Java compiler makes from the wrapper class to the primitive type.</dd>
+  </dl>
+</html>
+
+**Unboxing** includes converting an Integer to an int and a Double to a double. The Java compiler applies unboxing when a wrapper class object is passed as a parameter to a method that expects a value of the corresponding primitive type or assigned to a variable of the corresponding primitive type. Here's an example of unboxing:
 
 ```java
    Integer i = 2;  // autoboxing - wrap 2
